@@ -17,16 +17,16 @@ WARNING: PUTTING NEWPIPE OR ANY FORK OF IT INTO GOOGLE PLAYSTORE VIOLATES THEIR 
 
 ## Screenshots
 
-[<img src="metadata\en-US\phoneScreenshots/shot_1.png" width=160>](metadata\en-US\phoneScreenshots/shot_1.png)
-[<img src="metadata\en-US\phoneScreenshots/shot_2.png" width=160>](metadata\en-US\phoneScreenshots/shot_2.png)
-[<img src="metadata\en-US\phoneScreenshots/shot_3.png" width=160>](metadata\en-US\phoneScreenshots/shot_3.png)
-[<img src="metadata\en-US\phoneScreenshots/shot_4.png" width=160>](metadata\en-US\phoneScreenshots/shot_4.png)
-[<img src="metadata\en-US\phoneScreenshots/shot_5.png" width=160>](metadata\en-US\phoneScreenshots/shot_5.png)
-[<img src="metadata\en-US\phoneScreenshots/shot_6.png" width=160>](metadata\en-US\phoneScreenshots/shot_6.png)
-[<img src="metadata\en-US\phoneScreenshots/shot_7.png" width=160>](metadata\en-US\phoneScreenshots/shot_7.png)
-[<img src="metadata\en-US\phoneScreenshots/shot_8.png" width=160>](metadata\en-US\phoneScreenshots/shot_8.png)
-[<img src="metadata\en-US\phoneScreenshots/shot_9.png" width=160>](metadata\en-US\phoneScreenshots/shot_9.png)
-[<img src="metadata\en-US\phoneScreenshots/shot_10.png" width=160>](metadata\en-US\phoneScreenshots/shot_10.png)
+[<img src="metadata/en-US/phoneScreenshots/shot_1.png" width=160>](metadata/en-US/phoneScreenshots/shot_1.png)
+[<img src="metadata/en-US/phoneScreenshots/shot_2.png" width=160>](metadata/en-US/phoneScreenshots/shot_2.png)
+[<img src="metadata/en-US/phoneScreenshots/shot_3.png" width=160>](metadata/en-US/phoneScreenshots/shot_3.png)
+[<img src="metadata/en-US/phoneScreenshots/shot_4.png" width=160>](metadata/en-US/phoneScreenshots/shot_4.png)
+[<img src="metadata/en-US/phoneScreenshots/shot_5.png" width=160>](metadata/en-US/phoneScreenshots/shot_5.png)
+[<img src="metadata/en-US/phoneScreenshots/shot_6.png" width=160>](metadata/en-US/phoneScreenshots/shot_6.png)
+[<img src="metadata/en-US/phoneScreenshots/shot_7.png" width=160>](metadata/en-US/phoneScreenshots/shot_7.png)
+[<img src="metadata/en-US/phoneScreenshots/shot_8.png" width=160>](metadata/en-US/phoneScreenshots/shot_8.png)
+[<img src="metadata/en-US/phoneScreenshots/shot_9.png" width=160>](metadata/en-US/phoneScreenshots/shot_9.png)
+[<img src="metadata/en-US/phoneScreenshots/shot_10.png" width=160>](metadata/en-US/phoneScreenshots/shot_10.png)
 
 ## Description
 
