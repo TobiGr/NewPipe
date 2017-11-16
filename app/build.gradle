@@ -71,6 +71,7 @@ dependencies {
 
     implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
     implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.github.apl-devs:appintro:v4.2.2'
     implementation 'com.github.nirhart:ParallaxScroll:dd53d1f9d1'
     implementation 'com.nononsenseapps:filepicker:3.0.1'
     implementation 'com.google.android.exoplayer:exoplayer:2.7.0'

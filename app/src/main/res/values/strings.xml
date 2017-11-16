@@ -427,4 +427,15 @@
     <string name="enable_disposed_exceptions_title">Report Out-of-Lifecycle Errors</string>
     <string name="enable_disposed_exceptions_summary">Force reporting of undeliverable Rx exceptions occurring outside of fragment or activity lifecycle after dispose</string>
 
+    <!-- Tours -->
+    <string name="app_intro_skip_button">SKIP</string>
+    <string name="app_intro_done_button">GET STARTED</string>
+    <string name="welcome_tour_welcome_title">Welcome to NewPipe</string>
+    <string name="welcome_tour_welcome_description">Take a tour to learn some basics about NewPipe.</string>
+    <string name="welcome_tour_about_title">What is NewPipe about?</string>
+    <string name="welcome_tour_about_description">Play videos and audios/music from streaming services and protect your privacy.</string>
+    <string name="welcome_tour_playlist_title">Play them all!</string>
+    <string name="welcome_tour_playlist_description">NewPipe supports three different players: normal video player, popup and background player</string>
+    <string name="welcome_tour_download_title">Download your favourites!</string>
+    <string name="welcome_tour_download_description">You want to enjoy them offline? No problem!</string>
 </resources>

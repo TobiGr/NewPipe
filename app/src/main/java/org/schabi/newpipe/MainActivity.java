@@ -53,6 +53,7 @@ import org.schabi.newpipe.fragments.MainFragment;
 import org.schabi.newpipe.fragments.detail.VideoDetailFragment;
 import org.schabi.newpipe.fragments.list.search.SearchFragment;
 import org.schabi.newpipe.report.ErrorActivity;
+import org.schabi.newpipe.tours.WelcomeTour;
 import org.schabi.newpipe.util.Constants;
 import org.schabi.newpipe.util.NavigationHelper;
 import org.schabi.newpipe.util.ServiceHelper;
@@ -123,6 +124,14 @@ public class MainActivity extends AppCompatActivity {
             setupDrawerHeader();
         } else {
             drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
+        }
+
+        if (!sharedPreferences.getBoolean("first", false) || true) {
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putBoolean("first", true);
+            editor.apply();
+            Intent intent = new Intent(this, WelcomeTour.class); // Call the AppIntro java class
+            startActivity(intent);
         }
     }
 
