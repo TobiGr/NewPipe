@@ -42,7 +42,10 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-
+import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Consumer;
+import io.reactivex.schedulers.Schedulers;
+import io.reactivex.subjects.PublishSubject;
 import org.schabi.newpipe.database.AppDatabase;
 import org.schabi.newpipe.database.history.dao.HistoryDAO;
 import org.schabi.newpipe.database.history.dao.SearchHistoryDAO;
@@ -59,17 +62,13 @@ import org.schabi.newpipe.fragments.BackPressable;
 import org.schabi.newpipe.fragments.detail.VideoDetailFragment;
 import org.schabi.newpipe.fragments.list.search.SearchFragment;
 import org.schabi.newpipe.history.HistoryListener;
+import org.schabi.newpipe.tours.WelcomeTour;
 import org.schabi.newpipe.util.Constants;
 import org.schabi.newpipe.util.NavigationHelper;
 import org.schabi.newpipe.util.StateSaver;
 import org.schabi.newpipe.util.ThemeHelper;
 
 import java.util.Date;
-
-import io.reactivex.disposables.Disposable;
-import io.reactivex.functions.Consumer;
-import io.reactivex.schedulers.Schedulers;
-import io.reactivex.subjects.PublishSubject;
 
 public class MainActivity extends AppCompatActivity implements HistoryListener {
     private static final String TAG = "MainActivity";
@@ -149,6 +148,15 @@ public class MainActivity extends AppCompatActivity implements HistoryListener {
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 
         initHistory();
+
+
+        if (!sharedPreferences.getBoolean("first", false) || true) {
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putBoolean("first", true);
+            editor.apply();
+            Intent intent = new Intent(this, WelcomeTour.class); // Call the AppIntro java class
+            startActivity(intent);
+        }
     }
 
     @Override
