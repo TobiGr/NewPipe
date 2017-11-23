@@ -15,17 +15,6 @@ android {
         vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
-        release {
-            minifyEnabled true
-            shrinkResources true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-        debug {
-            multiDexEnabled true
-
-            debuggable true
-            applicationIdSuffix ".debug"
-        }
         beta {
             minifyEnabled true
             shrinkResources true

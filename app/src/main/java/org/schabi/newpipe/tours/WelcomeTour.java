@@ -33,6 +33,7 @@ public class WelcomeTour extends AppIntro {
         addSlide(AppIntroFragment.newInstance(getString(R.string.welcome_tour_about_title), getString(R.string.welcome_tour_about_description), R.mipmap.ic_launcher , Color.rgb(34,34,34)));
         addSlide(AppIntroFragment.newInstance(getString(R.string.welcome_tour_playlist_title), getString(R.string.welcome_tour_playlist_description), R.mipmap.ic_launcher , Color.rgb(34,34,34)));
         addSlide(AppIntroFragment.newInstance(getString(R.string.welcome_tour_download_title), getString(R.string.welcome_tour_download_description), R.mipmap.ic_launcher , Color.rgb(34,34,34)));
+        addSlide(AppIntroFragment.newInstance(getString(R.string.welcome_tour_explore_title), getString(R.string.welcome_tour_explore_description), R.mipmap.ic_launcher , Color.rgb(34,34,34)));
 
 
         // OPTIONAL METHODS
