@@ -126,10 +126,12 @@ public class MainActivity extends AppCompatActivity {
             drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
         }
 
-        if (!sharedPreferences.getBoolean("first", false) || true) {
-            SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        if (!sharedPreferences.getBoolean("first", false) || sharedPreferences.getInt("lastVersion", 0) == 0) {
+
+            /*SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putBoolean("first", true);
-            editor.apply();
+            editor.apply();*/
             Intent intent = new Intent(this, WelcomeTour.class); // Call the AppIntro java class
             startActivity(intent);
         }
