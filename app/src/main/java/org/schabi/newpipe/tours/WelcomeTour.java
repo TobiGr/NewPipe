@@ -12,6 +12,7 @@ import org.schabi.newpipe.R;
  * Created by Tobias on 08.11.2017.
  */
 
+// TODO RENAME to WelcomeScreen
 public class WelcomeTour extends AppIntro {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -35,6 +36,23 @@ public class WelcomeTour extends AppIntro {
         addSlide(AppIntroFragment.newInstance(getString(R.string.welcome_tour_download_title), getString(R.string.welcome_tour_download_description), R.mipmap.ic_launcher , Color.rgb(34,34,34)));
         addSlide(AppIntroFragment.newInstance(getString(R.string.welcome_tour_explore_title), getString(R.string.welcome_tour_explore_description), R.mipmap.ic_launcher , Color.rgb(34,34,34)));
 
+
+        // Falls neue Version
+        // Dann lade Changelog
+        // addSlide(ChangeLogFragment);
+
+        /*
+        VideoTourFragment
+        => title, description, video
+        *************
+        ChangeLog.html in assets
+        => add webView for ChangeLog
+        *************
+        => Changelog in Settings > About > Changelog
+        => Settings > About > About NewPipe
+        => Settings > About > Licenses
+        *************
+         */
 
         // OPTIONAL METHODS
         // Override bar/separator color.
