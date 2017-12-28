@@ -40,6 +40,7 @@ ext {
     supportLibVersion = '27.0.2'
 }
 dependencies {
+    implementation 'com.android.support:support-v4:27.0.2'
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2') {
         exclude module: 'support-annotations'
     }

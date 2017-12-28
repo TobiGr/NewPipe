@@ -30,12 +30,19 @@ public class WelcomeTour extends AppIntro {
         // Instead of fragments, you can also use our default slide
         // Just set a title, description, background and image. AppIntro will do the rest.
         //addSlide(AppIntroFragment.newInstance(title, description, image, backgroundColor));
-        addSlide(AppIntroFragment.newInstance(getString(R.string.welcome_tour_welcome_title), getString(R.string.welcome_tour_welcome_description), R.mipmap.ic_launcher , Color.rgb(34,34,34)));
+
+        String[] changes = {
+                "Bugfixes",
+                "Performance Improvemets"
+        };
+        WhatsNewFragment whatsNew = WhatsNewFragment.newInstance(changes);
+        addSlide(whatsNew);
+        /*addSlide(AppIntroFragment.newInstance(getString(R.string.welcome_tour_welcome_title), getString(R.string.welcome_tour_welcome_description), R.mipmap.ic_launcher , Color.rgb(34,34,34)));
         addSlide(AppIntroFragment.newInstance(getString(R.string.welcome_tour_about_title), getString(R.string.welcome_tour_about_description), R.mipmap.ic_launcher , Color.rgb(34,34,34)));
         addSlide(AppIntroFragment.newInstance(getString(R.string.welcome_tour_playlist_title), getString(R.string.welcome_tour_playlist_description), R.mipmap.ic_launcher , Color.rgb(34,34,34)));
         addSlide(AppIntroFragment.newInstance(getString(R.string.welcome_tour_download_title), getString(R.string.welcome_tour_download_description), R.mipmap.ic_launcher , Color.rgb(34,34,34)));
         addSlide(AppIntroFragment.newInstance(getString(R.string.welcome_tour_explore_title), getString(R.string.welcome_tour_explore_description), R.mipmap.ic_launcher , Color.rgb(34,34,34)));
-
+*/
 
         // Falls neue Version
         // Dann lade Changelog
