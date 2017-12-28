@@ -150,13 +150,13 @@ public class MainActivity extends AppCompatActivity implements HistoryListener {
         initHistory();
 
 
-        if (!sharedPreferences.getBoolean("first", false) || sharedPreferences.getInt("lastVersion", 0) == 0) {
-
-            /*SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putBoolean("first", true);
-            editor.apply();*/
-            Intent intent = new Intent(this, WelcomeTour.class); // Call the AppIntro java class
+        if (sharedPreferences.getBoolean("firstLaunch", true) || sharedPreferences.getInt("lastVersionCode", 0) != BuildConfig.VERSION_CODE) {
+            Intent intent = new Intent(this, WelcomeTour.class);
             startActivity(intent);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putBoolean("firstLaunch", false);
+            editor.putInt("lastVersionCode", BuildConfig.VERSION_CODE);
+            editor.apply();
         }
     }
 
