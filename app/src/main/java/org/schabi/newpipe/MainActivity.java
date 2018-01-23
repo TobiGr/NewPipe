@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (sharedPreferences.getBoolean("firstLaunch", true) || sharedPreferences.getInt("lastVersionCode", 0) != BuildConfig.VERSION_CODE) {
-            Intent intent = new Intent(this, WelcomeTour.class);
+            Intent intent = new Intent(this, WelcomeScreen.class);
             startActivity(intent);
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putBoolean("firstLaunch", false);
