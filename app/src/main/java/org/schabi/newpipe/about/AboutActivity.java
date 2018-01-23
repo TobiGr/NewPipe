@@ -20,6 +20,7 @@ import android.widget.TextView;
 
 import org.schabi.newpipe.BuildConfig;
 import org.schabi.newpipe.R;
+import org.schabi.newpipe.tours.WelcomeScreen;
 import org.schabi.newpipe.util.NavigationHelper;
 import org.schabi.newpipe.util.ThemeHelper;
 
@@ -133,6 +134,9 @@ public class AboutActivity extends AppCompatActivity {
             TextView version = rootView.findViewById(R.id.app_version);
             version.setText(BuildConfig.VERSION_NAME);
 
+            View changesButton = rootView.findViewById(R.id.view_changes);
+            changesButton.setOnClickListener(new OnChangesLinkClickListener());
+
             View githubLink = rootView.findViewById(R.id.github_link);
             githubLink.setOnClickListener(new OnGithubLinkClickListener());
 
@@ -143,6 +147,15 @@ public class AboutActivity extends AppCompatActivity {
             websiteLink.setOnClickListener(new OnWebsiteLinkClickListener());
 
             return rootView;
+        }
+
+        private static class OnChangesLinkClickListener implements View.OnClickListener {
+            @Override
+            public void onClick(final View view) {
+                final Context context = view.getContext();
+                Intent intent = new Intent(context, WelcomeScreen.class);
+                context.startActivity(intent);
+            }
         }
 
         private static class OnGithubLinkClickListener implements View.OnClickListener {
