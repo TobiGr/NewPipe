@@ -17,9 +17,10 @@ import org.schabi.newpipe.R;
 /**
  * Fragment containing information about the changes in the current version
  */
+// TODO rename to ChangesFragment
 public class WhatsNewFragment extends Fragment {
 
-    // TODO add clicklistener to about fragment to open whats in a dialog
+    // TODO add clicklistener to about fragment to open whatsNewFragment in a dialog
 
     private static final String ARG_CHANGES = "changes";
     private String[] changes;

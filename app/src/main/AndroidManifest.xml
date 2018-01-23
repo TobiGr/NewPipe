@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".tours.WelcomeTour"
+        <activity android:name=".tours.WelcomeScreen"
             android:label="@string/app_name" />
 
         <activity

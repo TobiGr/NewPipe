@@ -13,7 +13,17 @@ import org.schabi.newpipe.R;
  */
 
 // TODO RENAME to WelcomeScreen
-public class WelcomeTour extends AppIntro {
+public class WelcomeScreen extends AppIntro {
+
+    private static final String[][] APP_CHANGES = {
+            /* New */
+            {"NewPipe is stable now!"},
+            /* Improved */
+            {"Nothing, because NewPipe is perfect"},
+            /* Fixed */
+            {"Every single bug", "EVERY bug", "EVERYTHING"}
+    };
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +46,9 @@ public class WelcomeTour extends AppIntro {
                 "Performance Improvemets"
         };
         WhatsNewFragment whatsNew = WhatsNewFragment.newInstance(changes);
-        addSlide(whatsNew);
+        //addSlide(whatsNew);
+        ChangesFragment changesFragment = ChangesFragment.newInstance(APP_CHANGES[0], APP_CHANGES[1], APP_CHANGES[2]);
+        addSlide(changesFragment);
         /*addSlide(AppIntroFragment.newInstance(getString(R.string.welcome_tour_welcome_title), getString(R.string.welcome_tour_welcome_description), R.mipmap.ic_launcher , Color.rgb(34,34,34)));
         addSlide(AppIntroFragment.newInstance(getString(R.string.welcome_tour_about_title), getString(R.string.welcome_tour_about_description), R.mipmap.ic_launcher , Color.rgb(34,34,34)));
         addSlide(AppIntroFragment.newInstance(getString(R.string.welcome_tour_playlist_title), getString(R.string.welcome_tour_playlist_description), R.mipmap.ic_launcher , Color.rgb(34,34,34)));

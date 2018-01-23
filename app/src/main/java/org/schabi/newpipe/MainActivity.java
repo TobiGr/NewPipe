@@ -62,7 +62,7 @@ import org.schabi.newpipe.fragments.BackPressable;
 import org.schabi.newpipe.fragments.detail.VideoDetailFragment;
 import org.schabi.newpipe.fragments.list.search.SearchFragment;
 import org.schabi.newpipe.history.HistoryListener;
-import org.schabi.newpipe.tours.WelcomeTour;
+import org.schabi.newpipe.tours.WelcomeScreen;
 import org.schabi.newpipe.util.Constants;
 import org.schabi.newpipe.util.NavigationHelper;
 import org.schabi.newpipe.util.StateSaver;
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity implements HistoryListener {
 
 
         if (sharedPreferences.getBoolean("firstLaunch", true) || sharedPreferences.getInt("lastVersionCode", 0) != BuildConfig.VERSION_CODE) {
-            Intent intent = new Intent(this, WelcomeTour.class);
+            Intent intent = new Intent(this, WelcomeScreen.class);
             startActivity(intent);
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putBoolean("firstLaunch", false);

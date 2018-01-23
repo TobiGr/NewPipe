@@ -370,5 +370,9 @@
     <string name="welcome_tour_download_description">You want to enjoy them offline? No problem!</string>
     <string name="welcome_tour_explore_title">Ready?</string>
     <string name="welcome_tour_explore_description">If not, go through other tours as well. You can find them in the settings.</string>
-    <string name="whats_new_version">What\'s new in version %1$s</string>
+    <string name="whats_new_version">New in version %1$s</string>
+    <string name="new_in_version">New</string>
+    <string name="improved_in_version">Improved</string>
+    <string name="fixed_in_version">Fixed</string>
+
 </resources>
