@@ -59,7 +59,7 @@ public class ChangesFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_whats_new, container, false);
         TextView titleView = rootView.findViewById(R.id.whats_new_title);
-        titleView.setText(getContext().getString(R.string.whats_new_version,
+        titleView.setText(getContext().getString(R.string.changes_in_version_title,
                 BuildConfig.VERSION_NAME.toString()) );
 
         LinearLayout changesView = rootView.findViewById(R.id.whats_new_changes);

@@ -272,6 +272,9 @@
     <string name="tab_about">About</string>
     <string name="tab_contributors">Contributors</string>
     <string name="tab_licenses">Licenses</string>
+    <string name="changes_title">Changes</string>
+    <string name="changes_encouragement">Take a look at what has been improved in this version.</string>
+    <string name="view_changes">View changes</string>
     <string name="app_description">A free lightweight YouTube frontend for Android.</string>
     <string name="contribution_title">Contribute</string>
     <string name="contribution_encouragement">Whether you have ideas of; translation, design changes, code cleaning, or real heavy code changes—help is always welcome. The more is done the better it gets!</string>
@@ -370,7 +373,7 @@
     <string name="welcome_tour_download_description">You want to enjoy them offline? No problem!</string>
     <string name="welcome_tour_explore_title">Ready?</string>
     <string name="welcome_tour_explore_description">If not, go through other tours as well. You can find them in the settings.</string>
-    <string name="whats_new_version">New in version %1$s</string>
+    <string name="changes_in_version_title">Changes in version %1$s</string>
     <string name="new_in_version">New</string>
     <string name="improved_in_version">Improved</string>
     <string name="fixed_in_version">Fixed</string>
