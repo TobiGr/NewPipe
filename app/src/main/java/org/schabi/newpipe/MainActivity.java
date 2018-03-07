@@ -53,7 +53,7 @@ import org.schabi.newpipe.fragments.MainFragment;
 import org.schabi.newpipe.fragments.detail.VideoDetailFragment;
 import org.schabi.newpipe.fragments.list.search.SearchFragment;
 import org.schabi.newpipe.report.ErrorActivity;
-import org.schabi.newpipe.tours.WelcomeTour;
+import org.schabi.newpipe.tours.WelcomeScreen;
 import org.schabi.newpipe.util.Constants;
 import org.schabi.newpipe.util.NavigationHelper;
 import org.schabi.newpipe.util.ServiceHelper;
@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
             drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
         }
 
-
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         if (sharedPreferences.getBoolean("firstLaunch", true) || sharedPreferences.getInt("lastVersionCode", 0) != BuildConfig.VERSION_CODE) {
             Intent intent = new Intent(this, WelcomeScreen.class);
             startActivity(intent);
