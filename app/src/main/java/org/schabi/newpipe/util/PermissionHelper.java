@@ -24,7 +24,7 @@ public class PermissionHelper {
 
     public static boolean checkStoragePermissions(Activity activity, int requestCode) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-            if(!checkReadStoragePermissions(activity, requestCode)) return false;
+            if (!checkReadStoragePermissions(activity, requestCode)) return false;
         }
         return checkWriteStoragePermissions(activity, requestCode);
     }

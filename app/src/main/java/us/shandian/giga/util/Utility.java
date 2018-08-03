@@ -65,7 +65,7 @@ public class Utility {
         } catch (Exception e) {
             //nothing to do
         } finally {
-            if(objectOutputStream != null) {
+            if (objectOutputStream != null) {
                 try {
                     objectOutputStream.close();
                 } catch (Exception e) {
@@ -88,7 +88,7 @@ public class Utility {
             //nothing to do
         }
 
-        if(objectInputStream != null){
+        if (objectInputStream != null){
             try {
                 objectInputStream .close();
             } catch (Exception e) {

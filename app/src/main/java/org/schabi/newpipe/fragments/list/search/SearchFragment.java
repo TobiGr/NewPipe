@@ -371,7 +371,7 @@ public class SearchFragment
                     itemId++,
                     0,
                     ServiceHelper.getTranslatedFilterString(filter, c));
-            if(isFirstItem) {
+            if (isFirstItem) {
                 item.setChecked(true);
                 isFirstItem = false;
             }

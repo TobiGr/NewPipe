@@ -94,13 +94,13 @@ public class SelectKioskFragment extends DialogFragment {
     @Override
     public void onCancel(final DialogInterface dialogInterface) {
         super.onCancel(dialogInterface);
-        if(onCancelListener != null) {
+        if (onCancelListener != null) {
             onCancelListener.onCancel();
         }
     }
 
     private void clickedItem(SelectKioskAdapter.Entry entry) {
-        if(onSelectedLisener != null) {
+        if (onSelectedLisener != null) {
             onSelectedLisener.onKioskSelected(entry.kioskId, entry.serviceId);
         }
         dismiss();

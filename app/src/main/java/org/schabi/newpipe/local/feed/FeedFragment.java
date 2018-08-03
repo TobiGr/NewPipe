@@ -120,7 +120,7 @@ public class FeedFragment extends BaseListFragment<List<SubscriptionEntity>, Voi
             supportActionBar.setTitle(R.string.fragment_whats_new);
         }
 
-        if(useAsFrontPage) {
+        if (useAsFrontPage) {
             supportActionBar.setDisplayShowTitleEnabled(true);
             //supportActionBar.setDisplayShowTitleEnabled(false);
         }

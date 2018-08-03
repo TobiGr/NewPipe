@@ -253,7 +253,7 @@ public class RouterActivity extends AppCompatActivity {
                 .setNegativeButton(R.string.just_once, dialogButtonsClickListener)
                 .setPositiveButton(R.string.always, dialogButtonsClickListener)
                 .setOnDismissListener((dialog) -> {
-                    if(!selectionIsDownload) finish();
+                    if (!selectionIsDownload) finish();
                 })
                 .create();
 

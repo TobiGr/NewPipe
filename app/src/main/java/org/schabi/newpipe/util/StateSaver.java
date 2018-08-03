@@ -131,7 +131,7 @@ public class StateSaver {
 
             File file = new File(savedState.getPathFileSaved());
             if (!file.exists()) {
-                if(MainActivity.DEBUG) {
+                if (MainActivity.DEBUG) {
                     Log.d(TAG, "Cache file doesn't exist: " + file.getAbsolutePath());
                 }
                 return null;
@@ -212,7 +212,7 @@ public class StateSaver {
                 stateObjectsHolder.put(prefixFileName, savedObjects);
                 return new SavedState(prefixFileName, "");
             } else {
-                if(MainActivity.DEBUG) Log.d(TAG, "Nothing to save");
+                if (MainActivity.DEBUG) Log.d(TAG, "Nothing to save");
                 return null;
             }
         }
@@ -223,8 +223,8 @@ public class StateSaver {
             if (!cacheDir.exists()) throw new RuntimeException("Cache dir does not exist > " + cacheDirPath);
             cacheDir = new File(cacheDir, CACHE_DIR_NAME);
             if (!cacheDir.exists()) {
-                if(!cacheDir.mkdir()) {
-                    if(BuildConfig.DEBUG) {
+                if (!cacheDir.mkdir()) {
+                    if (BuildConfig.DEBUG) {
                         Log.e(TAG, "Failed to create cache directory " + cacheDir.getAbsolutePath());
                     }
                     return null;

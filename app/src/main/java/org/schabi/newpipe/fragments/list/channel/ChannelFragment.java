@@ -104,7 +104,7 @@ public class ChannelFragment extends BaseListInfoFragment<ChannelInfo> {
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
-        if(activity != null
+        if (activity != null
                 && useAsFrontPage
                 && isVisibleToUser) {
             setTitle(currentInfo != null ? currentInfo.getName() : name);
@@ -211,7 +211,7 @@ public class ChannelFragment extends BaseListInfoFragment<ChannelInfo> {
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
         ActionBar supportActionBar = activity.getSupportActionBar();
-        if(useAsFrontPage && supportActionBar != null) {
+        if (useAsFrontPage && supportActionBar != null) {
             supportActionBar.setDisplayHomeAsUpEnabled(false);
         } else {
             inflater.inflate(R.menu.menu_channel, menu);
@@ -224,7 +224,7 @@ public class ChannelFragment extends BaseListInfoFragment<ChannelInfo> {
 
     private void openRssFeed() {
         final ChannelInfo info = currentInfo;
-        if(info != null) {
+        if (info != null) {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(info.getFeedUrl()));
             startActivity(intent);
         }
@@ -470,7 +470,7 @@ public class ChannelFragment extends BaseListInfoFragment<ChannelInfo> {
     private PlayQueue getPlayQueue(final int index) {
         final List<StreamInfoItem> streamItems = new ArrayList<>();
         for(InfoItem i : infoListAdapter.getItemsList()) {
-            if(i instanceof StreamInfoItem) {
+            if (i instanceof StreamInfoItem) {
                 streamItems.add((StreamInfoItem) i);
             }
         }

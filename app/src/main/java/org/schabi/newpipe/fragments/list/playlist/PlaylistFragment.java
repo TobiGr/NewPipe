@@ -316,7 +316,7 @@ public class PlaylistFragment extends BaseListInfoFragment<PlaylistInfo> {
     private PlayQueue getPlayQueue(final int index) {
         final List<StreamInfoItem> infoItems = new ArrayList<>();
         for(InfoItem i : infoListAdapter.getItemsList()) {
-            if(i instanceof StreamInfoItem) {
+            if (i instanceof StreamInfoItem) {
                 infoItems.add((StreamInfoItem) i);
             }
         }

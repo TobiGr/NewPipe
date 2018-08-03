@@ -71,10 +71,10 @@ public class LicenseFragmentHelper extends AsyncTask<Object, Void, Integer> {
      * @return String which contains a HTML formatted license page styled according to the context's theme
      */
     public static String getFormattedLicense(Context context, License license) {
-        if(context == null) {
+        if (context == null) {
             throw new NullPointerException("context is null");
         }
-        if(license == null) {
+        if (license == null) {
             throw new NullPointerException("license is null");
         }
 

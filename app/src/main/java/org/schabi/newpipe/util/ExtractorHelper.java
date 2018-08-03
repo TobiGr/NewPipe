@@ -59,7 +59,7 @@ public final class ExtractorHelper {
     }
 
     private static void checkServiceId(int serviceId) {
-        if(serviceId == Constants.NO_SERVICE_ID) {
+        if (serviceId == Constants.NO_SERVICE_ID) {
             throw new IllegalArgumentException("serviceId is NO_SERVICE_ID");
         }
     }

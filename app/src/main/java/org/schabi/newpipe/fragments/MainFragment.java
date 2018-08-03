@@ -169,7 +169,7 @@ public class MainFragment extends BaseFragment implements TabLayout.OnTabSelecte
                 case 0:
                     return isSubscriptionsPageOnlySelected() ? new SubscriptionFragment() : getMainPageFragment();
                 case 1:
-                    if(PreferenceManager.getDefaultSharedPreferences(getActivity())
+                    if (PreferenceManager.getDefaultSharedPreferences(getActivity())
                             .getString(getString(R.string.main_page_content_key), getString(R.string.blank_page_key))
                             .equals(getString(R.string.subscription_page_key))) {
                         return new BookmarkFragment();

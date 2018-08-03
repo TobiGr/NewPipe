@@ -106,7 +106,7 @@ public class ContentSettingsFragment extends BasePreferenceFragment {
                     defaultPreferences.getString(getString(R.string.main_page_content_key), "blank_page");
             final String mainPrefOldSummary = getMainPagePrefSummery(mainPrefOldValue, mainPageContentPref);
 
-            if(newValue.equals(getString(R.string.kiosk_page_key))) {
+            if (newValue.equals(getString(R.string.kiosk_page_key))) {
                 SelectKioskFragment selectKioskFragment = new SelectKioskFragment();
                 selectKioskFragment.setOnSelectedLisener((String kioskId, int service_id) -> {
                     defaultPreferences.edit()
@@ -134,7 +134,7 @@ public class ContentSettingsFragment extends BasePreferenceFragment {
                     mainPageContentPref.setValue(mainPrefOldValue);
                 });
                 selectKioskFragment.show(getFragmentManager(), "select_kiosk");
-            } else if(newValue.equals(getString(R.string.channel_page_key))) {
+            } else if (newValue.equals(getString(R.string.channel_page_key))) {
                 SelectChannelFragment selectChannelFragment = new SelectChannelFragment();
                 selectChannelFragment.setOnSelectedLisener((String url, String name, int service) -> {
                     defaultPreferences.edit()
@@ -283,7 +283,7 @@ public class ContentSettingsFragment extends BasePreferenceFragment {
             }
 
             //If settings file exist, ask if it should be imported.
-            if(ZipHelper.extractFileFromZip(filePath, newpipe_settings.getPath(), "newpipe.settings")) {
+            if (ZipHelper.extractFileFromZip(filePath, newpipe_settings.getPath(), "newpipe.settings")) {
                 AlertDialog.Builder alert = new AlertDialog.Builder(getContext());
                 alert.setTitle(R.string.import_settings);
 
@@ -356,10 +356,10 @@ public class ContentSettingsFragment extends BasePreferenceFragment {
         final String mainPageContentKey = getString(R.string.main_page_content_key);
         final Preference mainPagePref = findPreference(getString(R.string.main_page_content_key));
         final String bpk = getString(R.string.blank_page_key);
-        if(defaultPreferences.getString(mainPageContentKey, bpk)
+        if (defaultPreferences.getString(mainPageContentKey, bpk)
                 .equals(getString(R.string.channel_page_key))) {
             mainPagePref.setSummary(defaultPreferences.getString(getString(R.string.main_page_selected_channel_name), "error"));
-        } else if(defaultPreferences.getString(mainPageContentKey, bpk)
+        } else if (defaultPreferences.getString(mainPageContentKey, bpk)
                 .equals(getString(R.string.kiosk_page_key))) {
             try {
                 StreamingService service = NewPipe.getService(
@@ -387,7 +387,7 @@ public class ContentSettingsFragment extends BasePreferenceFragment {
     // Utils
     //////////////////////////////////////////////////////////////////////////*/
     private String getMainPagePrefSummery(final String mainPrefOldValue, final ListPreference mainPageContentPref) {
-        if(mainPrefOldValue.equals(getString(R.string.channel_page_key))) {
+        if (mainPrefOldValue.equals(getString(R.string.channel_page_key))) {
             return defaultPreferences.getString(getString(R.string.main_page_selected_channel_name), "error");
         } else {
             return mainPageContentPref.getSummary().toString();
@@ -395,15 +395,15 @@ public class ContentSettingsFragment extends BasePreferenceFragment {
     }
 
     private int getMainPageSummeryByKey(final String key) {
-        if(key.equals(getString(R.string.blank_page_key))) {
+        if (key.equals(getString(R.string.blank_page_key))) {
             return R.string.blank_page_summary;
-        } else if(key.equals(getString(R.string.kiosk_page_key))) {
+        } else if (key.equals(getString(R.string.kiosk_page_key))) {
             return R.string.kiosk_page_summary;
-        } else if(key.equals(getString(R.string.feed_page_key))) {
+        } else if (key.equals(getString(R.string.feed_page_key))) {
             return R.string.feed_page_summary;
-        } else if(key.equals(getString(R.string.subscription_page_key))) {
+        } else if (key.equals(getString(R.string.subscription_page_key))) {
             return R.string.subscription_page_summary;
-        } else if(key.equals(getString(R.string.channel_page_key))) {
+        } else if (key.equals(getString(R.string.channel_page_key))) {
             return R.string.channel_page_summary;
         }
         return R.string.blank_page_summary;

@@ -95,7 +95,7 @@ public class KioskFragment extends BaseListInfoFragment<KioskInfo> {
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
-        if(useAsFrontPage && isVisibleToUser && activity != null) {
+        if (useAsFrontPage && isVisibleToUser && activity != null) {
             try {
                 setTitle(kioskTranslatedName);
             } catch (Exception e) {

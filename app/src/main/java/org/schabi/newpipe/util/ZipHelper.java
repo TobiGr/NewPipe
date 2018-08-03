@@ -74,12 +74,12 @@ public class ZipHelper {
 
         ZipEntry ze;
         while((ze = inZip.getNextEntry()) != null) {
-            if(ze.getName().equals(name)) {
+            if (ze.getName().equals(name)) {
                 found = true;
                 // delete old file first
                 File oldFile = new File(file);
-                if(oldFile.exists()) {
-                    if(!oldFile.delete()) {
+                if (oldFile.exists()) {
+                    if (!oldFile.delete()) {
                         throw new Exception("Could not delete " + file);
                     }
                 }
