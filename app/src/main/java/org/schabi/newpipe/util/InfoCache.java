@@ -28,9 +28,7 @@ import org.schabi.newpipe.MainActivity;
 import org.schabi.newpipe.extractor.Info;
 
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
-import static org.schabi.newpipe.extractor.ServiceList.SoundCloud;
 
 
 public final class InfoCache {

@@ -28,7 +28,6 @@ import org.schabi.newpipe.util.FilePickerActivityHelper;
 import org.schabi.newpipe.util.KioskTranslator;
 import org.schabi.newpipe.util.ZipHelper;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -42,10 +41,8 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Map;
 import java.util.zip.ZipFile;
-import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
-import static android.content.Context.MODE_PRIVATE;
 
 public class ContentSettingsFragment extends BasePreferenceFragment {
 
@@ -260,7 +257,7 @@ public class ContentSettingsFragment extends BasePreferenceFragment {
         } finally {
             try {
                 zipFile.close();
-            } catch (Exception e){}
+            } catch (Exception e){ }
         }
 
         try {

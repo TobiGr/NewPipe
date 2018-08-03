@@ -381,7 +381,7 @@ public class LocalPlaylistFragment extends BaseLocalListFragment<List<PlaylistSt
 
         final Disposable disposable = playlistManager.renamePlaylist(playlistId, name)
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(longs -> {/*Do nothing on success*/}, this::onError);
+                .subscribe(longs -> { /*Do nothing on success*/}, this::onError);
         disposables.add(disposable);
     }
 

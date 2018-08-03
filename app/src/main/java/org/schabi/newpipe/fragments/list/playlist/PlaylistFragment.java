@@ -20,7 +20,6 @@ import android.widget.TextView;
 
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
-import org.schabi.newpipe.App;
 import org.schabi.newpipe.NewPipeDatabase;
 import org.schabi.newpipe.R;
 import org.schabi.newpipe.database.playlist.model.PlaylistRemoteEntity;
@@ -30,7 +29,6 @@ import org.schabi.newpipe.extractor.NewPipe;
 import org.schabi.newpipe.extractor.exceptions.ExtractionException;
 import org.schabi.newpipe.extractor.playlist.PlaylistInfo;
 import org.schabi.newpipe.extractor.stream.StreamInfoItem;
-import org.schabi.newpipe.extractor.linkhandler.ListLinkHandler;
 import org.schabi.newpipe.fragments.list.BaseListInfoFragment;
 import org.schabi.newpipe.info_list.InfoItemDialog;
 import org.schabi.newpipe.local.playlist.RemotePlaylistManager;
@@ -418,12 +416,12 @@ public class PlaylistFragment extends BaseListInfoFragment<PlaylistInfo> {
         if (currentInfo != null && playlistEntity == null) {
             action = remotePlaylistManager.onBookmark(currentInfo)
                     .observeOn(AndroidSchedulers.mainThread())
-                    .subscribe(ignored -> {/* Do nothing */}, this::onError);
+                    .subscribe(ignored -> { /* Do nothing */}, this::onError);
         } else if (playlistEntity != null) {
             action = remotePlaylistManager.deletePlaylist(playlistEntity.getUid())
                     .observeOn(AndroidSchedulers.mainThread())
                     .doFinally(() -> playlistEntity = null)
-                    .subscribe(ignored -> {/* Do nothing */}, this::onError);
+                    .subscribe(ignored -> { /* Do nothing */}, this::onError);
         } else {
             action = Disposables.empty();
         }

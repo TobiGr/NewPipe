@@ -955,7 +955,7 @@ public abstract class BasePlayer implements
         final StreamInfo currentInfo = currentMetadata.getMetadata();
         final Disposable viewRegister = recordManager.onViewed(currentInfo).onErrorComplete()
                 .subscribe(
-                        ignored -> {/* successful */},
+                        ignored -> { /* successful */},
                         error -> Log.e(TAG, "Player onViewed() failure: ", error)
                 );
         databaseUpdateReactor.add(viewRegister);
@@ -977,7 +977,7 @@ public abstract class BasePlayer implements
                 .observeOn(AndroidSchedulers.mainThread())
                 .onErrorComplete()
                 .subscribe(
-                        ignored -> {/* successful */},
+                        ignored -> { /* successful */},
                         error -> Log.e(TAG, "savePlaybackState() failure: ", error)
                 );
         databaseUpdateReactor.add(stateSaver);

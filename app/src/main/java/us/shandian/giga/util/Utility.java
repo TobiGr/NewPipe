@@ -11,9 +11,7 @@ import android.widget.Toast;
 
 import org.schabi.newpipe.R;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

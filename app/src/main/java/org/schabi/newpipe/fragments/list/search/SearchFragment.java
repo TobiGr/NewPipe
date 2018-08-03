@@ -712,7 +712,7 @@ public class SearchFragment
         historyRecordManager.onSearched(serviceId, searchString)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(
-                        ignored -> {},
+                        ignored -> { },
                         error -> showSnackBarError(error, UserAction.SEARCHED,
                                 NewPipe.getNameOfService(serviceId), searchString, 0)
                 );
