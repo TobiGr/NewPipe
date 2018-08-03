@@ -67,7 +67,7 @@ public abstract class HistoryEntryAdapter<E, VH extends RecyclerView.ViewHolder>
     public void onBindViewHolder(VH holder, int position) {
         final E entry = mEntries.get(position);
         holder.itemView.setOnClickListener(v -> {
-            if(onHistoryItemClickListener != null) {
+            if (onHistoryItemClickListener != null) {
                 onHistoryItemClickListener.onHistoryItemClick(entry);
             }
         });

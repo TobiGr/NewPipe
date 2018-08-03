@@ -93,7 +93,7 @@ public class PlayVideoActivity extends AppCompatActivity {
         assert actionBar != null;
         actionBar.setDisplayHomeAsUpEnabled(true);
         Intent intent = getIntent();
-        if(mediaController == null) {
+        if (mediaController == null) {
             //prevents back button hiding media controller controls (after showing them)
             //instead of exiting video
             //see http://stackoverflow.com/questions/6051825
@@ -150,7 +150,7 @@ public class PlayVideoActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(uiIsHidden) {
+                if (uiIsHidden) {
                     showUi();
                 } else {
                     hideUi();
@@ -174,7 +174,7 @@ public class PlayVideoActivity extends AppCompatActivity {
         }
 
         prefs = getPreferences(Context.MODE_PRIVATE);
-        if(prefs.getBoolean(PREF_IS_LANDSCAPE, false) && !isLandscape) {
+        if (prefs.getBoolean(PREF_IS_LANDSCAPE, false) && !isLandscape) {
             toggleOrientation();
         }
     }
@@ -298,7 +298,7 @@ public class PlayVideoActivity extends AppCompatActivity {
                 = new MediaController.LayoutParams(MediaController.LayoutParams.MATCH_PARENT,
                 MediaController.LayoutParams.WRAP_CONTENT);
 
-        if(!hasSoftKeys) {
+        if (!hasSoftKeys) {
             mediaControllerLayout.setMargins(20, 0, 20, 20);
         } else {
             int width = getNavigationBarWidth();
@@ -315,7 +315,7 @@ public class PlayVideoActivity extends AppCompatActivity {
     }
 
     private int getNavigationBarHeight() {
-        if(Build.VERSION.SDK_INT >= 17) {
+        if (Build.VERSION.SDK_INT >= 17) {
             Display d = getWindowManager().getDefaultDisplay();
 
             DisplayMetrics realDisplayMetrics = new DisplayMetrics();
@@ -332,7 +332,7 @@ public class PlayVideoActivity extends AppCompatActivity {
     }
 
     private int getNavigationBarWidth() {
-        if(Build.VERSION.SDK_INT >= 17) {
+        if (Build.VERSION.SDK_INT >= 17) {
             Display d = getWindowManager().getDefaultDisplay();
 
             DisplayMetrics realDisplayMetrics = new DisplayMetrics();
@@ -355,7 +355,7 @@ public class PlayVideoActivity extends AppCompatActivity {
     }
 
     private void toggleOrientation() {
-        if(isLandscape)  {
+        if (isLandscape)  {
             isLandscape = false;
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         } else {

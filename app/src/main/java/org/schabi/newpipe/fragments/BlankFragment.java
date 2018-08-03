@@ -14,7 +14,7 @@ public class BlankFragment extends BaseFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        if(activity != null && activity.getSupportActionBar() != null) {
+        if (activity != null && activity.getSupportActionBar() != null) {
             activity.getSupportActionBar()
                     .setTitle("NewPipe");
         }
@@ -24,8 +24,8 @@ public class BlankFragment extends BaseFragment {
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
-        if(isVisibleToUser) {
-            if(activity != null && activity.getSupportActionBar() != null) {
+        if (isVisibleToUser) {
+            if (activity != null && activity.getSupportActionBar() != null) {
                 activity.getSupportActionBar()
                         .setTitle("NewPipe");
             }

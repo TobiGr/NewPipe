@@ -167,13 +167,13 @@ public class PlayQueueAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
     @Override
     public int getItemCount() {
         int count = playQueue.getStreams().size();
-        if(footer != null && showFooter) count++;
+        if (footer != null && showFooter) count++;
         return count;
     }
 
     @Override
     public int getItemViewType(int position) {
-        if(footer != null && position == playQueue.getStreams().size() && showFooter) {
+        if (footer != null && position == playQueue.getStreams().size() && showFooter) {
             return FOOTER_VIEW_TYPE_ID;
         }
 
@@ -195,7 +195,7 @@ public class PlayQueueAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        if(holder instanceof PlayQueueItemHolder) {
+        if (holder instanceof PlayQueueItemHolder) {
             final PlayQueueItemHolder itemHolder = (PlayQueueItemHolder) holder;
 
             // Build the list item
@@ -205,7 +205,7 @@ public class PlayQueueAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
             final boolean isSelected = playQueue.getIndex() == position;
             itemHolder.itemSelected.setVisibility(isSelected ? View.VISIBLE : View.INVISIBLE);
             itemHolder.itemView.setSelected(isSelected);
-        } else if(holder instanceof HFHolder && position == playQueue.getStreams().size() && footer != null && showFooter) {
+        } else if (holder instanceof HFHolder && position == playQueue.getStreams().size() && footer != null && showFooter) {
             ((HFHolder) holder).view = footer;
         }
     }

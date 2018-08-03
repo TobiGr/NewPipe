@@ -25,9 +25,9 @@ public class License implements Parcelable {
     private String filename;
 
     public License(String name, String abbreviation, String filename) {
-        if(name == null) throw new NullPointerException("name is null");
-        if(abbreviation == null) throw new NullPointerException("abbreviation is null");
-        if(filename == null) throw new NullPointerException("filename is null");
+        if (name == null) throw new NullPointerException("name is null");
+        if (abbreviation == null) throw new NullPointerException("abbreviation is null");
+        if (filename == null) throw new NullPointerException("filename is null");
         this.name = name;
         this.filename = filename;
         this.abbreviation = abbreviation;

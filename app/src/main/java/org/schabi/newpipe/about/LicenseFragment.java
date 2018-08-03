@@ -24,7 +24,7 @@ public class LicenseFragment extends Fragment {
     private SoftwareComponent mComponentForContextMenu;
 
     public static LicenseFragment newInstance(SoftwareComponent[] softwareComponents) {
-        if(softwareComponents == null) {
+        if (softwareComponents == null) {
             throw new NullPointerException("softwareComponents is null");
         }
         LicenseFragment fragment = new LicenseFragment();

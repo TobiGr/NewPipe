@@ -682,7 +682,7 @@ public class VideoDetailFragment
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(isLoading.get()) {
+        if (isLoading.get()) {
             // if is still loading block menu
             return true;
         }
@@ -706,7 +706,7 @@ public class VideoDetailFragment
                     NavigationHelper.playWithKore(activity, Uri.parse(
                             url.replace("https", "http")));
                 } catch (Exception e) {
-                    if(DEBUG) Log.i(TAG, "Failed to start kore", e);
+                    if (DEBUG) Log.i(TAG, "Failed to start kore", e);
                     showInstallKoreDialog(activity);
                 }
                 return true;

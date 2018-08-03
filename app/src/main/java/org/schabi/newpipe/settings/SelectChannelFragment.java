@@ -118,13 +118,13 @@ public class SelectChannelFragment extends DialogFragment {
     @Override
     public void onCancel(final DialogInterface dialogInterface) {
         super.onCancel(dialogInterface);
-        if(onCancelListener != null) {
+        if (onCancelListener != null) {
             onCancelListener.onCancel();
         }
     }
 
     private void clickedItem(int position) {
-        if(onSelectedLisener != null) {
+        if (onSelectedLisener != null) {
             SubscriptionEntity entry = subscriptions.get(position);
             onSelectedLisener.onChannelSelected(entry.getUrl(), entry.getName(), entry.getServiceId());
         }
@@ -138,7 +138,7 @@ public class SelectChannelFragment extends DialogFragment {
     private void displayChannels(List<SubscriptionEntity> subscriptions) {
         this.subscriptions = subscriptions;
         progressBar.setVisibility(View.GONE);
-        if(subscriptions.isEmpty()) {
+        if (subscriptions.isEmpty()) {
             emptyView.setVisibility(View.VISIBLE);
             return;
         }

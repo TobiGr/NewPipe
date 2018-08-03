@@ -271,7 +271,7 @@ public class StatisticsPlaylistFragment
     //////////////////////////////////////////////////////////////////////////*/
 
     private void toggleSortMode() {
-        if(sortMode == StatisticSortMode.LAST_PLAYED) {
+        if (sortMode == StatisticSortMode.LAST_PLAYED) {
             sortMode = StatisticSortMode.MOST_PLAYED;
             setTitle(getString(R.string.title_most_played));
             sortButtonIcon.setImageResource(ThemeHelper.getIconByAttr(R.attr.history, getContext()));
@@ -336,13 +336,13 @@ public class StatisticsPlaylistFragment
     private void deleteEntry(final int index) {
         final LocalItem infoItem = itemListAdapter.getItemsList()
                 .get(index);
-        if(infoItem instanceof StreamStatisticsEntry) {
+        if (infoItem instanceof StreamStatisticsEntry) {
             final StreamStatisticsEntry entry = (StreamStatisticsEntry) infoItem;
             final Disposable onDelete = recordManager.deleteStreamHistory(entry.streamId)
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribe(
                             howManyDelted -> {
-                                if(getView() != null) {
+                                if (getView() != null) {
                                     Snackbar.make(getView(), R.string.one_item_deleted,
                                             Snackbar.LENGTH_SHORT).show();
                                 } else {
