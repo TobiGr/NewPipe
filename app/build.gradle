@@ -96,3 +96,20 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:$okHttpLibVersion"
     debugImplementation "com.facebook.stetho:stetho-okhttp3:$stethoLibVersion"
 }
+apply plugin: 'checkstyle'
+task checkstyle(type: Checkstyle) {
+    configFile = rootProject.file('config/checkstyle/checkstyle.xml')
+    source 'src/main/java'
+    include '**/*.java'
+    reports {
+        xml.enabled false
+        html.enabled true
+    }
+    classpath = files()
+}
+tasks.withType(Checkstyle) {
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
+}
