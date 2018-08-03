@@ -20,7 +20,6 @@ import org.schabi.newpipe.database.LocalItem;
 import org.schabi.newpipe.database.playlist.PlaylistLocalItem;
 import org.schabi.newpipe.database.playlist.PlaylistMetadataEntry;
 import org.schabi.newpipe.database.playlist.model.PlaylistRemoteEntity;
-import org.schabi.newpipe.extractor.NewPipe;
 import org.schabi.newpipe.local.BaseLocalListFragment;
 import org.schabi.newpipe.local.playlist.LocalPlaylistManager;
 import org.schabi.newpipe.local.playlist.RemotePlaylistManager;
@@ -275,7 +274,7 @@ public final class BookmarkFragment
                 .setPositiveButton(R.string.delete, (dialog, i) ->
                         disposables.add(deleteReactor
                                 .observeOn(AndroidSchedulers.mainThread())
-                                .subscribe(ignored -> {/*Do nothing on success*/}, this::onError))
+                                .subscribe(ignored -> { /*Do nothing on success*/}, this::onError))
                 )
                 .setNegativeButton(R.string.cancel, null)
                 .show();

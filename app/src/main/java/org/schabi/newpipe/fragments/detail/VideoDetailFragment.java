@@ -720,7 +720,7 @@ public class VideoDetailFragment
         builder.setMessage(R.string.kore_not_found)
                 .setPositiveButton(R.string.install, (DialogInterface dialog, int which) ->
                         NavigationHelper.installKore(context))
-                .setNegativeButton(R.string.cancel, (DialogInterface dialog, int which) -> {});
+                .setNegativeButton(R.string.cancel, (DialogInterface dialog, int which) -> { });
         builder.create().show();
     }
 
@@ -964,7 +964,7 @@ public class VideoDetailFragment
         final HistoryRecordManager recordManager = new HistoryRecordManager(requireContext());
         disposables.add(recordManager.onViewed(info).onErrorComplete()
                 .subscribe(
-                        ignored -> {/* successful */},
+                        ignored -> { /* successful */},
                         error -> Log.e(TAG, "Register view failure: ", error)
                 ));
     }
