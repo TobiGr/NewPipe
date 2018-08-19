@@ -30,7 +30,7 @@
     <string name="fragment_whats_new">Обновления</string>
 
     <string name="controls_background_title">Във фонов режим</string>
-    <string name="controls_popup_title">В прозорец</string>
+    <string name="popup">В прозорец</string>
 
     <string name="download_path_title">Директория за изтегляне на видео</string>
     <string name="download_path_summary">Папка за съхранение на изтеглените видеота</string>
@@ -69,7 +69,6 @@
     <string name="enable_watch_history_summary">Запаметявай кои видеота са гледани</string>
     <string name="resume_on_audio_focus_gain_title">Възобнови при връщане на фокус</string>
     <string name="resume_on_audio_focus_gain_summary">Продължавай възпроизвеждането след прекъсване (например телефонно обаждане)</string>
-    <string name="download_dialog_title">Изтегли</string>
     <string name="next_video_title">Следващ клип</string>
     <string name="show_next_and_similar_title">Показвай „следващ“ и „подобни“</string>
     <string name="show_hold_to_append_title">Показвай съвет „задръж за добавяне“</string>
@@ -79,20 +78,17 @@
     <string name="settings_category_player_behavior_title">Поведение</string>
     <string name="settings_category_video_audio_title">Видео &amp; Аудио</string>
     <string name="settings_category_history_title">История и кеш-памет</string>
-    <string name="settings_category_popup_title">Нов прозорец</string>
     <string name="settings_category_appearance_title">Външност</string>
     <string name="settings_category_other_title">Други</string>
     <string name="background_player_playing_toast">Възпроизвеждане във фонов режим</string>
     <string name="popup_playing_toast">Възпроизвеждане в подпрозорец</string>
     <string name="background_player_append">Включен в опашката на фоновия плейър</string>
     <string name="popup_playing_append">Включен в опашката в нов прозорец</string>
-    <string name="play_btn_text">Възпроизвеждане</string>
     <string name="content">Съдържание</string>
     <string name="show_age_restricted_content_title">Покажи съдържание за възрастни</string>
     <string name="video_is_age_restricted">Съдържание за възрастни. Разрешаването на такова съдържание става от Настройки.</string>
     <string name="duration_live">на живо</string>
     <string name="downloads">Изтегляния</string>
-    <string name="downloads_title">Изтегляния</string>
     <string name="error_report_title">Съобщение за грешка</string>
     <string name="all">Всички</string>
     <string name="channel">Канал</string>
@@ -113,7 +109,7 @@
 
     <string name="unknown_content">[Неизвестен]</string>
 
-    <string name="general_error">Грешка</string>
+    <string name="error">Грешка</string>
     <string name="network_error">Проблем с мрежата</string>
     <string name="could_not_load_thumbnails">Не мога да заредя всички миниатюри</string>
     <string name="parsing_error">Неуспешно пресъздаване на уебсайта</string>
@@ -139,7 +135,6 @@
     <string name="error_details_headline">Подробности:</string>
 
 
-    <string name="detail_thumbnail_view_description">Миниатюра на видео</string>
     <string name="detail_uploader_thumbnail_view_description">Миниатюра на аватара на качилия видео</string>
     <string name="detail_likes_img_view_description">Харесвания</string>
     <string name="detail_dislikes_img_view_description">Нехаресвания</string>
@@ -185,7 +180,6 @@
 
     <string name="msg_name">Име на файла</string>
     <string name="msg_threads">Нишки</string>
-    <string name="msg_error">Грешка</string>
     <string name="msg_server_unsupported">Сървърът не се поддържа</string>
     <string name="msg_exists">Файлът вече съществува</string>
     <string name="msg_url_malform">Неправилен хиперлинк или няма връзка с Интернет</string>
@@ -199,12 +193,10 @@
 
     <string name="charset_letters_and_digits">Букви и цифри</string>
     <string name="title_activity_about">За NewPipe</string>
-    <string name="action_settings">Настройки</string>
-    <string name="action_about">Относно приложението</string>
+    <string name="about">Относно приложението</string>
     <string name="title_licenses">Лицензи от трети страни</string>
     <string name="error_unable_to_load_license">Неуспешно зареждане на лиценза</string>
     <string name="action_open_website">Отвори уебсайта</string>
-    <string name="tab_about">Относно приложението</string>
     <string name="tab_contributors">Допринесли</string>
     <string name="tab_licenses">Лицензи</string>
     <string name="app_description">Безплатно и леко поточно предаване за Android.</string>
@@ -289,7 +281,7 @@
     <string name="video_streams_empty">Не са намерени видео стриймове</string>
     <string name="audio_streams_empty">Не са намерени аудио стриймове</string>
     <string name="info_labels">"Какво:\\nЗаявка:\\nЕзик на съдържанието:\\nУслуга:\\nВреме по GMT:\\nПакет:\\nВерсия:\\nОС версия: "</string>
-    <string name="list_thumbnail_view_description">Миниатюра на видео</string>
+    <string name="thumbnail_description">Миниатюра на видео</string>
     <string name="user_report">Потребителски доклад</string>
     <string name="detail_drag_description">Пренареди чрез плъзгане</string>
 
@@ -307,18 +299,16 @@
     <string name="reCaptcha_title">reCAPTCHA заявка</string>
     <string name="recaptcha_request_toast">Изисква се въвеждане на reCAPTCHA</string>
 
-    <string name="settings_category_downloads_title">Изтегляне</string>
     <string name="charset_most_special_characters">Повечето специални символи</string>
 
     <string name="app_license">NewPipe е безплатен „copyleft“ софтуер: Можете да го използвате, изучавате, споделяте и подобрявате по ваше усмотрение. В частност, Вие можете да препубликувате и/или модифицирате приложението според правилата на Главния обществен лиценз на ГНУ, издаден от Фондацията за свободен софтуер – версия 3 на лиценза или по-нова.</string>
     <string name="read_full_license">Прочетете лиценза</string>
 
 
-    <string name="title_activity_history">История</string>
+    <string name="history">История</string>
     <string name="title_history_search">Търсения</string>
     <string name="title_history_view">Гледани</string>
     <string name="history_disabled">Историята е изключена</string>
-    <string name="action_history">История</string>
     <string name="history_empty">Историята е празна</string>
     <string name="history_cleared">Историята е изчистена</string>
     <string name="item_deleted">Елементът е изтрит</string>

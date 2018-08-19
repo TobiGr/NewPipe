@@ -38,7 +38,6 @@
     <string name="dark_theme_title">Темна</string>
     <string name="light_theme_title">Світла</string>
 
-    <string name="download_dialog_title">Завантажити</string>
     <string name="next_video_title">Наступне відео</string>
     <string name="show_next_and_similar_title">Показувати \"наступні\" та \"схожі\" відео</string>
     <string name="url_not_supported_toast">URL не підтримується</string>
@@ -47,14 +46,13 @@
     <string name="settings_category_appearance_title">Зовнішній вигляд</string>
     <string name="settings_category_other_title">Інше</string>
     <string name="background_player_playing_toast">Відтворення у фоновому режимі</string>
-    <string name="play_btn_text">Відтворити</string>
     <string name="storage_permission_denied">У доступі відмовлено</string>
     <string name="content">Контент</string>
     <string name="show_age_restricted_content_title">Показувати контент з віковими обмеженнями</string>
     <string name="video_is_age_restricted">Це відео має вікові обмеження. Спершу активуйте опцію для відображення таких відео у налаштуваннях.</string>
     <string name="duration_live">наживо</string>
 
-    <string name="general_error">Хиба</string>
+    <string name="error">Хиба</string>
     <string name="network_error">Хиба мережі</string>
     <string name="could_not_load_thumbnails">Не вдалося завантажити всі ескізи</string>
     <string name="youtube_signature_decryption_error">Не вдалося розшифрувати підпис URL відео</string>
@@ -75,7 +73,6 @@
     <string name="black_theme_title">Чорна</string>
 
     <string name="downloads">Завантаження</string>
-    <string name="downloads_title">Завантаження</string>
     <string name="error_report_title">Звіт про помилку</string>
     <string name="all">Усе</string>
     <string name="channel">Канал</string>
@@ -89,8 +86,7 @@
     <string name="error_details_headline">Деталі:</string>
 
 
-    <string name="list_thumbnail_view_description">Ескіз попереднього перегляду відео</string>
-    <string name="detail_thumbnail_view_description">Ескіз попереднього перегляду відео</string>
+    <string name="thumbnail_description">Ескіз попереднього перегляду відео</string>
     <string name="use_tor_title">Використовувати Tor</string>
     <string name="use_tor_summary">(Експериментально) Перенаправляти трафік через Tor для підвищення конфіденційності (трансляція відео ще не підтримується).</string>
     <string name="report_error">Зазвітувати про помилку</string>
@@ -114,7 +110,6 @@
     <string name="finish">ОК</string>
     <string name="msg_name">Назва файлу</string>
     <string name="msg_threads">Нитки</string>
-    <string name="msg_error">Хиба</string>
     <string name="msg_server_unsupported">Сервер не підтримується</string>
     <string name="msg_exists">Файл уже існує</string>
     <string name="msg_running">NewPipe завантажує</string>
@@ -139,7 +134,7 @@
     <string name="fragment_whats_new">Новинки</string>
 
     <string name="controls_background_title">Тло</string>
-    <string name="controls_popup_title">У вікні</string>
+    <string name="popup">У вікні</string>
 
     <string name="default_popup_resolution_title">Типова роздільна здатність вікна</string>
     <string name="show_higher_resolutions_summary">Не всі пристрої підтримують відтворення 2K/4K відео</string>
@@ -163,7 +158,6 @@
     <string name="settings_category_player_title">Програвач</string>
     <string name="settings_category_player_behavior_title">Поведінка</string>
     <string name="settings_category_history_title">Історія та кеш</string>
-    <string name="settings_category_popup_title">Вікно</string>
     <string name="popup_playing_toast">Відворення у вікні</string>
     <string name="background_player_append">Додано до фонового відтворення</string>
     <string name="popup_playing_append">Додано до чергу у вікно</string>
@@ -205,7 +199,6 @@
 \nу вікні</string>
 
     <string name="reCaptchaActivity">«reCAPTCHA»</string>
-    <string name="settings_category_downloads_title">Завантаження</string>
     <string name="settings_file_charset_title">Допустимі символи у назвах файлів</string>
     <string name="settings_file_replacement_character_summary">"Неправильні символи будуть скоректовані цим "</string>
     <string name="settings_file_replacement_character_title">Символ заміни</string>
@@ -214,15 +207,14 @@
     <string name="charset_most_special_characters">Більш специфічні символи</string>
 
     <string name="title_activity_about">Щодо NewPipe</string>
-    <string name="action_settings">Налаштування</string>
-    <string name="action_about">Візитівка</string>
+    <string name="about">Візитівка</string>
     <string name="error_unable_to_load_license">Неможливо завантажити ліцензію</string>
     <string name="tab_licenses">Ліцензії</string>
     <string name="contribution_title">Зробити внесок</string>
     <string name="view_on_github">Переглянути на Ґітгаб</string>
     <string name="donation_title">Фінансова допомога</string>
     <string name="website_title">Веб-сайт</string>
-    <string name="title_activity_history">Історія</string>
+    <string name="history">Історія</string>
     <string name="history_cleared">Історію стерто</string>
     <string name="export_complete_toast">Експортування доконано</string>
     <string name="import_complete_toast">Імпортування доконано</string>
@@ -276,7 +268,6 @@
 
     <string name="title_licenses">Сторонні ліцензії</string>
     <string name="action_open_website">Перейти до сайту</string>
-    <string name="tab_about">Візитівка</string>
     <string name="app_description">Вільний та легковагий стримінґ для Андроїду.</string>
     <string name="contribution_encouragement">Які б не були Ваші ідеї: переклад, дизайн, легкий чи глобальний рефакторинґ - будь-яка допомога завжди у нагоді. Що більше зроблено, то ліпшим NewPipe стає!</string>
     <string name="disable_leak_canary_notice">Моніторинг витоку памяті вимкнено</string>
@@ -307,7 +298,6 @@
     <string name="title_history_search">Історія пошуку</string>
     <string name="title_history_view">Переглянуто</string>
     <string name="history_disabled">Історію вимкнено</string>
-    <string name="action_history">Історія</string>
     <string name="history_empty">Історія відсутня</string>
     <string name="item_deleted">Елемент видалено</string>
     <string name="delete_item_search_history">Чи ви хочете видалити цей елемент з історії пошуку?</string>

@@ -35,7 +35,7 @@
     <string name="fragment_whats_new">چی نوێ هه‌یه‌</string>
 
     <string name="controls_background_title">له‌پشته‌وه‌</string>
-    <string name="controls_popup_title">په‌نجه‌ره‌</string>
+    <string name="popup">په‌نجه‌ره‌</string>
     <string name="controls_add_to_playlist_title">ناردن بۆ</string>
 
     <string name="download_path_title">شوێنی داگرتنی ڤیدیۆ</string>
@@ -55,7 +55,6 @@
     <string name="kore_not_found">نه‌رمه‌واڵا نه‌دۆزرایه‌وه‌. دابمه‌زرێت؟</string>
     <string name="show_play_with_kodi_title">پیشاندانی بژارده‌ی “كاركردن به‌ Kodi”</string>
     <string name="show_play_with_kodi_summary">پیشاندانی بژارده‌ی كارپێكردنی ڤیدیۆ به‌ Kodi</string>
-    <string name="play_audio">ده‌نگ</string>
     <string name="default_audio_format_title">جۆری سه‌ره‌كی ده‌نگ</string>
     <string name="default_video_format_title">جۆری سه‌ره‌كی ڤیدیۆ</string>
     <string name="theme_title">ڕووكار</string>

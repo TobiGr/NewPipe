@@ -36,7 +36,6 @@
     <string name="dark_theme_title">Gelap</string>
     <string name="light_theme_title">Terang</string>
 
-    <string name="download_dialog_title">Unduh</string>
     <string name="next_video_title">Video berikutnya</string>
     <string name="show_next_and_similar_title">Tampilkan video \'berikutnya\' dan \'serupa\'</string>
     <string name="url_not_supported_toast">URL tidak didukung</string>
@@ -45,7 +44,6 @@
     <string name="settings_category_appearance_title">Tampilan</string>
     <string name="settings_category_other_title">Lainnya</string>
     <string name="background_player_playing_toast">Putar di latar belakang</string>
-    <string name="play_btn_text">Putar</string>
     <string name="content">Konten</string>
     <string name="show_age_restricted_content_title">Tampilkan konten batasan usia</string>
     <string name="video_is_age_restricted">"Video Dibatasi Usia. Memperbolehkan  ditonton dapat diatur lewat Pengaturan."</string>
@@ -55,10 +53,9 @@
     <string name="screen_rotation">rotasi</string>
     <string name="duration_live">langsung</string>
     <string name="downloads">Unduhan</string>
-    <string name="downloads_title">Unduhan</string>
     <string name="error_report_title">Laporan galat</string>
 
-    <string name="general_error">Galat</string>
+    <string name="error">Galat</string>
     <string name="parsing_error">Tidak dapat mengurai situs web</string>
     <string name="light_parsing_error">Sama sekali tidak dapat mengurai situs web</string>
     <string name="content_not_available">Konten tidak tersedia</string>
@@ -76,8 +73,7 @@
     <string name="error_details_headline">Detail:</string>
 
 
-    <string name="list_thumbnail_view_description">Pratinjau thumbnail video</string>
-    <string name="detail_thumbnail_view_description">Pratinjau thumbnail video</string>
+    <string name="thumbnail_description">Pratinjau thumbnail video</string>
     <string name="detail_likes_img_view_description">Suka</string>
     <string name="detail_uploader_thumbnail_view_description">Gambar thumbnail pengunggah</string>
     <string name="detail_dislikes_img_view_description">Tidak suka</string>
@@ -102,7 +98,6 @@
     <string name="finish">OK</string>
 
     <string name="msg_name">Nama berkas</string>
-    <string name="msg_error">Galat</string>
     <string name="msg_server_unsupported">Server tidak didukung</string>
     <string name="msg_exists">Berkas telah ada</string>
     <string name="msg_url_malform">URL salah atau tidak tersedia layanan internet</string>
@@ -156,7 +151,7 @@ membuka di mode popup</string>
     <string name="show_higher_resolutions_title">Tampilkan resolusi yang lebih tinggi</string>
     <string name="show_higher_resolutions_summary">Hanya perangkat tertentu yang mendukung pemutaran video 2K/4K</string>
     <string name="controls_background_title">Latar Belakang</string>
-    <string name="controls_popup_title">Popup</string>
+    <string name="popup">Popup</string>
 
     <string name="refresh">Segarkan</string>
     <string name="clear">Bersihkan</string>
@@ -166,7 +161,6 @@ membuka di mode popup</string>
     <string name="popup_remember_size_pos_title">Ingat ukuran dan posisi popup</string>
     <string name="popup_remember_size_pos_summary">Ingat ukuran dan posisi terakhir popup</string>
 
-    <string name="settings_category_popup_title">Popup</string>
     <string name="popup_resizing_indicator_title">Ubah ukuran</string>
 
     <string name="player_gesture_controls_title">Kontrol isyarat gerak pemutar</string>
@@ -176,7 +170,6 @@ membuka di mode popup</string>
 
 <string name="best_resolution">Resolusi terbaik</string>
 
-    <string name="settings_category_downloads_title">Unduh</string>
     <string name="settings_file_charset_title">Karakter yang diizinkan sebagai nama berkas</string>
     <string name="settings_file_replacement_character_summary">Karakter yang tidak valid akan diganti dengan karakter ini</string>
     <string name="settings_file_replacement_character_title">Karakter pengganti</string>
@@ -185,13 +178,11 @@ membuka di mode popup</string>
     <string name="charset_most_special_characters">Karakter spesial umum</string>
 
     <string name="title_activity_about">Tentang NewPipe</string>
-    <string name="action_settings">Pengaturan</string>
-    <string name="action_about">Tentang</string>
+    <string name="about">Tentang</string>
     <string name="title_licenses">Lisensi pihak ketiga</string>
     <string name="copyright" formatted="true">© %1$s oleh %2$s di bawah %3$s</string>
     <string name="error_unable_to_load_license">Tidak bisa memuat lisensi</string>
     <string name="action_open_website">Buka situs web</string>
-    <string name="tab_about">Tentang</string>
     <string name="tab_contributors">Kontributor</string>
     <string name="tab_licenses">Lisensi</string>
     <string name="app_description">Aplikasi streaming gratis dan ringan untuk Android.</string>
@@ -212,9 +203,8 @@ membuka di mode popup</string>
     <string name="enable_search_history_summary">Simpan pencarian secara lokal</string>
     <string name="enable_watch_history_title">Riwayat &amp; Tembolok</string>
     <string name="notification_channel_name">Notifikasi NewPipe</string>
-    <string name="title_activity_history">Riwayat</string>
+    <string name="history">Riwayat</string>
     <string name="history_disabled">Riwayat dinonaktifkan</string>
-    <string name="action_history">Riwayat</string>
     <string name="history_empty">Riwayat kosong</string>
     <string name="download_thumbnail_title">Muat thumbnail</string>
     <string name="download_thumbnail_summary">Nonaktifkan untuk berhenti memuat semua thumbnail dan menghemat penggunaan data dan memori. Mengubah ini akan menghapus tembolok gambar pada diska dan memory.</string>

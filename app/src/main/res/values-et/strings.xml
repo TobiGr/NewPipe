@@ -34,7 +34,7 @@
     <string name="fragment_whats_new">Mis on uut</string>
 
     <string name="controls_background_title">Taust</string>
-    <string name="controls_popup_title">Hüpikaken</string>
+    <string name="popup">Hüpikaken</string>
     <string name="controls_add_to_playlist_title">"Lisa "</string>
 
     <string name="download_path_title">Video allalaadimise kaust</string>
@@ -84,7 +84,6 @@
     <string name="enable_watch_history_summary">Jälgi videote vaatamist</string>
     <string name="resume_on_audio_focus_gain_title">Jätka taasesitust fookuse saamisel</string>
     <string name="resume_on_audio_focus_gain_summary">Jätka taasesitust pärast katkestamist (nt. telefonikõne)</string>
-    <string name="download_dialog_title">Laadi alla</string>
     <string name="next_video_title">Järgmine video</string>
     <string name="show_next_and_similar_title">Kuva \'järgmine\' ja \'sarnased\' videod</string>
     <string name="show_hold_to_append_title">Kuva vihjet \"lisamiseks hoia\"</string>
@@ -97,7 +96,6 @@
     <string name="settings_category_player_behavior_title">Käitumine</string>
     <string name="settings_category_video_audio_title">Heli ja pilt</string>
     <string name="settings_category_history_title">Ajalugu ja vahemälu</string>
-    <string name="settings_category_popup_title">Hüpikaken</string>
     <string name="settings_category_appearance_title">Välimus</string>
     <string name="settings_category_other_title">Muu</string>
     <string name="settings_category_debug_title">Silumine</string>
@@ -150,7 +148,7 @@
     <string name="clear_search_history_summary">Kustutab otsisõnade ajaloo</string>
     <string name="delete_search_history_alert">Kustuta kogu otsinguajalugu</string>
     <string name="search_history_deleted">Otsinguajalugu kustutati.</string>
-    <string name="general_error">Viga</string>
+    <string name="error">Viga</string>
     <string name="network_error">Võrgu viga</string>
     <string name="could_not_load_thumbnails">Kõiki pisipilte ei õnnestunud laadida</string>
     <string name="youtube_signature_decryption_error">Video URLi dekrüptimine nurjus</string>
@@ -188,8 +186,7 @@
     <string name="error_details_headline">Üksikasjad:</string>
 
 
-    <string name="list_thumbnail_view_description">Video eelvaate pisipilt</string>
-    <string name="detail_thumbnail_view_description">Video eelvaate pisipilt</string>
+    <string name="thumbnail_description">Video eelvaate pisipilt</string>
     <string name="detail_uploader_thumbnail_view_description">Üleslaadiaja avatari pisipilt</string>
     <string name="detail_likes_img_view_description">Meeldib</string>
     <string name="detail_dislikes_img_view_description">Ei meeldi</string>
@@ -249,7 +246,6 @@
 
     <string name="msg_name">Faili nimi</string>
     <string name="msg_threads">Lõimed</string>
-    <string name="msg_error">Viga</string>
     <string name="msg_server_unsupported">Server pole toetatud</string>
     <string name="msg_exists">Fail on juba olemas</string>
     <string name="msg_url_malform">Vigane URL või internet pole saadaval</string>
@@ -263,7 +259,6 @@
     <string name="one_item_deleted">Kustutati 1 element.</string>
 
     <string name="reCaptchaActivity">"reCAPTCHA "</string>
-    <string name="settings_category_downloads_title">Laadi alla</string>
     <string name="settings_file_charset_title">Lubatud tähemärgid failinimedes</string>
     <string name="settings_file_replacement_character_summary">Vigased tähemärgid asendatakse selle väärtusega</string>
     <string name="settings_file_replacement_character_title">Asendustähemärk</string>
@@ -274,12 +269,10 @@
     <string name="toast_no_player">Selle faili esitamiseks puudub rakendus</string>
 
     <string name="title_activity_about">NewPipe rakendusest</string>
-    <string name="action_settings">Seaded</string>
-    <string name="action_about">Programmist</string>
+    <string name="about">Programmist</string>
     <string name="title_licenses">Kolmanda osapoole litsentsid</string>
     <string name="error_unable_to_load_license">Litsentsi laadimine nurjus</string>
     <string name="action_open_website">Ava veebileht</string>
-    <string name="tab_about">Programmist</string>
     <string name="tab_contributors">Kaasautorid</string>
     <string name="tab_licenses">Litsentsid</string>
     <string name="contribution_title">Panusta</string>
@@ -293,11 +286,10 @@
     <string name="read_full_license">Loe litsentsi</string>
 
 
-    <string name="title_activity_history">Ajalugu</string>
+    <string name="history">Ajalugu</string>
     <string name="title_history_search">Otsitud</string>
     <string name="title_history_view">Vaadatud</string>
     <string name="history_disabled">Ajalugu on keelatud</string>
-    <string name="action_history">Ajalugu</string>
     <string name="history_empty">Ajalugu on tühi</string>
     <string name="history_cleared">Ajalugu kustutati</string>
     <string name="item_deleted">Element kustutati</string>

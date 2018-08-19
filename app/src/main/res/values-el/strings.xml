@@ -36,7 +36,6 @@
     <string name="dark_theme_title">Σκοτεινό</string>
     <string name="light_theme_title">Φωτεινό</string>
 
-    <string name="download_dialog_title">Λήψη</string>
     <string name="next_video_title">Επόμενο video</string>
     <string name="show_next_and_similar_title">Προβολή επόμενου και σχετικών video</string>
     <string name="url_not_supported_toast">Δεν υποστηρίζεται η διεύθυνση URL</string>
@@ -45,11 +44,9 @@
     <string name="settings_category_appearance_title">Εμφάνιση</string>
     <string name="settings_category_other_title">Άλλα</string>
     <string name="background_player_playing_toast">Αναπαραγωγή στο υπόβαθρο</string>
-    <string name="play_btn_text">Αναπαραγωγή</string>
     <string name="network_error">Σφάλμα δικτύου</string>
 
-    <string name="list_thumbnail_view_description">Εικόνα προεπισκόπησης video</string>
-    <string name="detail_thumbnail_view_description">Εικόνα προεπισκόπησης video</string>
+    <string name="thumbnail_description">Εικόνα προεπισκόπησης video</string>
     <string name="detail_uploader_thumbnail_view_description">Εικόνα προφίλ του uploader</string>
     <string name="detail_likes_img_view_description">Like</string>
     <string name="detail_dislikes_img_view_description">Dislike</string>
@@ -68,13 +65,12 @@
     <string name="show_search_suggestions_title">Προτάσεις αναζήτησης</string>
     <string name="enable_search_history_title">Ιστορικό αναζήτησης</string>
     <string name="downloads">Λήψεις</string>
-    <string name="downloads_title">Λήψεις</string>
     <string name="all">Όλα</string>
     <string name="channel">Κανάλι</string>
     <string name="yes">Ναι</string>
     <string name="later">Αργότερα</string>
     <string name="filter">Φίλτρο</string>
-    <string name="general_error">Σφάλμα</string>
+    <string name="error">Σφάλμα</string>
     <string name="error_snackbar_action">ΑΝΑΦΟΡΑ</string>
     <string name="what_device_headline">Πληροφορίες:</string>
     <string name="what_happened_headline">Τι συνέβη:</string>
@@ -87,16 +83,12 @@
     <string name="audio">Ήχος</string>
     <string name="pause">Παύση</string>
     <string name="delete">Διαγραφή</string>
-    <string name="msg_error">Σφάλμα</string>
     <string name="msg_exists">Το αρχείο υπάρχει ήδη</string>
     <string name="msg_running_detail">Πατήστε για λεπτομέρειες</string>
-    <string name="settings_category_downloads_title">Λήψη</string>
     <string name="charset_letters_and_digits">Γράμματα και ψηφία</string>
-    <string name="action_settings">Ρυθμίσεις</string>
     <string name="action_open_website">Άνοιγμα ιστοσελίδας</string>
     <string name="tab_licenses">Άδειες</string>
-    <string name="title_activity_history">Ιστορικό</string>
-    <string name="action_history">Ιστορικό</string>
+    <string name="history">Ιστορικό</string>
     <string name="show_info">Εμφάνιση πληροφοριών</string>
 
     </resources>

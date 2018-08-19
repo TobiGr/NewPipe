@@ -25,21 +25,18 @@
     <string name="show_play_with_kodi_title">Pokaži možnost \"Predvajaj s Kodi\"</string>
     <string name="default_audio_format_title">Privzet zapis zvoka</string>
     <string name="play_audio">Zvok</string>
-    <string name="download_dialog_title">Prejem</string>
     <string name="next_video_title">Naslednji video</string>
     <string name="show_next_and_similar_title">Pokaži naslednji video in podobne posnetke</string>
     <string name="url_not_supported_toast">Zapis naslova URL ni podprt.</string>
     <string name="search_language_title">Privzeti jezik vsebine</string>
     <string name="settings_category_video_audio_title">Video in Zvok</string>
-    <string name="list_thumbnail_view_description">Sličica predogleda videa</string>
-    <string name="detail_thumbnail_view_description">Sličica predogleda videa</string>
+    <string name="thumbnail_description">Sličica predogleda videa</string>
     <string name="detail_uploader_thumbnail_view_description">Sličica objavitelja</string>
     <string name="show_play_with_kodi_summary">Pokaži možnost predvajanja videa preko predstavnega središča Kodi</string>
 
     <string name="detail_likes_img_view_description">Všeč mi je</string>
     <string name="detail_dislikes_img_view_description">Ni mi všeč</string>
     <string name="background_player_playing_toast">Predvajanje v ozadju</string>
-    <string name="play_btn_text">Predvajaj</string>
 
     <string name="theme_title">Tema</string>
     <string name="dark_theme_title">Temna</string>
@@ -57,7 +54,7 @@
 
     <string name="err_dir_create">Ni mogoče ustvariti mape za prejem \'%1$s\'</string>
     <string name="info_dir_created">Ustvarjena je mapa za prejem \'%1$s\'</string>
-    <string name="general_error">Napaka</string>
+    <string name="error">Napaka</string>
     <string name="could_not_load_thumbnails">Vseh sličic videov ni mogoče naložiti</string>
     <string name="youtube_signature_decryption_error">Ni mogoče odšifrirati podpisa naslova URL videa</string>
     <string name="parsing_error">Ni mogoče razčleniti spletišča.</string>
@@ -107,7 +104,6 @@
 
     <string name="msg_name">Ime datoteke</string>
     <string name="msg_threads">Nizi</string>
-    <string name="msg_error">Napaka</string>
     <string name="msg_server_unsupported">Strežnik ni podprt</string>
     <string name="msg_exists">Datoteka že obstaja</string>
     <string name="msg_url_malform">Napačno oblikovan naslov URL oziroma nedostopen internet</string>
@@ -120,7 +116,6 @@
     <string name="add">Nova naloga</string>
     <string name="finish">V redu</string>
     <string name="downloads">Prejemi</string>
-    <string name="downloads_title">Prejemi</string>
     <string name="error_report_title">Poročilo o napaki</string>
 
     <string name="could_not_load_image">Slike ni mogoče naložiti</string>
@@ -161,7 +156,7 @@ odpiranje v pojavnem načinu</string>
     <string name="show_higher_resolutions_summary">Predvajanje posnetkov 2K/4K omogočajo le nekatere naprave.</string>
 
     <string name="controls_background_title">Ozadje</string>
-    <string name="controls_popup_title">Pojavno okno</string>
+    <string name="popup">Pojavno okno</string>
 
     <string name="filter">Filter</string>
     <string name="refresh">Osveži</string>
@@ -170,7 +165,6 @@ odpiranje v pojavnem načinu</string>
     <string name="popup_remember_size_pos_title">Zapomni si položaj in velikost pojavnega okna</string>
     <string name="popup_remember_size_pos_summary">Zapomni si položaj in velikost pojavnega okna</string>
 
-    <string name="settings_category_popup_title">Pojavno okno</string>
     <string name="popup_resizing_indicator_title">Prilagajanje velikosti</string>
 
     <string name="use_external_video_player_summary">Pri nekaterih ločljivostih bo posnetek brez zvoka, če je ta možnost omogočena</string>
@@ -182,13 +176,11 @@ odpiranje v pojavnem načinu</string>
 <string name="best_resolution">Najboljša ločljivost</string>
 
     <string name="title_activity_about">O programu</string>
-    <string name="action_settings">Nastavitve</string>
-    <string name="action_about">O programu</string>
+    <string name="about">O programu</string>
     <string name="title_licenses">Dovoljenja zunanjih programskih paketov</string>
     <string name="copyright" formatted="true">© %1$s z %2$s z dovoljenjem %3$s</string>
     <string name="error_unable_to_load_license">Ni mogoče naložiti dovoljenja</string>
     <string name="action_open_website">Odpri spletišče</string>
-    <string name="tab_about">O programu</string>
     <string name="tab_contributors">Sodelavci</string>
     <string name="tab_licenses">Dovoljenja</string>
     <string name="view_on_github">Pokaži na Github</string>
@@ -206,7 +198,6 @@ odpiranje v pojavnem načinu</string>
 
     <string name="fragment_whats_new">Kaj je novega</string>
 
-    <string name="settings_category_downloads_title">Prejmi</string>
     <string name="settings_file_charset_title">Dovoljeni znaki v imenih datotek</string>
     <string name="settings_file_replacement_character_summary">Neveljavni znaki so zamenjani z znakom</string>
     <string name="settings_file_replacement_character_title">Znak za zamenjavo</string>
@@ -227,11 +218,10 @@ odpiranje v pojavnem načinu</string>
 
     <string name="contribution_title">Doprinos k projektu</string>
 
-    <string name="title_activity_history">Zgodovina</string>
+    <string name="history">Zgodovina</string>
     <string name="title_history_search">Preiskano</string>
     <string name="title_history_view">Predvajano</string>
     <string name="history_disabled">Shranjevanje zgodovine je onemogočeno</string>
-    <string name="action_history">Zgodovina</string>
     <string name="history_empty">Zgodovina je prazna!</string>
     <string name="history_cleared">Zgodovina je počiščena</string>
 

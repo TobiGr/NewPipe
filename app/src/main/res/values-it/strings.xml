@@ -24,15 +24,13 @@
     <string name="show_play_with_kodi_summary">Mostra l\'opzione per riprodurre i video tramite Kodi</string>
     <string name="play_audio">Audio</string>
     <string name="default_audio_format_title">Formato audio predefinito</string>
-    <string name="download_dialog_title">Scarica</string>
     <string name="next_video_title">Prossimo video</string>
     <string name="show_next_and_similar_title">Mostra \'prossimi\' video e video \'simili\'</string>
     <string name="url_not_supported_toast">URL non supportato</string>
     <string name="search_language_title">Lingua predefinita per i contenuti</string>
     <string name="settings_category_video_audio_title">Video e Audio</string>
 
-    <string name="list_thumbnail_view_description">Miniatura anteprima video</string>
-    <string name="detail_thumbnail_view_description">Miniatura anteprima video</string>
+    <string name="thumbnail_description">Miniatura anteprima video</string>
     <string name="detail_uploader_thumbnail_view_description">Miniatura dell\'immagine di profilo dell\'utente</string>
     <string name="detail_dislikes_img_view_description">Non mi piace</string>
     <string name="detail_likes_img_view_description">Mi piace</string>
@@ -52,9 +50,8 @@
     <string name="settings_category_appearance_title">Aspetto</string>
     <string name="settings_category_other_title">Altro</string>
     <string name="background_player_playing_toast">Riproduzione in sottofondo</string>
-    <string name="play_btn_text">Riproduci</string>
 
-    <string name="general_error">Errore</string>
+    <string name="error">Errore</string>
     <string name="network_error">Errore di connessione</string>
     <string name="could_not_load_thumbnails">Impossibile caricare tutte le miniature</string>
     <string name="youtube_signature_decryption_error">Impossibile decriptare la firma dell\'URL del video</string>
@@ -99,7 +96,6 @@
     <string name="retry">Riprova</string>
     <string name="storage_permission_denied">È stato negato il permesso di accesso all\'archiviazione di massa</string>
     <string name="downloads">Download</string>
-    <string name="downloads_title">Download</string>
     <string name="error_report_title">Segnalazione errori</string>
 
     <string name="start">Inizia</string>
@@ -113,7 +109,6 @@
 
     <string name="msg_name">Nome del file</string>
     <string name="msg_threads">Thread</string>
-    <string name="msg_error">Errore</string>
     <string name="msg_server_unsupported">Server non supportato</string>
     <string name="msg_exists">File già esistente</string>
     <string name="msg_url_malform">URL errato o errore di connessione</string>
@@ -155,7 +150,7 @@
     <string name="use_old_player_title">Usa il vecchio lettore multimediale</string>
 <string name="use_external_video_player_summary">Alcune risoluzioni NON riprodurranno l\'audio se questa opzione viene abilitata</string>
     <string name="controls_background_title">In sottofondo</string>
-    <string name="controls_popup_title">Popup</string>
+    <string name="popup">Popup</string>
 
     <string name="default_popup_resolution_title">Risoluzione predefinita per la modalità popup</string>
     <string name="show_higher_resolutions_title">Mostra risoluzioni più alte</string>
@@ -168,7 +163,6 @@
     <string name="show_search_suggestions_title">Suggerimenti di ricerca</string>
     <string name="show_search_suggestions_summary">Mostra i suggerimenti durante la ricerca</string>
 
-    <string name="settings_category_popup_title">Popup</string>
     <string name="filter">Filtra i risultati</string>
     <string name="refresh">Ricarica</string>
     <string name="clear">Cancella</string>
@@ -180,13 +174,11 @@
     <string name="msg_popup_permission">Questo permesso è necessario 
 \nper riprodurre in modalità popup</string>
 
-    <string name="action_settings">Impostazioni</string>
-    <string name="action_about">Informazioni</string>
+    <string name="about">Informazioni</string>
     <string name="title_licenses">Licenze di terze parti</string>
     <string name="copyright" formatted="true">© %1$s di %2$s protetto da licenza %3$s</string>
     <string name="error_unable_to_load_license">Impossible caricare la licenza</string>
     <string name="action_open_website">Visita il sito</string>
-    <string name="tab_about">Informazioni</string>
     <string name="tab_contributors">Contributori</string>
     <string name="tab_licenses">Licenze</string>
     <string name="app_description">Interfaccia libera e leggera per lo streaming di YouTube su Android.</string>
@@ -214,7 +206,6 @@
     <string name="resume_on_audio_focus_gain_summary">Continua a riprodurre dopo le interruzioni (es. chiamate)</string>
 
 
-    <string name="settings_category_downloads_title">Scarica</string>
     <string name="settings_file_charset_title">Caratteri ammessi nei nomi dei file</string>
     <string name="settings_file_replacement_character_summary">I caratteri non validi vengono sostituiti con</string>
     <string name="settings_file_replacement_character_title">Carattere sostitutivo</string>
@@ -222,11 +213,10 @@
     <string name="charset_letters_and_digits">Lettere e cifre</string>
     <string name="charset_most_special_characters">Caratteri speciali</string>
 
-    <string name="title_activity_history">Cronologia</string>
+    <string name="history">Cronologia</string>
     <string name="title_history_search">Ricerche effettuate</string>
     <string name="title_history_view">Visualizzati</string>
     <string name="history_disabled">La cronologia è disabilitata</string>
-    <string name="action_history">Cronologia</string>
     <string name="history_empty">La cronologia è vuota</string>
     <string name="history_cleared">Cronologia cancellata</string>
 

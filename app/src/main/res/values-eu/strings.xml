@@ -22,16 +22,13 @@
     <string name="show_play_with_kodi_summary">Erakutsi bideoa Kodi multimedia zentroarekin erreproduzitzeko aukera</string>
     <string name="play_audio">Audioa</string>
     <string name="default_audio_format_title">Audio formatu lehenetsia</string>
-    <string name="download_dialog_title">Deskargatu</string>
     <string name="next_video_title">Hurrengo bideoa</string>
     <string name="show_next_and_similar_title">Erakutsi \'hurrengo\' eta \'antzeko\' bideoak</string>
     <string name="url_not_supported_toast">URLak ez du euskarririk</string>
     <string name="search_language_title">Edukiaren hizkuntz lehenetsia</string>
     <string name="settings_category_video_audio_title">Bideoa eta Audioa</string>
-    <string name="play_btn_text">Erreproduzitu</string>
 
-    <string name="list_thumbnail_view_description">Bideoaren aurreikuspen argazkitxoa</string>
-    <string name="detail_thumbnail_view_description">Bideoaren aurreikuspen argazkitxoa</string>
+    <string name="thumbnail_description">Bideoaren aurreikuspen argazkitxoa</string>
     <string name="detail_uploader_thumbnail_view_description">Igotzailearen abatarraren iruditxoa</string>
     <string name="detail_dislikes_img_view_description">Ez dute gustoko</string>
     <string name="detail_likes_img_view_description">Gustoko dute</string>
@@ -57,7 +54,7 @@
     <string name="use_external_video_player_summary">Bereizmen batzuetan ez da audiorik izango aukera hau gaituz gero</string>
     <string name="popup_mode_share_menu_title">NewPipe laster-leiho modua</string>
     <string name="controls_background_title">Bigarren planoa</string>
-    <string name="controls_popup_title">Laster-leihoa</string>
+    <string name="popup">Laster-leihoa</string>
 
     <string name="default_popup_resolution_title">Laster-leihoaren lehenetsitako bereizmena</string>
     <string name="show_higher_resolutions_title">Erakutsi bereizmen altuagoak</string>
@@ -72,7 +69,6 @@
     <string name="show_search_suggestions_title">Bilaketa-iradokizunak</string>
     <string name="show_search_suggestions_summary">Erakutsi iradokizunak bilatzean</string>
 
-    <string name="settings_category_popup_title">Laster-leihoa</string>
     <string name="settings_category_other_title">Besteak</string>
     <string name="popup_playing_toast">Laster-leiho moduan erreproduzitzen</string>
     <string name="content">Edukia</string>
@@ -80,7 +76,6 @@
     <string name="video_is_age_restricted">Bideoa adinez mugatuta dago. Ezarpenetan gaitu daiteke eduki mota hau.</string>
     <string name="duration_live">zuzenean</string>
     <string name="downloads">Deskargak</string>
-    <string name="downloads_title">Deskargak</string>
     <string name="error_report_title">Errore-txostena</string>
     <string name="all">Dena</string>
     <string name="channel">Kanala</string>
@@ -93,7 +88,7 @@
     <string name="popup_resizing_indicator_title">Tamainaz aldatzen</string>
     <string name="best_resolution">Bereizmen onena</string>
 
-    <string name="general_error">Errorea</string>
+    <string name="error">Errorea</string>
     <string name="network_error">Sare-errorea</string>
     <string name="could_not_load_thumbnails">Ezin izan dira iruditxo guztiak deskargatu</string>
     <string name="youtube_signature_decryption_error">Ezin izan da bideoaren URL sinadura deskodetu</string>
@@ -146,7 +141,6 @@
 
     <string name="msg_name">Fitxategi-izena</string>
     <string name="msg_threads">Hariak</string>
-    <string name="msg_error">Errorea</string>
     <string name="msg_server_unsupported">Euskarririk gabeko zerbitzaria</string>
     <string name="msg_exists">Fitxategia badago aurretik</string>
     <string name="msg_url_malform">Eragabeko URLa edo Internet ez dago eskuragarri</string>
@@ -163,13 +157,11 @@
     <string name="recaptcha_request_toast">reCAPTCHA erronka eskatu da</string>
 
     <string name="title_activity_about">NewPipe aplikazioari buruz</string>
-    <string name="action_settings">Ezarpenak</string>
-    <string name="action_about">Honi buruz</string>
+    <string name="about">Honi buruz</string>
     <string name="title_licenses">Hirugarrengoen lizentziak</string>
     <string name="copyright" formatted="true">"© %1$s %2$s.  %3$s"</string>
     <string name="error_unable_to_load_license">Ezin izan da lizentzia kargatu</string>
     <string name="action_open_website">Ireki webgunea</string>
-    <string name="tab_about">Honi buruz</string>
     <string name="tab_contributors">Parte hartzaileak</string>
     <string name="tab_licenses">Lizentziak</string>
     <string name="app_description">Androiderako streaming libre eta arina.</string>
@@ -192,7 +184,6 @@
     <string name="resume_on_audio_focus_gain_title">Jarraitu fokua irabaztean</string>
     <string name="resume_on_audio_focus_gain_summary">Jarraitu etenaldiak eta gero (adib. telefono deiak)</string>
 
-    <string name="settings_category_downloads_title">Deskargatu</string>
     <string name="settings_file_charset_title">Fitxategi-izenetan baimendutako karaktereak</string>
     <string name="settings_file_replacement_character_summary">Karaktere baliogabeak balio honekin ordezkatzen dira</string>
     <string name="settings_file_replacement_character_title">Ordezko karakterea</string>
@@ -234,11 +225,10 @@
 	<item quantity="other">%s bideo</item>
 </plurals>
 
-    <string name="title_activity_history">Historiala</string>
+    <string name="history">Historiala</string>
     <string name="title_history_search">Bilatuta</string>
     <string name="title_history_view">Ikusita</string>
     <string name="history_disabled">Historiala desgaituta dago</string>
-    <string name="action_history">Historiala</string>
     <string name="history_empty">Historiala hutsik dago</string>
     <string name="history_cleared">Historiala garbitu da</string>
     <string name="item_deleted">Elementua ezabatuta</string>

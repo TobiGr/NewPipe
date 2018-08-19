@@ -37,7 +37,6 @@
     <string name="dark_theme_title">Escuru</string>
     <string name="light_theme_title">Claru</string>
 
-    <string name="download_dialog_title">Baxar</string>
     <string name="next_video_title">Videu siguiente</string>
     <string name="show_next_and_similar_title">Amosar vídeos siguientes y asemeyaos</string>
     <string name="url_not_supported_toast">URL non sofitada</string>
@@ -46,16 +45,14 @@
     <string name="settings_category_appearance_title">Aspeutu</string>
     <string name="settings_category_other_title">Otru</string>
     <string name="background_player_playing_toast">Reproduciendo de fondu</string>
-    <string name="play_btn_text">Reproducir</string>
     <string name="content">Conteníu</string>
     <string name="show_age_restricted_content_title">Amosar conteníu torgáu pola edá</string>
     <string name="video_is_age_restricted">El videu ta torgáu pola edá. Desactiva esto diendo primero a axustes.</string>
     <string name="duration_live">en direuto</string>
     <string name="downloads">Descargues</string>
-    <string name="downloads_title">Descargues</string>
     <string name="error_report_title">Informe de fallu</string>
 
-    <string name="general_error">Fallu</string>
+    <string name="error">Fallu</string>
     <string name="network_error">Fallu de rede</string>
     <string name="could_not_load_thumbnails">Nun pudieron cargase toles miniatures</string>
     <string name="youtube_signature_decryption_error">Nun pudo descifrase la robla de la URL</string>
@@ -76,8 +73,7 @@
     <string name="error_details_headline">Detalles:</string>
 
 
-    <string name="list_thumbnail_view_description">Miniatura de previsualización del videu</string>
-    <string name="detail_thumbnail_view_description">Miniatura de previsualización del videu</string>
+    <string name="thumbnail_description">Miniatura de previsualización del videu</string>
     <string name="detail_likes_img_view_description">Préstames</string>
     <string name="use_tor_title">Usar Tor</string>
     <string name="use_tor_summary">(Esperimental) Forcia\'l tráficu de descargues pente Tor pa más privacidá (la tresmisión de vídeos entá nun se sofita).</string>
@@ -102,7 +98,6 @@
     <string name="finish">Val</string>
     <string name="msg_name">Nome de ficheru</string>
     <string name="msg_threads">Filos</string>
-    <string name="msg_error">Fallu</string>
     <string name="msg_server_unsupported">Sirvidor ensin sofitu</string>
     <string name="msg_exists">Yá esiste\'l ficheru</string>
     <string name="msg_url_malform">URL malformada o internet non disponible</string>
@@ -148,7 +143,7 @@
     <string name="recaptcha_request_toast">Solicitóse la prueba reCAPTCHA</string>
 
     <string name="controls_background_title">Fondu</string>
-    <string name="controls_popup_title">Ventanu emerxente</string>
+    <string name="popup">Ventanu emerxente</string>
 
     <string name="default_popup_resolution_title">Resolución por defeutu del ventanu emerxente</string>
     <string name="show_higher_resolutions_title">Amosar resoluciones más altes</string>
@@ -165,7 +160,6 @@
     <string name="show_search_suggestions_title">Suxerencies de gueta</string>
     <string name="show_search_suggestions_summary">Amuesa suxerencies al guetar</string>
 
-    <string name="settings_category_popup_title">Ventanu emerxente</string>
     <string name="popup_resizing_indicator_title">Redimensionáu</string>
 
     <string name="use_old_player_summary">Reproductor vieyu integráu de Mediaframework</string>
@@ -217,7 +211,6 @@
 	<item quantity="other">%s vídeos</item>
 </plurals>
 
-    <string name="settings_category_downloads_title">Descargues</string>
     <string name="settings_file_charset_title">Caráuteres permitíos nos nomes de ficheros</string>
     <string name="settings_file_replacement_character_summary">Los caráuteres non válidos tróquense por esti valor</string>
     <string name="settings_file_replacement_character_title">Troquéu de caráuteres</string>
@@ -226,13 +219,11 @@
     <string name="charset_most_special_characters">La mayoría de caráuteres especiales</string>
 
     <string name="title_activity_about">Tocante a NewPipe</string>
-    <string name="action_settings">Axustes</string>
-    <string name="action_about">Tocante a</string>
+    <string name="about">Tocante a</string>
     <string name="title_licenses">Llicencies de terceros</string>
     <string name="copyright" formatted="true">© %1$s por %2$s so la %3$s</string>
     <string name="error_unable_to_load_license">Nun pudo cargase la llicencia</string>
     <string name="action_open_website">Abrir sitiu web</string>
-    <string name="tab_about">Tocante a</string>
     <string name="tab_contributors">Collaboradores</string>
     <string name="tab_licenses">Llicencies</string>
     <string name="app_description">Un frontal llixeru de YouTube p\'Android.</string>
@@ -242,11 +233,10 @@
     <string name="read_full_license">Lleer llicencia</string>
     <string name="contribution_title">Collaborar</string>
 
-    <string name="title_activity_history">Historial</string>
+    <string name="history">Historial</string>
     <string name="title_history_search">Guetao</string>
     <string name="title_history_view">Visto</string>
     <string name="history_disabled">L\'historial ta desactiváu</string>
-    <string name="action_history">Historial</string>
     <string name="history_empty">L\'historial ta baleru</string>
     <string name="history_cleared">Llimpióse l\'historial</string>
     <string name="item_deleted">Desanicióse l\'elementu</string>

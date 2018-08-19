@@ -19,14 +19,13 @@
     <string name="tab_subscriptions">सदस्यता</string>
 
     <string name="controls_background_title">पीछे</string>
-    <string name="controls_popup_title">पॉपअप</string>
+    <string name="popup">पॉपअप</string>
 
     <string name="autoplay_by_calling_app_title">ऑटोप्‍ले करें</string>
     <string name="play_audio">ऑडियो</string>
     <string name="light_theme_title">हलका</string>
     <string name="black_theme_title">काली</string>
     <string name="enable_watch_history_title">इतिहास</string>
-    <string name="download_dialog_title">डाउनलोड</string>
     <string name="next_video_title">अगला वीडियो</string>
     <string name="settings_category_video_audio_title">वीडियो और ऑडियो</string>
     <string name="settings_category_history_title">इतिहास</string>
@@ -34,22 +33,19 @@
     <string name="no_views">कोई दर्शक नहीं</string>
     <string name="no_videos">कोई वीडियो नहीं है</string>
     <string name="title_activity_about">न्यूपाइप के बारे में जाने</string>
-    <string name="action_settings">सेटिंग</string>
-    <string name="action_about">इसके बारे में</string>
+    <string name="about">इसके बारे में</string>
     <string name="title_licenses">तृतीय-पक्ष लाइसेंस</string>
     <string name="action_open_website">वेबसाइट खोलें</string>
-    <string name="tab_about">इसके बारे में</string>
     <string name="tab_licenses">लाइसेंस</string>
     <string name="view_on_github">GitHub में देखें</string>
     <string name="app_license_title">न्यूपाइप का लाइसेंस</string>
     <string name="read_full_license">लाइसेंस पढ़ें</string>
     <string name="contribution_title">योगदान करें</string>
 
-    <string name="title_activity_history">इतिहास</string>
+    <string name="history">इतिहास</string>
     <string name="title_history_search">खोजा जा चूका है</string>
     <string name="title_history_view">विडियो जो देख लिए गए है</string>
     <string name="history_disabled">इतिहास disable है</string>
-    <string name="action_history">इतिहास</string>
     <string name="history_empty">इतिहास खाली है</string>
     <string name="history_cleared">इतिहास साफ़ हो चुकी है</string>
     <string name="item_deleted">Item हटा दिया गया है</string>
@@ -107,19 +103,16 @@
     <string name="search_language_title">डिफ़ॉल्ट विषय की भाषा</string>
     <string name="settings_category_player_title">प्लेयर</string>
     <string name="settings_category_player_behavior_title">चाल चलन</string>
-    <string name="settings_category_popup_title">पॉपअप</string>
     <string name="settings_category_appearance_title">दिखावट</string>
     <string name="settings_category_other_title">और दुसरे</string>
     <string name="popup_playing_toast">विडियो पॉपअप के अंदाज में चल रहा</string>
     <string name="background_player_append">बैकग्राउंड प्लेयर की कतार पर</string>
     <string name="popup_playing_append">पॉपअप प्लेयर की कतार पर</string>
-    <string name="play_btn_text">चलाये</string>
     <string name="content">विषयवस्तु</string>
     <string name="show_age_restricted_content_title">उम्र प्रतिबंदित से सम्बंधित विषयवस्तु दिखाये (जैसे - हिंसात्मक,कामोतोजनक)</string>
     <string name="video_is_age_restricted">उम्र प्रतिबंदित विडियो है .इस प्रकार की विषयवस्तु को अनुमति देने के लिए Setting से संभव है |</string>
     <string name="duration_live">सीधा प्रसारण</string>
     <string name="downloads">डाउनलोड</string>
-    <string name="downloads_title">डाउनलोड</string>
     <string name="error_report_title">त्रुटी की रिपोर्ट</string>
     <string name="all">सारे</string>
     <string name="channel">चैनल</string>
@@ -140,7 +133,7 @@
 
     <string name="unknown_content">[नहीं जानते]</string>
 
-    <string name="general_error">त्रुटी</string>
+    <string name="error">त्रुटी</string>
     <string name="network_error">नेटवर्क में त्रुटी</string>
     <string name="could_not_load_thumbnails">सारे thumbnail(फोटो जो फ़ोन की मेमोरी में है ) भरे नहीं जा सकते</string>
     <string name="youtube_signature_decryption_error">विडियो के URL signature को decrypt नहीं कर सकते</string>
@@ -168,8 +161,7 @@
     <string name="error_details_headline">विवरण:</string>
 
 
-    <string name="list_thumbnail_view_description">विडियो के thumbnail के पूर्व दर्शन</string>
-    <string name="detail_thumbnail_view_description">विडियो के thumbnail के पूर्व दर्शन</string>
+    <string name="thumbnail_description">विडियो के thumbnail के पूर्व दर्शन</string>
     <string name="detail_uploader_thumbnail_view_description">अपलोडर के thumbnail वाले फोटो</string>
     <string name="detail_likes_img_view_description">पसंद</string>
     <string name="detail_dislikes_img_view_description">नापसंद</string>
@@ -221,7 +213,6 @@
 
     <string name="msg_name">फाइल का नाम</string>
     <string name="msg_threads">मेसेज के thread</string>
-    <string name="msg_error">त्रुटी</string>
     <string name="msg_server_unsupported">server ठीक से चल नहीं रहा</string>
     <string name="msg_exists">फाइल पहले से ही बनी हुई है</string>
     <string name="msg_url_malform">URL सही नहीं है या फिर हो सकता है इन्टरनेट उपलब्ध नहीं है</string>
@@ -236,7 +227,6 @@
     <string name="reCaptcha_title">reCAPTCHA चुनोती</string>
     <string name="recaptcha_request_toast">reCAPTCHA चुनोती के लिए निवेदन</string>
 
-    <string name="settings_category_downloads_title">डाउनलोड</string>
     <string name="settings_file_charset_title">फाइल के नाम के लिए आवश्यक characters(जैसे - १२३, abc) की अनुमति है</string>
     <string name="settings_file_replacement_character_summary">अमान्य characters इस value से बदल जायेंगे</string>
     <string name="settings_file_replacement_character_title">रिप्लेसमेंट करैक्टर</string>

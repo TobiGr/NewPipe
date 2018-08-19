@@ -39,7 +39,6 @@
     <string name="dark_theme_title">تیره</string>
     <string name="light_theme_title">روشن</string>
 
-    <string name="download_dialog_title">بارگیری</string>
     <string name="next_video_title">ویدیوی بعدی</string>
     <string name="show_next_and_similar_title">نماش ویدیوهای بعدی و مشابه</string>
     <string name="url_not_supported_toast">نشانی اینترنتی پشتیبانی نمی‌شود</string>
@@ -48,16 +47,14 @@
     <string name="settings_category_appearance_title">ظاهر</string>
     <string name="settings_category_other_title">دیگر</string>
     <string name="background_player_playing_toast">در حال پخش در پس‌زمینه</string>
-    <string name="play_btn_text">پخش</string>
     <string name="content">محتوا</string>
     <string name="show_age_restricted_content_title">نمایش محتوای محدود شده بر اساس سن</string>
     <string name="video_is_age_restricted">ویدیو بر اساس سن محدود شده است. نخست، ویدیوهای محدود شده بر اساس سن را در تنظیمات فعّال کنید.</string>
     <string name="duration_live">زنده</string>
     <string name="downloads">بارگیری‌ها</string>
-    <string name="downloads_title">بارگیری‌ها</string>
     <string name="error_report_title">گزارش خطا</string>
 
-    <string name="general_error">خطا</string>
+    <string name="error">خطا</string>
     <string name="network_error">خطای شبکه</string>
     <string name="could_not_load_thumbnails">نمی‌توان تمام بندانگشتی‌ها را بار کرد</string>
     <string name="youtube_signature_decryption_error">نمی‌توان امضای نشانی اینترنتی ویدیو را رمزگشایی کرد.</string>
@@ -78,8 +75,7 @@
     <string name="error_details_headline">جزییات:</string>
 
 
-    <string name="list_thumbnail_view_description">بندانگشتی پیش‌نمایش ویدیو</string>
-    <string name="detail_thumbnail_view_description">بندانگشتی پیش‌نمایش ویدیو</string>
+    <string name="thumbnail_description">بندانگشتی پیش‌نمایش ویدیو</string>
     <string name="detail_uploader_thumbnail_view_description">بندانگشتی کاربر بارگذار</string>
     <string name="detail_likes_img_view_description">پسندها</string>
     <string name="detail_dislikes_img_view_description">نپسندیدن‌ها</string>
@@ -107,7 +103,6 @@
 
     <string name="msg_name">نام پرونده</string>
     <string name="msg_threads">رشته‌ها</string>
-    <string name="msg_error">خطا</string>
     <string name="msg_server_unsupported">کارساز پشتیبانی نشده</string>
     <string name="msg_exists">پرونده از پیش وجود دارد</string>
     <string name="msg_url_malform">نشانی اینترنتی خراب است یا اینترنت در دسترس نیست</string>

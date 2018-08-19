@@ -27,7 +27,6 @@
     <string name="show_search_suggestions_title">Kërko propozimet</string>
     <string name="enable_watch_history_title">Të shikuarat</string>
     <string name="enable_watch_history_summary">Ruaji videot e shikuara</string>
-    <string name="download_dialog_title">Shkarko</string>
     <string name="next_video_title">Videoja tjetër</string>
     <string name="service_title">Shërbimi</string>
     <string name="search_language_title">Gjuha e dëshiruar e përmbajtjeve</string>
@@ -37,10 +36,8 @@
     <string name="settings_category_history_title">Historia dhe memorja e përkohshme</string>
     <string name="settings_category_appearance_title">Dukja</string>
     <string name="settings_category_other_title">Të tjera</string>
-    <string name="play_btn_text">Luaj</string>
     <string name="content">Përmbajtja</string>
     <string name="downloads">Të shkarkuarat</string>
-    <string name="downloads_title">Të shkarkuarat</string>
     <string name="error_report_title">Raporti i gabimit</string>
     <string name="all">Të gjitha</string>
     <string name="channel">Kanali</string>

@@ -21,7 +21,7 @@
     <string name="use_external_audio_player_title">השתמש בנגן סרטים חיצוני</string>
     <string name="popup_mode_share_menu_title">מצב חלון צץ (NewPipe)</string>
     <string name="controls_background_title">רקע</string>
-    <string name="controls_popup_title">חלון צץ</string>
+    <string name="popup">חלון צץ</string>
 
     <string name="download_path_title">נתיב הורדה לסרטונים</string>
     <string name="download_path_summary">נתיב לשמירת סרטונים</string>
@@ -55,24 +55,20 @@
     <string name="show_search_suggestions_title">הצעות חיפוש</string>
     <string name="show_search_suggestions_summary">הצג הצעות כשמחפשים</string>
 
-    <string name="download_dialog_title">הורד</string>
     <string name="next_video_title">הסרטון הבא</string>
     <string name="show_next_and_similar_title">הראה את הסרטונים הבאים וסרטונים דומים</string>
     <string name="url_not_supported_toast">כתובת URL לא נתמכת</string>
     <string name="search_language_title">שפת התוכן המועדפת</string>
     <string name="settings_category_video_audio_title">סרטים ושמע</string>
-    <string name="settings_category_popup_title">חלון צץ</string>
     <string name="settings_category_appearance_title">תצוגה</string>
     <string name="settings_category_other_title">אחרים</string>
     <string name="background_player_playing_toast">מנגן ברקע</string>
     <string name="popup_playing_toast">מנגן במצב חלון צץ</string>
-    <string name="play_btn_text">נגן</string>
     <string name="content">תוכן</string>
     <string name="show_age_restricted_content_title">הראה תוכן בעל הגבלת גיל</string>
     <string name="video_is_age_restricted">לסרטון קיימת הגבלת גיל. ניתן לאפשר צפייה בסרטונים אלו ע\"י שינוי ממסך ההגדרות.</string>
     <string name="duration_live">חי</string>
     <string name="downloads">הורדות</string>
-    <string name="downloads_title">הורדות</string>
     <string name="error_report_title">דו\"ח שגיאה</string>
     <string name="all">הכל</string>
     <string name="channel">ערוץ</string>
@@ -84,7 +80,7 @@
     <string name="clear">נקה</string>
     <string name="popup_resizing_indicator_title">שינוי גודל</string>
 
-    <string name="general_error">שגיאה</string>
+    <string name="error">שגיאה</string>
     <string name="network_error">שגיאת אינטרנט</string>
     <string name="could_not_load_thumbnails">אין אפשרות לטעון את כל התמונות הממוזערות</string>
     <string name="youtube_signature_decryption_error">לא הייתה אפשרות לפענח את חתימת ה-URL של הסרט</string>
@@ -146,8 +142,7 @@
     <string name="error_details_headline">פרטים:</string>
 
 
-    <string name="list_thumbnail_view_description">תמונות ממוזערות לתצוגה המקדמת של הסרטון</string>
-    <string name="detail_thumbnail_view_description">תמונות ממוזערות לתצוגה המקדמת של הסרטון</string>
+    <string name="thumbnail_description">תמונות ממוזערות לתצוגה המקדמת של הסרטון</string>
     <string name="detail_uploader_thumbnail_view_description">תמונה של המשתמש המפרסם</string>
     <string name="detail_likes_img_view_description">אהבו</string>
     <string name="detail_dislikes_img_view_description">לא אהבו</string>
@@ -207,7 +202,6 @@
 
     <string name="msg_name">שם קובץ</string>
     <string name="msg_threads">אשכולות</string>
-    <string name="msg_error">שגיאה</string>
     <string name="msg_server_unsupported">שרת לא נתמך</string>
     <string name="msg_exists">קובץ כבר קיים</string>
     <string name="msg_url_malform">URL לא תקין או שאין אינטרנט זמין</string>
@@ -223,7 +217,6 @@
     <string name="reCaptcha_title">אתגר reCAPTCHA</string>
     <string name="recaptcha_request_toast">נתבקש אתגר reCAPTCHA</string>
 
-    <string name="settings_category_downloads_title">הורדה</string>
     <string name="settings_file_charset_title">רשימת תווים אפשרית בשמות קבצים</string>
     <string name="settings_file_replacement_character_summary">תווים לא נתמכים מוחלפים עם הערך הזה</string>
     <string name="settings_file_replacement_character_title">תו חלופי</string>
@@ -232,13 +225,11 @@
     <string name="charset_most_special_characters">רוב התווים הייחודיים</string>
 
     <string name="title_activity_about">אודות NewPipe</string>
-    <string name="action_settings">הגדרות</string>
-    <string name="action_about">אודות</string>
+    <string name="about">אודות</string>
     <string name="title_licenses">רישיונות צד ג\'</string>
     <string name="copyright" formatted="true">© %1$s ע\"י %2$s תחת %3$s</string>
     <string name="error_unable_to_load_license">לא ניתן לטעון רישיון</string>
     <string name="action_open_website">פתח אתר</string>
-    <string name="tab_about">אודות</string>
     <string name="tab_contributors">תורמים</string>
     <string name="tab_licenses">רישיונות</string>
     <string name="app_description">נגן קל וחופשי לYouTube עבור אנדרואיד.</string>
@@ -254,11 +245,10 @@
     <string name="read_full_license">קרא רישיון</string>
 
 
-    <string name="title_activity_history">היסטוריה</string>
+    <string name="history">היסטוריה</string>
     <string name="title_history_search">חופש בעבר</string>
     <string name="title_history_view">נצפה בעבר</string>
     <string name="history_disabled">היסטוריה אינה פעילה</string>
-    <string name="action_history">היסטוריה</string>
     <string name="history_empty">ההיסטוריה ריקה</string>
     <string name="history_cleared">היסטוריה נוקתה</string>
     <string name="item_deleted">פריט נמחק</string>

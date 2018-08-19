@@ -35,7 +35,7 @@
     <string name="fragment_whats_new">Nieuw</string>
 
     <string name="controls_background_title">Achtergrond</string>
-    <string name="controls_popup_title">Pop-up</string>
+    <string name="popup">Pop-up</string>
     <string name="controls_add_to_playlist_title">Toevoegen aan</string>
 
     <string name="download_path_title">Downloadlocatie voor video’s</string>
@@ -85,7 +85,6 @@
     <string name="enable_watch_history_summary">Kijkgeschiedenis bijhouden</string>
     <string name="resume_on_audio_focus_gain_title">Hervat bij focus</string>
     <string name="resume_on_audio_focus_gain_summary">Ga verder met afspelen na onderbrekingen (zoals telefoongesprekken)</string>
-    <string name="download_dialog_title">Downloaden</string>
     <string name="next_video_title">Volgende video</string>
     <string name="show_next_and_similar_title">Toond ‘volgende’ en ‘vergelijkbare’ video’s</string>
     <string name="show_hold_to_append_title">Toond tip voor ingedrukt houden voor toe te voegen</string>
@@ -98,7 +97,6 @@
     <string name="settings_category_player_behavior_title">Gedrag</string>
     <string name="settings_category_video_audio_title">Video &amp; audio</string>
     <string name="settings_category_history_title">Geschiedenis &amp; cache</string>
-    <string name="settings_category_popup_title">Pop-up</string>
     <string name="settings_category_appearance_title">Uiterlijk</string>
     <string name="settings_category_other_title">Overige</string>
     <string name="settings_category_debug_title">Foutopsporing</string>
@@ -106,13 +104,11 @@
     <string name="popup_playing_toast">Speelt af in pop-upmodus</string>
     <string name="background_player_append">Toegevoegd aan wachtrij voor achtergrondspeler</string>
     <string name="popup_playing_append">Toegevoegd aan wachtrij voor pop-upspeler</string>
-    <string name="play_btn_text">Afspelen</string>
     <string name="content">Inhoud</string>
     <string name="show_age_restricted_content_title">Toon inhoud met leeftijdsbeperking</string>
     <string name="video_is_age_restricted">Video heeft leeftijdsbeperking. Leeftijdsbeperkte video’s kunnen ingeschakeld worden in de instellingen.</string>
     <string name="duration_live">live</string>
     <string name="downloads">Downloads</string>
-    <string name="downloads_title">Downloads</string>
     <string name="error_report_title">Foutrapport</string>
     <string name="all">Alles</string>
     <string name="channel">Kanaal</string>
@@ -145,7 +141,7 @@
     <string name="export_data_title">Databank exporteren</string>
     <string name="import_data_summary">Dit zal uw huidige geschiedenis en abonnementen overschrijven</string>
     <string name="export_data_summary">Exporteer geschiedenis, abonnementen en speellijsten.</string>
-    <string name="general_error">Fout</string>
+    <string name="error">Fout</string>
     <string name="network_error">Netwerkfout</string>
     <string name="could_not_load_thumbnails">Kon niet alle miniaturen laden</string>
     <string name="youtube_signature_decryption_error">Kon video-URL-ondertekening niet ontsleutelen</string>
@@ -183,8 +179,7 @@
     <string name="error_details_headline">Details:</string>
 
 
-    <string name="list_thumbnail_view_description">Videovoorbeeldminiatuur</string>
-    <string name="detail_thumbnail_view_description">Videovoorbeeldminiatuur</string>
+    <string name="thumbnail_description">Videovoorbeeldminiatuur</string>
     <string name="detail_uploader_thumbnail_view_description">Avatarminiatuur van uploader</string>
     <string name="detail_likes_img_view_description">Duimen</string>
     <string name="detail_dislikes_img_view_description">Duimen omlaag</string>
@@ -244,7 +239,6 @@
 
     <string name="msg_name">Bestandsnaam</string>
     <string name="msg_threads">Threads</string>
-    <string name="msg_error">Fout</string>
     <string name="msg_server_unsupported">Server wordt niet ondersteund</string>
     <string name="msg_exists">Bestand bestaat al</string>
     <string name="msg_url_malform">Verkeerden URL of internet niet beschikbaar</string>
@@ -259,7 +253,6 @@
     <string name="reCaptcha_title">reCAPTCHA-uitdaging</string>
     <string name="recaptcha_request_toast">reCAPTCHA-uitdaging gevraagd</string>
 
-    <string name="settings_category_downloads_title">Download</string>
     <string name="settings_file_charset_title">Toegelaten tekens in bestandsnamen</string>
     <string name="settings_file_replacement_character_summary">Ongeldige tekens worden vervangen door deze waarde</string>
     <string name="settings_file_replacement_character_title">Vervangend teken</string>
@@ -270,13 +263,11 @@
     <string name="toast_no_player">Genen app gevonden voor dit bestand mee af te spelen</string>
 
     <string name="title_activity_about">Over NewPipe</string>
-    <string name="action_settings">Instellingen</string>
-    <string name="action_about">Over</string>
+    <string name="about">Over</string>
     <string name="title_licenses">Derdepartijlicenties</string>
     <string name="copyright" formatted="true">© %1$s door %2$s, uitgebracht onder de %3$s</string>
     <string name="error_unable_to_load_license">Kon licentie niet laden</string>
     <string name="action_open_website">Website openen</string>
-    <string name="tab_about">Over</string>
     <string name="tab_contributors">Bijdragers</string>
     <string name="tab_licenses">Licenties</string>
     <string name="app_description">Vrij en licht streamen voor Android.</string>
@@ -292,11 +283,10 @@
     <string name="read_full_license">Licentie lezen</string>
 
 
-    <string name="title_activity_history">Geschiedenis</string>
+    <string name="history">Geschiedenis</string>
     <string name="title_history_search">Gezocht</string>
     <string name="title_history_view">Gekeken</string>
     <string name="history_disabled">Geschiedenis is uitgeschakeld</string>
-    <string name="action_history">Geschiedenis</string>
     <string name="history_empty">De geschiedenis is leeg</string>
     <string name="history_cleared">Geschiedenis gewist</string>
     <string name="item_deleted">Item verwijderd</string>

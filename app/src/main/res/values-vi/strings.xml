@@ -18,7 +18,7 @@
     <string name="use_external_video_player_summary">Một số độ phân giải sẽ KHÔNG có âm thanh khi chế độ này</string>
     <string name="use_external_audio_player_title">Sử dụng trình phát âm thanh bên ngoài</string>
     <string name="popup_mode_share_menu_title">Chế độ popup của NewPipe</string>
-    <string name="controls_popup_title">Chế độ Popup</string>
+    <string name="popup">Chế độ Popup</string>
 
     <string name="download_path_title">Đường dẫn tải xuống video</string>
     <string name="download_path_summary">Đường dẫn để lưu trữ video đã tải xuống</string>
@@ -53,8 +53,6 @@
     <string name="show_search_suggestions_title">Đề xuất tìm kiếm</string>
     <string name="show_search_suggestions_summary">Hiển thị các đề xuất khi tìm kiếm</string>
 
-    <string name="download_dialog_title">Tải về</string>
-
     <string name="next_video_title">Video tiếp theo</string>
     <string name="show_next_and_similar_title">Hiển thị các video tiếp theo và tương tự</string>
     <string name="url_not_supported_toast">URL không được hỗ trợ</string>
@@ -62,13 +60,11 @@
     <string name="settings_category_other_title">Khác</string>
     <string name="background_player_playing_toast">Phát ở chế độ nền</string>
     <string name="popup_playing_toast">Phát ở chế độ cửa sổ bật lên (Popup)</string>
-    <string name="play_btn_text">Phát</string>
     <string name="content">Nội dung</string>
     <string name="show_age_restricted_content_title">Hiển thị nội dung bị hạn chế độ tuổi</string>
     <string name="video_is_age_restricted">Video bị giới hạn về tuổi. Bật chế độ cho phép hiển thị video bị hạn chế về độ tuổi ở trong cài đặt trước.</string>
     <string name="duration_live">Trực tiếp</string>
     <string name="downloads">Tải xuống</string>
-    <string name="downloads_title">Tải xuống</string>
     <string name="error_report_title">Báo lỗi</string>
     <string name="all">Tất cả</string>
     <string name="channel">Kênh</string>
@@ -81,7 +77,7 @@
     <string name="popup_resizing_indicator_title">Thay đổi kích thước</string>
     <string name="best_resolution">Độ phân giải tốt nhất</string>
 
-    <string name="general_error">Lỗi</string>
+    <string name="error">Lỗi</string>
     <string name="network_error">Lỗi kết nối mạng</string>
     <string name="could_not_load_thumbnails">Không thể tải tất cả các thumbnails</string>
     <string name="youtube_signature_decryption_error">Không thể giải mã chữ ký URL của video.</string>
@@ -105,8 +101,7 @@
     <string name="error_details_headline">Chi tiết:</string>
 
 
-    <string name="list_thumbnail_view_description">Hình thu nhỏ xem trước video</string>
-    <string name="detail_thumbnail_view_description">Hình thu nhỏ xem trước video</string>
+    <string name="thumbnail_description">Hình thu nhỏ xem trước video</string>
     <string name="detail_uploader_thumbnail_view_description">Hình thu nhỏ người dùng của người tải lên</string>
     <string name="detail_likes_img_view_description">Lượt thích</string>
     <string name="detail_dislikes_img_view_description">Dislike</string>
@@ -141,7 +136,6 @@
 
     <string name="msg_name">Tên file</string>
     <string name="msg_threads">Chủ đề</string>
-    <string name="msg_error">Lỗi</string>
     <string name="msg_server_unsupported">Sever không được hỗ trợ</string>
     <string name="msg_exists">Tập tin đã tồn tại</string>
     <string name="msg_url_malform">URL không hợp lệ hoặc Internet không khả dụng</string>
@@ -158,13 +152,11 @@
     <string name="recaptcha_request_toast">Yêu cầu reCAPTCHA</string>
 
     <string name="title_activity_about">Giới thiệu về NewPipe</string>
-    <string name="action_settings">Cài đặt</string>
-    <string name="action_about">Về</string>
+    <string name="about">Về</string>
     <string name="title_licenses">Giấy phép của bên thứ ba</string>
     <string name="copyright" formatted="true">© %1$s bởi %2$s dưới %3$s</string>
     <string name="error_unable_to_load_license">Không thể tải giấy phép</string>
     <string name="action_open_website">Mở trang web</string>
-    <string name="tab_about">Về</string>
     <string name="tab_contributors">Cộng tác viên</string>
     <string name="tab_licenses">Giấy phép</string>
     <string name="app_description">Giao diện trực quan nhẹ cho Android.</string>
@@ -176,7 +168,6 @@
 <string name="screen_rotation">Quay</string>
     <string name="search_language_title">Ngôn ngữ nội dung ưu tiên</string>
     <string name="settings_category_video_audio_title">Video &amp; Âm thanh</string>
-    <string name="settings_category_popup_title">Bật lên</string>
     <string name="enable_watch_history_title">Lịch sử</string>
     <string name="settings_category_history_title">Lịch sử</string>
     <string name="playlist">Danh sách</string>

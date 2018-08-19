@@ -19,7 +19,7 @@
     <string name="use_external_audio_player_title">Använd extern ljudspelare</string>
     <string name="popup_mode_share_menu_title">NewPipe popup-läge</string>
     <string name="controls_background_title">Bakgrund</string>
-    <string name="controls_popup_title">Extrafönster</string>
+    <string name="popup">Extrafönster</string>
 
     <string name="download_path_title">Genväg för nerladdning av video</string>
     <string name="download_path_summary">Genväg för att lagra nerladdade videor i</string>
@@ -52,25 +52,20 @@
     <string name="show_search_suggestions_title">Sökförslag</string>
     <string name="show_search_suggestions_summary">Visa förslag i samband med sökning</string>
 
-    <string name="download_dialog_title">Ladda ner</string>
-
     <string name="next_video_title">Nästa video</string>
     <string name="show_next_and_similar_title">Visa \'nästkommande\' och \'liknande\' videor</string>
     <string name="url_not_supported_toast">Webbadressen stöds inte</string>
     <string name="search_language_title">Standard innehållsspråk</string>
     <string name="settings_category_video_audio_title">Video &amp; Ljud</string>
-    <string name="settings_category_popup_title">Popup-ruta</string>
     <string name="settings_category_appearance_title">Utseende</string>
     <string name="settings_category_other_title">Andra</string>
     <string name="background_player_playing_toast">Spelar upp i bakgrunden</string>
     <string name="popup_playing_toast">Spelar upp i popup-läge</string>
-    <string name="play_btn_text">Spela upp</string>
     <string name="content">Innehåll</string>
     <string name="show_age_restricted_content_title">Visa åldersbegränsat innehåll</string>
     <string name="video_is_age_restricted">Videon är åldersbegränsad. Du kan aktivera åldersbegränsade videor i inställningarna.</string>
     <string name="duration_live">direkt</string>
     <string name="downloads">Nerladdningar</string>
-    <string name="downloads_title">Nerladdningar</string>
     <string name="error_report_title">Felrapport</string>
     <string name="all">Alla</string>
     <string name="channel">Kanal</string>
@@ -82,7 +77,7 @@
     <string name="clear">Rensa</string>
     <string name="best_resolution">Bästa upplösningen</string>
 
-    <string name="general_error">Fel</string>
+    <string name="error">Fel</string>
     <string name="network_error">Nätverksfel</string>
     <string name="could_not_load_thumbnails">Kunde inte ladda alla miniatyrbilder</string>
     <string name="parsing_error">Det gick inte att analysera webbplatsen</string>
@@ -150,8 +145,7 @@
 
     <string name="error_report_button_text">Rapportera fel via e-post</string>
     <string name="info_labels">Vad:\\nBegäran:\\nInnehålls Språk:\\nTjänst:\\nGMT Tid:\\nPaket:\\nVersion:\\nOS-version:</string>
-    <string name="list_thumbnail_view_description">Videons miniatyrbild</string>
-    <string name="detail_thumbnail_view_description">Videons miniatyrbild</string>
+    <string name="thumbnail_description">Videons miniatyrbild</string>
     <string name="detail_uploader_thumbnail_view_description">Uppladdarens avatar miniatyrbild</string>
     <string name="use_tor_summary">(Experimentellt) Tvinga nedladdningstrafik via Tor för ökad integritet (strömmande videon stöds inte ännu).</string>
     <string name="user_report">Användarrapport</string>
@@ -201,7 +195,6 @@
 
     <string name="msg_name">Filnamn</string>
     <string name="msg_threads">Trådar</string>
-    <string name="msg_error">Fel</string>
     <string name="msg_server_unsupported">Serveren stöds inte</string>
     <string name="msg_exists">Filen finns redan</string>
     <string name="msg_url_malform">Felaktig webbadress eller Internet inte tillgängligt</string>
@@ -217,7 +210,6 @@
     <string name="reCaptcha_title">reCAPTCHA utmaning</string>
     <string name="recaptcha_request_toast">reCAPTCHA utmaning begärd</string>
 
-    <string name="settings_category_downloads_title">Nedladdning</string>
     <string name="settings_file_charset_title">Tillåtna tecken i filnamn</string>
     <string name="settings_file_replacement_character_summary">Ogiltiga tecken ersätts med detta värde</string>
     <string name="settings_file_replacement_character_title">Ersättningstecknet</string>
@@ -226,13 +218,11 @@
     <string name="charset_most_special_characters">De flesta specialtecken</string>
 
     <string name="title_activity_about">Om NewPipe</string>
-    <string name="action_settings">Inställningar</string>
-    <string name="action_about">Om</string>
+    <string name="about">Om</string>
     <string name="title_licenses">Tredjepartslicenser</string>
     <string name="copyright" formatted="true">© %1$s av %2$s under %3$s</string>
     <string name="error_unable_to_load_license">Kunde inte ladda licens</string>
     <string name="action_open_website">Öppna webbplats</string>
-    <string name="tab_about">Om</string>
     <string name="tab_contributors">Medverkande</string>
     <string name="tab_licenses">Licenser</string>
     <string name="app_description">Öppet och enkel Android app för mediastreaming.</string>
@@ -242,11 +232,10 @@
     <string name="read_full_license">Läs hela licensen</string>
     <string name="contribution_title">Bidra</string>
 
-    <string name="title_activity_history">Historik</string>
+    <string name="history">Historik</string>
     <string name="title_history_search">Sökt</string>
     <string name="title_history_view">Tittade</string>
     <string name="history_disabled">Historik är inaktiverat</string>
-    <string name="action_history">Historik</string>
     <string name="history_empty">Historiken är tom</string>
     <string name="history_cleared">Historiken har rensats</string>
     <string name="item_deleted">Objektet bortaget</string>

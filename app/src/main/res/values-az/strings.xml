@@ -45,7 +45,6 @@
     <string name="kore_not_found">Kore app tapılmadı. Yükləyək?</string>
     <string name="show_play_with_kodi_title">\"Kodi ilə oynat\" seçimini göstər</string>
     <string name="show_play_with_kodi_summary">Videonu Kodi media center ilə oynatmaq üçün seçim göstər</string>
-    <string name="play_audio">Audio</string>
     <string name="default_audio_format_title">Defolt audio formatı</string>
     <string name="default_video_format_title">Defolt video formatı</string>
     <string name="theme_title">Mövzu</string>

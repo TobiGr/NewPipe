@@ -24,15 +24,13 @@
     <string name="view_count_text">%1$s vues</string>
     <string name="play_audio">Audio</string>
     <string name="default_audio_format_title">Format audio par défaut</string>
-    <string name="download_dialog_title">Télécharger</string>
     <string name="next_video_title">Vidéo suivante</string>
     <string name="show_next_and_similar_title">Afficher les vidéos \"suivantes\" et \"similaires\"</string>
     <string name="url_not_supported_toast">Lien non pris en charge</string>
     <string name="settings_category_video_audio_title">Vidéo et audio</string>
     <string name="settings_category_other_title">Autre</string>
 
-    <string name="list_thumbnail_view_description">Miniature d’aperçu vidéo</string>
-    <string name="detail_thumbnail_view_description">Miniature d’aperçu vidéo</string>
+    <string name="thumbnail_description">Miniature d’aperçu vidéo</string>
     <string name="detail_dislikes_img_view_description">Je n’aime pas</string>
     <string name="detail_likes_img_view_description">J’aime</string>
     <string name="search_language_title">Langue du contenu par défaut</string>
@@ -40,7 +38,6 @@
     <string name="use_external_video_player_title">Utiliser un lecteur vidéo externe</string>
     <string name="use_external_audio_player_title">Utiliser un lecteur audio externe</string>
     <string name="background_player_playing_toast">Lecture en arrière-plan</string>
-    <string name="play_btn_text">Lire</string>
 
     <string name="use_tor_title">Utiliser Tor</string>
     <string name="use_tor_summary">(Expérimental) Rediriger le trafic de téléchargement via Tor pour plus de confidentialité (streaming non supporté pour le moment).</string>
@@ -57,7 +54,7 @@
 
     <string name="err_dir_create">Impossible de créer le répertoire de téléchargement « %1$s »</string>
     <string name="info_dir_created">Répertoire de téléchargement « %1$s » créé</string>
-    <string name="general_error">Erreur</string>
+    <string name="error">Erreur</string>
     <string name="parsing_error">Impossible d\'analyser le site web</string>
     <string name="content_not_available">Contenu non disponible</string>
     <string name="blocked_by_gema">Bloqué par GEMA</string>
@@ -94,7 +91,6 @@
     <string name="could_not_setup_download_menu">Impossible de configurer le menu de téléchargement</string>
     <string name="could_not_get_stream">Impossible d\'obtenir un flux</string>
     <string name="downloads">Téléchargements</string>
-    <string name="downloads_title">Téléchargements</string>
     <string name="error_report_title">Rapport d\'erreur</string>
 
     <string name="start">Lire</string>
@@ -108,7 +104,6 @@
 
     <string name="msg_name">Nom du fichier</string>
     <string name="msg_threads">Threads</string>
-    <string name="msg_error">Erreur</string>
     <string name="msg_server_unsupported">Serveur non supporté</string>
     <string name="msg_exists">Fichier déjà existant</string>
     <string name="msg_url_malform">Lien malformé ou internet indisponible</string>
@@ -149,7 +144,7 @@
 \nutiliser le mode fenêtré</string>
 
     <string name="controls_background_title">Arrière-plan</string>
-    <string name="controls_popup_title">Fenêtre</string>
+    <string name="popup">Fenêtre</string>
 
     <string name="default_popup_resolution_title">Résolution de la fenêtre par défaut</string>
     <string name="show_higher_resolutions_title">Afficher résolutions plus élevées</string>
@@ -158,7 +153,6 @@
     <string name="popup_remember_size_pos_title">Mémoriser la taille et la position de la fenêtre</string>
     <string name="popup_remember_size_pos_summary">Mémoriser la dernière taille et position de la fenêtre</string>
 
-    <string name="settings_category_popup_title">Fenêtre</string>
     <string name="filter">Filtre</string>
     <string name="refresh">Actualiser</string>
     <string name="clear">Effacer</string>
@@ -182,13 +176,10 @@
 
     <string name="fragment_whats_new">Nouveautés</string>
 
-    <string name="settings_category_downloads_title">Téléchargement</string>
-    <string name="action_settings">Paramètres</string>
-    <string name="action_about">À propos</string>
+    <string name="about">À propos</string>
     <string name="title_licenses">Licences tierces</string>
     <string name="error_unable_to_load_license">Impossible de charger la licence</string>
     <string name="action_open_website">Ouvrir le site</string>
-    <string name="tab_about">À propos</string>
     <string name="tab_contributors">Contributeurs</string>
     <string name="tab_licenses">Licences</string>
     <string name="app_description">Lecteur de flux libre et léger pour Android.</string>
@@ -212,11 +203,10 @@
     <string name="enable_search_history_title">Historique de recherche</string>
     <string name="enable_search_history_summary">Conserver les recherches sur l\'appareil</string>
     <string name="enable_watch_history_title">Historique et cache</string>
-    <string name="title_activity_history">Historique</string>
+    <string name="history">Historique</string>
     <string name="title_history_search">Recherché</string>
     <string name="title_history_view">Regardé</string>
     <string name="history_disabled">L\'historique est désactivé</string>
-    <string name="action_history">Historique</string>
     <string name="history_empty">L\'historique est vide</string>
     <string name="history_cleared">Historique supprimé</string>
 

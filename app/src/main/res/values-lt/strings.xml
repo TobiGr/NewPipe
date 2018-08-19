@@ -20,7 +20,7 @@
     <string name="use_external_audio_player_title">Naudoti išorinį audio grotuvą</string>
     <string name="popup_mode_share_menu_title">NewPipe iššokančiojo lango rėžimas</string>
     <string name="controls_background_title">Fonas</string>
-    <string name="controls_popup_title">Išokantis langelis</string>
+    <string name="popup">Išokantis langelis</string>
 
     <string name="download_path_title">Vaizdo įrašų parsiuntimo kelias</string>
     <string name="download_path_summary">Vieta parsisiųstų vaizdo įrašų laikymui</string>
@@ -53,23 +53,19 @@
     <string name="player_gesture_controls_summary">Naudokite gestus valdyti grotuvo ryškumą ir garsumą</string>
     <string name="show_search_suggestions_title">Paieškos nuspėjimai</string>
     <string name="show_search_suggestions_summary">Rodyti nuspėjimus, kai ieškoma</string>
-    <string name="download_dialog_title">Atsisiųsti</string>
     <string name="next_video_title">Kitas vaizdo įrašas</string>
     <string name="show_next_and_similar_title">Rodyti kitus panašius vaizdo įrašus</string>
     <string name="url_not_supported_toast">URL nepalaikoma</string>
     <string name="search_language_title">Numatytoji tūrinio kalba</string>
     <string name="settings_category_video_audio_title">Vaizdas ir garsas</string>
-    <string name="settings_category_popup_title">Iššokantis langas</string>
     <string name="settings_category_appearance_title">Išvaizda</string>
     <string name="settings_category_other_title">Kita</string>
     <string name="background_player_playing_toast">Groja fone</string>
     <string name="popup_playing_toast">Grojama iššokančiojo lango rėžime</string>
-    <string name="play_btn_text">Groti</string>
     <string name="content">Turinys</string>
     <string name="show_age_restricted_content_title">Rodyti amžiaus cenzo apribotą turinį</string>
     <string name="duration_live">Gyvai</string>
     <string name="downloads">Atsisiuntimai</string>
-    <string name="downloads_title">Atsisiuntimai</string>
     <string name="error_report_title">Klaidų ataskaita</string>
     <string name="all">Visi</string>
     <string name="channel">Kanalas</string>
@@ -81,7 +77,7 @@
     <string name="clear">Išvalyti</string>
     <string name="popup_resizing_indicator_title">Dydžio keitimas</string>
     <string name="best_resolution">Geriausia raiška</string>
-    <string name="general_error">Klaida</string>
+    <string name="error">Klaida</string>
     <string name="network_error">Tinklo klaida</string>
     <string name="could_not_load_thumbnails">Negalima įkelti visų miniatiūrų</string>
     <string name="youtube_signature_decryption_error">Negalima iššifruoti vaizdo įrašo skaitmeninio parašo</string>
@@ -105,8 +101,7 @@
     <string name="error_details_headline">Detalės:</string>
 
 
-    <string name="list_thumbnail_view_description">Vaizdo įrašo peržiūros miniatiūra</string>
-    <string name="detail_thumbnail_view_description">Vaizdo įrašo peržiūros miniatiūra</string>
+    <string name="thumbnail_description">Vaizdo įrašo peržiūros miniatiūra</string>
     <string name="detail_uploader_thumbnail_view_description">Įkėlėjo naudotojo paveikslėlio miniatiūra</string>
     <string name="detail_likes_img_view_description">Pamėgimai</string>
     <string name="detail_dislikes_img_view_description">Nemėgimai</string>
@@ -145,7 +140,6 @@
 
     <string name="msg_name">Bylos pavadinimas</string>
     <string name="msg_threads">Gijos</string>
-    <string name="msg_error">Klaida</string>
     <string name="msg_server_unsupported">Tarnybinė stotis nepalaikoma</string>
     <string name="msg_exists">Byla jau egzistuoja</string>
     <string name="msg_url_malform">Neteisingas adresas arba negalimas internetas</string>
@@ -216,7 +210,6 @@
 
     <string name="no_videos">Nėra vaizdo įrašų</string>
     <string name="view">Groti</string>
-    <string name="settings_category_downloads_title">Parsisiųsti</string>
     <string name="settings_file_charset_title">Leidžiami simboliai bylų varduose</string>
     <string name="settings_file_replacement_character_summary">Neleistini simboliai yra pakeičiami šia reikšme</string>
     <string name="settings_file_replacement_character_title">Pakaitinis simbolis</string>
@@ -225,13 +218,11 @@
     <string name="charset_most_special_characters">Ypatingieji simboliai</string>
 
     <string name="title_activity_about">Apie NewPipe</string>
-    <string name="action_settings">Nustatymai</string>
-    <string name="action_about">Apie</string>
+    <string name="about">Apie</string>
     <string name="title_licenses">Trečiųjų šalių leidimai</string>
     <string name="copyright" formatted="true">© %1$s %2$s pagal %3$s</string>
     <string name="error_unable_to_load_license">Negalima įkelti leidimo</string>
     <string name="action_open_website">Atidaryti interneto puslapį</string>
-    <string name="tab_about">Apie</string>
     <string name="tab_contributors">Pagalbininkai</string>
     <string name="tab_licenses">Leidimai</string>
     <string name="app_description">Nemokama, atviro kodo Youtube peržiūros programėlė Android sistemai.</string>
@@ -247,11 +238,10 @@
     <string name="read_full_license">Skaityti leidimą</string>
 
 
-    <string name="title_activity_history">Istorija</string>
+    <string name="history">Istorija</string>
     <string name="title_history_search">Ieškota</string>
     <string name="title_history_view">Peržiūrėta</string>
     <string name="history_disabled">Istorija išjungta</string>
-    <string name="action_history">Istorija</string>
     <string name="history_empty">Istorija tuščia</string>
     <string name="history_cleared">Istorija išvalyta</string>
     <string name="item_deleted">Elementas ištrintas</string>

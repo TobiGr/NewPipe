@@ -24,7 +24,6 @@
     <string name="show_play_with_kodi_summary">Mostrar una opción para reproducir vídeo con Kodi Media Center</string>
     <string name="play_audio">Audio</string>
     <string name="default_audio_format_title">Formato de audio por defecto</string>
-    <string name="download_dialog_title">Descargar</string>
     <string name="next_video_title">Siguiente vídeo</string>
     <string name="url_not_supported_toast">URL no soportada</string>
     <string name="use_external_video_player_title">Usar reproductor de vídeo externo</string>
@@ -50,16 +49,14 @@
 
     <string name="download_path_audio_title">Ruta de descarga de audio</string>
     <string name="settings_category_video_audio_title">Vídeo y Audio</string>
-    <string name="play_btn_text">Reproducir</string>
-    <string name="general_error">Error</string>
+    <string name="error">Error</string>
     <string name="network_error">Error de conexión</string>
     <string name="could_not_load_thumbnails">No se pudo cargar las miniaturas</string>
     <string name="youtube_signature_decryption_error">No se pudo descifrar la URL del vídeo</string>
     <string name="parsing_error">No se pudo analizar el sitio web</string>
     <string name="show_next_and_similar_title">Mostrar vídeos \'siguientes\' y \'similares\'</string>
     <string name="search_language_title">Idioma del contenido por defecto</string>
-    <string name="list_thumbnail_view_description">Vista previa del vídeo</string>
-    <string name="detail_thumbnail_view_description">Vista previa del vídeo</string>
+    <string name="thumbnail_description">Vista previa del vídeo</string>
     <string name="detail_likes_img_view_description">Me gusta</string>
     <string name="detail_dislikes_img_view_description">No me gusta</string>
     <string name="detail_uploader_thumbnail_view_description">Miniatura del avatar del usuario</string>
@@ -75,7 +72,6 @@
     <string name="autoplay_by_calling_app_summary">Reproducir un vídeo cuando NewPipe es llamado desde otra app</string>
     <string name="duration_live">en vivo</string>
     <string name="downloads">Descargas</string>
-    <string name="downloads_title">Descargas</string>
     <string name="error_report_title">Reportar error</string>
 
     <string name="light_parsing_error">No se pudo analizar el sitio web completamente</string>
@@ -111,7 +107,6 @@
 
     <string name="msg_name">Nombre del archivo</string>
     <string name="msg_threads">Hilo</string>
-    <string name="msg_error">Error</string>
     <string name="msg_server_unsupported">Servidor no soportado</string>
     <string name="msg_exists">El archivo ya existe</string>
     <string name="msg_url_malform">URL mal formada o Internet no disponible</string>
@@ -156,7 +151,7 @@ abrir en modo popup</string>
     <string name="show_higher_resolutions_summary">Solo algunos dispositivos soportan reproducción de vídeos en 2K/4K</string>
     <string name="default_popup_resolution_title">Resolución por defecto del popup</string>
     <string name="controls_background_title">Segundo plano</string>
-    <string name="controls_popup_title">Popup</string>
+    <string name="popup">Popup</string>
 
     <string name="filter">Filtro</string>
     <string name="refresh">Actualizar</string>
@@ -165,7 +160,6 @@ abrir en modo popup</string>
     <string name="popup_remember_size_pos_title">Recordar tamaño y posición del popup</string>
     <string name="popup_remember_size_pos_summary">Recordar el último tamaño y posición del popup</string>
 
-    <string name="settings_category_popup_title">Popup</string>
     <string name="popup_resizing_indicator_title">Redimensionando</string>
 
     <string name="use_external_video_player_summary">Algunas resoluciones podrían NO tener audio cuando esta opción está activada</string>
@@ -177,13 +171,11 @@ abrir en modo popup</string>
 <string name="best_resolution">Mejor resolución</string>
 
     <string name="title_activity_about">Acerca de NewPipe</string>
-    <string name="action_settings">Ajustes</string>
-    <string name="action_about">Acerca de</string>
+    <string name="about">Acerca de</string>
     <string name="title_licenses">Licencias de terceros</string>
     <string name="copyright" formatted="true">© %1$s por %2$s, bajo %3$s</string>
     <string name="error_unable_to_load_license">No se pudo cargar la licencia</string>
     <string name="action_open_website">Abrir sitio web</string>
-    <string name="tab_about">Acerca de</string>
     <string name="tab_contributors">Colaboradores</string>
     <string name="tab_licenses">Licencias</string>
     <string name="app_description">Streaming gratuito y ligero en Android.</string>
@@ -206,7 +198,6 @@ abrir en modo popup</string>
     <string name="resume_on_audio_focus_gain_title">Reanudar al enfocar</string>
     <string name="resume_on_audio_focus_gain_summary">Continuar reproduciendo después de las interrupciones (ej. llamadas telefónicas)</string>
 
-    <string name="settings_category_downloads_title">Descargar</string>
     <string name="settings_file_charset_title">Caracteres permitidos en los nombres de archivo</string>
     <string name="settings_file_replacement_character_summary">Los caracteres no válidos se reemplazan por este valor</string>
     <string name="settings_file_replacement_character_title">Carácter de reemplazo</string>
@@ -218,11 +209,10 @@ abrir en modo popup</string>
     <string name="enable_search_history_summary">Almacenar búsquedas localmente</string>
     <string name="enable_watch_history_title">Historial y caché</string>
     <string name="enable_watch_history_summary">Almacenar historial de vídeos vistos</string>
-    <string name="title_activity_history">Historial</string>
+    <string name="history">Historial</string>
     <string name="title_history_search">Buscado</string>
     <string name="title_history_view">Visualizado</string>
     <string name="history_disabled">Historial desactivado</string>
-    <string name="action_history">Historial</string>
     <string name="history_empty">El historial está vacío</string>
     <string name="history_cleared">Historial borrado</string>
 

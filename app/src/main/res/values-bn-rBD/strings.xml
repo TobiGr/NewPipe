@@ -22,7 +22,7 @@
     <string name="popup_mode_share_menu_title">NewPipe পপআপ মোড</string>
 
     <string name="controls_background_title">ব্যাকগ্রাউন্ড</string>
-    <string name="controls_popup_title">পপআপ</string>
+    <string name="popup">পপআপ</string>
 
     <string name="download_path_title">ভিডিও ডাউনলোড করার পাথ</string>
     <string name="download_path_summary">ডাউনলোড করা ভিডিওগুলো রাখার ফোল্ডার</string>
@@ -53,26 +53,22 @@
     <string name="popup_remember_size_pos_title">পপআপ আকার এবং অবস্থান মনে রাখো</string>
     <string name="popup_remember_size_pos_summary">শেষ আকার এবং পপআপ সেট অবস্থান মনে রাখো</string>
 
-    <string name="download_dialog_title">ডাউনলোড</string>
     <string name="next_video_title">পরবর্তী ভিডিও</string>
     <string name="show_next_and_similar_title">পরবর্তী এবং অনুরূপ ভিডিওগুলি দেখাও</string>
     <string name="url_not_supported_toast">URL সমর্থিত নয়</string>
     <string name="search_language_title">কন্টেন্ট এর জন্য পছন্দসই ভাষা</string>
     <string name="settings_category_video_audio_title">ভিডিও এবং অডিও</string>
-    <string name="settings_category_popup_title">পপআপ</string>
     <string name="settings_category_appearance_title">অ্যাপিয়ারেন্স</string>
     <string name="settings_category_other_title">অন্যান্য</string>
     <!--     <string name="background_player_time_text" translatable="false">%1$s - NewPipe</string> -->
     <string name="background_player_playing_toast">ব্যাকগ্রাউন্ডে চলছে</string>
     <string name="popup_playing_toast">পপআপ মোডে চলছে</string>
     <!--     <string name="c3s_url" translatable="false">https://www.c3s.cc/</string> -->
-    <string name="play_btn_text">চালাও</string>
     <string name="content">কন্টেন্ট</string>
     <string name="show_age_restricted_content_title">বয়স সীমাবদ্ধ কন্টেন্ট দেখাও</string>
     <string name="video_is_age_restricted">ভিডিওটিকে বয়স সীমিত করা হয়েছে। প্রথমে সেটিংসে বয়স সীমাবদ্ধ ভিডিওগুলি সক্ষম করো।</string>
     <string name="duration_live">লাইভ</string>
     <string name="downloads">ডাউনলোডগুলি</string>
-    <string name="downloads_title">ডাউনলোডগুলি</string>
     <string name="error_report_title">ত্রুটি প্রতিবেদন</string>
     <string name="all">সবগুলি</string>
     <string name="channel">চ্যানেল</string>
@@ -85,7 +81,7 @@
     <string name="popup_resizing_indicator_title">আকার পরিবর্তন</string>
 
     <!-- error strings -->
-    <string name="general_error">ত্রুটি</string>
+    <string name="error">ত্রুটি</string>
     <string name="network_error">নেটওয়ার্ক ত্রুটি</string>
     <string name="could_not_load_thumbnails">সব থাম্বনেইল লোড করা যায়নি</string>
     <string name="youtube_signature_decryption_error">ভিডিও URL স্বাক্ষর ডিক্রিপ্ট করা যায়নি।</string>
@@ -111,8 +107,7 @@
 
 
     <!-- Content descriptions (for better accessibility) -->
-    <string name="list_thumbnail_view_description">ভিডিও প্রাকদর্শন থাম্বনেইল</string>
-    <string name="detail_thumbnail_view_description">ভিডিও প্রাকদর্শন থাম্বনেইল</string>
+    <string name="thumbnail_description">ভিডিও প্রাকদর্শন থাম্বনেইল</string>
     <string name="detail_uploader_thumbnail_view_description">আপলোডারের ইউজারপিক থাম্বনেইল</string>
     <string name="detail_likes_img_view_description">পছন্দ হয়েছে</string>
     <string name="detail_dislikes_img_view_description">অপছন্দ হয়েছে</string>
@@ -151,7 +146,6 @@
     <!-- Msg -->
     <string name="msg_name">ফাইলের নাম</string>
     <string name="msg_threads">থ্রেড</string>
-    <string name="msg_error">ত্রুটি</string>
     <string name="msg_server_unsupported">সার্ভার অসমর্থিত</string>
     <string name="msg_exists">ফাইল ইতিমধ্যেই বিদ্যমান</string>
     <string name="msg_url_malform">বিকৃত URL অথবা ইন্টারনেট নেই</string>
@@ -195,7 +189,6 @@
     <string name="no_views">কোন ভিউ নেই</string>
     <string name="rename">নাম পরিবর্তন করুন</string>
 
-    <string name="action_settings">সেটিংস</string>
     <string name="action_open_website">ওয়েব সাইট খুলুন</string>
     <string name="website_title">ওয়েব সাইট</string>
     <string name="no_player_found_toast">"কোন স্ট্রিম প্লেয়ার পাওয়া যায়নি (প্লে করতে VLC ইন্সটল করতে পারেন)  "</string>

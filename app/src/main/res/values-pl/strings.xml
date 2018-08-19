@@ -39,7 +39,6 @@
     <string name="dark_theme_title">Ciemny</string>
     <string name="light_theme_title">Jasny</string>
 
-    <string name="download_dialog_title">Pobrane</string>
     <string name="next_video_title">Następny film</string>
     <string name="show_next_and_similar_title">Pokaż \'następne\' i \'podobne\' filmy</string>
     <string name="url_not_supported_toast">URL nieobsługiwany</string>
@@ -48,16 +47,14 @@
     <string name="settings_category_appearance_title">Wygląd</string>
     <string name="settings_category_other_title">Inne</string>
     <string name="background_player_playing_toast">Odtwarzanie w tle</string>
-    <string name="play_btn_text">Odtwórz</string>
     <string name="content">Zawartość</string>
     <string name="show_age_restricted_content_title">Pokaż zawartość z ograniczeniem wieku</string>
     <string name="video_is_age_restricted">Film z ograniczeniami wiekowymi. Najpierw zezwól na filmy z ograniczeniem wiekowym w ustawieniach.</string>
     <string name="duration_live">Na żywo</string>
     <string name="downloads">Pobrane</string>
-    <string name="downloads_title">Pobrane</string>
     <string name="error_report_title">Raport błędu</string>
 
-    <string name="general_error">Błąd</string>
+    <string name="error">Błąd</string>
     <string name="network_error">Błąd sieci</string>
     <string name="could_not_load_thumbnails">Nie można załadować wszystkich miniatur</string>
     <string name="youtube_signature_decryption_error">Nie można odszyfrować sygnatury URL filmu</string>
@@ -79,8 +76,7 @@
     <string name="error_details_headline">Szczegóły:</string>
 
 
-    <string name="list_thumbnail_view_description">Miniatura filmu</string>
-    <string name="detail_thumbnail_view_description">Miniatura filmu</string>
+    <string name="thumbnail_description">Miniatura filmu</string>
     <string name="detail_uploader_thumbnail_view_description">Miniatura zdjęcia wysyłającego</string>
     <string name="detail_likes_img_view_description">Polubienia</string>
     <string name="detail_dislikes_img_view_description">Łapki w dół</string>
@@ -106,7 +102,6 @@
 
     <string name="msg_name">Nazwa pliku</string>
     <string name="msg_threads">Wątki</string>
-    <string name="msg_error">Błąd</string>
     <string name="msg_server_unsupported">Serwer niewspierany</string>
     <string name="msg_exists">Plik już istnieje</string>
     <string name="msg_url_malform">Zniekształcony URL lub brak internetu</string>
@@ -138,7 +133,6 @@
     <string name="show_search_suggestions_title">Podpowiedzi wyszukiwania</string>
     <string name="show_search_suggestions_summary">Pokazuj sugestie podczas wyszukiwania</string>
 
-    <string name="settings_category_popup_title">Tryb okienkowy</string>
     <string name="popup_playing_toast">Odtwarzanie w trybie okienkowym</string>
     <string name="all">Wszystkie</string>
     <string name="channel">Kanał</string>
@@ -163,20 +157,17 @@
 
     <string name="open_in_popup_mode">Odtwórz w trybie okienkowym</string>
     <string name="popup_mode_share_menu_title">Tryb okienkowy NewPipe</string>
-    <string name="controls_popup_title">Tryb okienkowy</string>
+    <string name="popup">Tryb okienkowy</string>
 
 <string name="best_resolution">Najlepsza rozdzielczość</string>
 
-    <string name="settings_category_downloads_title">Pobierz</string>
     <string name="settings_file_replacement_character_summary">Niepoprawne znaki są zamienione na tę wartość</string>
     <string name="charset_letters_and_digits">Litery i cyfry</string>
     <string name="title_activity_about">O NewPipe</string>
-    <string name="action_settings">Ustawienia</string>
-    <string name="action_about">O programie</string>
+    <string name="about">O programie</string>
     <string name="title_licenses">Licencje stron trzecich</string>
     <string name="error_unable_to_load_license">Nie można załadować licencji</string>
     <string name="action_open_website">Otwórz stronę</string>
-    <string name="tab_about">O programie</string>
     <string name="tab_licenses">Licencje</string>
     <string name="app_description">Wolne, lekkie przesyłanie strumieniowania na Androidzie.</string>
     <string name="view_on_github">Zobacz na GitHubie</string>
@@ -211,11 +202,10 @@
     <string name="notification_channel_description">Powiadomienia dla odtwarzacza NewPipe w tle i w okienku</string>
 
     <string name="tab_contributors">Współautorzy</string>
-    <string name="title_activity_history">Historia</string>
+    <string name="history">Historia</string>
     <string name="title_history_search">Wyszukiwane</string>
     <string name="title_history_view">Obejrzane</string>
     <string name="history_disabled">Historia jest wyłączona</string>
-    <string name="action_history">Historia</string>
     <string name="history_empty">Historia jest pusta</string>
     <string name="history_cleared">Historia została wyczyszczona</string>
 

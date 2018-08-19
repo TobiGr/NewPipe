@@ -24,7 +24,6 @@
     <string name="show_play_with_kodi_summary">Показать опцию воспроизведения видео через медиацентр Kodi</string>
     <string name="play_audio">Аудио</string>
     <string name="default_audio_format_title">Формат аудио по умолчанию</string>
-    <string name="download_dialog_title">Скачать</string>
     <string name="next_video_title">Следующее видео</string>
     <string name="url_not_supported_toast">URL не поддерживается</string>
     <string name="show_next_and_similar_title">\"Следующее\" и \"Предложенные\"</string>
@@ -33,8 +32,7 @@
     <string name="settings_category_appearance_title">Внешний вид</string>
     <string name="settings_category_other_title">Другое</string>
 
-    <string name="list_thumbnail_view_description">Миниатюра видео-превью</string>
-    <string name="detail_thumbnail_view_description">Миниатюра видео-превью</string>
+    <string name="thumbnail_description">Миниатюра видео-превью</string>
     <string name="detail_uploader_thumbnail_view_description">Миниатюра аватара пользователя</string>
     <string name="detail_dislikes_img_view_description">Не понравилось</string>
     <string name="detail_likes_img_view_description">Понравилось</string>
@@ -45,7 +43,6 @@
     <string name="dark_theme_title">Тёмная</string>
     <string name="light_theme_title">Светлая</string>
 
-    <string name="play_btn_text">Воспроизвести</string>
     <string name="network_error">Ошибка сети</string>
 
     <string name="use_tor_title">Использовать Tor</string>
@@ -64,7 +61,6 @@
     <string name="checksum">Контрольная сумма</string>
 
     <string name="msg_name">Имя файла</string>
-    <string name="msg_error">Ошибка</string>
     <string name="msg_server_unsupported">Сервер не поддерживается</string>
     <string name="msg_running">NewPipe скачивает</string>
     <string name="msg_url_malform">Неверный URL или нет доступа к интернету</string>
@@ -74,7 +70,7 @@
 
 
     <string name="show_age_restricted_content_title">Контент 18+</string>
-    <string name="general_error">Ошибка</string>
+    <string name="error">Ошибка</string>
     <string name="your_comment">Ваш комментарий (English):</string>
     <string name="err_dir_create">Не удалось создать папку для загрузки \"%1$s\"</string>
     <string name="autoplay_by_calling_app_title">Автовоспроизведение</string>
@@ -83,7 +79,6 @@
     <string name="video_is_age_restricted">Видео с возрастными ограничениями. Разрешить подобный контент можно в настройках.</string>
     <string name="duration_live">вживую</string>
     <string name="downloads">Загрузки</string>
-    <string name="downloads_title">Загрузки</string>
     <string name="error_report_title">Отчёт об ошибке</string>
 
     <string name="parsing_error">Не удалось разобрать веб-сайт</string>
@@ -121,14 +116,13 @@
 
 
     <string name="controls_background_title">В фоне</string>
-    <string name="controls_popup_title">В окне</string>
+    <string name="popup">В окне</string>
 
     <string name="show_higher_resolutions_summary">Только некоторые устройства могут воспроизводить видео в 2K/4K</string>
     <string name="default_video_format_title">Формат видео по умолчанию</string>
     <string name="black_theme_title">Чёрная</string>
     <string name="popup_remember_size_pos_title">Восстановить окно</string>
     <string name="player_gesture_controls_summary">Изменять яркость и громкость жестами</string>
-    <string name="settings_category_popup_title">Всплывающее окно</string>
     <string name="popup_playing_toast">Воспроизведение во всплывающем окне</string>
     <string name="channel">Канал</string>
     <string name="yes">Да</string>
@@ -170,14 +164,12 @@
     <string name="show_higher_resolutions_title">Высокие разрешения</string>
     <string name="popup_mode_share_menu_title">NewPipe в окне</string>
     <string name="title_activity_about">О NewPipe</string>
-    <string name="action_settings">Настройки</string>
     <string name="app_license_title">Лицензия NewPipe</string>
     <string name="tab_licenses">Лицензии</string>
     <string name="title_licenses">Сторонние лицензии</string>
     <string name="action_open_website">Открыть веб-сайт</string>
-    <string name="action_about">О приложении</string>
+    <string name="about">О приложении</string>
     <string name="error_unable_to_load_license">Не удалось загрузить лицензию</string>
-    <string name="tab_about">О приложении</string>
     <string name="tab_contributors">Участники</string>
     <string name="read_full_license">Прочитать лицензию</string>
     <string name="app_description">Свободное легковесное потоковое воспроизведение на Android.</string>
@@ -205,7 +197,6 @@
     <string name="notification_channel_name">Уведомление NewPipe</string>
     <string name="notification_channel_description">Уведомления для NewPipe в фоне и во всплывающем окне</string>
 
-    <string name="settings_category_downloads_title">Загрузки</string>
     <string name="settings_file_charset_title">Допустимые символы имён файлов</string>
     <string name="settings_file_replacement_character_summary">Недопустимые символы заменяются на этот</string>
     <string name="settings_file_replacement_character_title">Символ для замены</string>
@@ -213,11 +204,10 @@
     <string name="charset_letters_and_digits">Буквы и цифры</string>
     <string name="charset_most_special_characters">Большинство спецсимволов</string>
 
-    <string name="title_activity_history">История</string>
+    <string name="history">История</string>
     <string name="title_history_search">История поиска</string>
     <string name="title_history_view">Просмотрено</string>
     <string name="history_disabled">История отключена</string>
-    <string name="action_history">История</string>
     <string name="history_empty">История пуста</string>
     <string name="history_cleared">История очищена</string>
 

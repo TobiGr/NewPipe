@@ -30,7 +30,6 @@
     <string name="dark_theme_title">灰暗</string>
     <string name="light_theme_title">明亮</string>
 
-    <string name="download_dialog_title">下载</string>
     <string name="next_video_title">即将播放</string>
     <string name="show_next_and_similar_title">显示下一部和相似的视频</string>
     <string name="url_not_supported_toast">不支援此网址</string>
@@ -39,11 +38,9 @@
     <string name="settings_category_appearance_title">外观</string>
     <string name="settings_category_other_title">其他</string>
     <string name="background_player_playing_toast">后台播放</string>
-    <string name="play_btn_text">播放</string>
     <string name="network_error">网络错误</string>
 
-    <string name="list_thumbnail_view_description">视频预览缩略图</string>
-    <string name="detail_thumbnail_view_description">视频预览缩略图</string>
+    <string name="thumbnail_description">视频预览缩略图</string>
     <string name="detail_uploader_thumbnail_view_description">上传者的头像缩图</string>
     <string name="detail_likes_img_view_description">喜欢</string>
     <string name="detail_dislikes_img_view_description">不喜欢</string>
@@ -58,7 +55,7 @@
     <string name="content">内容</string>
     <string name="show_age_restricted_content_title">显示年龄限制内容</string>
     <string name="video_is_age_restricted">视频有年龄限制。请先在设置中启用\"显示年龄限制内容\"。</string>
-    <string name="general_error">错误</string>
+    <string name="error">错误</string>
     <string name="could_not_load_thumbnails">无法加载所有缩略图</string>
     <string name="youtube_signature_decryption_error">无法解密视频网址签名</string>
     <string name="parsing_error">无法解析网站</string>
@@ -100,7 +97,6 @@
 
     <string name="msg_name">文件名</string>
     <string name="msg_threads">线程</string>
-    <string name="msg_error">错误</string>
     <string name="msg_server_unsupported">服务器不支持</string>
     <string name="msg_exists">文件已经存在</string>
     <string name="msg_url_malform">网址不正确或网络不可用</string>
@@ -112,7 +108,6 @@
 
     <string name="add">新任务</string>
     <string name="downloads">下载</string>
-    <string name="downloads_title">下载</string>
     <string name="error_report_title">错误报告</string>
 
     <string name="could_not_load_image">无法加载图像</string>
@@ -138,7 +133,7 @@
     <string name="fragment_whats_new">新鲜事</string>
 
     <string name="controls_background_title">后台播放</string>
-    <string name="controls_popup_title">悬浮窗</string>
+    <string name="popup">悬浮窗</string>
 
     <string name="default_popup_resolution_title">窗口模式默认分辨率</string>
     <string name="show_higher_resolutions_title">显示更高的分辨率</string>
@@ -159,7 +154,6 @@
     <string name="resume_on_audio_focus_gain_summary">在打扰（例如来电）过后恢复视频播放</string>
 
 
-    <string name="settings_category_popup_title">窗口模式</string>
     <string name="popup_playing_toast">以窗口模式播放</string>
     <string name="all">所有</string>
     <string name="channel">频道</string>
@@ -184,7 +178,6 @@
     <string name="msg_popup_permission">该项权限用于
 \n以窗口模式打开</string>
 
-    <string name="settings_category_downloads_title">下载</string>
     <string name="settings_file_charset_title">在文件名中允许的字符</string>
     <string name="settings_file_replacement_character_summary">无效的字符将以该值取代</string>
     <string name="settings_file_replacement_character_title">替换字符</string>
@@ -193,13 +186,11 @@
     <string name="charset_most_special_characters">特殊字符</string>
 
     <string name="title_activity_about">关于 NewPipe</string>
-    <string name="action_settings">设置</string>
-    <string name="action_about">关于</string>
+    <string name="about">关于</string>
     <string name="title_licenses">第三方许可</string>
     <string name="copyright" formatted="true">© %1$s by %2$s under %3$s</string>
     <string name="error_unable_to_load_license">无法加载许可</string>
     <string name="action_open_website">打开网站</string>
-    <string name="tab_about">关于</string>
     <string name="tab_contributors">贡献者</string>
     <string name="tab_licenses">许可</string>
     <string name="app_description">开源的轻量级流媒体Android客户端。</string>
@@ -209,11 +200,10 @@
     <string name="read_full_license">阅读许可</string>
     <string name="contribution_title">贡献</string>
 
-    <string name="title_activity_history">历史记录</string>
+    <string name="history">历史记录</string>
     <string name="title_history_search">搜索记录</string>
     <string name="title_history_view">观看记录</string>
     <string name="history_disabled">历史记录已禁用</string>
-    <string name="action_history">历史记录</string>
     <string name="history_empty">没有历史记录</string>
     <string name="history_cleared">历史记录已清除</string>
 

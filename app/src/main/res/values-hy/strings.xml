@@ -3,7 +3,6 @@
     <string name="main_bg_subtitle">Սեղմեք որոնման կոճակը որ սկսել</string>
     <string name="search">Որոնել</string>
     <string name="downloads">Բեռնված</string>
-    <string name="downloads_title">Բեռնված</string>
     <string name="settings">Պարամետրեր</string>
     <string name="share">Կիսվել</string>
     <string name="black_theme_title">Սև</string>
@@ -13,7 +12,6 @@
     <string name="dark_theme_title">Մուգ</string>
     <string name="msg_wait">Սպասեք…</string>
     <string name="msg_exists">Ֆայլ արդեն կա</string>
-    <string name="msg_error">Սխալ</string>
     <string name="msg_name">ֆայլի անունը</string>
     <string name="finish">Այո</string>
     <string name="delete">Ջնջել</string>
@@ -29,4 +27,5 @@
     <string name="cancel">Վերացնել</string>
     <string name="open_in_browser">Բացել բրաուզերում</string>
     <string name="choose_browser">Ընտրեք բրաուզերը</string>
+    <string name="error">Սխալ</string>
 </resources>

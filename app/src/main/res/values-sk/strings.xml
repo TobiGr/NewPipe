@@ -36,7 +36,6 @@
     <string name="dark_theme_title">Tmavá</string>
     <string name="light_theme_title">Svetlá</string>
 
-    <string name="download_dialog_title">Prevziať</string>
     <string name="next_video_title">Ďalšie video</string>
     <string name="show_next_and_similar_title">Ukázať \'ďalšie\' a \'podobné\' videá</string>
     <string name="url_not_supported_toast">URL nie je podporovaná</string>
@@ -45,8 +44,7 @@
     <string name="settings_category_appearance_title">Vzhľad</string>
     <string name="settings_category_other_title">Iné</string>
     <string name="background_player_playing_toast">Prehrávanie na pozadí</string>
-    <string name="play_btn_text">Prehrať</string>
-    <string name="general_error">Chyba</string>
+    <string name="error">Chyba</string>
     <string name="network_error">Chyba siete</string>
     <string name="could_not_load_thumbnails">Nemožno zobraziť všetky náhľady</string>
     <string name="youtube_signature_decryption_error">Nepodarilo sa dekódovať URL videa</string>
@@ -54,8 +52,7 @@
     <string name="content_not_available">Obsah nie je dostupný</string>
     <string name="blocked_by_gema">Obsah blokuje GEMA</string>
 
-    <string name="list_thumbnail_view_description">Náhľad videa</string>
-    <string name="detail_thumbnail_view_description">Náhľad videa</string>
+    <string name="thumbnail_description">Náhľad videa</string>
     <string name="detail_uploader_thumbnail_view_description">Náhľad avataru uploadera</string>
     <string name="detail_likes_img_view_description">Lajky</string>
     <string name="detail_dislikes_img_view_description">Dislajky</string>
@@ -105,7 +102,6 @@
 
     <string name="msg_name">Názov súboru</string>
     <string name="msg_threads">Vlákna</string>
-    <string name="msg_error">Chyba</string>
     <string name="msg_server_unsupported">Nepodporovaný server</string>
     <string name="msg_exists">Súbor už existuje</string>
     <string name="msg_url_malform">Neplatná URL alebo bez pripojenia na Internet</string>
@@ -116,7 +112,6 @@
     <string name="no_available_dir">Vyberte si dostupný adresár na preberanie</string>
 
     <string name="downloads">Prevzaté</string>
-    <string name="downloads_title">Prevzaté</string>
     <string name="error_report_title">Hlásenie o chybe</string>
 
     <string name="could_not_load_image">Nemožno načítať obrázok</string>
@@ -159,7 +154,7 @@
     <string name="show_higher_resolutions_title">Zobraziť vyššie rozlíšenie</string>
     <string name="show_higher_resolutions_summary">Len niektoré zariadenia podporujú videá 2K/4K</string>
     <string name="controls_background_title">Na pozadí</string>
-    <string name="controls_popup_title">V okne</string>
+    <string name="popup">V okne</string>
 
     <string name="filter">Filter</string>
     <string name="refresh">Obnoviť</string>
@@ -173,7 +168,6 @@
     <string name="show_search_suggestions_title">Hľadať návrhy</string>
     <string name="show_search_suggestions_summary">Zobrazovať návrhy pri vyhľadávaní</string>
 
-    <string name="settings_category_popup_title">Mini okno</string>
     <string name="popup_resizing_indicator_title">Zmena veľkosti</string>
     <string name="best_resolution">Najlepšie rozlíšenie</string>
 
@@ -199,7 +193,6 @@
     <string name="notification_channel_name">NewPipe notifikácie</string>
     <string name="notification_channel_description">Notifikácie pre NewPipe na pozadí a v mini okne</string>
 
-    <string name="settings_category_downloads_title">Preberanie</string>
     <string name="settings_file_charset_title">Povolené znaky v názvoch súborov</string>
     <string name="settings_file_replacement_character_summary">Neplatné znaky budú nahradené týmito znakmi</string>
     <string name="settings_file_replacement_character_title">Náhradný znak</string>
@@ -208,13 +201,11 @@
     <string name="charset_most_special_characters">Väčšina špeciálnych znakov</string>
 
     <string name="title_activity_about">O NewPipe</string>
-    <string name="action_settings">Nastavenia</string>
-    <string name="action_about">O</string>
+    <string name="about">O</string>
     <string name="title_licenses">Licencie tretích strán</string>
     <string name="copyright" formatted="true">© %1$s od %2$s pod %3$s</string>
     <string name="error_unable_to_load_license">Nemožno nahrať licenciu</string>
     <string name="action_open_website">Otvoriť webstránku</string>
-    <string name="tab_about">O</string>
     <string name="tab_contributors">Prispievatelia</string>
     <string name="tab_licenses">Licencie</string>
     <string name="app_description">Ľahké streamovanie v systéme Android.</string>
@@ -224,11 +215,10 @@
     <string name="read_full_license">Prečítať licencie</string>
     <string name="contribution_title">Zapojiť sa</string>
 
-    <string name="title_activity_history">História</string>
+    <string name="history">História</string>
     <string name="title_history_search">Vyhľadávané</string>
     <string name="title_history_view">Pozreté</string>
     <string name="history_disabled">História je zakázaná</string>
-    <string name="action_history">História</string>
     <string name="history_empty">História je prázdna</string>
     <string name="history_cleared">História bola vyčistená</string>
 

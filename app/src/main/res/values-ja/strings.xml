@@ -23,23 +23,19 @@
     <string name="show_play_with_kodi_summary">Kodi メディアセンター経由で動画を再生するための設定を表示します</string>
     <string name="play_audio">音楽</string>
     <string name="default_audio_format_title">デフォルトの音楽形式</string>
-    <string name="download_dialog_title">保存</string>
     <string name="next_video_title">次の動画</string>
     <string name="show_next_and_similar_title">\"次の動画\"と\"関連動画\"を表示します</string>
     <string name="url_not_supported_toast">URLは使用できません</string>
     <string name="search_language_title">優先言語</string>
     <string name="settings_category_video_audio_title">動画と音楽</string>
     <string name="view_count_text">%1$s ビュー</string>
-    <string name="list_thumbnail_view_description">動画 プレビュー サムネイル</string>
-    <string name="detail_thumbnail_view_description">動画 プレビュー サムネイル</string>
+    <string name="thumbnail_description">動画 プレビュー サムネイル</string>
     <string name="detail_uploader_thumbnail_view_description">アップローダー サムネイル</string>
     <string name="detail_dislikes_img_view_description">低評価</string>
     <string name="detail_likes_img_view_description">高評価</string>
     <string name="use_external_video_player_title">外部プレイヤーを使用する</string>
     <string name="use_external_audio_player_title">外部プレイヤーを使用する</string>
     <string name="background_player_playing_toast">バックグラウンドで再生中</string>
-
-    <string name="play_btn_text">再生</string>
 
     <string name="use_tor_title">Torを使用する</string>
     <string name="use_tor_summary">(実験的) 強制的に Tor を経由した経路で保存して､匿名性を高めます(動画の同時再生は未だ対応していません)｡</string>
@@ -57,7 +53,7 @@
 
     <string name="err_dir_create">保存場所 \'%1$s\' を作成できません</string>
     <string name="info_dir_created">保存場所 \'%1$s\' を作成しました</string>
-    <string name="general_error">エラー</string>
+    <string name="error">エラー</string>
     <string name="could_not_load_thumbnails">全てのサムネイルを読み込むことができません</string>
     <string name="youtube_signature_decryption_error">動画のURL署名を復号できませんでした</string>
     <string name="parsing_error">Webサイトを解析できませんでした</string>
@@ -109,7 +105,6 @@
 
     <string name="msg_name">ファイル名</string>
     <string name="msg_threads">同時接続数</string>
-    <string name="msg_error">エラー</string>
     <string name="msg_server_unsupported">サーバーが対応していません</string>
     <string name="msg_exists">ファイルが既に存在します</string>
     <string name="msg_url_malform">URL の形式が正しくないか､通信が利用できません</string>
@@ -120,7 +115,6 @@
     <string name="no_available_dir">利用可能な保存場所を選択して下さい</string>
 
     <string name="downloads">保存</string>
-    <string name="downloads_title">保存</string>
     <string name="error_report_title">不具合報告</string>
 
     <string name="could_not_load_image">画像を読み込みできません</string>
@@ -163,7 +157,7 @@
     <string name="show_higher_resolutions_title">高い解像度で表示</string>
     <string name="show_higher_resolutions_summary">一部のデバイスのみ 2K/4K ビデオの再生をサポートしています</string>
     <string name="controls_background_title">背景</string>
-    <string name="controls_popup_title">ポップアップ</string>
+    <string name="popup">ポップアップ</string>
 
     <string name="filter">フィルター</string>
     <string name="refresh">更新</string>
@@ -172,7 +166,6 @@
     <string name="popup_remember_size_pos_title">ポップアップのサイズと位置を記憶する</string>
     <string name="popup_remember_size_pos_summary">前回のポップアップしたサイズと位置を記憶する</string>
 
-    <string name="settings_category_popup_title">ポップアップ</string>
     <string name="popup_resizing_indicator_title">サイズを変更</string>
 
     <string name="use_external_video_player_summary">このオプションが有効になっているとき、一部の解像度では音声がありません。</string>
@@ -184,13 +177,11 @@
 <string name="best_resolution">最適な解像度</string>
 
     <string name="title_activity_about">NewPipe について</string>
-    <string name="action_settings">設定</string>
-    <string name="action_about">このアプリについて</string>
+    <string name="about">このアプリについて</string>
     <string name="title_licenses">サードパーティー ライセンス</string>
     <string name="copyright" formatted="true">© %1$s 作者 %2$s ライセンス %3$s</string>
     <string name="error_unable_to_load_license">ライセンスを読み込めません</string>
     <string name="action_open_website">Web サイトを開く</string>
-    <string name="tab_about">このアプリについて</string>
     <string name="tab_contributors">貢献者</string>
     <string name="tab_licenses">ライセンス</string>
     <string name="app_description">Android向けの無料で軽量なYouTubeフロントエンド。</string>
@@ -232,7 +223,6 @@
     <string name="search_no_results">何も見つかりませんでした</string>
     <string name="no_subscribers">チャンネル登録なし</string>
     <string name="no_videos">動画がありません</string>
-    <string name="settings_category_downloads_title">保存</string>
     <string name="settings_file_charset_title">ファイル名に使用可能な文字</string>
     <string name="settings_file_replacement_character_summary">無効な文字は次の値で置き換えられます</string>
     <string name="settings_file_replacement_character_title">置換文字</string>
@@ -244,11 +234,10 @@
     <string name="donation_encouragement">NewPipeはあなたに最高の経験をもたらすため、自由時間を費やしたボランティアによって開発されています。カップのコーヒー(Java)を楽しんでいる間に、開発者がNewPipeをより良いものにすることが出来るよう、今度はお返しをする時間です！</string>
     <string name="website_title">Webサイト</string>
     <string name="website_encouragement">NewPipeに関する詳しい情報や最新のニュースについては、我々のWebサイトをご覧ください。</string>
-    <string name="title_activity_history">履歴</string>
+    <string name="history">履歴</string>
     <string name="title_history_search">検索履歴</string>
     <string name="title_history_view">再生履歴</string>
     <string name="history_disabled">履歴は無効です</string>
-    <string name="action_history">履歴</string>
     <string name="history_empty">履歴に何もありません</string>
     <string name="history_cleared">履歴を消去しました</string>
     <string name="item_deleted">アイテムを削除しました</string>

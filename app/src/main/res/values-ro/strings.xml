@@ -37,7 +37,6 @@
     <string name="dark_theme_title">Întunecat</string>
     <string name="light_theme_title">Luminos</string>
 
-    <string name="download_dialog_title">Descărcați</string>
     <string name="next_video_title">Următorul videoclip</string>
     <string name="show_next_and_similar_title">Arată videoclipurile care urmează</string>
     <string name="url_not_supported_toast">URL nesuportat</string>
@@ -46,12 +45,11 @@
     <string name="settings_category_appearance_title">Aspect</string>
     <string name="settings_category_other_title">Altele</string>
     <string name="background_player_playing_toast">Redare în fundal</string>
-    <string name="play_btn_text">Redați</string>
     <string name="content">Conținut</string>
     <string name="show_age_restricted_content_title">Arată conținutul restricționat în funcție de vârstă</string>
     <string name="video_is_age_restricted">Videoclipul este restricționat în funcție de vârstă. Permiterea vizionării este posibilă din Setări.</string>
 
-    <string name="general_error">Eroare</string>
+    <string name="error">Eroare</string>
     <string name="network_error">Eroare de rețea</string>
     <string name="could_not_load_thumbnails">Nu s-au putut încărca toate thumbnail-urile</string>
     <string name="youtube_signature_decryption_error">Nu s-a putut decripta semnătura URL a videoclipului</string>
@@ -62,8 +60,7 @@
     <string name="live_streams_not_supported">Acesta este un LIVE STREAM, care încă nu este suportat.</string>
 
 
-    <string name="list_thumbnail_view_description">Thumbnail-ul videoclipului</string>
-    <string name="detail_thumbnail_view_description">Thumbnail de previzualizare al videoclipului</string>
+    <string name="thumbnail_description">Thumbnail-ul videoclipului</string>
     <string name="detail_uploader_thumbnail_view_description">Thumbnail-ul avatarului autorului</string>
     <string name="detail_likes_img_view_description">Au apreciat</string>
     <string name="detail_dislikes_img_view_description">Nu au apreciat</string>
@@ -76,7 +73,6 @@
     <string name="autoplay_by_calling_app_summary">Redă automat un videoclip atunci când NewPipe este deschis din altă aplicație</string>
     <string name="duration_live">În direct</string>
     <string name="downloads">Descărcări</string>
-    <string name="downloads_title">Descărcări</string>
     <string name="error_report_title">Raport de erori</string>
 
     <string name="light_parsing_error">Nu s-a putut analiza complet website-ul</string>
@@ -111,7 +107,6 @@
 
     <string name="msg_name">Numele fișierului</string>
     <string name="msg_threads">Thread-uri</string>
-    <string name="msg_error">Eroare</string>
     <string name="msg_server_unsupported">Server nesuportat</string>
     <string name="msg_exists">Fișierul există deja</string>
     <string name="msg_url_malform">URL malformat sau Internet indisponibil</string>
@@ -157,7 +152,7 @@ pentru a deschide în mod pop-up</string>
 
 <string name="use_external_video_player_summary">Anumite rezoluții NU vor avea sunet atunci când această opțiune este activată</string>
     <string name="controls_background_title">Fundal</string>
-    <string name="controls_popup_title">Pop-up</string>
+    <string name="popup">Pop-up</string>
 
     <string name="popup_remember_size_pos_title">Reține dimensiunea și poziția pop-up-ului</string>
     <string name="popup_remember_size_pos_summary">Reține ultima dimensiune și poziție a pop-up-ului</string>
@@ -166,7 +161,6 @@ pentru a deschide în mod pop-up</string>
     <string name="show_search_suggestions_title">Arată sugestii</string>
     <string name="show_search_suggestions_summary">Arată sugestii în timpul căutării</string>
 
-    <string name="settings_category_popup_title">Pop-up</string>
     <string name="filter">Filtru</string>
     <string name="refresh">Reîmprospătează</string>
     <string name="clear">Curăță</string>
@@ -223,7 +217,6 @@ pentru a deschide în mod pop-up</string>
 	<item quantity="other">%s videoclipuri</item>
 </plurals>
 
-    <string name="settings_category_downloads_title">Descarcă</string>
     <string name="settings_file_charset_title">Caractere permise în numele fișierelor</string>
     <string name="settings_file_replacement_character_summary">Caracterele invalide sunt înlocuite cu această valoare</string>
     <string name="settings_file_replacement_character_title">Caracter înlocuitor</string>
@@ -232,13 +225,11 @@ pentru a deschide în mod pop-up</string>
     <string name="charset_most_special_characters">Caracterele cele mai speciale</string>
 
     <string name="title_activity_about">Despre NewPipe</string>
-    <string name="action_settings">Setări</string>
-    <string name="action_about">Despre</string>
+    <string name="about">Despre</string>
     <string name="title_licenses">Licențe terță-parte</string>
     <string name="copyright" formatted="true">© %1$s de %2$s sub %3$s</string>
     <string name="error_unable_to_load_license">Nu s-a putut încărca licența</string>
     <string name="action_open_website">Accesează site-ul</string>
-    <string name="tab_about">Despre</string>
     <string name="tab_contributors">Contributori</string>
     <string name="tab_licenses">Licențe</string>
     <string name="app_description">Un player Youtube \"uşor\" gratuit, pentru Android.</string>
@@ -248,11 +239,10 @@ pentru a deschide în mod pop-up</string>
     <string name="read_full_license">Citiți licența</string>
     <string name="contribution_title">Contribuie</string>
 
-    <string name="title_activity_history">Istoric</string>
+    <string name="history">Istoric</string>
     <string name="title_history_search">Căutat</string>
     <string name="title_history_view">Vizionat</string>
     <string name="history_disabled">Istoricul este dezactivat</string>
-    <string name="action_history">Istoric</string>
     <string name="history_empty">Istoricul este gol</string>
     <string name="history_cleared">Istoric curățat</string>
     <string name="item_deleted">Element șters</string>

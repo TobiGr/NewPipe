@@ -36,7 +36,6 @@
     <string name="dark_theme_title">Tmavé</string>
     <string name="light_theme_title">Světlé</string>
 
-    <string name="download_dialog_title">Stáhnout</string>
     <string name="next_video_title">Další videa</string>
     <string name="show_next_and_similar_title">Zobrazovat \'další\' a \'podobná\' videa</string>
     <string name="url_not_supported_toast">URL není podporováno</string>
@@ -45,8 +44,7 @@
     <string name="settings_category_appearance_title">Vzhled</string>
     <string name="settings_category_other_title">Ostatní</string>
     <string name="background_player_playing_toast">Přehrávání na pozadí</string>
-    <string name="play_btn_text">Přehrát</string>
-    <string name="general_error">Chyba</string>
+    <string name="error">Chyba</string>
     <string name="network_error">Chyba sítě</string>
     <string name="could_not_load_thumbnails">Nebylo možné nahrát všechny náhledy</string>
     <string name="youtube_signature_decryption_error">Nebylo možné dekódovat URL videa</string>
@@ -54,8 +52,7 @@
     <string name="content_not_available">Obsah není k dispozici</string>
     <string name="blocked_by_gema">Obsah blokuje GEMA</string>
 
-    <string name="list_thumbnail_view_description">Náhled videa</string>
-    <string name="detail_thumbnail_view_description">Náhled videa</string>
+    <string name="thumbnail_description">Náhled videa</string>
     <string name="detail_uploader_thumbnail_view_description">Náhled avataru uploadera</string>
     <string name="detail_likes_img_view_description">To se mi líbí</string>
     <string name="detail_dislikes_img_view_description">To se mi nelíbí</string>
@@ -80,7 +77,6 @@
     <string name="msg_server_unsupported">Server není podporován</string>
     <string name="msg_exists">Soubor již existuje</string>
     <string name="msg_url_malform">Špatné URL nebo bez připojení k internetu</string>
-    <string name="msg_error">Chyba</string>
     <string name="msg_name">Jméno souboru</string>
     <string name="msg_threads">Vlákna</string>
     <string name="pause">Zastavit</string>
@@ -107,7 +103,6 @@
     <string name="error_report_title">Nahlásit chybu</string>
 
     <string name="downloads">Stažené soubory</string>
-    <string name="downloads_title">Stažené soubory</string>
     <string name="what_device_headline">Info:</string>
     <string name="your_comment">Vaše poznámky (anglicky):</string>
     <string name="storage_permission_denied">Oprávnění přístupu do úložiště zamítnuto</string>
@@ -161,7 +156,7 @@ otevření ve vyskakovacím okně</string>
     <string name="fragment_whats_new">Co je nového</string>
 
     <string name="controls_background_title">Na pozadí</string>
-    <string name="controls_popup_title">V okně</string>
+    <string name="popup">V okně</string>
 
     <string name="default_popup_resolution_title">Výchozí rozlišení vyskakovacího okna</string>
     <string name="player_gesture_controls_title">Ovládání přehrávače gesty</string>
@@ -177,7 +172,6 @@ otevření ve vyskakovacím okně</string>
     <string name="settings_category_player_title">Přehrávač</string>
     <string name="settings_category_player_behavior_title">Chování</string>
     <string name="settings_category_history_title">Historie a mezipamět</string>
-    <string name="settings_category_popup_title">V okně</string>
     <string name="popup_playing_toast">Přehrávání v okně</string>
     <string name="playlist">Playlist</string>
     <string name="disabled">Vypnuto</string>
@@ -219,7 +213,6 @@ otevření ve vyskakovacím okně</string>
 	<item quantity="other">%s videí</item>
 </plurals>
 
-    <string name="settings_category_downloads_title">Stahování</string>
     <string name="settings_file_charset_title">Povolené znaky v názvech souborů</string>
     <string name="settings_file_replacement_character_summary">Neplatné znaky budou nahrazeny těmito</string>
     <string name="settings_file_replacement_character_title">Náhradní znak</string>
@@ -228,13 +221,11 @@ otevření ve vyskakovacím okně</string>
     <string name="charset_most_special_characters">Většina speciálních znaků</string>
 
     <string name="title_activity_about">O NewPipe</string>
-    <string name="action_settings">Nastavení</string>
-    <string name="action_about">O aplikaci</string>
+    <string name="about">O aplikaci</string>
     <string name="title_licenses">Licence třetích stran</string>
     <string name="copyright" formatted="true">© %1$s od %2$s pod %3$s</string>
     <string name="error_unable_to_load_license">Nepodařilo se nahrát licenci</string>
     <string name="action_open_website">Otevřít webstránku</string>
-    <string name="tab_about">O aplikaci</string>
     <string name="tab_contributors">Přispěvatelé</string>
     <string name="tab_licenses">Licence</string>
     <string name="app_description">Svobodné a nenáročné streamování v Androidu.</string>
@@ -244,11 +235,10 @@ otevření ve vyskakovacím okně</string>
     <string name="read_full_license">Přečíst licenci</string>
     <string name="contribution_title">Podílet se</string>
 
-    <string name="title_activity_history">Historie</string>
+    <string name="history">Historie</string>
     <string name="title_history_search">Vyhledáváno</string>
     <string name="title_history_view">Zhlédnuto</string>
     <string name="history_disabled">Historie je vypnutá</string>
-    <string name="action_history">Historie</string>
     <string name="history_empty">Historie je prázdná</string>
     <string name="history_cleared">Historie vymazána</string>
     <string name="item_deleted">Položka byla odstraněna</string>

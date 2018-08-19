@@ -25,7 +25,6 @@
     <string name="dark_theme_title">Malluma</string>
     <string name="light_theme_title">Luma</string>
 
-    <string name="download_dialog_title">Elŝuti</string>
     <string name="next_video_title">Sekva video</string>
     <string name="url_not_supported_toast">Ligilo ne subtenita</string>
     <string name="search_language_title">Preferata enhavlingvo</string>
@@ -33,8 +32,7 @@
     <string name="settings_category_appearance_title">Apero</string>
     <string name="settings_category_other_title">Alia</string>
     <string name="background_player_playing_toast">Ludado fone</string>
-    <string name="play_btn_text">Ludi</string>
-    <string name="general_error">Eraro</string>
+    <string name="error">Eraro</string>
     <string name="network_error">Reteraro</string>
     <string name="content_not_available">Enhavo ne estas disponebla.</string>
     <string name="blocked_by_gema">Blokita de GEMA.</string>
@@ -48,8 +46,7 @@
     <string name="could_not_load_thumbnails">Ĉiuj miniaturoj ne ŝargeblas</string>
     <string name="youtube_signature_decryption_error">La subskribo de la ligilo de la video ne malĉifreblas.</string>
     <string name="parsing_error">La retejo ne analizeblas.</string>
-    <string name="list_thumbnail_view_description">Miniaturo de la antaŭrigardo de la video</string>
-    <string name="detail_thumbnail_view_description">Miniaturo de la antaŭrigardo de la video</string>
+    <string name="thumbnail_description">Miniaturo de la antaŭrigardo de la video</string>
     <string name="detail_uploader_thumbnail_view_description">Miniaturo de la bildo de la alŝutinto</string>
     <string name="err_dir_create">La elŝutujo \'%1$s\' ne kreeblas</string>
     <string name="info_dir_created">Elŝutujo \'%1$s\' kreita</string>
@@ -95,7 +92,7 @@
     <string name="fragment_whats_new">Kio novas</string>
 
     <string name="controls_background_title">Fono</string>
-    <string name="controls_popup_title">ŝprucfenestron</string>
+    <string name="popup">ŝprucfenestron</string>
     <string name="controls_add_to_playlist_title">Aldonu al</string>
 
     <string name="autoplay_by_calling_app_title">Aŭtomata play</string>

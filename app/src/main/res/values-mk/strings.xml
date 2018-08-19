@@ -35,7 +35,7 @@
     <string name="fragment_whats_new">Новости</string>
 
     <string name="controls_background_title">Позадина</string>
-    <string name="controls_popup_title">Подпрозорче</string>
+    <string name="popup">Подпрозорче</string>
     <string name="controls_add_to_playlist_title">Додај на</string>
 
     <string name="download_path_title">Локација за зачувување на видеата</string>
@@ -85,7 +85,6 @@
     <string name="enable_watch_history_summary">Зачувај ја листата на гледани видеа</string>
     <string name="resume_on_audio_focus_gain_title">Продолжи видео при враќање на фокусот</string>
     <string name="resume_on_audio_focus_gain_summary">Продолжи го видеото по прекини (пр. телефонски повик)</string>
-    <string name="download_dialog_title">Превземи</string>
     <string name="next_video_title">Следно видео</string>
     <string name="show_next_and_similar_title">Покажи „следни“ и „слични“ видеа</string>
     <string name="show_hold_to_append_title">Покажи совет „задржи за прикачување“</string>
@@ -98,7 +97,6 @@
     <string name="settings_category_player_behavior_title">Однесување</string>
     <string name="settings_category_video_audio_title">Видео и Звук</string>
     <string name="settings_category_history_title">Историја</string>
-    <string name="settings_category_popup_title">Подпрозорче</string>
     <string name="settings_category_appearance_title">Изглед</string>
     <string name="settings_category_other_title">Друго</string>
     <string name="settings_category_debug_title">Дебагирање</string>
@@ -106,13 +104,11 @@
     <string name="popup_playing_toast">Пуштено во прозорче</string>
     <string name="background_player_append">Ставено на листата за заднинско пуштање</string>
     <string name="popup_playing_append">Ставено на листа, за пуштање во прозорче</string>
-    <string name="play_btn_text">Пушти</string>
     <string name="content">Содржина</string>
     <string name="show_age_restricted_content_title">Покажи видеа со граница на возрастта</string>
     <string name="video_is_age_restricted">Видео за возрасни. Можете да дозволите вакви видеа преку Поставки.</string>
     <string name="duration_live">во живо</string>
     <string name="downloads">Превземања</string>
-    <string name="downloads_title">Превземања</string>
     <string name="error_report_title">Извештај за грешки</string>
     <string name="all">Сите</string>
     <string name="channel">Канал</string>
@@ -145,7 +141,7 @@
     <string name="export_data_title">Изнеси база на податоци</string>
     <string name="import_data_summary">Ќе ги избрише моменталните членства и историја</string>
     <string name="export_data_summary">Изнеси историја, членства и плејлисти.</string>
-    <string name="general_error">Грешка</string>
+    <string name="error">Грешка</string>
     <string name="network_error">Мрежна грешка</string>
     <string name="could_not_load_thumbnails">Не можеа да се прочитаат сите сликички</string>
     <string name="youtube_signature_decryption_error">Невозможно децифрирање на URL потписот</string>
@@ -182,8 +178,7 @@
     <string name="error_details_headline">Детали:</string>
 
 
-    <string name="list_thumbnail_view_description">Сликичка за преглед на видеото</string>
-    <string name="detail_thumbnail_view_description">Сликичка за преглед на видеото</string>
+    <string name="thumbnail_description">Сликичка за преглед на видеото</string>
     <string name="detail_uploader_thumbnail_view_description">Икона од аватарот на објавителот</string>
     <string name="detail_likes_img_view_description">Допаѓања</string>
     <string name="detail_dislikes_img_view_description">Недопаѓања</string>
@@ -243,7 +238,6 @@
 
     <string name="msg_name">Име на датотека</string>
     <string name="msg_threads">Нишки</string>
-    <string name="msg_error">Грешка</string>
     <string name="msg_server_unsupported">Неподдржан сервер</string>
     <string name="msg_exists">Датотеката веќе постои</string>
     <string name="msg_url_malform">Неправилно URL или нема интернет</string>
@@ -259,7 +253,6 @@
     <string name="reCaptcha_title">reCAPTCHA Предизвик</string>
     <string name="recaptcha_request_toast">Потребен е reCAPTCHA предизвик</string>
 
-    <string name="settings_category_downloads_title">Превземања</string>
     <string name="settings_file_charset_title">Дозволени знаци во имињата на датотеките</string>
     <string name="settings_file_replacement_character_summary">Невалидните знаци се менуваат со оваа вредност</string>
     <string name="settings_file_replacement_character_title">Знак за замена</string>
@@ -268,13 +261,11 @@
     <string name="charset_most_special_characters">Повеќето посебни знаци</string>
 
     <string name="title_activity_about">За NewPipe</string>
-    <string name="action_settings">Поставки</string>
-    <string name="action_about">За апликацијата</string>
+    <string name="about">За апликацијата</string>
     <string name="title_licenses">Лиценци од трети страни</string>
     <string name="copyright" formatted="true">© %1$s од %2$s под %3$s</string>
     <string name="error_unable_to_load_license">Не може да се вчита лиценцата</string>
     <string name="action_open_website">Отвори вебсајт</string>
-    <string name="tab_about">За апликацијата</string>
     <string name="tab_contributors">Соработници</string>
     <string name="tab_licenses">Лиценци</string>
     <string name="app_description">Слободна, лесна YouTube апликација за Андроид.</string>
@@ -290,11 +281,10 @@
     <string name="read_full_license">Прочитај лиценца</string>
 
 
-    <string name="title_activity_history">Историја</string>
+    <string name="history">Историја</string>
     <string name="title_history_search">Пребарано</string>
     <string name="title_history_view">Гледано</string>
     <string name="history_disabled">Историјата е оневозможена</string>
-    <string name="action_history">Историја</string>
     <string name="history_empty">Историјата е празна</string>
     <string name="history_cleared">Историјата е избришана</string>
     <string name="item_deleted">Предметот е избришан</string>

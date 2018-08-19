@@ -31,7 +31,7 @@
     <string name="fragment_whats_new">Uudet</string>
 
     <string name="controls_background_title">Taustatoisto</string>
-    <string name="controls_popup_title">Ikkuna</string>
+    <string name="popup">Ikkuna</string>
 
     <string name="download_path_title">Videolatausten sijainti</string>
     <string name="download_path_summary">Sijainti ladatuille videoille</string>
@@ -69,7 +69,6 @@
     <string name="enable_watch_history_title">Historia</string>
     <string name="enable_watch_history_summary">Pidä muistissa katsotut videot</string>
     <string name="resume_on_audio_focus_gain_summary">Jatka toistoa keskeytysten jälkeen (esim. puhelut)</string>
-    <string name="download_dialog_title">Lataus</string>
     <string name="next_video_title">Seuraava video</string>
     <string name="show_next_and_similar_title">Näytä seuraavia ja samankaltaisia videoita</string>
     <string name="url_not_supported_toast">URL ei tueta</string>
@@ -78,18 +77,15 @@
     <string name="settings_category_player_behavior_title">Käyttäytyminen</string>
     <string name="settings_category_video_audio_title">Video &amp; Ääni</string>
     <string name="settings_category_history_title">Historia</string>
-    <string name="settings_category_popup_title">Ponnahdusikkuna</string>
     <string name="settings_category_appearance_title">Ulkoasu</string>
     <string name="settings_category_other_title">Muu</string>
     <string name="background_player_playing_toast">Toistaa taustalla</string>
     <string name="popup_playing_toast">Toistaa ponnahdusikkunassa</string>
-    <string name="play_btn_text">Toista</string>
     <string name="content">Sisältö</string>
     <string name="show_age_restricted_content_title">Näytä ikärajoitettua sisältöä</string>
     <string name="video_is_age_restricted">Ikärajoitettu video. Ikärajoituksen voi sallia asetuksista.</string>
     <string name="duration_live">suora</string>
     <string name="downloads">Lataukset</string>
-    <string name="downloads_title">Lataukset</string>
     <string name="error_report_title">Virheraportti</string>
     <string name="all">Kaikki</string>
     <string name="channel">Kanava</string>
@@ -107,7 +103,7 @@
     <string name="notification_channel_name">NewPipe Ilmoitus</string>
     <string name="notification_channel_description">Ilmoitukset Newpipe taustasoitolle ja ponnahdusikkunalle</string>
 
-    <string name="general_error">Virhe</string>
+    <string name="error">Virhe</string>
     <string name="network_error">Verkkovirhe</string>
     <string name="could_not_load_thumbnails">Ei pystytty lataamaan kaikkia esikatselukuvia</string>
     <string name="youtube_signature_decryption_error">Ei pystytty purkamaan salausta videon URL allekirjoitukselle</string>
@@ -129,8 +125,7 @@
     <string name="error_details_headline">Yksityiskohdat:</string>
 
 
-    <string name="list_thumbnail_view_description">Videon esikatselukuva</string>
-    <string name="detail_thumbnail_view_description">Videon esikatselukuva</string>
+    <string name="thumbnail_description">Videon esikatselukuva</string>
     <string name="detail_uploader_thumbnail_view_description">Jakajan avatar esikatselukuva</string>
     <string name="detail_likes_img_view_description">Tykkäykset</string>
     <string name="detail_dislikes_img_view_description">Ei-tykkäykset</string>
@@ -184,7 +179,6 @@
 
     <string name="msg_name">Tiedostonimi</string>
     <string name="msg_threads">Säikeet</string>
-    <string name="msg_error">Virhe</string>
     <string name="msg_server_unsupported">Serveriä ei tueta</string>
     <string name="msg_exists">Tiedosto on jo olemassa</string>
     <string name="msg_url_malform">Epämuodostunut URL tai Internet-yhteys ei ole saatavilla</string>
@@ -199,7 +193,6 @@
     <string name="reCaptcha_title">reCAPTCHA Haaste</string>
     <string name="recaptcha_request_toast">reCAPTCHA Haaste pyydetty</string>
 
-    <string name="settings_category_downloads_title">Lataus</string>
     <string name="settings_file_charset_title">Sallitut merkit tiedostonimissä</string>
     <string name="settings_file_replacement_character_summary">Epäkelvot merkit korvataan tällä arvolla</string>
     <string name="settings_file_replacement_character_title">Korvaava merkki</string>
@@ -208,12 +201,10 @@
     <string name="charset_most_special_characters">Suurin osa erikoismerkeistä</string>
 
     <string name="title_activity_about">Tietoja NewPipe</string>
-    <string name="action_settings">Asetukset</string>
-    <string name="action_about">Tietoja</string>
+    <string name="about">Tietoja</string>
     <string name="title_licenses">Kolmannen osapuolen Lisenssit</string>
     <string name="error_unable_to_load_license">Ei voitu ladata lisenssiä</string>
     <string name="action_open_website">Avaa websivu</string>
-    <string name="tab_about">Tietoja</string>
     <string name="tab_contributors">Hyväntekijät</string>
     <string name="tab_licenses">Lisenssit</string>
     <string name="app_description">Vapaa kevyt Android YouTube-frontend.</string>
@@ -223,11 +214,10 @@
     <string name="read_full_license">Lue lisenssi</string>
     <string name="contribution_title">Osallistu</string>
 
-    <string name="title_activity_history">Historia</string>
+    <string name="history">Historia</string>
     <string name="title_history_search">Haettu</string>
     <string name="title_history_view">Katsottu</string>
     <string name="history_disabled">Historia on poistettu käytöstä</string>
-    <string name="action_history">Historia</string>
     <string name="history_empty">Historia on tyhjä</string>
     <string name="history_cleared">Historia pyyhitty</string>
     <string name="item_deleted">Poistettu</string>

@@ -24,21 +24,18 @@
     <string name="show_play_with_kodi_summary">Zeigt eine Option an, über die man Videos mit Kodi abspielen kann</string>
     <string name="play_audio">Audio</string>
     <string name="default_audio_format_title">Bevorzugtes Audioformat</string>
-    <string name="download_dialog_title">Herunterladen</string>
     <string name="next_video_title">Nächstes Video</string>
     <string name="show_next_and_similar_title">\'Nächste\' und \'ähnliche\' Videos anzeigen</string>
     <string name="url_not_supported_toast">URL wird nicht unterstützt</string>
     <string name="settings_category_video_audio_title">Video &amp; Audio</string>
     <string name="search_language_title">Bevorzugte Sprache des Inhalts</string>
-    <string name="list_thumbnail_view_description">Video-Vorschaubild</string>
-    <string name="detail_thumbnail_view_description">Video-Vorschaubild</string>
+    <string name="thumbnail_description">Video-Vorschaubild</string>
     <string name="detail_uploader_thumbnail_view_description">Nutzerbild</string>
     <string name="detail_dislikes_img_view_description">Gefällt nicht</string>
     <string name="detail_likes_img_view_description">Gefällt</string>
     <string name="use_external_video_player_title">Benutze externen Videoabspieler</string>
     <string name="use_external_audio_player_title">Benutze externen Audioabspieler</string>
     <string name="background_player_playing_toast">Spiele im Hintergrund ab</string>
-    <string name="play_btn_text">Abspielen</string>
 
     <string name="use_tor_title">Benutze Tor</string>
     <string name="use_tor_summary">(Experimentell) Erzwinge das Herunterladen durch Tor für verbesserte Privatsphäre (Videostream noch nicht unterstützt).</string>
@@ -56,7 +53,7 @@
     <string name="settings_category_other_title">Andere</string>
     <string name="err_dir_create">Kann Download-Verzeichnis nicht anlegen \'%1$s\'</string>
     <string name="info_dir_created">Download-Verzeichnis \'%1$s\' erstellt</string>
-    <string name="general_error">Fehler</string>
+    <string name="error">Fehler</string>
     <string name="could_not_load_thumbnails">Konnte nicht alle Vorschaubilder laden</string>
     <string name="youtube_signature_decryption_error">Konnte Video-URL-Signatur nicht entschlüsseln</string>
     <string name="parsing_error">Konnte Webseite nicht analysieren</string>
@@ -96,7 +93,6 @@
 
     <string name="main_bg_subtitle">„Suchen“ antippen, um zu beginnen</string>
     <string name="downloads">Downloads</string>
-    <string name="downloads_title">Downloads</string>
     <string name="error_report_title">Fehlerbericht</string>
 
     <string name="delete">Löschen</string>
@@ -109,7 +105,6 @@
     <string name="short_billion">Mrd.</string>
 
     <string name="msg_name">Dateiname</string>
-    <string name="msg_error">Fehler</string>
     <string name="msg_exists">Datei existiert bereits</string>
     <string name="msg_wait">Bitte warten…</string>
     <string name="msg_copied">In Zwischenablage kopiert</string>
@@ -156,7 +151,7 @@
     <string name="show_higher_resolutions_title">Zeige höhere Auflösungen an</string>
     <string name="show_higher_resolutions_summary">Nur manche Geräte unterstützen das Abspielen von 2K-/4K-Videos</string>
     <string name="controls_background_title">Hintergrund</string>
-    <string name="controls_popup_title">Pop-up</string>
+    <string name="popup">Pop-up</string>
 
     <string name="popup_remember_size_pos_title">Größe und Position des Pop-ups merken</string>
 <string name="use_external_video_player_summary">Manche Auflösungen werden KEINE Tonspur haben, wenn diese Option eingeschaltet ist</string>
@@ -166,30 +161,26 @@
     <string name="show_search_suggestions_title">Durchsuche Vorschläge</string>
     <string name="show_search_suggestions_summary">Zeige Vorschläge beim Suchen</string>
 
-    <string name="settings_category_popup_title">Pop-up</string>
     <string name="filter">Filter</string>
     <string name="refresh">Aktualisieren</string>
     <string name="clear">Leeren</string>
     <string name="popup_resizing_indicator_title">Größenänderung</string>
     <string name="best_resolution">Beste Auflösung</string>
 
-    <string name="action_about">Über</string>
+    <string name="about">Über</string>
     <string name="title_activity_about">Über NewPipe</string>
     <string name="action_open_website">Website öffnen</string>
     <string name="tab_contributors">Mitwirkende</string>
     <string name="tab_licenses">Lizenzen</string>
     <string name="read_full_license">Lizenz lesen</string>
-    <string name="action_settings">Einstellungen</string>
     <string name="error_unable_to_load_license">Lizenz konnte nicht geladen werden</string>
     <string name="copyright" formatted="true">© %1$s von %2$s unter %3$s</string>
-    <string name="tab_about">Über</string>
     <string name="app_description">Eine freie, schlanke Streaming-App für Android.</string>
     <string name="app_license_title">NewPipes Lizenz</string>
     <string name="contribution_encouragement">Ob Ideen, Übersetzungen, Design-Änderungen, Code-Aufräumung oder richtig große Code-Änderungen – Hilfe ist immer willkommen. Je mehr geholfen wird, desto besser wird NewPipe!</string>
     <string name="title_licenses">Drittanbieter-Lizenzen</string>
     <string name="view_on_github">Auf GitHub ansehen</string>
     <string name="contribution_title">Beitragen</string>
-<string name="settings_category_downloads_title">Download</string>
     <string name="settings_file_charset_title">Erlaubte Zeichen im Dateinamen</string>
     <string name="settings_file_replacement_character_summary">Ungültige Zeichen werden durch dieses Zeichen ersetzt</string>
     <string name="settings_file_replacement_character_title">Ersetzungszeichen</string>
@@ -206,11 +197,10 @@
     <string name="enable_search_history_summary">Speichere den Suchverlauf lokal</string>
     <string name="enable_watch_history_title">Verlauf &amp; Cache</string>
     <string name="enable_watch_history_summary">Speichere den Wiedergabeverlauf</string>
-    <string name="title_activity_history">Verlauf</string>
+    <string name="history">Verlauf</string>
     <string name="title_history_search">Gesucht</string>
     <string name="title_history_view">Angesehen</string>
     <string name="history_disabled">Verlauf ist deaktiviert</string>
-    <string name="action_history">Verlauf</string>
     <string name="history_empty">Der Verlauf ist leer</string>
     <string name="history_cleared">Verlauf bereinigt</string>
 

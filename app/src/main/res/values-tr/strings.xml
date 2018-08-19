@@ -38,7 +38,6 @@
     <string name="dark_theme_title">Koyu</string>
     <string name="light_theme_title">Açık</string>
 
-    <string name="download_dialog_title">İndir</string>
     <string name="next_video_title">Sonraki video</string>
     <string name="show_next_and_similar_title">\'Sonraki\' ve \'benzer\' videoları göster</string>
     <string name="url_not_supported_toast">URL desteklenmiyor</string>
@@ -48,16 +47,14 @@
     <string name="settings_category_appearance_title">Görünüm</string>
     <string name="settings_category_other_title">Diğer</string>
     <string name="background_player_playing_toast">Arka planda oynatıyor</string>
-    <string name="play_btn_text">Oynat</string>
     <string name="content">İçerik</string>
     <string name="show_age_restricted_content_title">Yaş sınırlı içeriği göster</string>
     <string name="video_is_age_restricted">Yaş Sınırlı Video. Bu gibi materyallere Ayarlar\'dan izin verilebilir.</string>
     <string name="duration_live">canlı</string>
     <string name="downloads">İndirilenler</string>
-    <string name="downloads_title">İndirilenler</string>
     <string name="error_report_title">Hata bildirimi</string>
 
-    <string name="general_error">Hata</string>
+    <string name="error">Hata</string>
     <string name="network_error">Ağ hatası</string>
     <string name="could_not_load_thumbnails">Küçük resimlerin tümü yüklenemedi</string>
     <string name="youtube_signature_decryption_error">Video URL imzası çözülemedi</string>
@@ -76,7 +73,6 @@
     <string name="what_device_headline">Bilgi:</string>
     <string name="what_happened_headline">Ne oldu:</string>
     <string name="info_labels">Ne:\\nİstek:\\nİçerik Dili:\\nHizmet:\\nGMT Zamanı:\\nPaket:\\nSürüm:\\nİşletim sistemi sürümü:</string>
-    <string name="detail_thumbnail_view_description">Video ön izleme küçük resmi</string>
     <string name="detail_uploader_thumbnail_view_description">Yükleyenin küçük resmi</string>
     <string name="detail_likes_img_view_description">Beğeni</string>
     <string name="detail_dislikes_img_view_description">Beğenmeme</string>
@@ -105,7 +101,6 @@
 
     <string name="msg_name">Dosya adı</string>
     <string name="msg_threads">İş parçacığı</string>
-    <string name="msg_error">Hata</string>
     <string name="msg_server_unsupported">Sunucu desteklenmiyor</string>
     <string name="msg_exists">Dosya zaten var</string>
     <string name="msg_url_malform">Hatalı biçimlendirilmiş URL veya İnternet yok</string>
@@ -137,7 +132,7 @@
     <string name="error_details_headline">Ayrıntılar:</string>
 
 
-    <string name="list_thumbnail_view_description">Video ön izleme küçük resmi</string>
+    <string name="thumbnail_description">Video ön izleme küçük resmi</string>
     <string name="use_old_player_title">Eski oynatıcıyı kullan</string>
     <string name="use_old_player_summary">Eski içe gömülü Mediaframework oynatıcısı</string>
 
@@ -154,7 +149,7 @@
     <string name="recaptcha_request_toast">reCAPTCHA Formu istendi</string>
 
     <string name="controls_background_title">Arka Plan</string>
-    <string name="controls_popup_title">Açılır Oynatıcı</string>
+    <string name="popup">Açılır Oynatıcı</string>
 
     <string name="filter">Süz</string>
     <string name="refresh">Yenile</string>
@@ -163,7 +158,6 @@
     <string name="popup_remember_size_pos_title">Açılır oynatıcı boyutunu ve konumunu hatırla</string>
     <string name="popup_remember_size_pos_summary">Açılır oynatıcının ayarlandığı son boyutu ve konumu hatırla</string>
 
-    <string name="settings_category_popup_title">Açılır Oynatıcı</string>
     <string name="popup_resizing_indicator_title">Boyutlandırılıyor</string>
 
     <string name="use_external_video_player_summary">Bu seçenek etkinken bazı çözünürlüklerin sesi olmayacaktır</string>
@@ -175,13 +169,11 @@
 <string name="best_resolution">En iyi çözünürlük</string>
 
     <string name="title_activity_about">NewPipe Hakkında</string>
-    <string name="action_settings">Ayarlar</string>
-    <string name="action_about">Hakkında</string>
+    <string name="about">Hakkında</string>
     <string name="title_licenses">Üçüncü Taraf Lisanslar</string>
     <string name="copyright" formatted="true">© %1$s, %2$s tarafından %3$s altında</string>
     <string name="error_unable_to_load_license">Lisans yüklenemedi</string>
     <string name="action_open_website">Web sitesini aç</string>
-    <string name="tab_about">Hakkında</string>
     <string name="tab_contributors">Katkıda bulunanlar</string>
     <string name="tab_licenses">Lisanslar</string>
     <string name="app_description">Android\'de özgür, hafif akış oynatımı.</string>
@@ -190,7 +182,6 @@
     <string name="contribution_encouragement">Fikirleriniz; çeviri, tasarım değişiklikleri, kod temizliği ya da gerçek köklü kod değişikleri olsun yardımınıza her zaman açığız. Ne kadar çok yapılırsa o kadar iyi olur!</string>
     <string name="read_full_license">Lisansı oku</string>
     <string name="contribution_title">Katkıda bulun</string>
-<string name="settings_category_downloads_title">İndirme</string>
     <string name="settings_file_charset_title">Dosya adlarında izin verilen karakterler</string>
     <string name="settings_file_replacement_character_summary">Geçersiz karakterler bu değer ile değiştirilir</string>
     <string name="settings_file_replacement_character_title">Değiştirme karakteri</string>
@@ -245,11 +236,10 @@
 	<item quantity="other">%s video</item>
 </plurals>
 
-    <string name="title_activity_history">Geçmiş</string>
+    <string name="history">Geçmiş</string>
     <string name="title_history_search">Aranan</string>
     <string name="title_history_view">İzlenen</string>
     <string name="history_disabled">Geçmiş devre dışı</string>
-    <string name="action_history">Geçmiş</string>
     <string name="history_empty">Geçmiş boş</string>
     <string name="history_cleared">Geçmiş temizlendi</string>
     <string name="item_deleted">Öge silindi</string>
