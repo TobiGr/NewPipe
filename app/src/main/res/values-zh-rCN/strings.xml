@@ -205,9 +205,8 @@
     <string name="title_history_view">观看记录</string>
     <string name="history_disabled">历史记录已禁用</string>
     <string name="history_empty">没有历史记录</string>
-    <string name="history_cleared">历史记录已清除</string>
 
-<string name="settings_category_player_title">播放器</string>
+    <string name="settings_category_player_title">播放器</string>
     <string name="settings_category_player_behavior_title">行为</string>
     <string name="settings_category_history_title">历史记录 &amp; 缓存</string>
     <string name="background_player_append">在后台播放器上排队</string>

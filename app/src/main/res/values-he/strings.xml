@@ -250,7 +250,6 @@
     <string name="title_history_view">נצפה בעבר</string>
     <string name="history_disabled">היסטוריה אינה פעילה</string>
     <string name="history_empty">ההיסטוריה ריקה</string>
-    <string name="history_cleared">היסטוריה נוקתה</string>
     <string name="item_deleted">פריט נמחק</string>
     <string name="delete_item_search_history">האם ברצונך למחוק את הפריט הזה מהיסטורית החיפושים?</string>
 

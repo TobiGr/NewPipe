@@ -239,7 +239,6 @@
     <string name="title_history_view">再生履歴</string>
     <string name="history_disabled">履歴は無効です</string>
     <string name="history_empty">履歴に何もありません</string>
-    <string name="history_cleared">履歴を消去しました</string>
     <string name="item_deleted">アイテムを削除しました</string>
     <string name="delete_item_search_history">このアイテムを検索履歴から削除しますか？</string>
 

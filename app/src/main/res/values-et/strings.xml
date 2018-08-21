@@ -291,7 +291,6 @@
     <string name="title_history_view">Vaadatud</string>
     <string name="history_disabled">Ajalugu on keelatud</string>
     <string name="history_empty">Ajalugu on tühi</string>
-    <string name="history_cleared">Ajalugu kustutati</string>
     <string name="item_deleted">Element kustutati</string>
     <string name="delete_item_search_history">Kas kustutada see kirje otsinguajaloost?</string>
     <string name="delete_stream_history_prompt">Kas kustutada see kirje vaatamiste ajaloost?</string>

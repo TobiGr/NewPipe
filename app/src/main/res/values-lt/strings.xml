@@ -243,7 +243,6 @@
     <string name="title_history_view">Peržiūrėta</string>
     <string name="history_disabled">Istorija išjungta</string>
     <string name="history_empty">Istorija tuščia</string>
-    <string name="history_cleared">Istorija išvalyta</string>
     <string name="item_deleted">Elementas ištrintas</string>
     <string name="delete_item_search_history">Ar norite ištrinti šį elementą iš paieškos istorijos?</string>
 

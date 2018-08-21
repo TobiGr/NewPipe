@@ -220,9 +220,8 @@
     <string name="title_history_view">Pozreté</string>
     <string name="history_disabled">História je zakázaná</string>
     <string name="history_empty">História je prázdna</string>
-    <string name="history_cleared">História bola vyčistená</string>
 
-<string name="settings_category_player_title">Prehrávač</string>
+    <string name="settings_category_player_title">Prehrávač</string>
     <string name="settings_category_player_behavior_title">Správanie</string>
     <string name="settings_category_history_title">História a vyrovnávacia pamäť</string>
     <string name="playlist">Zoznam</string>

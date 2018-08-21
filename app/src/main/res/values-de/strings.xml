@@ -202,9 +202,8 @@
     <string name="title_history_view">Angesehen</string>
     <string name="history_disabled">Verlauf ist deaktiviert</string>
     <string name="history_empty">Der Verlauf ist leer</string>
-    <string name="history_cleared">Verlauf bereinigt</string>
 
-<string name="subscription_change_failed">Fehler beim Ändern des Abos</string>
+    <string name="subscription_change_failed">Fehler beim Ändern des Abos</string>
     <string name="subscription_update_failed">Fehler beim Aktualisieren des Abos</string>
 
     <string name="resume_on_audio_focus_gain_summary">Nach Unterbrechungen (z.B. Telefonaten) Wiedergabe fortsetzen</string>

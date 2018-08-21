@@ -241,7 +241,6 @@
     <string name="title_history_view">İzlenen</string>
     <string name="history_disabled">Geçmiş devre dışı</string>
     <string name="history_empty">Geçmiş boş</string>
-    <string name="history_cleared">Geçmiş temizlendi</string>
     <string name="item_deleted">Öge silindi</string>
 <string name="delete_item_search_history">Bu içeriği arama geçmişinden silmek istiyor musunuz?</string>
 <string name="show_hold_to_append_title">\"Kuyruğa almak İçin bas\" ipucunu göster</string>

@@ -215,7 +215,6 @@
     <string name="donation_title">Фінансова допомога</string>
     <string name="website_title">Веб-сайт</string>
     <string name="history">Історія</string>
-    <string name="history_cleared">Історію стерто</string>
     <string name="export_complete_toast">Експортування доконано</string>
     <string name="import_complete_toast">Імпортування доконано</string>
     <string name="top_50">Топ 50</string>

@@ -241,7 +241,6 @@
     <string name="title_history_view">Visto</string>
     <string name="history_disabled">Histórico está desativado</string>
     <string name="history_empty">O histórico está vazio</string>
-    <string name="history_cleared">Histórico eliminado</string>
     <string name="item_deleted">Item apagado</string>
 <string name="delete_item_search_history">Deseja apagar este item do histórico de pesquisa?</string>
 <string name="play_all">Reproduzir todos</string>

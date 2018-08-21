@@ -286,7 +286,6 @@
     <string name="title_history_view">Гледано</string>
     <string name="history_disabled">Историјата е оневозможена</string>
     <string name="history_empty">Историјата е празна</string>
-    <string name="history_cleared">Историјата е избришана</string>
     <string name="item_deleted">Предметот е избришан</string>
     <string name="delete_item_search_history">Сакаш да го избришеш предметот од историјата?</string>
     <string name="delete_stream_history_prompt">Сакаш да го избришеш предметот од историјата на прегледи?</string>

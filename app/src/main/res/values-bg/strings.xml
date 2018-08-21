@@ -310,7 +310,6 @@
     <string name="title_history_view">Гледани</string>
     <string name="history_disabled">Историята е изключена</string>
     <string name="history_empty">Историята е празна</string>
-    <string name="history_cleared">Историята е изчистена</string>
     <string name="item_deleted">Елементът е изтрит</string>
     <string name="delete_item_search_history">Искате ли да изтриете този елемент от историята на търсенията?</string>
     <string name="delete_stream_history_prompt">Искате ли да изтриете този елемент от историята на гледанията?</string>

@@ -225,7 +225,6 @@
     <string name="title_history_view">已觀看</string>
     <string name="history_disabled">歷史紀錄已被停用</string>
     <string name="history_empty">沒有歷史紀錄</string>
-    <string name="history_cleared">已清除歷史紀錄</string>
     <string name="item_deleted">項目已刪除</string>
     <string name="delete_item_search_history">確定要刪除此項搜尋紀錄嗎？</string>
 <string name="no_player_found_toast">找不到串流播放器（您可以安裝 VLC播放）</string>

@@ -218,9 +218,8 @@ te openen in pop-upmodus</string>
     <string name="title_history_view">Gekeken</string>
     <string name="history_disabled">Geschiedenis is uitgeschakeld</string>
     <string name="history_empty">De geschiedenis is leeg</string>
-    <string name="history_cleared">Geschiedenis gewist</string>
 
-<string name="settings_category_player_title">Speler</string>
+    <string name="settings_category_player_title">Speler</string>
     <string name="settings_category_player_behavior_title">Gedrag</string>
     <string name="settings_category_history_title">Geschiedenis &amp; Cache</string>
     <string name="playlist">Afspeellijst</string>

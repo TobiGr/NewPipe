@@ -219,7 +219,6 @@
     <string name="title_history_view">Katsottu</string>
     <string name="history_disabled">Historia on poistettu käytöstä</string>
     <string name="history_empty">Historia on tyhjä</string>
-    <string name="history_cleared">Historia pyyhitty</string>
     <string name="item_deleted">Poistettu</string>
     <string name="delete_item_search_history">Haluatko poistaa tämän hakuhistoriasta?</string>
 <string name="resume_on_audio_focus_gain_title">Jatka toistoa</string>

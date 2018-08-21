@@ -201,9 +201,8 @@
     <string name="title_history_view">Гледано</string>
     <string name="history_disabled">Историјат је искључен</string>
     <string name="history_empty">Историјат је празан</string>
-    <string name="history_cleared">Историјат очишћен</string>
 
-<string name="resume_on_audio_focus_gain_summary">Настави пуштање након прекида (нпр. позива)</string>
+    <string name="resume_on_audio_focus_gain_summary">Настави пуштање након прекида (нпр. позива)</string>
 
 
     <string name="settings_file_charset_title">Дозвољени знакови у називима</string>

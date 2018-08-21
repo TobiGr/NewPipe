@@ -237,7 +237,6 @@
     <string name="title_history_view">Tittade</string>
     <string name="history_disabled">Historik är inaktiverat</string>
     <string name="history_empty">Historiken är tom</string>
-    <string name="history_cleared">Historiken har rensats</string>
     <string name="item_deleted">Objektet bortaget</string>
     <string name="delete_item_search_history">Vill du ta bort det här objektet från sökhistoriken?</string>
 

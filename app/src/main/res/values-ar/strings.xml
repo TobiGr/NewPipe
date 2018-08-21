@@ -229,7 +229,6 @@
     <string name="title_history_view">تمت مشاهدته</string>
     <string name="history_disabled">تم تعطيل السجل</string>
     <string name="history_empty">التاريخ فارغ</string>
-    <string name="history_cleared">تم مسح التاريخ</string>
     <string name="item_deleted">تم حذف العنصر</string>
     <string name="delete_item_search_history">هل تريد حذف هذا العنصر من سجل البحث؟</string>
 

@@ -207,9 +207,8 @@
     <string name="title_history_view">Obejrzane</string>
     <string name="history_disabled">Historia jest wyłączona</string>
     <string name="history_empty">Historia jest pusta</string>
-    <string name="history_cleared">Historia została wyczyszczona</string>
 
-<string name="settings_category_player_title">Odtwarzacz</string>
+    <string name="settings_category_player_title">Odtwarzacz</string>
     <string name="settings_category_player_behavior_title">Zachowanie</string>
     <string name="settings_category_history_title">Historia i pamięć podręczna</string>
     <string name="playlist">Playlista</string>

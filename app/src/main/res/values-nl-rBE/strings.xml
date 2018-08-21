@@ -288,7 +288,6 @@
     <string name="title_history_view">Gekeken</string>
     <string name="history_disabled">Geschiedenis is uitgeschakeld</string>
     <string name="history_empty">De geschiedenis is leeg</string>
-    <string name="history_cleared">Geschiedenis gewist</string>
     <string name="item_deleted">Item verwijderd</string>
     <string name="delete_item_search_history">Wilt ge dit item uit uw zoekgeschiedenis verwijderen?</string>
     <string name="delete_stream_history_prompt">Wilt ge dit item uit uw kijkgeschiedenis verwijderen?</string>

@@ -238,7 +238,6 @@
     <string name="title_history_view">Visto</string>
     <string name="history_disabled">L\'historial ta desactiváu</string>
     <string name="history_empty">L\'historial ta baleru</string>
-    <string name="history_cleared">Llimpióse l\'historial</string>
     <string name="item_deleted">Desanicióse l\'elementu</string>
     <string name="delete_item_search_history">¿Quies desaniciar esti elementu del historial de gueta?</string>
 <string name="play_all">Reproducir too</string>

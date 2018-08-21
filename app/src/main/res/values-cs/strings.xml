@@ -240,7 +240,6 @@ otevření ve vyskakovacím okně</string>
     <string name="title_history_view">Zhlédnuto</string>
     <string name="history_disabled">Historie je vypnutá</string>
     <string name="history_empty">Historie je prázdná</string>
-    <string name="history_cleared">Historie vymazána</string>
     <string name="item_deleted">Položka byla odstraněna</string>
 <string name="show_hold_to_append_title">Zobrazovat tip \"podržet pro přidání\"</string>
     <string name="show_hold_to_append_summary">Zobrazí se po stisku tlačítek přehrát na pozadí nebo přehrát v okně na stránce s videem</string>

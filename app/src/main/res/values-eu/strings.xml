@@ -230,7 +230,6 @@
     <string name="title_history_view">Ikusita</string>
     <string name="history_disabled">Historiala desgaituta dago</string>
     <string name="history_empty">Historiala hutsik dago</string>
-    <string name="history_cleared">Historiala garbitu da</string>
     <string name="item_deleted">Elementua ezabatuta</string>
 <string name="show_hold_to_append_title">Erakutsi \"mantendu eransteko\" aholkua</string>
     <string name="show_hold_to_append_summary">Erakutsi aholkua bigarren planoko eta laster-leihoko botoia sakatzean bideoaren xehetasunen orrian</string>

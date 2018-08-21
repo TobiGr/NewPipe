@@ -199,9 +199,8 @@
     <string name="title_history_view">Gledano</string>
     <string name="history_disabled">Povijest ugašena</string>
     <string name="history_empty">Povijest je prazna</string>
-    <string name="history_cleared">Povijest očišćena</string>
 
-<string name="notification_channel_name">NewPipe obavijest</string>
+    <string name="notification_channel_name">NewPipe obavijest</string>
     <string name="notification_channel_description">Obavijesti za NewPipe pozadinske i skočne reproduktore</string>
 
     <string name="settings_category_player_title">Reproduktor</string>

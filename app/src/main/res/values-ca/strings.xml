@@ -86,7 +86,6 @@
     <string name="history">Historial</string>
     <string name="history_disabled">L\'historial està desactivat</string>
     <string name="history_empty">L\'historial és buit</string>
-    <string name="history_cleared">S\'ha esborrat l\'historial</string>
     <string name="item_deleted">S\'ha eliminat l\'element</string>
     <string name="delete_item_search_history">Voleu eliminar aquest element de l\'historial de cerca?</string>
     <string name="delete_stream_history_prompt">Voleu eliminar aquest element de l\'historial de reproduccions?</string>

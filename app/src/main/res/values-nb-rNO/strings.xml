@@ -239,7 +239,6 @@
     <string name="title_history_view">Sett</string>
     <string name="history_disabled">Historikk avskrudd</string>
     <string name="history_empty">Historikken er tom</string>
-    <string name="history_cleared">Historikk tømt</string>
     <string name="item_deleted">Element slettet</string>
 <string name="delete_item_search_history">Ønsker du å slette dette elementet fra søkehistorikken?</string>
 <string name="play_all">Spill av alle</string>

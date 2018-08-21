@@ -168,7 +168,6 @@
     <string name="title_history_view">వీక్షించారు</string>
     <string name="history_disabled">చరిత్ర నిలిపివేయబడింది</string>
     <string name="history_empty">చరిత్ర ఖాళీగా ఉంది</string>
-    <string name="history_cleared">చరిత్ర క్లియర్ చేయబడింది</string>
     <string name="item_deleted">అంశం తొలగించబడింది</string>
     <string name="delete_item_search_history">మీరు ఈ అంశాన్ని శోధన చరిత్ర నుండి తొలగించాలనుకుంటున్నారా?</string>
 

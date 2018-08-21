@@ -288,7 +288,6 @@ membuka di mode popup</string>
     <string name="website_title">Situs</string>
     <string name="website_encouragement">Kunjungi situs web NewPipe untuk info dan berita.</string>
     <string name="title_history_search">Sudah dicari</string>
-    <string name="history_cleared">Riwayat terhapus</string>
     <string name="item_deleted">Item terhapus</string>
     <string name="delete_item_search_history">Kamu ingin menghapus item ini dari riwayat pencarian?</string>
     <string name="delete_stream_history_prompt">Kamu ingin menghapus item ini dari riwayat tontonan?</string>

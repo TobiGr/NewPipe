@@ -208,9 +208,8 @@
     <string name="title_history_view">Regardé</string>
     <string name="history_disabled">L\'historique est désactivé</string>
     <string name="history_empty">L\'historique est vide</string>
-    <string name="history_cleared">Historique supprimé</string>
 
-<string name="notification_channel_name">Notification NewPipe</string>
+    <string name="notification_channel_name">Notification NewPipe</string>
     <string name="undo">Annuler</string>
 
     <string name="enable_watch_history_summary">Garder une trace des vidéos regardées</string>

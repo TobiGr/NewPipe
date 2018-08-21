@@ -243,7 +243,6 @@
     <string name="title_history_view">시청함</string>
     <string name="history_disabled">기록을 사용하지 않습니다</string>
     <string name="history_empty">기록이 없습니다</string>
-    <string name="history_cleared">기록이 삭제되었습니다</string>
     <string name="item_deleted">항목이 삭제되었습니다</string>
     <string name="delete_item_search_history">이 항목을 검색 기록에서 삭제할까요?</string>
 
