@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="main_bg_subtitle">শুরু করতে অনুসন্ধান এ আলতো চাপ</string>
-    <string name="view_count_text">%1$s বার দেখা হয়েছে</string>
     <string name="upload_date_text">প্রকাশকাল %1$s</string>
     <string name="no_player_found">কোন স্ট্রিম প্লেয়ার পাওয়া যায়নি। তুমি কি VLC ইনস্টল করতে চাও?</string>
     <string name="install">ইনস্টল</string>

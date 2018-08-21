@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources><string name="main_bg_subtitle">Shtyp \"kërko\" për të filluar</string>
-    <string name="view_count_text">%1$s shikime</string>
     <string name="upload_date_text">Publikuar më %1$s</string>
     <string name="install">Instalo</string>
     <string name="cancel">Anulo</string>

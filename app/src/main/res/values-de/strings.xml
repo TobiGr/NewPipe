@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="view_count_text">%1$s Aufrufe</string>
     <string name="upload_date_text">Veröffentlicht am %1$s</string>
     <string name="no_player_found">Keinen Streamplayer gefunden. Möchtest du VLC installieren?</string>
     <string name="install">Installieren</string>

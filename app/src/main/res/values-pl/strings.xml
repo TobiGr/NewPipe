@@ -15,7 +15,6 @@
     <string name="use_external_video_player_title">Użyj zewnętrznego odtwarzacza wideo</string>
     <string name="use_external_audio_player_title">Użyj zewnętrznego odtwarzacza audio</string>
 
-    <string name="view_count_text">%1$s wyświetleń</string>
     <string name="upload_date_text">Opublikowano %1$s</string>
     <string name="no_player_found">Nie znaleziono odtwarzacza strumieni. Zainstalować VLC?</string>
     <string name="download_path_title">Ścieżka zapisu wideo</string>

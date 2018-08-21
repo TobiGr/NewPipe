@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="main_bg_subtitle">Calca na gueta pa entamar</string>
-    <string name="view_count_text">%1$s visiones</string>
     <string name="upload_date_text">Espublizóse\'l %1$s</string>
     <string name="no_player_found">Nun s\'alcontró un reproductor de fluxos. ¿Quies instalar VLC?</string>
     <string name="install">Instalar</string>

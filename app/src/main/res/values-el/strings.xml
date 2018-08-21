@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="view_count_text">%1$s προβολές</string>
     <string name="upload_date_text">Ανέβηκε στις %1$s</string>
     <string name="no_player_found">Δεν βρέθηκε πρόγραμμα αναπαραγωγής. Εγκατάσταση του VLC;</string>
     <string name="install">Εγκατάσταση</string>

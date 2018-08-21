@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="view_count_text">%1$s vizionări</string>
     <string name="upload_date_text">Încărcat pe %1$s</string>
     <string name="no_player_found">Niciun player pentru streaming găsit. Doriți să instalați VLC?</string>
     <string name="install">Instalare</string>

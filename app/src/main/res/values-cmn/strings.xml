@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources><string name="main_bg_subtitle">点按搜索即可开始</string>
-    <string name="view_count_text">%1$s 意见</string>
     <string name="upload_date_text">发布 %1$s</string>
     <string name="no_player_found">找不到流播放器。你想安装VLC吗？</string>
     <string name="no_player_found_toast">找不到流播放器（您可以安装VLC播放它）</string>

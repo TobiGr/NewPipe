@@ -2,7 +2,6 @@
 <resources>
     <string name="app_name" translatable="false">NewPipe</string>
     <string name="main_bg_subtitle">Tap search to get started</string>
-    <string name="view_count_text">%1$s views</string>
     <string name="upload_date_text">Published on %1$s</string>
     <string name="no_player_found">No stream player found. Do you want to install VLC?</string>
     <string name="no_player_found_toast">No stream player found (you can install VLC to play it)</string>

@@ -28,7 +28,6 @@
     <string name="url_not_supported_toast">URLは使用できません</string>
     <string name="search_language_title">優先言語</string>
     <string name="settings_category_video_audio_title">動画と音楽</string>
-    <string name="view_count_text">%1$s ビュー</string>
     <string name="thumbnail_description">動画 プレビュー サムネイル</string>
     <string name="detail_uploader_thumbnail_view_description">アップローダー サムネイル</string>
     <string name="detail_dislikes_img_view_description">低評価</string>

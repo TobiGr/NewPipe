@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="view_count_text">點播%1$s次</string>
     <string name="upload_date_text">%1$s發布</string>
     <string name="no_player_found">找不到串流播放器，您要安裝VLC吗？</string>
     <string name="install">安裝</string>

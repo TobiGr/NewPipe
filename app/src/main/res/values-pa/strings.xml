@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources><string name="main_bg_subtitle">ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਸਰਚ ਦਬਾਓ</string>
-    <string name="view_count_text">%1$s ਦੇਖੇ</string>
     <string name="upload_date_text">%1$s ਤੇ ਪਬਲਿਸ਼ ਕੀਤਾ</string>
     <string name="no_player_found">ਸਟਰੀਮ ਪਲੇਅਰ ਨਹੀਂ ਮਿਲਿਆ . ਤੁਸੀ VLC ਭਰਨਾ ਚਾਹੋਗੇ?</string>
     <string name="no_player_found_toast">ਸਟਰੀਮ ਪਲੇਅਰ ਨਹੀਂ ਮਿਲਿਆ (ਤੁਸੀਂ vlc ਇੰਸਟਾਲ ਕਰ ਸਕਦੇ ਹੋ)</string>

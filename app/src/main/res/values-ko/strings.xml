@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="view_count_text">시청 횟수 %1$s</string>
     <string name="upload_date_text">%1$s에 업로드됨</string>
     <string name="no_player_found">스트리밍 플레이어가 발견되지 않았습니다. VLC를 설치할까요?</string>
     <string name="install">설치</string>

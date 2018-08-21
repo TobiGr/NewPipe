@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="main_bg_subtitle">Tekan pencarian untuk memulai</string>
-    <string name="view_count_text">%1$s tayang</string>
     <string name="upload_date_text">Diterbitkan pada %1$s</string>
     <string name="install">Pasang</string>
     <string name="cancel">Batal</string>

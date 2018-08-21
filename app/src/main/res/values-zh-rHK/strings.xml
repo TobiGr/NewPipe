@@ -42,7 +42,6 @@
     <string name="detail_dislikes_img_view_description">討厭</string>
     <string name="use_tor_title">使用 Tor</string>
     <string name="use_tor_summary">（測試中）為加強私隱，要求通過 Tor 傳送下載流量（暫時不支援串流影片）。</string>
-    <string name="view_count_text">觀看次數：%1$s</string>
     <string name="no_player_found">找不到任何串流播放器，您要安裝 VLC 嗎？</string>
     <string name="open_in_browser">使用瀏覽器開啟</string>
     <string name="share_dialog_title">分享影片</string>

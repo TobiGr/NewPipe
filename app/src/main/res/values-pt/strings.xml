@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="view_count_text">%1$s visualizações</string>
     <string name="upload_date_text">Publicado em %1$s</string>
     <string name="no_player_found">Reprodutor não disponível. Deseja instalar o VLC?</string>
     <string name="install">Instalar</string>

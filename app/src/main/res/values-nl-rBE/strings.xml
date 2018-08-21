@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources><string name="main_bg_subtitle">Tik op zoeken voor te beginnen</string>
-    <string name="view_count_text">%1$s keer bekeken</string>
     <string name="upload_date_text">Gepubliceerd op %1$s</string>
     <string name="no_player_found">Gene speler met streamondersteuning gevonden. Wilt ge VLC installeren?</string>
     <string name="no_player_found_toast">Gene speler met streamondersteuning gevonden (ge kunt VLC installeren voor het af te spelen)</string>

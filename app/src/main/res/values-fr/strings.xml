@@ -21,7 +21,6 @@
     <string name="show_play_with_kodi_summary">Afficher une option pour lire la vidéo avec Kodi</string>
     <string name="show_play_with_kodi_title">Afficher l’option « Lire avec Kodi »</string>
     <string name="upload_date_text">Ajoutée le %1$s</string>
-    <string name="view_count_text">%1$s vues</string>
     <string name="play_audio">Audio</string>
     <string name="default_audio_format_title">Format audio par défaut</string>
     <string name="next_video_title">Vidéo suivante</string>

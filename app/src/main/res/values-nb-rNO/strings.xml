@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="view_count_text">%1$s visninger</string>
     <string name="upload_date_text">Publisert den %1$s</string>
     <string name="no_player_found">Fant ingen videostrøm. Installer VLC?</string>
     <string name="install">Installer</string>

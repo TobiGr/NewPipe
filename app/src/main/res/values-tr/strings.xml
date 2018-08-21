@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="main_bg_subtitle">Başlamak için aramaya dokun</string>
-    <string name="view_count_text">%1$s görüntüleme</string>
     <string name="upload_date_text">Yayımlanma: %1$s</string>
     <string name="no_player_found">Akış oynatıcı bulunamadı. VLC\'yi kurmak ister misiniz?</string>
     <string name="install">Kur</string>

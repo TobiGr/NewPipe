@@ -101,7 +101,6 @@
     <string name="detail_dislikes_img_view_description">Ogillanden</string>
     <string name="use_tor_title">Använd Tor</string>
     <string name="report_error">Rapportera ett fel</string>
-    <string name="view_count_text">%1$s visningar</string>
     <string name="subscribe_button_title">Prenumerera</string>
     <string name="subscribed_button_title">Prenumererad</string>
     <string name="channel_unsubscribed">Prenumerationen togs bort</string>

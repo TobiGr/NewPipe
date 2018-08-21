@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources><string name="main_bg_subtitle">Стисни на пребарување за да почнеш</string>
-    <string name="view_count_text">%1$s прегледи</string>
     <string name="upload_date_text">Објавено на %1$s</string>
     <string name="no_player_found">Не е најден плеер за стримови. Инсталирај VLC?</string>
     <string name="no_player_found_toast">Не е најден плеер за стримови (можеш да инсталираш VLC)</string>

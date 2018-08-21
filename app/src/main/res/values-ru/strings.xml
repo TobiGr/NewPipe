@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="view_count_text">%1$s просмотров</string>
     <string name="upload_date_text">Опубликовано %1$s</string>
     <string name="no_player_found">Потоковый плеер не найден. Установить VLC?</string>
     <string name="install">Установить</string>

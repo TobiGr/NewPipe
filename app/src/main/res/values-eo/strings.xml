@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="view_count_text">%1$s vidoj</string>
     <string name="upload_date_text">Eldonita je %1$s</string>
     <string name="install">Instali</string>
     <string name="cancel">Nuligi</string>

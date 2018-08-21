@@ -23,7 +23,6 @@
     <string name="default_resolution_title">Výchozí rozlišení</string>
     <string name="play_with_kodi_title">Přehrát pomocí Kodi</string>
     <string name="kore_not_found">Aplikace Kore nenalezena. Chcete ji nainstalovat?</string>
-    <string name="view_count_text">%1$s zhlédnutí</string>
     <string name="download_path_title">Umístění pro stažené video</string>
     <string name="download_path_summary">Cesta, kam se uloží stažené video</string>
     <string name="download_path_dialog_title">Zadejte umístění pro stažená videa</string>

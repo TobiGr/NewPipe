@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="view_count_text">%1$s megtekintés</string>
     <string name="upload_date_text">Közzétéve: %1$s</string>
     <string name="no_player_found">Nem található megfelelő lejátszó. Feltelepíti a VLC lejátszót?</string>
     <string name="install">Telepítés</string>

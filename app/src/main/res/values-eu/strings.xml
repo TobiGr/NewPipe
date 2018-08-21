@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="view_count_text">%1$s ikustaldi</string>
     <string name="upload_date_text">Argitaratze-data: %1$s</string>
     <string name="install">Instalatu</string>
     <string name="cancel">Utzi</string>

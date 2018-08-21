@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources><string name="main_bg_subtitle">Başlamaq üçün axtarışa bas</string>
-    <string name="view_count_text">%1$s baxış</string>
     <string name="upload_date_text">Dərc edilib %1$s</string>
     <string name="no_player_found">Axın oynadıcısı tapılmadı. VLC ni yükləmək istərdinizmi?</string>
     <string name="no_player_found_toast">Axın oynadıcısı tapılmadı (baxmaq üçün VLC ni yükləyə bilərsən)</string>
