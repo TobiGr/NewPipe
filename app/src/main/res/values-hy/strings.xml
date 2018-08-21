@@ -25,6 +25,5 @@
     <string name="install">Տեղադրել</string>
     <string name="cancel">Վերացնել</string>
     <string name="open_in_browser">Բացել բրաուզերում</string>
-    <string name="choose_browser">Ընտրեք բրաուզերը</string>
     <string name="error">Սխալ</string>
 </resources>

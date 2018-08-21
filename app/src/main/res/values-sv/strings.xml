@@ -11,7 +11,6 @@
     <string name="search">Sök</string>
     <string name="settings">Inställningar</string>
     <string name="share_dialog_title">Dela med</string>
-    <string name="choose_browser">Välj webbläsare</string>
     <string name="screen_rotation">rotering</string>
     <string name="use_external_video_player_title">Använd extern videospelare</string>
     <string name="use_external_video_player_summary">Några upplösningar kommer INTE ha ljud när det här alternativet är aktiverat</string>

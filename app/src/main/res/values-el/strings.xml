@@ -10,7 +10,6 @@
     <string name="search">Αναζήτηση</string>
     <string name="settings">Ρυθμίσεις</string>
     <string name="share_dialog_title">Κοινοποίηση με</string>
-    <string name="choose_browser">Επιλέξτε browser</string>
     <string name="screen_rotation">περιστροφή</string>
     <string name="use_external_video_player_title">Χρήση εξωτερικού video player</string>
     <string name="use_external_audio_player_title">Χρήση εξωτερικού audio player</string>

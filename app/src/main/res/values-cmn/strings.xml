@@ -13,7 +13,6 @@
     <string name="search">搜索</string>
     <string name="settings">设置</string>
     <string name="share_dialog_title">与某人分享</string>
-    <string name="choose_browser">选择浏览器</string>
     <string name="screen_rotation">回转</string>
     <string name="use_external_video_player_title">使用外部视频播放器</string>
     <string name="use_external_video_player_summary">启用此选项时,某些分辨率将不会有音频</string>

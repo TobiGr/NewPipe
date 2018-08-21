@@ -12,7 +12,6 @@
     <string name="search">Axtarış</string>
     <string name="settings">Ayarlar</string>
     <string name="share_dialog_title">Paylaş</string>
-    <string name="choose_browser">Brauzeri seç</string>
     <string name="use_external_video_player_title">Kənar video oynadıcı istifadə et</string>
     <string name="use_external_video_player_summary">Bu seçim aktivləşdirildiyi zaman bəzi ölçülərdə səs OLMAYACAQ</string>
     <string name="use_external_audio_player_title">Kənar audio oynadıcı istifadə et</string>

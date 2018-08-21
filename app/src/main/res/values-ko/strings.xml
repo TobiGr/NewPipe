@@ -10,7 +10,6 @@
     <string name="search">검색</string>
     <string name="settings">설정</string>
     <string name="share_dialog_title">다음으로 공유</string>
-    <string name="choose_browser">브라우저 선택</string>
     <string name="screen_rotation">회전</string>
     <string name="download_path_title">비디오 다운로드 위치</string>
     <string name="download_path_summary">다운로드된 비디오가 저장될 경로를 선택하세요</string>

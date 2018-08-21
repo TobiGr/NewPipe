@@ -13,7 +13,6 @@
     <string name="search">Otsi</string>
     <string name="settings">Seaded</string>
     <string name="share_dialog_title">Jaga</string>
-    <string name="choose_browser">Vali veebilehitseja</string>
     <string name="screen_rotation">pööramine</string>
     <string name="use_external_video_player_title">Kasuta välist videopleierit</string>
     <string name="use_external_video_player_summary">Kui see valik lubada, puudub osadel lahutustel heli</string>

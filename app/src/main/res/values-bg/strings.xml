@@ -11,7 +11,6 @@
     <string name="search">Търси</string>
     <string name="settings">Настройки</string>
     <string name="share_dialog_title">Сподели с</string>
-    <string name="choose_browser">Избери браузър</string>
     <string name="screen_rotation">ориентация</string>
     <string name="use_external_video_player_title">Използвай външен видео плейър</string>
     <string name="use_external_video_player_summary">Някои резолюции няма да имат вграден аудио поток, ако тази опция е избрана</string>

@@ -13,7 +13,6 @@
     <string name="search">Пребарај</string>
     <string name="settings">Поставки</string>
     <string name="share_dialog_title">Сподели со</string>
-    <string name="choose_browser">Одбери пребарувач</string>
     <string name="screen_rotation">ротација</string>
     <string name="use_external_video_player_title">Користи надворешен видео плеер</string>
     <string name="use_external_video_player_summary">Некои резолуции НЕМААТ звук со оваа опција</string>

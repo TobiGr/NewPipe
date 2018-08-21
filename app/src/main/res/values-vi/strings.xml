@@ -11,7 +11,6 @@
     <string name="search">Tìm kiếm</string>
     <string name="settings">Cài đặt</string>
     <string name="share_dialog_title">Chia sẻ với</string>
-    <string name="choose_browser">Chọn trình duyệt</string>
     <string name="use_external_video_player_title">Sử dụng trình phát video bên ngoài</string>
     <string name="use_external_video_player_summary">Một số độ phân giải sẽ KHÔNG có âm thanh khi chế độ này</string>
     <string name="use_external_audio_player_title">Sử dụng trình phát âm thanh bên ngoài</string>

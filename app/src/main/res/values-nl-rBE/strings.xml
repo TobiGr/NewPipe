@@ -13,7 +13,6 @@
     <string name="search">Zoeken</string>
     <string name="settings">Instellingen</string>
     <string name="share_dialog_title">Delen met</string>
-    <string name="choose_browser">Kies nen browser</string>
     <string name="screen_rotation">rotatie</string>
     <string name="use_external_video_player_title">Externe videospeler gebruiken</string>
     <string name="use_external_video_player_summary">Sommige resoluties zullen geen geluid hebben als deze optie is ingeschakeld</string>

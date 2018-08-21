@@ -2,7 +2,6 @@
 <resources>
     <string name="background_player_playing_toast">يتم التشغيل في الخلفية</string>
     <string name="cancel">إلغاء</string>
-    <string name="choose_browser">اختر المتصفح</string>
     <string name="dark_theme_title">مظلم</string>
     <string name="default_audio_format_title">صيغة الصوت الإفتراضية</string>
     <string name="default_resolution_title">الدقة الإفتراضية</string>

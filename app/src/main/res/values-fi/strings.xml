@@ -11,7 +11,6 @@
     <string name="search">Haku</string>
     <string name="settings">Asetukset</string>
     <string name="share_dialog_title">Jaa</string>
-    <string name="choose_browser">Valitse selain</string>
     <string name="screen_rotation">kierto</string>
     <string name="use_external_video_player_title">Käytä ulkoista videosoitinta</string>
     <string name="use_external_video_player_summary">Joillain resoluutioilla EI ole ääntä, kun tämä on valittuna</string>

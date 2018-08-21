@@ -12,7 +12,6 @@
     <string name="search">חפש</string>
     <string name="settings">הגדרות</string>
     <string name="share_dialog_title">שתף עם</string>
-    <string name="choose_browser">בחר דפדפן</string>
     <string name="screen_rotation">סיבוב</string>
     <string name="use_external_video_player_title">השתמש בנגן סרטים חיצוני</string>
     <string name="use_external_video_player_summary">לחלק מהסרטונים עם רזולוציה גבוהה לא יהיה שמע כאשר אפשרות זו פועלת</string>
