@@ -124,7 +124,6 @@
     <string name="recaptcha_request_toast">Défi reCAPTCHA demandé</string>
 
     <string name="open_in_popup_mode">Ouvrir en mode fenêtré</string>
-    <string name="popup_mode_share_menu_title">Mode fenêtré NewPipe</string>
 
     <string name="popup_playing_toast">Lecture en mode fenêtré</string>
     <string name="yes">Oui</string>

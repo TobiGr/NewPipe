@@ -14,7 +14,6 @@
     <string name="use_external_video_player_title">Sử dụng trình phát video bên ngoài</string>
     <string name="use_external_video_player_summary">Một số độ phân giải sẽ KHÔNG có âm thanh khi chế độ này</string>
     <string name="use_external_audio_player_title">Sử dụng trình phát âm thanh bên ngoài</string>
-    <string name="popup_mode_share_menu_title">Chế độ popup của NewPipe</string>
     <string name="popup">Chế độ Popup</string>
 
     <string name="download_path_title">Đường dẫn tải xuống video</string>

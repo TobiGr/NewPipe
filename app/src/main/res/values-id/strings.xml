@@ -135,8 +135,6 @@
     <string name="msg_popup_permission">Izin ini dibutuhkan untuk
 membuka di mode popup</string>
 
-    <string name="popup_mode_share_menu_title">Mode popup NewPipe</string>
-
     <string name="popup_playing_toast">Memutar dalam mode popup</string>
     <string name="use_old_player_title">Gunakan pemutar lama</string>
     <string name="use_old_player_summary">Versi lama pemutar Mediaframework</string>

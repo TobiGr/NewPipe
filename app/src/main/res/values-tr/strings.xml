@@ -110,7 +110,6 @@
 
     <string name="could_not_setup_download_menu">İndirme menüsü ayarlanamadı</string>
     <string name="open_in_popup_mode">Açılır oynatıcı kipinde aç</string>
-    <string name="popup_mode_share_menu_title">NewPipe açılır oynatıcı kipi</string>
 
     <string name="default_popup_resolution_title">Öntanımlı açılır oynatıcı çözünürlüğü</string>
     <string name="show_higher_resolutions_title">Daha yüksek çözünürlükleri göster</string>

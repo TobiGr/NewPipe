@@ -138,7 +138,6 @@
     <string name="open_in_popup_mode">Im Pop-up-Modus öffnen</string>
     <string name="default_video_format_title">Bevorzugtes Videoformat</string>
     <string name="popup_playing_toast">Spiele im Pop-up Modus ab</string>
-    <string name="popup_mode_share_menu_title">NewPipe-Pop-up-Modus</string>
 
 
     <string name="msg_popup_permission">Diese Berechtigung ist für das Öffnen im Pop-up-Modus erforderlich</string>

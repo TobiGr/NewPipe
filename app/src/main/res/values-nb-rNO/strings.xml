@@ -118,7 +118,6 @@
     <string name="reCaptcha_title">reCAPTCHA-oppgave</string>
 
     <string name="open_in_popup_mode">Åpne i oppsprettsmodus</string>
-    <string name="popup_mode_share_menu_title">NewPipe oppsprettsmodus</string>
 
     <string name="default_popup_resolution_title">Forvalgt oppsprettsoppløsning</string>
     <string name="show_higher_resolutions_title">Vis høyere oppløsninger</string>

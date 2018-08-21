@@ -15,7 +15,6 @@
     <string name="use_external_video_player_title">Koristi vanjski reproduktor videozapisa</string>
     <string name="use_external_video_player_summary">Neke razlučivosti NEĆE imati zvuk kad je ova opcija omogućena</string>
     <string name="use_external_audio_player_title">Koristi vanjski reproduktor za zvuk</string>
-    <string name="popup_mode_share_menu_title">NewPipe skočni prozor</string>
     <string name="subscribe_button_title">Pretplati se</string>
     <string name="subscribed_button_title">Pretplaćeno</string>
     <string name="channel_unsubscribed">Pretplata na kanalu otkazana</string>

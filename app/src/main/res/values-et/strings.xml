@@ -17,7 +17,6 @@
     <string name="use_external_video_player_title">Kasuta välist videopleierit</string>
     <string name="use_external_video_player_summary">Kui see valik lubada, puudub osadel lahutustel heli</string>
     <string name="use_external_audio_player_title">Kasuta välist audiopleierit</string>
-    <string name="popup_mode_share_menu_title">NewPipe hüpikaknarežiim</string>
     <string name="subscribe_button_title">Telli</string>
     <string name="subscribed_button_title">Tellitud</string>
     <string name="channel_unsubscribed">Kanali tellimus tühistatud</string>

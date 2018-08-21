@@ -15,7 +15,6 @@
     <string name="use_external_video_player_title">Naudoti išorinį vaizdo grotuvą</string>
     <string name="use_external_video_player_summary">Kai kurios raiškos nepalaiko audio, kai ši parinktis įgalinta</string>
     <string name="use_external_audio_player_title">Naudoti išorinį audio grotuvą</string>
-    <string name="popup_mode_share_menu_title">NewPipe iššokančiojo lango rėžimas</string>
     <string name="controls_background_title">Fonas</string>
     <string name="popup">Išokantis langelis</string>
 

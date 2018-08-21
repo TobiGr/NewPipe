@@ -135,8 +135,6 @@
     <string name="reCaptcha_title">Desafio reCAPTCHA</string>
     <string name="recaptcha_request_toast">Desafio reCAPTCHA solicitado</string>
 
-    <string name="popup_mode_share_menu_title">Modo \"popup\" do NewPipe</string>
-
     <string name="popup_playing_toast">Reproduzir em modo \"popup\"</string>
     <string name="use_old_player_title">Usar reprodutor antigo</string>
     <string name="use_old_player_summary">Versão antiga do reprodutor Mediaframework</string>

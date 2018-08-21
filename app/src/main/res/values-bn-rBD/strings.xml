@@ -16,7 +16,6 @@
     <string name="screen_rotation">রোটেশন</string>
     <string name="use_external_video_player_title">বাহ্যিক ভিডিও প্লেয়ার ব্যবহার করো</string>
     <string name="use_external_audio_player_title">বাহ্যিক অডিও প্লেয়ার ব্যবহার করো</string>
-    <string name="popup_mode_share_menu_title">NewPipe পপআপ মোড</string>
 
     <string name="controls_background_title">ব্যাকগ্রাউন্ড</string>
     <string name="popup">পপআপ</string>

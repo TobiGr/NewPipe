@@ -17,7 +17,6 @@
     <string name="use_external_video_player_title">使用外部视频播放器</string>
     <string name="use_external_video_player_summary">启用此选项时,某些分辨率将不会有音频</string>
     <string name="use_external_audio_player_title">使用外部音频播放器</string>
-    <string name="popup_mode_share_menu_title">NewPipe弹出模式</string>
     <string name="subscribe_button_title">订阅</string>
     <string name="subscribed_button_title">订阅</string>
     <string name="channel_unsubscribed">取消订阅成功</string>

@@ -15,7 +15,6 @@
     <string name="use_external_video_player_title">Използвай външен видео плейър</string>
     <string name="use_external_video_player_summary">Някои резолюции няма да имат вграден аудио поток, ако тази опция е избрана</string>
     <string name="use_external_audio_player_title">Използвай външен аудио плейър</string>
-    <string name="popup_mode_share_menu_title">NewPipe в прозорец</string>
     <string name="subscribe_button_title">Абониране</string>
     <string name="subscribed_button_title">Абониран</string>
     <string name="channel_unsubscribed">Премахнат абонамент за канала</string>

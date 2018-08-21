@@ -140,7 +140,6 @@ otevření ve vyskakovacím okně</string>
     <string name="default_video_format_title">Výchozí formát videa</string>
     <string name="popup_remember_size_pos_title">Pamatovat si velikost a pozici vyskakovacího okna</string>
     <string name="popup_remember_size_pos_summary">Pamatovat si poslední velikost a pozici vyskakovacího okna</string>
-    <string name="popup_mode_share_menu_title">NewPipe režim vyskakovacího okna</string>
     <string name="subscribe_button_title">Odebírat</string>
     <string name="subscribed_button_title">Odebíráno</string>
     <string name="channel_unsubscribed">Odběr zrušen</string>

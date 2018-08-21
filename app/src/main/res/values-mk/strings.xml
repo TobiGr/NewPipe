@@ -17,7 +17,6 @@
     <string name="use_external_video_player_title">Користи надворешен видео плеер</string>
     <string name="use_external_video_player_summary">Некои резолуции НЕМААТ звук со оваа опција</string>
     <string name="use_external_audio_player_title">Користи надворешен аудио плеер</string>
-    <string name="popup_mode_share_menu_title">NewPipe мало прозорче</string>
     <string name="subscribe_button_title">Зачлени се</string>
     <string name="subscribed_button_title">Зачленет</string>
     <string name="channel_unsubscribed">Откажано е членството на каналот</string>

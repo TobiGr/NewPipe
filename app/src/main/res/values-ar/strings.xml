@@ -74,7 +74,6 @@
     <string name="history">التاريخ</string>
     <string name="open_in_popup_mode">فتح في وضع النافذة المنبثقة</string>
     <string name="use_external_video_player_summary">"بعض الخيارات الدقة لن تحتوي على صوت عند تمكين هذا الخيار "</string>
-    <string name="popup_mode_share_menu_title">وضع النوافذ المنبثقة NewPipe</string>
     <string name="channel_unsubscribed">تم إلغاء الاشتراك في القناة</string>
     <string name="subscription_change_failed">تعذر تغيير حالة الاشتراك</string>
     <string name="subscription_update_failed">تعذر تحديث الاشتراك</string>

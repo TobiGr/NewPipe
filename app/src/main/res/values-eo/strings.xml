@@ -73,7 +73,6 @@
     <string name="no_player_found_toast">Neniu elsendlflua ludilo trovita (instalu VLC por ludi ĝin)</string>
     <string name="open_in_popup_mode">Malfermi en ŝprucfenestron modon</string>
     <string name="use_external_video_player_summary">Iuj rezolucioj NE havos aŭdion kiam ĉi tiu eblo estas ebligita</string>
-    <string name="popup_mode_share_menu_title">NewPipe ŝprucfenestron modon</string>
     <string name="subscribe_button_title">Aboni</string>
     <string name="subscribed_button_title">Abonita</string>
     <string name="channel_unsubscribed">Kanalo malabonita</string>

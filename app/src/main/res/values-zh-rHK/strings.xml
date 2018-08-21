@@ -110,7 +110,6 @@
     <string name="no_available_dir">請選擇下載資料夾。</string>
 
     <string name="open_in_popup_mode">在畫中畫模式開啟</string>
-    <string name="popup_mode_share_menu_title">NewPipe 畫中畫模式</string>
 
     <string name="default_popup_resolution_title">預設畫中畫解像度</string>
     <string name="show_higher_resolutions_title">顯示更高解像度</string>

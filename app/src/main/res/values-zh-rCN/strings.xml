@@ -117,7 +117,6 @@
 
 <string name="open_in_popup_mode">以悬浮窗打开</string>
     <string name="use_external_video_player_summary">选项启用时，某分辨率的视频将没有声音</string>
-    <string name="popup_mode_share_menu_title">NewPipe悬浮窗模式</string>
     <string name="subscribe_button_title">订阅</string>
     <string name="subscribed_button_title">已订阅</string>
     <string name="channel_unsubscribed">已取消订阅频道</string>

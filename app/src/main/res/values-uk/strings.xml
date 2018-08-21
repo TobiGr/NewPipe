@@ -118,7 +118,6 @@
 <string name="no_player_found_toast">Стримінґового програвача не знайдено (ви можете встановити VLC для відтворення)</string>
     <string name="open_in_popup_mode">Відкрити у віконному режимі</string>
     <string name="use_external_video_player_summary">Певні роздільності НЕ МАТИМУТЬ звуку якщо цей параметр увімкнено</string>
-    <string name="popup_mode_share_menu_title">NewPipe у віконному режимі</string>
     <string name="subscribe_button_title">Підписатися</string>
     <string name="subscribed_button_title">Ви підписалися</string>
     <string name="channel_unsubscribed">Ви відписалися від каналу</string>

@@ -140,8 +140,6 @@
     <string name="msg_popup_permission">Dovoljenje je zahtevano za
 odpiranje v pojavnem načinu</string>
 
-    <string name="popup_mode_share_menu_title">Pojavni način NewPipe</string>
-
     <string name="popup_playing_toast">Predvajanje v pojavnem načinu</string>
     <string name="disabled">Onemogočeno</string>
 

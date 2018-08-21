@@ -159,7 +159,6 @@
     <string name="recaptcha_request_toast">Запрошен ввод reCAPTCHA</string>
 
     <string name="show_higher_resolutions_title">Высокие разрешения</string>
-    <string name="popup_mode_share_menu_title">NewPipe в окне</string>
     <string name="title_activity_about">О NewPipe</string>
     <string name="app_license_title">Лицензия NewPipe</string>
     <string name="tab_licenses">Лицензии</string>

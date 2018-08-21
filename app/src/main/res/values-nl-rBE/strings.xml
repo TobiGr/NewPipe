@@ -17,7 +17,6 @@
     <string name="use_external_video_player_title">Externe videospeler gebruiken</string>
     <string name="use_external_video_player_summary">Sommige resoluties zullen geen geluid hebben als deze optie is ingeschakeld</string>
     <string name="use_external_audio_player_title">Externen audiospeler gebruiken</string>
-    <string name="popup_mode_share_menu_title">NewPipe-pop-upmodus</string>
     <string name="subscribe_button_title">Abonneer</string>
     <string name="subscribed_button_title">Geabonneerd</string>
     <string name="channel_unsubscribed">Abonnement opgezegd</string>

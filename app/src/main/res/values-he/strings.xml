@@ -16,7 +16,6 @@
     <string name="use_external_video_player_title">השתמש בנגן סרטים חיצוני</string>
     <string name="use_external_video_player_summary">לחלק מהסרטונים עם רזולוציה גבוהה לא יהיה שמע כאשר אפשרות זו פועלת</string>
     <string name="use_external_audio_player_title">השתמש בנגן סרטים חיצוני</string>
-    <string name="popup_mode_share_menu_title">מצב חלון צץ (NewPipe)</string>
     <string name="controls_background_title">רקע</string>
     <string name="popup">חלון צץ</string>
 

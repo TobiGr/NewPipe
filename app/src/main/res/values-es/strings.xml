@@ -136,8 +136,6 @@ abrir en modo popup</string>
     <string name="reCaptcha_title">reCAPTCHA Challenge</string>
     <string name="recaptcha_request_toast">reCAPTCHA Challenge requerido</string>
 
-    <string name="popup_mode_share_menu_title">Modo popup de NewPipe</string>
-
     <string name="popup_playing_toast">Reproduciendo en modo popup</string>
     <string name="use_old_player_title">Usar reproductor antiguo</string>
     <string name="use_old_player_summary">Versión antigua en reproductor Media Framework</string>

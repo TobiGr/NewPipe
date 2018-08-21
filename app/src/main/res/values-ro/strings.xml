@@ -121,8 +121,6 @@ pentru a deschide în mod pop-up</string>
     <string name="reCaptcha_title">reCAPTCHA noua</string>
     <string name="recaptcha_request_toast">reCAPTCHA noua ceruta</string>
 
-    <string name="popup_mode_share_menu_title">NewPipe mod pop-up</string>
-
     <string name="default_popup_resolution_title">"Rezoluție pop-up inițială "</string>
     <string name="show_higher_resolutions_title">Afișează rezoluții mai mari</string>
     <string name="show_higher_resolutions_summary">Doar anumite dispozitive suportă redarea videoclipurilor 2K/4K</string>

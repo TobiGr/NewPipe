@@ -15,7 +15,6 @@
     <string name="use_external_video_player_title">Använd extern videospelare</string>
     <string name="use_external_video_player_summary">Några upplösningar kommer INTE ha ljud när det här alternativet är aktiverat</string>
     <string name="use_external_audio_player_title">Använd extern ljudspelare</string>
-    <string name="popup_mode_share_menu_title">NewPipe popup-läge</string>
     <string name="controls_background_title">Bakgrund</string>
     <string name="popup">Extrafönster</string>
 
