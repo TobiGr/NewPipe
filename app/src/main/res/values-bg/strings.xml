@@ -10,7 +10,6 @@
     <string name="download">Изтегли</string>
     <string name="search">Търси</string>
     <string name="settings">Настройки</string>
-    <string name="did_you_mean">Може би имахте в предвид: %1$s ?</string>
     <string name="share_dialog_title">Сподели с</string>
     <string name="choose_browser">Избери браузър</string>
     <string name="screen_rotation">ориентация</string>

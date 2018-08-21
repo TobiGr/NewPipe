@@ -12,7 +12,6 @@
     <string name="controls_download_desc">下载流文件.</string>
     <string name="search">搜索</string>
     <string name="settings">设置</string>
-    <string name="did_you_mean">你的意思是: %1$s ?</string>
     <string name="share_dialog_title">与某人分享</string>
     <string name="choose_browser">选择浏览器</string>
     <string name="screen_rotation">回转</string>

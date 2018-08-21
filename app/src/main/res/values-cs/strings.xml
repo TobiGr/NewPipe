@@ -9,7 +9,6 @@
     <string name="download">Stáhnout</string>
     <string name="search">Vyhledat</string>
     <string name="settings">Nastavení</string>
-    <string name="did_you_mean">Měli jste na mysli: %1$s?</string>
     <string name="share_dialog_title">Sdílet s</string>
     <string name="choose_browser">Vybrat prohlížeč</string>
     <string name="screen_rotation">otočení</string>

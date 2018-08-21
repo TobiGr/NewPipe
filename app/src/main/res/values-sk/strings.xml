@@ -9,7 +9,6 @@
     <string name="download">Prevziať</string>
     <string name="search">Hľadať</string>
     <string name="settings">Nastavenia</string>
-    <string name="did_you_mean">Mysleli ste: %1$s?</string>
     <string name="share_dialog_title">Zdieľať s</string>
     <string name="choose_browser">Vyberte prehliadač</string>
     <string name="screen_rotation">otočenie</string>

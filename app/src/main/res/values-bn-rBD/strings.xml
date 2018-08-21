@@ -12,7 +12,6 @@
     <string name="download">ডাউনলোড</string>
     <string name="search">খোঁজ</string>
     <string name="settings">"সেটিংস "</string>
-    <string name="did_you_mean">আপনি কি বুঝিয়েছেনঃ %1$s ?</string>
     <string name="share_dialog_title">শেয়ার কর</string>
     <string name="choose_browser">ব্রাউজার পছন্দ কর</string>
     <string name="screen_rotation">রোটেশন</string>

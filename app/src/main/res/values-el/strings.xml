@@ -9,7 +9,6 @@
     <string name="download">Λήψη</string>
     <string name="search">Αναζήτηση</string>
     <string name="settings">Ρυθμίσεις</string>
-    <string name="did_you_mean">"Μήπως εννοείτε: %1$s ?"</string>
     <string name="share_dialog_title">Κοινοποίηση με</string>
     <string name="choose_browser">Επιλέξτε browser</string>
     <string name="screen_rotation">περιστροφή</string>

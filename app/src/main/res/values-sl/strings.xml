@@ -9,7 +9,6 @@
     <string name="download">Prejmi</string>
     <string name="search">Poišči</string>
     <string name="settings">Nastavitve</string>
-    <string name="did_you_mean">Ali ste mislili: %1$s?</string>
     <string name="share_dialog_title">Omogoči souporabo z</string>
     <string name="choose_browser">Izbor brskalnika</string>
     <string name="screen_rotation">usmerjenost</string>

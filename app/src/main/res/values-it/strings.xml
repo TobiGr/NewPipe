@@ -9,7 +9,6 @@
     <string name="download">Scarica</string>
     <string name="search">Cerca</string>
     <string name="settings">Impostazioni</string>
-    <string name="did_you_mean">Intendevi: %1$s ?</string>
     <string name="share_dialog_title">Condividi con</string>
     <string name="choose_browser">Scegli il browser</string>
     <string name="screen_rotation">rotazione</string>

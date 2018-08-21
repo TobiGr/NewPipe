@@ -3,7 +3,6 @@
     <string name="cancel">Annuler</string>
     <string name="choose_browser">Choisir un navigateur</string>
     <string name="default_resolution_title">Résolution par défaut</string>
-    <string name="did_you_mean">Vouliez-vous dire : %1$s ?</string>
     <string name="download">Télécharger</string>
     <string name="download_path_title">Chemin de téléchargement vidéo</string>
     <string name="download_path_dialog_title">Entrez le chemin de téléchargement des vidéos</string>

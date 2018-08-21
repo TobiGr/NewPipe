@@ -123,7 +123,6 @@
     <string name="no_player_found_toast">No s\'ha trobat cap reproductor de fluxos (podeu instal·lar el VLC per reproduir-lo)</string>
     <string name="open_in_popup_mode">Obre en mode emergent</string>
     <string name="controls_download_desc">Baixa el fitxer de vídeo.</string>
-    <string name="did_you_mean">Volíeu dir: %1$s?</string>
     <string name="share_dialog_title">Comparteix-ho amb</string>
     <string name="screen_rotation">rotació</string>
     <string name="use_external_video_player_title">Reproductor de vídeo extern</string>

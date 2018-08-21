@@ -11,7 +11,6 @@
     <string name="controls_download_desc">Axın faylını endir.</string>
     <string name="search">Axtarış</string>
     <string name="settings">Ayarlar</string>
-    <string name="did_you_mean">Bunu mu demək istədin: %1$s ?</string>
     <string name="share_dialog_title">Paylaş</string>
     <string name="choose_browser">Brauzeri seç</string>
     <string name="use_external_video_player_title">Kənar video oynadıcı istifadə et</string>

@@ -9,7 +9,6 @@
     <string name="download">Letöltés</string>
     <string name="search">Keresés</string>
     <string name="settings">Beállítások</string>
-    <string name="did_you_mean">Erre gondolt: %1$s ?</string>
     <string name="share_dialog_title">Megosztás ezzel</string>
     <string name="choose_browser">Válasszon böngészőt</string>
     <string name="screen_rotation">forgatás</string>

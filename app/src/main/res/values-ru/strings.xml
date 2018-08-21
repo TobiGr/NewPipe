@@ -9,7 +9,6 @@
     <string name="download">Скачать</string>
     <string name="search">Поиск</string>
     <string name="settings">Настройки</string>
-    <string name="did_you_mean">Возможно, вы имели в виду: %1$s?</string>
     <string name="share_dialog_title">Поделиться с помощью</string>
     <string name="choose_browser">Выбрать браузер</string>
     <string name="screen_rotation">поворот</string>

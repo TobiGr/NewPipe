@@ -11,7 +11,6 @@
     <string name="download">הורד</string>
     <string name="search">חפש</string>
     <string name="settings">הגדרות</string>
-    <string name="did_you_mean">האם התכוונת ל-%1$s ?</string>
     <string name="share_dialog_title">שתף עם</string>
     <string name="choose_browser">בחר דפדפן</string>
     <string name="screen_rotation">סיבוב</string>

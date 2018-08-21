@@ -9,7 +9,6 @@
     <string name="download">Descărcare</string>
     <string name="search">Căutare</string>
     <string name="settings">Setări</string>
-    <string name="did_you_mean">V-ați referit la: %1$s ?</string>
     <string name="share_dialog_title">Partajează cu</string>
     <string name="choose_browser">Alegeți browser-ul</string>
     <string name="screen_rotation">rotație</string>

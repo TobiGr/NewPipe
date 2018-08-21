@@ -10,7 +10,6 @@
     <string name="download">Lataus</string>
     <string name="search">Haku</string>
     <string name="settings">Asetukset</string>
-    <string name="did_you_mean">Tarkoititko: %1$s ?</string>
     <string name="share_dialog_title">Jaa</string>
     <string name="choose_browser">Valitse selain</string>
     <string name="screen_rotation">kierto</string>

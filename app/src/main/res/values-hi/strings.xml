@@ -51,7 +51,6 @@
     <string name="play_queue_audio_settings">ऑडियो सेटिंग</string>
     <string name="main_bg_subtitle">आरंम्भ करने के लिए खोज चिह्न दबाएं</string>
     <string name="cancel">रद्द करें</string>
-    <string name="did_you_mean">क्या आप का मतलब %1$s है?</string>
     <string name="share_dialog_title">शेयर करें</string>
     <string name="use_external_video_player_title">अन्य वीडियो प्लेयर उपयोग करें</string>
     <string name="use_external_video_player_summary">यह विकल्प चुनने से कुछ वीडियो से ध्वनि नहीं आएगी</string>

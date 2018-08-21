@@ -9,7 +9,6 @@
     <string name="detail_dislikes_img_view_description">عدم الإعجاب</string>
     <string name="detail_likes_img_view_description">الإعجابات</string>
     <string name="detail_uploader_thumbnail_view_description">الصورة المصغرة الشخصية</string>
-    <string name="did_you_mean">هل تقصد: %1$s ?</string>
     <string name="download">تنزيل</string>
     <string name="download_path_audio_dialog_title">أدخل مسار تنزيل الملفات الصوتية</string>
     <string name="download_path_audio_summary">مسار حفظ التنزيلات الصوتية</string>

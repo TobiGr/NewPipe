@@ -10,7 +10,6 @@
     <string name="download">بارگیری</string>
     <string name="search">جست‌وجو</string>
     <string name="settings">تنظیمات</string>
-    <string name="did_you_mean">منظورتان این بود: %1$s ؟</string>
     <string name="share_dialog_title">هم‌رسانی با</string>
     <string name="choose_browser">گزیدن مرورگر</string>
     <string name="screen_rotation">چرخش</string>

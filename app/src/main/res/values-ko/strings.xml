@@ -9,7 +9,6 @@
     <string name="download">다운로드</string>
     <string name="search">검색</string>
     <string name="settings">설정</string>
-    <string name="did_you_mean">혹시 이것을 검색하셨습니까?: %1$s ?</string>
     <string name="share_dialog_title">다음으로 공유</string>
     <string name="choose_browser">브라우저 선택</string>
     <string name="screen_rotation">회전</string>

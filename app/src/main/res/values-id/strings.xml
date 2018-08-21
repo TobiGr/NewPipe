@@ -48,7 +48,6 @@
     <string name="video_is_age_restricted">"Video Dibatasi Usia. Memperbolehkan  ditonton dapat diatur lewat Pengaturan."</string>
     <string name="network_error">Galat jaringan</string>
     <string name="could_not_load_thumbnails">Tidak bisa memuat semua Thumbnail</string>
-    <string name="did_you_mean">Maksud Anda: %1$s ?</string>
     <string name="screen_rotation">rotasi</string>
     <string name="duration_live">langsung</string>
     <string name="downloads">Unduhan</string>
