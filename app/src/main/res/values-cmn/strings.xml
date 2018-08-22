@@ -19,7 +19,6 @@
     <string name="use_external_audio_player_title">使用外部音频播放器</string>
     <string name="subscribe_button_title">订阅</string>
     <string name="subscribed_button_title">订阅</string>
-    <string name="channel_unsubscribed">取消订阅成功</string>
     <string name="subscription_change_failed">无法更改订阅</string>
     <string name="subscription_update_failed">无法更新订阅</string>
     <string name="show_info">显示详情</string>

@@ -161,7 +161,6 @@
     <string name="use_old_player_summary">Reproductor vieyu integráu de Mediaframework</string>
 <string name="subscribe_button_title">Soscribise</string>
     <string name="subscribed_button_title">Soscribiéstite</string>
-    <string name="channel_unsubscribed">Desoscribiéstite de la canal</string>
     <string name="subscription_change_failed">Nun pue camudase la resolución</string>
     <string name="subscription_update_failed">Nun pue anovase la soscripción</string>
 

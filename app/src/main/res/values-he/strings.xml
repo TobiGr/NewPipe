@@ -98,7 +98,6 @@
     <string name="info_labels">מה:\\nבקשה:\\nשפת התוכן:\\nשירות:\\nזמן GMT:\\nחבילה:\\nגרסה:\\nגרסת מערכת ההפעלה:</string>
 <string name="subscribe_button_title">הירשם כמנוי</string>
     <string name="subscribed_button_title">רשום כמנוי</string>
-    <string name="channel_unsubscribed">ביטול מנוי לערוץ</string>
     <string name="subscription_change_failed">אין אפשרות לשנות מנוי</string>
     <string name="subscription_update_failed">אין אפשרות לעדכן מנוי</string>
 

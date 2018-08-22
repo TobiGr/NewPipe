@@ -168,7 +168,6 @@
     <string name="contribution_title">Hartu parte</string>
 <string name="subscribe_button_title">Harpidetu</string>
     <string name="subscribed_button_title">Harpidetuta</string>
-    <string name="channel_unsubscribed">Kanaletik harpidetza kenduta</string>
     <string name="subscription_change_failed">Ezin izan da harpidetza aldatu</string>
     <string name="subscription_update_failed">Ezin izan da harpidetza eguneratu</string>
 

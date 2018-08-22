@@ -170,7 +170,6 @@
     <string name="search_no_results">Không tìm thấy</string>
     <string name="subscribe_button_title">Theo dõi</string>
     <string name="subscribed_button_title">Đang theo dõi</string>
-    <string name="channel_unsubscribed">Đã dừng theo dõi kênh</string>
     <string name="subscription_change_failed">Không thể thay đổi tình trạng theo dõi</string>
     <string name="subscription_update_failed">Không thể cập nhật tình trạng theo dõi</string>
 

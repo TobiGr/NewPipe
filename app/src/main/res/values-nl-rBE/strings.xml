@@ -19,7 +19,6 @@
     <string name="use_external_audio_player_title">Externen audiospeler gebruiken</string>
     <string name="subscribe_button_title">Abonneer</string>
     <string name="subscribed_button_title">Geabonneerd</string>
-    <string name="channel_unsubscribed">Abonnement opgezegd</string>
     <string name="subscription_change_failed">Kan het abonnement niet veranderen</string>
     <string name="subscription_update_failed">Kan het abonnement niet vernieuwen</string>
     <string name="show_info">Info tonen</string>

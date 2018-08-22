@@ -17,7 +17,6 @@
     <string name="use_external_audio_player_title">Koristi vanjski reproduktor za zvuk</string>
     <string name="subscribe_button_title">Pretplati se</string>
     <string name="subscribed_button_title">Pretplaćeno</string>
-    <string name="channel_unsubscribed">Pretplata na kanalu otkazana</string>
     <string name="subscription_change_failed">Nije moguće promijeniti pretplatu</string>
     <string name="subscription_update_failed">Nije moguće osvježiti pretplatu</string>
 

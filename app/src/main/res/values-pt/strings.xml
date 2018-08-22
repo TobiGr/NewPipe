@@ -179,7 +179,6 @@
     <string name="contribution_title">Participar</string>
 <string name="subscribe_button_title">Subscrever</string>
     <string name="subscribed_button_title">Subscrito</string>
-    <string name="channel_unsubscribed">Canal não subscrito</string>
     <string name="subscription_change_failed">Incapaz de alterar a subscrição</string>
     <string name="subscription_update_failed">Incapaz de atualizar a subscrição</string>
 

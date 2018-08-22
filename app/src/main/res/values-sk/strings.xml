@@ -168,7 +168,6 @@
 
     <string name="subscribe_button_title">Odber</string>
     <string name="subscribed_button_title">Odoberané</string>
-    <string name="channel_unsubscribed">Odber zrušený</string>
     <string name="subscription_change_failed">Nemožno zmeniť odber</string>
     <string name="subscription_update_failed">Nemožno aktualizovať odber</string>
 

@@ -261,7 +261,6 @@
     <string name="no_channel_subscribed_yet">Пока нет подписок на каналы</string>
     <string name="play_queue_remove">Удалить</string>
     <string name="subscribed_button_title">Вы подписаны</string>
-    <string name="channel_unsubscribed">Подписка отменена</string>
     <string name="show_hold_to_append_title">\"Зажмите, чтобы добавить\"</string>
     <string name="show_hold_to_append_summary">Показать подсказку при нажатии \"В окне\" или \"В фоне\" на странице сведений о видео</string>
     <string name="unknown_content">[Неизвестно]</string>

@@ -19,7 +19,6 @@
     <string name="use_external_audio_player_title">Користи надворешен аудио плеер</string>
     <string name="subscribe_button_title">Зачлени се</string>
     <string name="subscribed_button_title">Зачленет</string>
-    <string name="channel_unsubscribed">Откажано е членството на каналот</string>
     <string name="subscription_change_failed">Не може да се промени членството</string>
     <string name="subscription_update_failed">Не може да се освежи членството</string>
     <string name="show_info">Покажи информации</string>

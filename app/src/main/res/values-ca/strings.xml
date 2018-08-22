@@ -125,7 +125,6 @@
     <string name="share_dialog_title">Comparteix-ho amb</string>
     <string name="screen_rotation">rotació</string>
     <string name="use_external_video_player_title">Reproductor de vídeo extern</string>
-    <string name="channel_unsubscribed">Heu eliminat la subscripció d\'aquest canal</string>
     <string name="subscription_change_failed">No s\'ha pogut modificar la subscripció</string>
     <string name="subscription_update_failed">No s\'ha pogut actualitzar la subscripció</string>
     <string name="tab_main">Principal</string>

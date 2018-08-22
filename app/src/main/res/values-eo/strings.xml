@@ -75,7 +75,6 @@
     <string name="use_external_video_player_summary">Iuj rezolucioj NE havos aŭdion kiam ĉi tiu eblo estas ebligita</string>
     <string name="subscribe_button_title">Aboni</string>
     <string name="subscribed_button_title">Abonita</string>
-    <string name="channel_unsubscribed">Kanalo malabonita</string>
     <string name="subscription_change_failed">Neebla ŝanĝi abonon</string>
     <string name="controls_download_desc">Elŝutu dosieron.</string>
     <string name="subscription_update_failed">Ne eblas ĝisdatigi abonon</string>

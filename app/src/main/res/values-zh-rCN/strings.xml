@@ -119,7 +119,6 @@
     <string name="use_external_video_player_summary">选项启用时，某分辨率的视频将没有声音</string>
     <string name="subscribe_button_title">订阅</string>
     <string name="subscribed_button_title">已订阅</string>
-    <string name="channel_unsubscribed">已取消订阅频道</string>
     <string name="subscription_change_failed">无法更改订阅</string>
     <string name="subscription_update_failed">无法更新订阅</string>
 

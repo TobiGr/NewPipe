@@ -170,7 +170,6 @@ abrir em modo popup</string>
 
     <string name="subscribe_button_title">Inscrever-se</string>
     <string name="subscribed_button_title">Inscrito</string>
-    <string name="channel_unsubscribed">Inscrição ao canal cancelada</string>
     <string name="subscription_change_failed">Não foi possível modificar inscrição</string>
     <string name="subscription_update_failed">Não foi possível atualizar inscrição</string>
 

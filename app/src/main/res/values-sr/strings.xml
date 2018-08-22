@@ -204,7 +204,6 @@
     <string name="charset_letters_and_digits">Слова и бројке</string>
     <string name="copyright" formatted="true">© %1$s од %2$s под %3$s</string>
     <string name="error_unable_to_load_license">Не могу да учитам лиценцу</string>
-    <string name="channel_unsubscribed">Одјављен са канала</string>
     <string name="subscription_change_failed">Не могу да изменим претплату</string>
     <string name="subscription_update_failed">Не могу да ажурирам претплату</string>
 

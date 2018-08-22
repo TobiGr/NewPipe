@@ -17,7 +17,6 @@
     <string name="use_external_audio_player_title">Käytä ulkoista äänisoitinta</string>
     <string name="subscribe_button_title">Tilaa</string>
     <string name="subscribed_button_title">Tilattu</string>
-    <string name="channel_unsubscribed">Kanavan tilaus peruttu</string>
     <string name="subscription_change_failed">Ei pystytty vaihtamaan tilausta</string>
     <string name="subscription_update_failed">Ei pystytty päivittämään tilausta</string>
 

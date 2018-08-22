@@ -184,7 +184,6 @@ odpiranje v pojavnem načinu</string>
     <string name="app_description">Odprtokodni predvajalnik Youtube za Android.</string>
     <string name="subscribe_button_title">Naroči</string>
     <string name="subscribed_button_title">Naročeno</string>
-    <string name="channel_unsubscribed">Kanal ni naročen</string>
     <string name="subscription_change_failed">Ni mogoče spremeniti naročnine</string>
     <string name="subscription_update_failed">Ni mogoče posodobiti naročnine</string>
 

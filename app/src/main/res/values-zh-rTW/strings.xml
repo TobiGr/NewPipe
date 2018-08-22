@@ -152,7 +152,6 @@
     <string name="duration_live">現場直播</string>
     <string name="subscribe_button_title">訂閱</string>
     <string name="subscribed_button_title">已訂閱</string>
-    <string name="channel_unsubscribed">已取消訂閱頻道</string>
     <string name="subscription_change_failed">無法更改訂閱</string>
     <string name="subscription_update_failed">無法更新訂閱</string>
 

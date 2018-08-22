@@ -390,7 +390,6 @@ membuka di mode popup</string>
     <string name="tab_bookmarks">Markah</string>
 
     <string name="auto_queue_title">Antre otomatis stream berikutnya</string>
-    <string name="channel_unsubscribed">Berhenti langganan channel ini</string>
     <string name="subscription_update_failed">Tidak dapat memperbarui langganan</string>
     <string name="tab_subscriptions">Langganan</string>
     <string name="use_inexact_seek_title">Gunakan pencarian cepat yang tidak beraturan</string>

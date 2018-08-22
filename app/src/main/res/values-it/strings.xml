@@ -186,7 +186,6 @@
 <string name="title_activity_about">Informazioni su NewPipe</string>
     <string name="subscribe_button_title">Iscriviti</string>
     <string name="subscribed_button_title">Iscritto</string>
-    <string name="channel_unsubscribed">Disiscritto dal canale</string>
     <string name="subscription_change_failed">Impossibile cambiare l\'iscrizione</string>
     <string name="subscription_update_failed">Impossibile aggiornare l\'iscrizione</string>
 

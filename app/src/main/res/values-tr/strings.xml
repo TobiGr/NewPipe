@@ -187,7 +187,6 @@
 
     <string name="subscribe_button_title">Abone ol</string>
     <string name="subscribed_button_title">Abone olundu</string>
-    <string name="channel_unsubscribed">Kanal aboneliğinden çıktınız</string>
     <string name="subscription_change_failed">Abonelik değiştirilemiyor</string>
     <string name="subscription_update_failed">Abonelik güncellenemiyor</string>
 

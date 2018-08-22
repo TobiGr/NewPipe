@@ -187,7 +187,6 @@
     <string name="contribution_title">貢献</string>
 <string name="subscribe_button_title">チャンネル登録</string>
     <string name="subscribed_button_title">チャンネル登録しました</string>
-    <string name="channel_unsubscribed">チャンネル登録を解除しました</string>
     <string name="subscription_change_failed">チャンネル登録を変更できません</string>
     <string name="subscription_update_failed">チャンネル登録を更新できません</string>
 

@@ -100,7 +100,6 @@
     <string name="report_error">Rapportera ett fel</string>
     <string name="subscribe_button_title">Prenumerera</string>
     <string name="subscribed_button_title">Prenumererad</string>
-    <string name="channel_unsubscribed">Prenumerationen togs bort</string>
     <string name="subscription_change_failed">Kunde inte ändra prenumeration</string>
     <string name="subscription_update_failed">Kunde inte uppdatera prenumeration</string>
 

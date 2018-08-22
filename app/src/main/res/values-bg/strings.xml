@@ -17,7 +17,6 @@
     <string name="use_external_audio_player_title">Използвай външен аудио плейър</string>
     <string name="subscribe_button_title">Абониране</string>
     <string name="subscribed_button_title">Абониран</string>
-    <string name="channel_unsubscribed">Премахнат абонамент за канала</string>
     <string name="subscription_change_failed">Неуспешна промяна на абонамента</string>
     <string name="subscription_update_failed">Неуспешно обновление на абонамента</string>
 

@@ -148,7 +148,6 @@
 <string name="use_external_video_player_summary">Noen oppløsninger vil IKKE ha lyd når dette valget er påslått</string>
     <string name="subscribe_button_title">Abonner</string>
     <string name="subscribed_button_title">Abonnert</string>
-    <string name="channel_unsubscribed">Kanalabonnent oppsagt</string>
     <string name="subscription_change_failed">Klarte ikke å endre abonnement</string>
     <string name="subscription_update_failed">Klarte ikke å oppdatere abonnement</string>
 

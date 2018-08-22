@@ -142,7 +142,6 @@ otevření ve vyskakovacím okně</string>
     <string name="popup_remember_size_pos_summary">Pamatovat si poslední velikost a pozici vyskakovacího okna</string>
     <string name="subscribe_button_title">Odebírat</string>
     <string name="subscribed_button_title">Odebíráno</string>
-    <string name="channel_unsubscribed">Odběr zrušen</string>
     <string name="subscription_change_failed">Nelze změnit odběr</string>
     <string name="subscription_update_failed">Nelze aktualizovat odběr</string>
 

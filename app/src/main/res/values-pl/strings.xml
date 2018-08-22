@@ -177,7 +177,6 @@
     <string name="copyright" formatted="true">©%1$s %2$s na licencji %3$s</string>
     <string name="subscribe_button_title">Subskrybuj</string>
     <string name="subscribed_button_title">Subskrybujesz</string>
-    <string name="channel_unsubscribed">Anulowano subskrypcję kanału</string>
     <string name="subscription_change_failed">Nie można zmienić subskrypcji</string>
     <string name="subscription_update_failed">Nie można uaktualnić subskrypcji</string>
 

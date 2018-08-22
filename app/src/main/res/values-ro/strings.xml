@@ -164,7 +164,6 @@ pentru a deschide în mod pop-up</string>
 
     <string name="subscribe_button_title">Abonează-te</string>
     <string name="subscribed_button_title">Abonat(ă)</string>
-    <string name="channel_unsubscribed">Canal dezabonat</string>
     <string name="subscription_change_failed">Nu s-a putut modifica abonamentul</string>
     <string name="subscription_update_failed">Nu s-a putut actualiza abonamentul</string>
 

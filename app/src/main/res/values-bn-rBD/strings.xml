@@ -191,7 +191,6 @@
     <string name="use_external_video_player_summary">যদি এই অপশন অন থাকে তবে কিছু ভিডিওর অডিও কাজ নাও করতে পারে</string>
     <string name="subscribe_button_title">সাবস্ক্রাইব</string>
     <string name="subscribed_button_title">সাবস্ক্রাইব করা আছে</string>
-    <string name="channel_unsubscribed">চ্যানেল সাবস্ক্রাইব করা হয়েছে</string>
     <string name="subscription_change_failed">সাবস্ক্রিপশন পরিবর্তন করা হয়নি</string>
     <string name="subscription_update_failed">সাবস্ক্রিপশন আপডেট করতে ব্যার্থ হয়েছে</string>
     <string name="tab_main">প্রধান</string>

@@ -19,7 +19,6 @@
     <string name="use_external_audio_player_title">به‌كارهێنانی كارپێكه‌ری ده‌نگی ده‌ره‌كی</string>
     <string name="subscribe_button_title">به‌شداربوون</string>
     <string name="subscribed_button_title">به‌شداربوویت</string>
-    <string name="channel_unsubscribed">به‌شدارنابیت له‌ كه‌ناڵ</string>
     <string name="subscription_change_failed">ناتوانیت گۆڕانكاری له‌م به‌شدارییه‌دا بكه‌یت</string>
     <string name="subscription_update_failed">ناتوانرێت به‌شداریكردنه‌كه‌ نوێبكرێته‌وه‌</string>
     <string name="show_info">پیشاندانی زانیاری</string>

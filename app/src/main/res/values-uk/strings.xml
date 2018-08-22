@@ -120,7 +120,6 @@
     <string name="use_external_video_player_summary">Певні роздільності НЕ МАТИМУТЬ звуку якщо цей параметр увімкнено</string>
     <string name="subscribe_button_title">Підписатися</string>
     <string name="subscribed_button_title">Ви підписалися</string>
-    <string name="channel_unsubscribed">Ви відписалися від каналу</string>
     <string name="subscription_change_failed">Неможливо змінити підписання</string>
     <string name="subscription_update_failed">Неможливо оновити підписання</string>
 
