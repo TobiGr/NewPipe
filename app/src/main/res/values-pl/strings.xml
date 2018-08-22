@@ -40,7 +40,6 @@
     <string name="search_language_title">Domyślny język zawartości</string>
     <string name="settings_category_video_audio_title">Wideo i audio</string>
     <string name="settings_category_appearance_title">Wygląd</string>
-    <string name="settings_category_other_title">Inne</string>
     <string name="background_player_playing_toast">Odtwarzanie w tle</string>
     <string name="content">Zawartość</string>
     <string name="show_age_restricted_content_title">Pokaż zawartość z ograniczeniem wieku</string>

@@ -55,7 +55,6 @@
     <string name="search_language_title">שפת התוכן המועדפת</string>
     <string name="settings_category_video_audio_title">סרטים ושמע</string>
     <string name="settings_category_appearance_title">תצוגה</string>
-    <string name="settings_category_other_title">אחרים</string>
     <string name="background_player_playing_toast">מנגן ברקע</string>
     <string name="popup_playing_toast">מנגן במצב חלון צץ</string>
     <string name="content">תוכן</string>

@@ -25,7 +25,6 @@
     <string name="show_next_and_similar_title">Afficher les vidéos \"suivantes\" et \"similaires\"</string>
     <string name="url_not_supported_toast">Lien non pris en charge</string>
     <string name="settings_category_video_audio_title">Vidéo et audio</string>
-    <string name="settings_category_other_title">Autre</string>
 
     <string name="thumbnail_description">Miniature d’aperçu vidéo</string>
     <string name="detail_dislikes_img_view_description">Je n’aime pas</string>

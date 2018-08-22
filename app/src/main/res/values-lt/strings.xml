@@ -53,7 +53,6 @@
     <string name="search_language_title">Numatytoji tūrinio kalba</string>
     <string name="settings_category_video_audio_title">Vaizdas ir garsas</string>
     <string name="settings_category_appearance_title">Išvaizda</string>
-    <string name="settings_category_other_title">Kita</string>
     <string name="background_player_playing_toast">Groja fone</string>
     <string name="popup_playing_toast">Grojama iššokančiojo lango rėžime</string>
     <string name="content">Turinys</string>

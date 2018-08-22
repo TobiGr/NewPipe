@@ -39,7 +39,6 @@
     <string name="search_language_title">Переважна мова контенту</string>
     <string name="settings_category_video_audio_title">Відео та Аудіо</string>
     <string name="settings_category_appearance_title">Зовнішній вигляд</string>
-    <string name="settings_category_other_title">Інше</string>
     <string name="background_player_playing_toast">Відтворення у фоновому режимі</string>
     <string name="storage_permission_denied">У доступі відмовлено</string>
     <string name="content">Контент</string>

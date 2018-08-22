@@ -90,7 +90,6 @@
     <string name="settings_category_video_audio_title">Видео и Звук</string>
     <string name="settings_category_history_title">Историја</string>
     <string name="settings_category_appearance_title">Изглед</string>
-    <string name="settings_category_other_title">Друго</string>
     <string name="settings_category_debug_title">Дебагирање</string>
     <string name="background_player_playing_toast">Пуштено во позадина</string>
     <string name="popup_playing_toast">Пуштено во прозорче</string>

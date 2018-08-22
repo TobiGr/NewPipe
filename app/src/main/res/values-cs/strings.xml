@@ -39,7 +39,6 @@
     <string name="search_language_title">Preferovaný jazyk obsahu</string>
     <string name="settings_category_video_audio_title">Video a zvuk</string>
     <string name="settings_category_appearance_title">Vzhled</string>
-    <string name="settings_category_other_title">Ostatní</string>
     <string name="background_player_playing_toast">Přehrávání na pozadí</string>
     <string name="error">Chyba</string>
     <string name="network_error">Chyba sítě</string>

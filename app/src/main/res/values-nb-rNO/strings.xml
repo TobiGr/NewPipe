@@ -39,7 +39,6 @@
     <string name="search_language_title">Foretrukket innholdsspråk</string>
     <string name="settings_category_video_audio_title">Video og lyd</string>
     <string name="settings_category_appearance_title">Utseende</string>
-    <string name="settings_category_other_title">Annet</string>
     <string name="background_player_playing_toast">Spiller i bakgrunnen</string>
     <string name="network_error">Nettverksfeil</string>
 

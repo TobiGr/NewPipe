@@ -33,7 +33,6 @@
     <string name="search_language_title">默认内容语言</string>
     <string name="settings_category_video_audio_title">视频和音频</string>
     <string name="settings_category_appearance_title">外观</string>
-    <string name="settings_category_other_title">其他</string>
     <string name="background_player_playing_toast">后台播放</string>
     <string name="network_error">网络错误</string>
 

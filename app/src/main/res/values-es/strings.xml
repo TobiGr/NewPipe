@@ -31,7 +31,6 @@
     <string name="light_theme_title">Claro</string>
 
     <string name="settings_category_appearance_title">Apariencia</string>
-    <string name="settings_category_other_title">Otros</string>
     <string name="background_player_playing_toast">Reproduciendo en segundo plano</string>
     <string name="content_not_available">Contenido no disponible</string>
     <string name="use_tor_title">Usar Tor</string>

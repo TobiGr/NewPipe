@@ -90,7 +90,6 @@
     <string name="settings_category_video_audio_title">Video &amp; audio</string>
     <string name="settings_category_history_title">Geschiedenis &amp; cache</string>
     <string name="settings_category_appearance_title">Uiterlijk</string>
-    <string name="settings_category_other_title">Overige</string>
     <string name="settings_category_debug_title">Foutopsporing</string>
     <string name="background_player_playing_toast">Speelt af in achtergrond</string>
     <string name="popup_playing_toast">Speelt af in pop-upmodus</string>

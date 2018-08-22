@@ -51,7 +51,6 @@
     <string name="show_next_and_similar_title">Hiển thị các video tiếp theo và tương tự</string>
     <string name="url_not_supported_toast">URL không được hỗ trợ</string>
     <string name="settings_category_appearance_title">Hiển thị</string>
-    <string name="settings_category_other_title">Khác</string>
     <string name="background_player_playing_toast">Phát ở chế độ nền</string>
     <string name="popup_playing_toast">Phát ở chế độ cửa sổ bật lên (Popup)</string>
     <string name="content">Nội dung</string>

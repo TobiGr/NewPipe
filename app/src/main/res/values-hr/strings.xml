@@ -70,7 +70,6 @@
     <string name="search_language_title">Zadani jezik sadržaja</string>
     <string name="settings_category_video_audio_title">Video i zvuk</string>
     <string name="settings_category_appearance_title">Izgled</string>
-    <string name="settings_category_other_title">Drugo</string>
     <string name="background_player_playing_toast">Reprodukcija u pozadini</string>
     <string name="popup_playing_toast">Reproduciram u skočnom prozoru</string>
     <string name="content">Sadržaj</string>

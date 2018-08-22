@@ -90,7 +90,6 @@
     <string name="settings_category_video_audio_title">Heli ja pilt</string>
     <string name="settings_category_history_title">Ajalugu ja vahemälu</string>
     <string name="settings_category_appearance_title">Välimus</string>
-    <string name="settings_category_other_title">Muu</string>
     <string name="settings_category_debug_title">Silumine</string>
     <string name="background_player_playing_toast">Taasesitus taustal</string>
     <string name="popup_playing_toast">Taasesitus hüpikaknas</string>

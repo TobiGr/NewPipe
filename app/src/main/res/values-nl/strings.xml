@@ -41,7 +41,6 @@
     <string name="light_theme_title">Licht</string>
 
     <string name="settings_category_appearance_title">Uiterlijk</string>
-    <string name="settings_category_other_title">Overige</string>
     <string name="background_player_playing_toast">Speelt af in achtergrond</string>
     <string name="content">Inhoud</string>
     <string name="show_age_restricted_content_title">Toon inhoud met leeftijdsbeperking</string>

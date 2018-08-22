@@ -63,7 +63,6 @@
     <string name="show_search_suggestions_title">Bilaketa-iradokizunak</string>
     <string name="show_search_suggestions_summary">Erakutsi iradokizunak bilatzean</string>
 
-    <string name="settings_category_other_title">Besteak</string>
     <string name="popup_playing_toast">Laster-leiho moduan erreproduzitzen</string>
     <string name="content">Edukia</string>
     <string name="show_age_restricted_content_title">Erakutsi adinez mugatutako edukia</string>

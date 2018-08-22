@@ -41,7 +41,6 @@
     <string name="light_theme_title">明</string>
 
     <string name="settings_category_appearance_title">外観</string>
-    <string name="settings_category_other_title">その他</string>
     <string name="network_error">ネットワークエラー</string>
 
     <string name="download_path_audio_title">音楽を保存する場所</string>

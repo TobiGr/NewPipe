@@ -27,7 +27,6 @@
     <string name="search_language_title">Preferata enhavlingvo</string>
     <string name="settings_category_video_audio_title">Video kaj sono</string>
     <string name="settings_category_appearance_title">Apero</string>
-    <string name="settings_category_other_title">Alia</string>
     <string name="background_player_playing_toast">Ludado fone</string>
     <string name="error">Eraro</string>
     <string name="network_error">Reteraro</string>

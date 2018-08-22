@@ -50,7 +50,6 @@
     <string name="settings_category_video_audio_title">వీడియో &amp; ఆడియో</string>
     <string name="settings_category_history_title">చరిత్ర</string>
     <string name="settings_category_appearance_title">స్వరూపం</string>
-    <string name="settings_category_other_title">ఇతర</string>
     <string name="background_player_playing_toast">వెనకవైపులో ఆడుతున్నారు</string>
     <string name="popup_playing_toast">పాపప్ రీతిలో ప్లే చేస్తోంది</string>
     <string name="background_player_append">"ఆటగాడిపై   క్యూ"</string>

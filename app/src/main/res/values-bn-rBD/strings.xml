@@ -53,7 +53,6 @@
     <string name="search_language_title">কন্টেন্ট এর জন্য পছন্দসই ভাষা</string>
     <string name="settings_category_video_audio_title">ভিডিও এবং অডিও</string>
     <string name="settings_category_appearance_title">অ্যাপিয়ারেন্স</string>
-    <string name="settings_category_other_title">অন্যান্য</string>
     <!--     <string name="background_player_time_text" translatable="false">%1$s - NewPipe</string> -->
     <string name="background_player_playing_toast">ব্যাকগ্রাউন্ডে চলছে</string>
     <string name="popup_playing_toast">পপআপ মোডে চলছে</string>
