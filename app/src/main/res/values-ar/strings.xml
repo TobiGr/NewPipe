@@ -121,7 +121,6 @@
 
     <string name="light_parsing_error">لايمكن تحليل الموقع بشكل كلي</string>
     <string name="could_not_setup_download_menu">يتعذر إعداد قائمة التنزيل</string>
-    <string name="live_streams_not_supported">هذا هو بث مباشر ، وهو غير معتمد حتى الآن.</string>
     <string name="could_not_get_stream">يتعذر الحصول على أي بث</string>
     <string name="could_not_load_image">تعذر تحميل الصورة</string>
     <string name="app_ui_crash">تعطل التطبيق / واجهة المستخدم</string>

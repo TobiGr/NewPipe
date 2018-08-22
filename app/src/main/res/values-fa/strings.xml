@@ -57,7 +57,6 @@
     <string name="content_not_available">محتوا در دسترس نیست.</string>
     <string name="blocked_by_gema">مسدود شده توسّط GEMA.</string>
     <string name="could_not_setup_download_menu">نمی‌توان فهرست بارگیری را برپا ساخت.</string>
-    <string name="live_streams_not_supported">این یک جریان زنده است. این جریان‌ها هنوز پشتیبانی نمی‌شوند.</string>
     <string name="could_not_get_stream">نمی‌توان هیچ جریانی را گرفت.</string>
     <string name="sorry_string">ببخشید. نباید این اتّفاق می‌افتاد.</string>
     <string name="error_report_button_text">گزارش خطا با نامه</string>

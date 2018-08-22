@@ -54,7 +54,6 @@
     <string name="content_not_available">Inhoud niet beschikbaar</string>
     <string name="blocked_by_gema">Geblokkeerd door GEMA</string>
     <string name="could_not_setup_download_menu">Kon downloadmenu niet instellen</string>
-    <string name="live_streams_not_supported">Dit is een LIVESTREAM, deze worden nog niet ondersteund.</string>
 
 
     <string name="detail_likes_img_view_description">Duimpjes omhoog</string>

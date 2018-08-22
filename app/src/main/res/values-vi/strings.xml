@@ -79,7 +79,6 @@
     <string name="content_not_available">Nội dung không có sẵn.</string>
     <string name="blocked_by_gema">Chặn bởi GEMA.</string>
     <string name="could_not_setup_download_menu">Không thể thiết lập trình đơn tải xuống.</string>
-    <string name="live_streams_not_supported">Đây là một video phát trực tiếp. Chúng chưa được hỗ trợ.</string>
     <string name="could_not_get_stream">Không thể lấy bất kỳ luồng nào.</string>
     <string name="could_not_load_image">Không thể tải hình ảnh</string>
     <string name="app_ui_crash">Ứng dụng / Giao diện người dùng bị lỗi</string>

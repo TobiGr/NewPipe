@@ -103,7 +103,6 @@
     <string name="content_not_available">Sisältö ei ole saatavilla</string>
     <string name="blocked_by_gema">Estetty GEMA</string>
     <string name="could_not_setup_download_menu">Ei pystytty asettamaan latausvalikkoa</string>
-    <string name="live_streams_not_supported">Tämä on LIVE LÄHETYS, mitä ei vielä tueta.</string>
     <string name="could_not_get_stream">Ei saatu mitään suoratoistoa</string>
     <string name="could_not_load_image">Kuvan lataus epäonnistui</string>
     <string name="app_ui_crash">Sovellus/UI kaatui</string>

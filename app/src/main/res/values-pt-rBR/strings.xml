@@ -82,7 +82,6 @@
     <string name="kore_not_found">Aplicativo Kore não instalado. Instalar?</string>
     <string name="light_parsing_error">Não foi possível interpretar completamente o site</string>
     <string name="thumbnail_description">Miniatura do vídeo</string>
-    <string name="live_streams_not_supported">Isto é uma transmissão ao vivo, a qual ainda não é suportada.</string>
     <string name="main_bg_subtitle">Toque em pesquisar para começar</string>
     <string name="msg_exists">Arquivo já existe</string>
     <string name="msg_threads">Threads</string>

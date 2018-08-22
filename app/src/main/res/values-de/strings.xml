@@ -61,7 +61,6 @@
     <string name="video_is_age_restricted">Video ist altersbeschränkt. Schalte erst altersbeschränkte Videos in den Einstellungen ein.</string>
 
     <string name="could_not_setup_download_menu">Konnte Download-Menü nicht einrichten</string>
-    <string name="live_streams_not_supported">Dies ist ein LIVESTREAM. Diese werden noch nicht unterstützt.</string>
 
 
     <string name="light_parsing_error">Konnte Webseite nicht vollständig analysieren</string>

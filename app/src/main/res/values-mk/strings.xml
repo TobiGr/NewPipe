@@ -141,7 +141,6 @@
     <string name="content_not_available">Содржината е недостапна</string>
     <string name="blocked_by_gema">Блокирано од GEMA</string>
     <string name="could_not_setup_download_menu">Неуспешно поставување на менито за превземања</string>
-    <string name="live_streams_not_supported">Ова е пренос ВО ЖИВО, што сеуште не е поддржано.</string>
     <string name="could_not_get_stream">Не е пронајден поток на податоци</string>
     <string name="could_not_load_image">Сликата не се прочита</string>
     <string name="app_ui_crash">Се сруши Апп./Интерфејс</string>

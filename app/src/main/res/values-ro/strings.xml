@@ -53,7 +53,6 @@
     <string name="content_not_available">Conținut indisponibil</string>
     <string name="blocked_by_gema">Blocat de către GEMA</string>
     <string name="could_not_setup_download_menu">Imposibil de inițializat meniul pentru descărcări</string>
-    <string name="live_streams_not_supported">Acesta este un LIVE STREAM, care încă nu este suportat.</string>
 
 
     <string name="thumbnail_description">Thumbnail-ul videoclipului</string>

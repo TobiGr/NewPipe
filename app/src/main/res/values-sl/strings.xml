@@ -60,9 +60,6 @@
     <string name="could_not_setup_download_menu">Ni mogoče nastaviti menija za prejem datotek.</string>
 
 
-    <string name="live_streams_not_supported">Posnetek je pretok v živo. Ta vrsta prenosa še ni podprta.</string>
-
-
     <string name="content">Vsebina</string>
     <string name="show_age_restricted_content_title">Pokaži starostno omejeno vsebino</string>
     <string name="video_is_age_restricted">Starostna omejitev ogleda. Pred ogledom tovrstnih posnetkov, je treba ustrezno nastaviti omejitve.</string>

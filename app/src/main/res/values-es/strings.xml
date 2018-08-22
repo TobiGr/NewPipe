@@ -56,7 +56,6 @@
     <string name="detail_likes_img_view_description">Me gusta</string>
     <string name="detail_dislikes_img_view_description">No me gusta</string>
     <string name="detail_uploader_thumbnail_view_description">Miniatura del avatar del usuario</string>
-    <string name="live_streams_not_supported">Esta es una transmisión en vivo, la cual aún no es compatible.</string>
 
 
     <string name="content">Contenido</string>

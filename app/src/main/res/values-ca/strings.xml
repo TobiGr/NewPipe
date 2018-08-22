@@ -175,7 +175,6 @@
     <string name="content_not_available">Contingut no disponible</string>
     <string name="blocked_by_gema">Blocat per la GEMA</string>
     <string name="could_not_setup_download_menu">No s\'ha pogut configurar el menú de baixades</string>
-    <string name="live_streams_not_supported">Això és una emissió en directe, que encara no és compatible.</string>
     <string name="could_not_get_stream">No s\'ha pogut obtenir cap vídeo</string>
     <string name="could_not_load_image">No s\'ha pogut carregar la imatge</string>
     <string name="app_ui_crash">Ha fallat l\'aplicació o la interfície d\'usuari</string>

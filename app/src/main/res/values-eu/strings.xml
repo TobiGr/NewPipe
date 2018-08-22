@@ -90,7 +90,6 @@
     <string name="content_not_available">Edukia ez dago eskuragarri</string>
     <string name="blocked_by_gema">GEMAk blokeatuta</string>
     <string name="could_not_setup_download_menu">Ezin izan da deskargen menua ezarri</string>
-    <string name="live_streams_not_supported">Hau ZUZENEKO JARIO bat da. Ez dago hauentzako euskarririk oraindik.</string>
     <string name="could_not_get_stream">Ezin izan da jariorik eskuratu</string>
     <string name="could_not_load_image">Ezin izan da irudia kargatu</string>
     <string name="app_ui_crash">Aplikazioa/interfazea kraskatu da</string>

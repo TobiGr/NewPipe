@@ -109,7 +109,6 @@
     <string name="content_not_available">Съдържанието не е налично</string>
     <string name="blocked_by_gema">Блокирано от „GEMA“</string>
     <string name="could_not_setup_download_menu">Не мога да настроя меню за сваляне</string>
-    <string name="live_streams_not_supported">Това е предаване на живо, което все още не се поддържа.</string>
     <string name="could_not_get_stream">Не мога да достъпя нито един поток</string>
     <string name="could_not_load_image">Не мога да заредя изображение</string>
     <string name="app_ui_crash">Приложението или потребителският интерфейс се сринаха</string>

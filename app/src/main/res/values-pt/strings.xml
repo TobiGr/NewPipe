@@ -62,7 +62,6 @@
 
     <string name="light_parsing_error">Não foi possível processar totalmente o site</string>
     <string name="could_not_setup_download_menu">Não foi possível configurar o menu de descargas</string>
-    <string name="live_streams_not_supported">Esta é uma emissão em direto, as quais ainda não são suportadas.</string>
     <string name="could_not_get_stream">Não foi possível obter a emissão</string>
     <string name="sorry_string">Desculpe, isto não deveria ter acontecido.</string>
     <string name="error_report_button_text">Reportar erro por e-mail</string>

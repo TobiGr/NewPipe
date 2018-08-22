@@ -80,7 +80,6 @@
     <string name="content_not_available">Контент недоступен</string>
     <string name="blocked_by_gema">Заблокировано GEMA</string>
     <string name="could_not_setup_download_menu">Не удалось создать меню загрузки</string>
-    <string name="live_streams_not_supported">Это прямая трансляция, они пока не поддерживаются.</string>
     <string name="could_not_load_image">Не удалось загрузить изображение</string>
     <string name="app_ui_crash">Падение приложения/UI</string>
     <string name="sorry_string">Простите, это не должно было произойти.</string>

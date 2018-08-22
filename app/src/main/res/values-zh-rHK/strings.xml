@@ -61,7 +61,6 @@
     <string name="parsing_error">無法讀取網站。</string>
     <string name="light_parsing_error">無法完全讀取網站。</string>
     <string name="could_not_setup_download_menu">無法設定下載清單。</string>
-    <string name="live_streams_not_supported">此內容是一個直播串流，所以暫時未能播放。</string>
     <string name="could_not_get_stream">無法取得任何串流。</string>
     <string name="sorry_string">抱歉，這是不應該發生的。</string>
     <string name="error_report_button_text">透過電郵彙報問題</string>

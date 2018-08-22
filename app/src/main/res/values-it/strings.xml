@@ -60,9 +60,6 @@
     <string name="could_not_setup_download_menu">Impossibile impostare il menu di download</string>
 
 
-    <string name="live_streams_not_supported">Questo è uno stream in diretta, il quale non è ancora supportato.</string>
-
-
     <string name="content">Contenuti</string>
     <string name="show_age_restricted_content_title">Mostra contenuti vietati ai minori</string>
     <string name="video_is_age_restricted">Questo video è riservato ad un pubblico maggiorenne. Per accedervi, abilita \"Mostra contenuti vietati ai minori\" nelle impostazioni.</string>

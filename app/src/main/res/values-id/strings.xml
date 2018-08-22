@@ -55,7 +55,6 @@
     <string name="content_not_available">Konten tidak tersedia</string>
     <string name="blocked_by_gema">Diblokir oleh GEMA</string>
     <string name="could_not_setup_download_menu">Tidak bisa menyiapkan menu unduhan</string>
-    <string name="live_streams_not_supported">Ini adalah SIARAN LANGSUNG, yang sekarang ini belum didukung.</string>
     <string name="could_not_load_image">Tidak bisa memuat gambar</string>
     <string name="sorry_string">Maaf, hal tersebut seharusnya tidak terjadi.</string>
     <string name="error_report_button_text">Lapor galat via surat elektronik</string>

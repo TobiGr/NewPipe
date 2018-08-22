@@ -56,7 +56,6 @@
     <string name="light_parsing_error">Web sitesi tümüyle ayrıştırılamadı</string>
     <string name="content_not_available">İçerik kullanılabilir değil</string>
     <string name="blocked_by_gema">GEMA tarafından engellendi</string>
-    <string name="live_streams_not_supported">Bu, henüz desteklenmeyen, bir CANLI AKIŞ.</string>
     <string name="could_not_get_stream">Herhangi bir akış alınamadı</string>
     <string name="could_not_load_image">Resim yüklenemedi</string>
     <string name="app_ui_crash">Uygulama/arayüz çöktü</string>

@@ -59,9 +59,6 @@
     <string name="could_not_setup_download_menu">保存メニューを設定できませんでした</string>
 
 
-    <string name="live_streams_not_supported">生放送には対応していません</string>
-
-
     <string name="content">内容</string>
     <string name="show_age_restricted_content_title">年齢制限のあるコンテンツを表示する</string>
     <string name="video_is_age_restricted">この動画には年齢制限があります｡視聴するには設定から制限を解除して下さい｡</string>

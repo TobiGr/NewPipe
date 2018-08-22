@@ -61,7 +61,6 @@
     <string name="video_is_age_restricted">Старосно-ограничени видео. Премошћавање је доступно у поставкама.</string>
 
     <string name="could_not_setup_download_menu">Не могу да поставим мени преузимања</string>
-    <string name="live_streams_not_supported">Ово је ТОК УЖИВО, ово још није подржано.</string>
 
 
     <string name="light_parsing_error">Не могу да рашчланим веб-сајт у целости</string>

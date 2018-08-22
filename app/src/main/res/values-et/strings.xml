@@ -149,7 +149,6 @@
     <string name="content_not_available">Sisu pole saadaval</string>
     <string name="blocked_by_gema">GEMA poolt blokeeritud</string>
     <string name="could_not_setup_download_menu">Allalaadimismenüü seadistamine nurjus</string>
-    <string name="live_streams_not_supported">See on OTSEVOOG, mis pole veel toetatud.</string>
     <string name="could_not_get_stream">Ühtegi voogu ei leitud</string>
     <string name="could_not_load_image">Pildi laadimine nurjus</string>
     <string name="app_ui_crash">Rakendus jooksis kokku</string>

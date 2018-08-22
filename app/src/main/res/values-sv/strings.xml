@@ -80,7 +80,6 @@
     <string name="content_not_available">Innehållet är inte tillgängligt</string>
     <string name="blocked_by_gema">Blockerat av GEMA</string>
     <string name="could_not_setup_download_menu">Kunde inte ställa in nerladdningsmenyn</string>
-    <string name="live_streams_not_supported">Det här är en DIREKTSÄNDNING vilket ännu inte stöds.</string>
     <string name="could_not_load_image">Kunde inte ladda Bild</string>
     <string name="app_ui_crash">App/AnvändarGränssnitt kraschade</string>
     <string name="sorry_string">Oj, det där skulle inte ha hänt.</string>

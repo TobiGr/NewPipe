@@ -98,7 +98,6 @@
     <string name="content_not_available">Sadržaj nije dostupan</string>
     <string name="blocked_by_gema">Blokirano od GEMA-e</string>
     <string name="could_not_setup_download_menu">Nije moguće postaviti izbornik za preuzimanje</string>
-    <string name="live_streams_not_supported">Ovo je PRIJENOS UŽIVO, koji još nije podržan.</string>
     <string name="could_not_get_stream">Nije moguće dobaviti stream</string>
     <string name="could_not_load_image">Nije moguće učitati sliku</string>
     <string name="app_ui_crash">Aplikacija/UI se srušio</string>
