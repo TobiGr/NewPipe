@@ -51,7 +51,6 @@
     <string name="info_dir_created">已建立下載路徑「%1$s」</string>
     <string name="blocked_by_gema">內容被 GEMA 封鎖。</string>
     <string name="main_bg_subtitle">按一下搜尋按鈕以開始操作</string>
-    <string name="autoplay_by_calling_app_summary">當其他應用程式要求播放影片時，NewPipe 將會自動播放</string>
     <string name="content">內容</string>
     <string name="show_age_restricted_content_title">顯示已設年齡限制的影片</string>
     <string name="video_is_age_restricted">此影片設有年齡限制。若要觀看，請先在設定中解除年齡限制。</string>

@@ -35,7 +35,6 @@
     <string name="download_path_audio_summary">Папка за съхранение на изтеглено аудио</string>
     <string name="download_path_audio_dialog_title">Въведете път за съхранение на изтеглено аудио</string>
 
-    <string name="autoplay_by_calling_app_summary">Въпроизвежда видео, когато NewPipe е повикан от друго приложение</string>
     <string name="default_resolution_title">Резолюция по подразбиране</string>
     <string name="default_popup_resolution_title">Резолюция по подразбиране на прозореца</string>
     <string name="show_higher_resolutions_title">Покажи по-високи резолюции</string>

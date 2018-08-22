@@ -40,7 +40,6 @@
     <string name="download_path_audio_summary">Kaust allalaetud audio hoiustamiseks</string>
     <string name="download_path_audio_dialog_title">Sisesta audio allalaadimise rada</string>
 
-    <string name="autoplay_by_calling_app_summary">Esita video, kui NewPipe käivitub teise rakenduse kaudu</string>
     <string name="default_resolution_title">Vaikelahutus</string>
     <string name="default_popup_resolution_title">Hüpikakna vaikelahutus</string>
     <string name="show_higher_resolutions_title">Kuva kõrgemaid lahutusi</string>

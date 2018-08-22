@@ -87,7 +87,6 @@
     <string name="duration_live">уживо</string>
 
     <string name="main_bg_subtitle">Тапните на претрагу за почетак</string>
-    <string name="autoplay_by_calling_app_summary">Аутоматско пуштање видеа по позиву друге апликације</string>
     <string name="start">Почни</string>
     <string name="pause">Паузирај</string>
     <string name="view">Пусти</string>

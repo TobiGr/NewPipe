@@ -77,7 +77,6 @@
 
     <string name="popup">نافذة</string>
 
-    <string name="autoplay_by_calling_app_summary">تشغيل مقطع الفيديو عند إستدعاء NewPipe من تطبيق آخر</string>
     <string name="default_popup_resolution_title">الدقة الافتراضية لنوافذ المنبثقة</string>
     <string name="show_higher_resolutions_title">"عرض أعلى جودة "</string>
     <string name="show_higher_resolutions_summary">بعض الأجهزة فقط تدعم تشغيل مقاطع الفيديو 2K / 4K</string>

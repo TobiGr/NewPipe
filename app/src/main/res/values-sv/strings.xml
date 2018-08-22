@@ -26,7 +26,6 @@
     <string name="download_path_audio_summary">Genväg för att lagra nerladdade ljudfiler i</string>
     <string name="download_path_audio_dialog_title">Fyll i genvägen som ljudfiler ska laddas ner till</string>
 
-    <string name="autoplay_by_calling_app_summary">Automatiskt spelar en video upp när NewPipe öppnas av en annan app</string>
     <string name="default_resolution_title">Standardupplösning</string>
     <string name="default_popup_resolution_title">Standardupplösning för popup</string>
     <string name="show_higher_resolutions_title">Visa högre upplösningar</string>

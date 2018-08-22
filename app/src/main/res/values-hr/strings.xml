@@ -35,7 +35,6 @@
     <string name="download_path_audio_summary">Put za spremanje preuzetog zvuka u</string>
     <string name="download_path_audio_dialog_title">Unesi put za preuzimanje zvučne datoteke</string>
 
-    <string name="autoplay_by_calling_app_summary">Automatski reproduciraj videozapis kad je NewPipe pozvan iz druge aplikacije</string>
     <string name="default_resolution_title">Zadana razlučivost</string>
     <string name="default_popup_resolution_title">Zadana razlučivost skočnog prozora</string>
     <string name="show_higher_resolutions_title">Prikaži veće razlučivosti</string>

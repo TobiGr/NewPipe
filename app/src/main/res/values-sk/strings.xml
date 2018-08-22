@@ -59,7 +59,6 @@
     <string name="err_dir_create">Nemožno vytvoriť adresár na preberanie \'%1$s\'</string>
     <string name="info_dir_created">Adresár na preberanie bol vytvorený \'%1$s\'</string>
     <string name="main_bg_subtitle">Začnite vyhľadaním obsahu</string>
-    <string name="autoplay_by_calling_app_summary">Prehrá video pri zavolaní NewPipe inou aplikáciou</string>
     <string name="content">Obsah</string>
     <string name="show_age_restricted_content_title">Zobraziť vekovo obmedzený obsah</string>
     <string name="video_is_age_restricted">Toto video je vekovo obmedzené. Povoľte zobrazenie obsahu v nastavení.</string>

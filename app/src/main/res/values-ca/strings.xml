@@ -136,7 +136,6 @@
     <string name="download_path_audio_summary">Ruta on es desaran els fitxers d\'àudio baixats</string>
     <string name="download_path_audio_dialog_title">Introduïu una ruta de baixada per als fitxers d\'àudio</string>
 
-    <string name="autoplay_by_calling_app_summary">Reprodueix un vídeo quan el NewPipe s\'executa des d\'una altra aplicació</string>
     <string name="default_popup_resolution_title">Resolució per defecte del mode emergent</string>
     <string name="show_higher_resolutions_title">Mostra resolucions superiors</string>
     <string name="show_higher_resolutions_summary">Només alguns dispositius són compatibles amb la reproducció de vídeos en 2K/4K</string>

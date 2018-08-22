@@ -53,7 +53,6 @@
     <string name="open_in_popup_mode">以懸浮視窗開啟</string>
     <string name="use_external_video_player_summary">勾選後，部分解析度的影片將沒有聲音</string>
     <string name="controls_background_title">背景播放</string>
-    <string name="autoplay_by_calling_app_summary">NewPipe 被其他應用程式呼叫時播放影片</string>
     <string name="default_popup_resolution_title">懸浮視窗預設解析度</string>
     <string name="show_higher_resolutions_title">顯示更高的解析度</string>
     <string name="show_higher_resolutions_summary">只有部分裝置能播2K及4K影片</string>

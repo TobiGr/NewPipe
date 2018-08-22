@@ -70,7 +70,6 @@
     <string name="error">Ошибка</string>
     <string name="your_comment">Ваш комментарий (English):</string>
     <string name="err_dir_create">Не удалось создать папку для загрузки \"%1$s\"</string>
-    <string name="autoplay_by_calling_app_summary">Воспроизводить видео при вызове NewPipe из другого приложения</string>
     <string name="content">Контент</string>
     <string name="video_is_age_restricted">Видео с возрастными ограничениями. Разрешить подобный контент можно в настройках.</string>
     <string name="duration_live">вживую</string>

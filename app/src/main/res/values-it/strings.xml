@@ -69,7 +69,6 @@
     <string name="video_is_age_restricted">Questo video è riservato ad un pubblico maggiorenne. Per accedervi, abilita \"Mostra contenuti vietati ai minori\" nelle impostazioni.</string>
 
     <string name="main_bg_subtitle">Tocca cerca per iniziare</string>
-    <string name="autoplay_by_calling_app_summary">Riproduci i video quando NewPipe viene aperto da un\'altra app</string>
     <string name="duration_live">in diretta</string>
 
     <string name="light_parsing_error">Impossibile analizzare completamente il sito web</string>

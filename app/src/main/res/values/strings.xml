@@ -45,7 +45,6 @@
     <string name="download_path_audio_summary">Path to store downloaded audio in</string>
     <string name="download_path_audio_dialog_title">Enter download path for audio files</string>
 
-    <string name="autoplay_by_calling_app_summary">Plays a video when NewPipe is called from another app</string>
     <string name="default_resolution_title">Default resolution</string>
     <string name="default_popup_resolution_title">Default popup resolution</string>
     <string name="show_higher_resolutions_title">Show higher resolutions</string>

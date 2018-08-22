@@ -103,7 +103,6 @@
     <string name="msg_copied">Copióse al cartafueyu</string>
     <string name="no_available_dir">Esbilla una carpeta disponible de descarga, por favor</string>
 
-    <string name="autoplay_by_calling_app_summary">Auto-reproduz un videu al llamar a NewPipe dende otra aplicación</string>
     <string name="detail_uploader_thumbnail_view_description">Miniatura del avatar del xubidor</string>
     <string name="detail_dislikes_img_view_description">Despréstames</string>
 

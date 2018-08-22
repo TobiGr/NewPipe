@@ -40,7 +40,6 @@
     <string name="download_path_audio_summary">Локација за зачувување аудио</string>
     <string name="download_path_audio_dialog_title">Внеси локација за зачувување аудио</string>
 
-    <string name="autoplay_by_calling_app_summary">Пушта видео кога NewPipe е повикана од друга апликација</string>
     <string name="default_resolution_title">Стандардна резолуција</string>
     <string name="default_popup_resolution_title">Стандардна резолуција на подпрозорчето</string>
     <string name="show_higher_resolutions_title">Покажи повисоки резолуции</string>

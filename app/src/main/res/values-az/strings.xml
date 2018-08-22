@@ -33,7 +33,6 @@
     <string name="download_path_audio_summary">Yüklənən audioları saxlamaq üçün yer</string>
     <string name="download_path_audio_dialog_title">Audiolar üçün yükləmə yerini daxil et</string>
 
-    <string name="autoplay_by_calling_app_summary">NewPipe başqa bir uyğulamadan çağrıldığı zaman avtomatik olaraq videonu oynadır</string>
     <string name="default_resolution_title">Defolt ölçü</string>
     <string name="show_higher_resolutions_title">Daha böyük ölçüləri göstər</string>
     <string name="play_with_kodi_title">Kodi ilə oynat</string>

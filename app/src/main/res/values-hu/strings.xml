@@ -57,7 +57,6 @@
     <string name="content_not_available">A tartalom nem elérhető.</string>
     <string name="blocked_by_gema">GEMA által blokkolt.</string>
     <string name="live_streams_not_supported">Ez egy élö közvetités. Még nem támogatva.</string>
-    <string name="autoplay_by_calling_app_summary">Videók automatikus lejátszása a NewPipe külső indításakor.</string>
     <string name="video_is_age_restricted">A video korhatáros. A megtekintéséhez engedélyezze a korhatáros videókat.</string>
     <string name="duration_live">élő</string>
 

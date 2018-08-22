@@ -26,7 +26,6 @@
     <string name="download_path_audio_summary">Vieta laikyti parsisiųstus garso įrašus</string>
     <string name="download_path_audio_dialog_title">Įveskite atsisiuntimų kelią garso įrašams</string>
 
-    <string name="autoplay_by_calling_app_summary">Automatiškai groti vaizdo įrašą, kai NewPipe iškvečiama per kitą programėlę</string>
     <string name="default_resolution_title">Numatytoji raiška</string>
     <string name="default_popup_resolution_title">Numatytoji išokančiojo lango raiška</string>
     <string name="show_higher_resolutions_title">Rodyti aukštesnes raiškas</string>

@@ -84,7 +84,6 @@
     <string name="retry">Poskusi znova</string>
     <string name="your_comment">Opomba (v angleščini):</string>
     <string name="storage_permission_denied">Dovoljenje za dostop do shrambe je zavrnjeno</string>
-    <string name="autoplay_by_calling_app_summary">Samodejno predvaja vsebino, če je NewPipe klican iz drugega programa</string>
     <string name="report_error">Pošlji poročilo o napaki</string>
     <string name="user_report">Poročilo uporabnika</string>
 

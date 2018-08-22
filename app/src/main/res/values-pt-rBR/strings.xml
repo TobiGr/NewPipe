@@ -8,7 +8,6 @@
     <string name="view">Reproduzir</string>
     <string name="video_is_age_restricted">Vídeo com restrição de idade. Permissão para vídeos com essa restrição podem ser feitas no menu configurações.</string>
     <string name="video">Vídeo</string>
-    <string name="autoplay_by_calling_app_summary">Reproduz o vídeo quando o NewPipe for aberto a partir de outro aplicativo</string>
     <string name="black_theme_title">Preto</string>
     <string name="blocked_by_gema">Bloqueado pelo GEMA</string>
     <string name="cancel">Cancelar</string>

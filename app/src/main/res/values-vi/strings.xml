@@ -24,7 +24,6 @@
     <string name="download_path_audio_summary">Đường dẫn để lưu trữ âm thanh đã tải xuống</string>
     <string name="download_path_audio_dialog_title">Nhập đường dẫn tải xuống cho tệp âm thanh</string>
 
-    <string name="autoplay_by_calling_app_summary">Tự động phát một video khi NewPipe được gọi từ một ứng dụng khác</string>
     <string name="default_resolution_title">Độ phân giải mặc định</string>
     <string name="default_popup_resolution_title">Độ phân giải popup mặc định</string>
     <string name="show_higher_resolutions_title">Hiển thị độ phân giải cao hơn</string>
