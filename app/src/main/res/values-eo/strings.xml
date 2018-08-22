@@ -89,7 +89,6 @@
     <string name="popup">ŝprucfenestron</string>
     <string name="controls_add_to_playlist_title">Aldonu al</string>
 
-    <string name="autoplay_by_calling_app_title">Aŭtomata play</string>
     <string name="autoplay_by_calling_app_summary">Ludas video kiam NewPipe vokas de alia programo</string>
     <string name="default_popup_resolution_title">Defaŭlta popup rezolucio</string>
     <string name="show_higher_resolutions_title">Montri pli altajn rezoluciojn</string>

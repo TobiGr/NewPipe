@@ -66,7 +66,6 @@
 
     <string name="err_dir_create">Nu s-a putut crea directorul de descărcare \'%1$s\'</string>
     <string name="main_bg_subtitle">Apăsați căutare pentru a începe</string>
-    <string name="autoplay_by_calling_app_title">Redare automată</string>
     <string name="autoplay_by_calling_app_summary">Redă automat un videoclip atunci când NewPipe este deschis din altă aplicație</string>
     <string name="duration_live">În direct</string>
     <string name="downloads">Descărcări</string>

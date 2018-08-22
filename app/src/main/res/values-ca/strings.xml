@@ -17,7 +17,6 @@
 
     <string name="download_path_title">Ruta de baixada dels vídeos</string>
     <string name="download_path_audio_title">Ruta de baixada dels fitxers d\'àudio</string>
-    <string name="autoplay_by_calling_app_title">Reproducció automàtica</string>
     <string name="default_resolution_title">Resolució per defecte</string>
     <string name="play_audio">Àudio</string>
     <string name="default_audio_format_title">Format d\'àudio per defecte</string>

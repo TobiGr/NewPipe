@@ -35,7 +35,6 @@
     <string name="download_path_audio_summary">Sijainti ladatuille äänitiedostoille</string>
     <string name="download_path_audio_dialog_title">Aseta sijainti minne äänitiedostot tallennetaan</string>
 
-    <string name="autoplay_by_calling_app_title">Automaattitoisto</string>
     <string name="autoplay_by_calling_app_summary">Toistaa automaattisesti videon, kun NewPipe sovellusta kutsutaan toisesta sovelluksesta</string>
     <string name="default_resolution_title">Oletusresoluutio</string>
     <string name="default_popup_resolution_title">Ponnahdusikkunan oletusresoluutio</string>

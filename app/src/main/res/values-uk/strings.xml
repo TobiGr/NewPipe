@@ -22,7 +22,6 @@
     <string name="download_path_summary">Шлях де будуть зберігатись завантажені відео</string>
     <string name="download_path_audio_title">Шлях для завантаження аудіо</string>
     <string name="download_path_audio_summary">Шлях де будуть зберігатись завантажені аудіо файли</string>
-    <string name="autoplay_by_calling_app_title">Автоматично відтворювати</string>
     <string name="autoplay_by_calling_app_summary">Відтворює відео коли NewPipe викликано з іншого застосунку</string>
     <string name="default_resolution_title">Типова роздільна здатність</string>
     <string name="play_with_kodi_title">Відтворювати за допомогою Kodi</string>

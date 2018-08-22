@@ -65,7 +65,6 @@
     <string name="video_is_age_restricted">Vídeo restringido por edad. Permitir este tipo de material es posible desde Ajustes.</string>
 
     <string name="main_bg_subtitle">Toque en buscar para empezar</string>
-    <string name="autoplay_by_calling_app_title">Autoreproducir</string>
     <string name="autoplay_by_calling_app_summary">Reproducir un vídeo cuando NewPipe es llamado desde otra app</string>
     <string name="duration_live">en vivo</string>
     <string name="downloads">Descargas</string>

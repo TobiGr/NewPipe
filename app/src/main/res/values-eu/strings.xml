@@ -41,7 +41,6 @@
     <string name="download_path_audio_dialog_title">Zehaztu audioa deskargatzeko bide-izena</string>
 
     <string name="download_path_audio_summary">Deskargatutako audioa gordetzeko bide-izena</string>
-    <string name="autoplay_by_calling_app_title">Erreprodukzio automatikoa</string>
     <string name="autoplay_by_calling_app_summary">Bideoa abiatzen du NewPipe beste aplikazio batek deitu badu</string>
     <string name="dark_theme_title">Iluna</string>
     <string name="light_theme_title">Argia</string>

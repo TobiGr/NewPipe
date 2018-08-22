@@ -28,7 +28,6 @@
     <string name="download_path_audio_summary">ডাউনলোড করা অডিও সঞ্চয় করার পাথ</string>
     <string name="download_path_audio_dialog_title">অডিও ফাইলগুলির জন্য ডাউনলোডের পাথ প্রবেশ করাও</string>
 
-    <string name="autoplay_by_calling_app_title">স্বয়ংক্রিয়ভাবে প্লে করো যখন অন্য অ্যাপ্লিকেশন থেকে চালু করা হয়</string>
     <string name="autoplay_by_calling_app_summary">স্বয়ংক্রিয়ভাবে একটি ভিডিও প্লে করো যখন NewPipe অন্য অ্যাপ্লিকেশন থেকে চালু করা হয়।</string>
     <string name="default_resolution_title">ডিফল্ট রেজোল্যুশন</string>
     <string name="default_popup_resolution_title">ডিফল্ট পপআপ রেজোল্যুশন</string>

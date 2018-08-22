@@ -107,7 +107,6 @@
 
     <string name="fragment_whats_new">Vad är nytt</string>
 
-    <string name="autoplay_by_calling_app_title">Spela upp automatiskt</string>
     <string name="enable_search_history_title">Sök historik</string>
     <string name="enable_search_history_summary">Spara sökfrågor lokalt</string>
     <string name="enable_watch_history_title">Historik &amp; Cacheminne</string>

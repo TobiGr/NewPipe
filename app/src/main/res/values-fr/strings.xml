@@ -80,7 +80,6 @@
     <string name="retry">Réessayer</string>
     <string name="storage_permission_denied">Autorisation d\'accès au stockage refusée</string>
     <string name="main_bg_subtitle">Faites une recherche pour commencer</string>
-    <string name="autoplay_by_calling_app_title">Lecture automatique</string>
     <string name="video_is_age_restricted">Vidéo soumise à une limite d\'âge. Autoriser ce type de contenu est possible depuis les paramètres.</string>
     <string name="user_report">Rapport utilisateur</string>
 

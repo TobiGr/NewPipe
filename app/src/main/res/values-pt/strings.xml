@@ -80,7 +80,6 @@
     <string name="retry">Tentar novamente</string>
     <string name="storage_permission_denied">Permissão para aceder ao armazenamento foi negada</string>
     <string name="main_bg_subtitle">Toque para iniciar a pesquisa</string>
-    <string name="autoplay_by_calling_app_title">Reprodução automática</string>
     <string name="autoplay_by_calling_app_summary">Reproduzir vídeo se o NewPipe for invocado por outra aplicação</string>
     <string name="duration_live">direto</string>
 

@@ -81,7 +81,6 @@
     <string name="error_snackbar_message">Entschuldigung. Es sind einige Fehler aufgetreten.</string>
     <string name="your_comment">Dein Kommentar (auf englisch):</string>
     <string name="could_not_get_stream">Konnte keinen Stream holen</string>
-    <string name="autoplay_by_calling_app_title">Autoplay</string>
     <string name="autoplay_by_calling_app_summary">Spiele ein Video ab, wenn NewPipe von einer anderen App aufgerufen wurde</string>
     <string name="report_error">Einen Fehler melden</string>
     <string name="user_report">Anwenderbericht</string>

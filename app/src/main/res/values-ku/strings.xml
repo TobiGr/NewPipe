@@ -40,7 +40,6 @@
     <string name="download_path_audio_summary">شوێنی ده‌نگه‌ داگیراوه‌كان</string>
     <string name="download_path_audio_dialog_title">نوسینی شوێنی داگرتنی ده‌نگه‌كان</string>
 
-    <string name="autoplay_by_calling_app_title">كاركردنی خۆكارانه‌</string>
     <string name="default_resolution_title">قه‌باره‌ی سه‌ره‌كی</string>
     <string name="default_popup_resolution_title">قه‌باره‌ی سه‌ره‌كی په‌نجه‌ره‌</string>
     <string name="show_higher_resolutions_title">پیشاندانی قه‌باره‌ی به‌رزتر</string>

@@ -21,7 +21,6 @@
     <string name="download_path_audio_summary">Lokasi untuk menyimpan audio yang diunduh</string>
     <string name="download_path_audio_dialog_title">Masukkan lokasi unduhan berkas audio</string>
 
-    <string name="autoplay_by_calling_app_title">Putar otomatis</string>
     <string name="autoplay_by_calling_app_summary">Putar video ketika NewPipe dijalankan dari aplikasi lain</string>
     <string name="default_resolution_title">Resolusi baku</string>
     <string name="play_with_kodi_title">Putar dengan Kodi</string>

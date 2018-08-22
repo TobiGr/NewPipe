@@ -23,7 +23,6 @@
     <string name="download_path_audio_summary">مسیر ذخیرهٔ صداهای بارگیری شده</string>
     <string name="download_path_audio_dialog_title">مسیر بارگیری را برای صداها وارد کنید.</string>
 
-    <string name="autoplay_by_calling_app_title">پخش خودکار هنگام فراخوانی از کاره‌ای دیگر</string>
     <string name="autoplay_by_calling_app_summary">هنگامی که نیوپایپ از کارهٔ دیگری فراخوانی می‌شود، ویدیویی را به صورت خودکار پخش می‌کند.</string>
     <string name="default_resolution_title">وضوح پیش‌گزیده</string>
     <string name="play_with_kodi_title">پخش با کودی</string>

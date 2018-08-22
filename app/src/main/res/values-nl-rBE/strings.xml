@@ -40,7 +40,6 @@
     <string name="download_path_audio_summary">Locatie voor gedownloade muziek in op te slaan</string>
     <string name="download_path_audio_dialog_title">Voer downloadlocatie voor audiobestanden in</string>
 
-    <string name="autoplay_by_calling_app_title">Automatisch afspelen</string>
     <string name="autoplay_by_calling_app_summary">Speeld video’s af wanneer da NewPipe vanuit nen anderen app word g’opend</string>
     <string name="default_resolution_title">Standaardresolutie</string>
     <string name="default_popup_resolution_title">Standaardresolutie voor pop-up</string>

@@ -40,7 +40,6 @@
     <string name="download_path_audio_summary">储存音频的路径</string>
     <string name="download_path_audio_dialog_title">输入音频的下载路径</string>
 
-    <string name="autoplay_by_calling_app_title">自动播放</string>
     <string name="autoplay_by_calling_app_summary">NewPipes被其它程序调用时播放视频</string>
     <string name="default_resolution_title">默认分辨率</string>
     <string name="default_popup_resolution_title">默认弹出窗口分辨率</string>
