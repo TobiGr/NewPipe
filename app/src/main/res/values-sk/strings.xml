@@ -171,7 +171,6 @@
     <string name="subscription_change_failed">Nemožno zmeniť odber</string>
     <string name="subscription_update_failed">Nemožno aktualizovať odber</string>
 
-    <string name="tab_main">Hlavné</string>
     <string name="tab_subscriptions">Odbery</string>
 
     <string name="fragment_whats_new">Čo je nové</string>

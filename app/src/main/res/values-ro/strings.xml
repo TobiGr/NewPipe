@@ -167,7 +167,6 @@ pentru a deschide în mod pop-up</string>
     <string name="subscription_change_failed">Nu s-a putut modifica abonamentul</string>
     <string name="subscription_update_failed">Nu s-a putut actualiza abonamentul</string>
 
-    <string name="tab_main">Principal</string>
     <string name="tab_subscriptions">Abonamente</string>
 
     <string name="fragment_whats_new">Ce este nou</string>

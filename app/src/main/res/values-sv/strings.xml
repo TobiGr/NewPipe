@@ -103,7 +103,6 @@
     <string name="subscription_change_failed">Kunde inte ändra prenumeration</string>
     <string name="subscription_update_failed">Kunde inte uppdatera prenumeration</string>
 
-    <string name="tab_main">Hem</string>
     <string name="tab_subscriptions">Prenumerationer</string>
 
     <string name="fragment_whats_new">Vad är nytt</string>

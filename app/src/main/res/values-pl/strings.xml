@@ -180,7 +180,6 @@
     <string name="subscription_change_failed">Nie można zmienić subskrypcji</string>
     <string name="subscription_update_failed">Nie można uaktualnić subskrypcji</string>
 
-    <string name="tab_main">Główna</string>
     <string name="tab_subscriptions">Subskrypcje</string>
 
     <string name="fragment_whats_new">Co nowego</string>

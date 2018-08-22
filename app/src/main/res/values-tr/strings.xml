@@ -190,7 +190,6 @@
     <string name="subscription_change_failed">Abonelik değiştirilemiyor</string>
     <string name="subscription_update_failed">Abonelik güncellenemiyor</string>
 
-    <string name="tab_main">Ana</string>
     <string name="tab_subscriptions">Abonelikler</string>
 
     <string name="fragment_whats_new">Neler Yeni</string>

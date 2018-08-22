@@ -127,7 +127,6 @@
     <string name="use_external_video_player_title">Reproductor de vídeo extern</string>
     <string name="subscription_change_failed">No s\'ha pogut modificar la subscripció</string>
     <string name="subscription_update_failed">No s\'ha pogut actualitzar la subscripció</string>
-    <string name="tab_main">Principal</string>
     <string name="controls_background_title">Segon pla</string>
     <string name="popup">Emergent</string>
     <string name="controls_add_to_playlist_title">Afegeix a</string>

@@ -173,7 +173,6 @@ abrir em modo popup</string>
     <string name="subscription_change_failed">Não foi possível modificar inscrição</string>
     <string name="subscription_update_failed">Não foi possível atualizar inscrição</string>
 
-    <string name="tab_main">Principal</string>
     <string name="tab_subscriptions">Inscrições</string>
 
     <string name="fragment_whats_new">Novidades</string>

@@ -193,7 +193,6 @@
     <string name="subscribed_button_title">সাবস্ক্রাইব করা আছে</string>
     <string name="subscription_change_failed">সাবস্ক্রিপশন পরিবর্তন করা হয়নি</string>
     <string name="subscription_update_failed">সাবস্ক্রিপশন আপডেট করতে ব্যার্থ হয়েছে</string>
-    <string name="tab_main">প্রধান</string>
     <string name="tab_subscriptions">সাবস্ক্রিপশন</string>
     <string name="tab_bookmarks">বুকমার্কস</string>
 

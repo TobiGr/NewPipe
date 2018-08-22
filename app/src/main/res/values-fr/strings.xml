@@ -166,7 +166,6 @@
 
     <string name="subscribe_button_title">S\'abonner</string>
     <string name="subscribed_button_title">Abonné</string>
-    <string name="tab_main">Principal</string>
     <string name="tab_subscriptions">Abonnements</string>
 
     <string name="fragment_whats_new">Nouveautés</string>

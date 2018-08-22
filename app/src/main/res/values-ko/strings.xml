@@ -100,7 +100,6 @@
     <string name="subscription_change_failed">구독 여부를 변경할 수 없음</string>
     <string name="subscription_update_failed">구독을 업데이트할 수 없음</string>
 
-    <string name="tab_main">메인 화면</string>
     <string name="tab_subscriptions">구독</string>
 
     <string name="fragment_whats_new">새로운 영상</string>

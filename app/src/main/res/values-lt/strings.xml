@@ -155,7 +155,6 @@
     <string name="subscription_change_failed">Negalima keisti prenumeratos</string>
     <string name="subscription_update_failed">Negalima atnaujinti prenumeratos</string>
 
-    <string name="tab_main">Pagrindinis</string>
     <string name="tab_subscriptions">Prenumeratos</string>
 
     <string name="fragment_whats_new">Kas Naujo</string>

@@ -191,7 +191,6 @@
     <string name="tab_contributors">Bidragsytere</string>
     <string name="tab_licenses">Lisenser</string>
     <string name="app_description">Fri lett strømming på Android.</string>
-    <string name="tab_main">Oversikt</string>
     <string name="player_gesture_controls_title">Spillerhåndvendinger</string>
     <string name="player_gesture_controls_summary">Bruk håndvendinger for å kontrollere lys- og lyd-styrken til avspilleren</string>
     <string name="resume_on_audio_focus_gain_title">Fortsett ved fokus</string>

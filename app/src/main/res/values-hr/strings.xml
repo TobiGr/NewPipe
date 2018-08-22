@@ -20,7 +20,6 @@
     <string name="subscription_change_failed">Nije moguće promijeniti pretplatu</string>
     <string name="subscription_update_failed">Nije moguće osvježiti pretplatu</string>
 
-    <string name="tab_main">Početna</string>
     <string name="tab_subscriptions">Pretplate</string>
 
     <string name="fragment_whats_new">Što je novo</string>

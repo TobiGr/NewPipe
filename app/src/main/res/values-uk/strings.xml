@@ -123,7 +123,6 @@
     <string name="subscription_change_failed">Неможливо змінити підписання</string>
     <string name="subscription_update_failed">Неможливо оновити підписання</string>
 
-    <string name="tab_main">Головна</string>
     <string name="tab_subscriptions">Підписання</string>
 
     <string name="fragment_whats_new">Новинки</string>

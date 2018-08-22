@@ -145,7 +145,6 @@ otevření ve vyskakovacím okně</string>
     <string name="subscription_change_failed">Nelze změnit odběr</string>
     <string name="subscription_update_failed">Nelze aktualizovat odběr</string>
 
-    <string name="tab_main">Hlavní</string>
     <string name="tab_subscriptions">Odběry</string>
 
     <string name="fragment_whats_new">Co je nového</string>

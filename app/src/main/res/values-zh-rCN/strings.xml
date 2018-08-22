@@ -122,7 +122,6 @@
     <string name="subscription_change_failed">无法更改订阅</string>
     <string name="subscription_update_failed">无法更新订阅</string>
 
-    <string name="tab_main">首页</string>
     <string name="tab_subscriptions">订阅</string>
 
     <string name="fragment_whats_new">新鲜事</string>

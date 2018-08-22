@@ -20,7 +20,6 @@
     <string name="subscription_change_failed">Ei pystytty vaihtamaan tilausta</string>
     <string name="subscription_update_failed">Ei pystytty päivittämään tilausta</string>
 
-    <string name="tab_main">Päävalikko</string>
     <string name="tab_subscriptions">Tilaukset</string>
 
     <string name="fragment_whats_new">Uudet</string>

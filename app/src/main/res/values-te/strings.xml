@@ -17,7 +17,6 @@
     <string name="subscription_change_failed">సబ్ స్క్రైబ్ సాధ్యం కాలేదు</string>
     <string name="subscription_update_failed">సబ్ స్క్రైబ్ నవీకరించలేరు</string>
 
-    <string name="tab_main">ప్రధానంగా</string>
     <string name="tab_subscriptions">సభ్యత్వం</string>
 
     <string name="fragment_whats_new">కొత్తది ఏమిటి</string>

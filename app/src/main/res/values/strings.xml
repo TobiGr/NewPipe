@@ -27,7 +27,6 @@
     <string name="subscription_update_failed">Unable to update subscription</string>
     <string name="show_info">Show info</string>
 
-    <string name="tab_main">Main</string>
     <string name="tab_subscriptions">Subscriptions</string>
     <string name="tab_bookmarks">Bookmarks</string>
 

@@ -52,7 +52,6 @@
     <string name="use_external_video_player_title">अन्य वीडियो प्लेयर उपयोग करें</string>
     <string name="use_external_video_player_summary">यह विकल्प चुनने से कुछ वीडियो से ध्वनि नहीं आएगी</string>
     <string name="use_external_audio_player_title">अन्य ऑडियो प्लेयर उपयोग करें</string>
-    <string name="tab_main">मुख्य</string>
     <string name="subscription_change_failed">सदस्यता को बदलने में असमर्थ है</string>
     <string name="subscription_update_failed">सदस्यता को अपडेट करने में असमर्थ है</string>
 

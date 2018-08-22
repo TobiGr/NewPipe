@@ -101,7 +101,6 @@
     <string name="subscription_change_failed">אין אפשרות לשנות מנוי</string>
     <string name="subscription_update_failed">אין אפשרות לעדכן מנוי</string>
 
-    <string name="tab_main">ראשי</string>
     <string name="tab_subscriptions">מנויים</string>
 
     <string name="fragment_whats_new">מה חדש</string>

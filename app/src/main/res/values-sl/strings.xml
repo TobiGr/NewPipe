@@ -187,7 +187,6 @@ odpiranje v pojavnem načinu</string>
     <string name="subscription_change_failed">Ni mogoče spremeniti naročnine</string>
     <string name="subscription_update_failed">Ni mogoče posodobiti naročnine</string>
 
-    <string name="tab_main">Glavno</string>
     <string name="tab_subscriptions">Naročnine</string>
 
     <string name="fragment_whats_new">Kaj je novega</string>

@@ -214,7 +214,6 @@
     <string name="history_disabled">La cronologia è disabilitata</string>
     <string name="history_empty">La cronologia è vuota</string>
 
-    <string name="tab_main">Principale</string>
     <string name="settings_category_player_title">Lettore multimediale</string>
     <string name="settings_category_player_behavior_title">Comportamento</string>
     <string name="settings_category_history_title">Cronologia e cache</string>

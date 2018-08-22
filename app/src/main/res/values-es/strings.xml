@@ -184,7 +184,6 @@ abrir en modo popup</string>
     <string name="subscription_change_failed">No se puede cambiar la suscripción</string>
     <string name="subscription_update_failed">No se puede actualizar la suscripción</string>
 
-    <string name="tab_main">Principal</string>
     <string name="tab_subscriptions">Suscripciones</string>
 
     <string name="fragment_whats_new">Qué hay de nuevo</string>

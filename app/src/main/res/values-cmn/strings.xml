@@ -23,7 +23,6 @@
     <string name="subscription_update_failed">无法更新订阅</string>
     <string name="show_info">显示详情</string>
 
-    <string name="tab_main">主页</string>
     <string name="tab_subscriptions">订阅</string>
     <string name="tab_bookmarks">书签</string>
 
