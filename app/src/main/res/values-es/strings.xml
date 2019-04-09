@@ -437,6 +437,7 @@ abrir en modo popup</string>
     <string name="max_retry_desc">Cantidad máxima de intentos antes de cancelar la descarga</string>
     <string name="pause_downloads_on_mobile">Interrumpir en redes medidas</string>
     <string name="pause_downloads_on_mobile_desc">Útil al cambiar a Datos Móviles, aunque algunas descargas no se pueden suspender</string>
+    <string name="close">Cerrar</string>
     <string name="enable_queue_limit">Limitar cola de descarga</string>
     <string name="enable_queue_limit_desc">Solo se permitirá una descarga a la vez</string>
     <string name="start_downloads">Iniciar descargas</string>
@@ -446,8 +447,8 @@ abrir en modo popup</string>
     <!-- message dialog about download error -->
     <string name="show_error">Mostrar error</string>
     <string name="label_code">Codigo</string>
-    <string name="error_file_creation">No se puede crear la carpeta de destino</string>
-    <string name="error_path_creation">No se puede crear el archivo</string>
+    <string name="error_file_creation">No se puede crear el archivo</string>
+    <string name="error_path_creation">No se puede crear la carpeta de destino</string>
     <string name="error_permission_denied">Permiso denegado por el sistema</string>
     <string name="error_ssl_exception">Fallo la conexión segura</string>
     <string name="error_unknown_host">No se pudo encontrar el servidor</string>
