@@ -471,4 +471,5 @@
     <string name="saved_tabs_invalid_json">Utilisation des onglets par défaut, erreur lors de la lecture des onglets enregistrés</string>
     <string name="error_http_unsupported_range">Le serveur n\'accepte pas les téléchargements multi-threads, réessayez avec @string/msg_threads = 1</string>
     <string name="msg_pending_downloads">Continuer vos %s transferts en attente depuis Téléchargement</string>
+    <string name="error_timeout">Délai de connection dépassé</string>
 </resources>

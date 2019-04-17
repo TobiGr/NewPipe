@@ -487,6 +487,7 @@ abrir en modo popup</string>
     <string name="app_update_notification_content_title">¡Actualización de NewPipe disponible!</string>
     <string name="app_update_notification_content_text">Pulsa para descargar</string>
     <string name="error_progress_lost">Se perdió el progreso porque el archivo fue eliminado</string>
+    <string name="error_timeout">Tiempo de espera excedido</string>
     <string name="downloads_storage">API de almacenamiento</string>
     <string name="downloads_storage_desc">Seleccione que API utilizar para almacenar las descargas</string>
     <string name="storage_access_framework_description">Framework de acceso a almacenamiento</string>
