@@ -437,7 +437,7 @@
     <string name="app_update_notification_content_title">Une mise à jour de NewPipe disponible !</string>
     <string name="app_update_notification_content_text">Appuyez pour télécharger</string>
     <string name="missions_header_finished">Terminé</string>
-    <string name="missions_header_pending">Dans la file d\'attente</string>
+    <string name="missions_header_pending">En attente</string>
     <string name="paused">En pause</string>
     <string name="download_failed">Téléchargement échoué</string>
     <string name="conferences">Conférences</string>

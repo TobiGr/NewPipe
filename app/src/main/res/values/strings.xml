@@ -557,7 +557,6 @@
 
 
     <string name="missions_header_finished">Finished</string>
-    <string name="missions_header_pending">In queue</string>
 
     <string name="paused">paused</string>
     <string name="queued">queued</string>
@@ -622,5 +621,6 @@
     <string name="save_as">Save as…</string>
 
     <string name="download_pick_path">Select the downloads save path</string>
+    <string name="missions_header_pending">Pending</string>
 
 </resources>

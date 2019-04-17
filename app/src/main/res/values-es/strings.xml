@@ -406,8 +406,7 @@ abrir en modo popup</string>
     <string name="playlists">Listas de reproducción</string>
     <string name="tracks">Pistas</string>
     <string name="missions_header_finished">Finalizadas</string>
-    <string name="missions_header_pending">En cola</string>
-    
+
     <string name="paused">pausado</string>
     <string name="queued">en cola</string>
     <string name="post_processing">post-procesado</string>
@@ -495,4 +494,6 @@ abrir en modo popup</string>
     <string name="save_as">Guardar como…</string>
     <string name="download_to_sdcard_error_message">No es posible descargar a una tarjeta SD externa. \¿Restablecer la ubicación de la carpeta de descarga\?</string>
     <string name="download_pick_path">Seleccione los directorios de descarga</string>
+    <string name="missions_header_pending">Pendiente</string>
+
 </resources>

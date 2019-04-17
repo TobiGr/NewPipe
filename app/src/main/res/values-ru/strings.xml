@@ -458,7 +458,6 @@
     <string name="events">События</string>
     <string name="conferences">Конференции</string>
     <string name="post_processing">пост-обработка</string>
-    <string name="missions_header_pending">В очереди</string>
     <string name="download_finished">Загрузка завершена</string>
     <string name="download_finished_more">" %s загрузок завершено"</string>
     <string name="generate_unique_name">Создать уникальное имя</string>
@@ -472,4 +471,5 @@
     <string name="error_postprocessing_failed">Пост-обработка не удалась</string>
     <string name="pause_downloads_on_mobile">Останавливать скачивание при переходе на мобильную сеть</string>
     <string name="close">Закрыть</string>
+    <string name="missions_header_pending">в ожидании</string>
 </resources>
