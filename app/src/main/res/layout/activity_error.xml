@@ -117,11 +117,52 @@
                 android:layout_height="wrap_content"
                 android:inputType="" />
 
+            <LinearLayout
+                android:id="@+id/includeDocumentSwitchContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/includeDocumentSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:layout_marginEnd="4dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/includeDocumentSwitchText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/error_report_switch_document_text" />
+            </LinearLayout>
+
             <Button
-                android:id="@+id/errorReportButton"
+                android:id="@+id/errorReportEmailButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/error_report_button_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/error_report_open_github_notice" />
+
+            <Button
+                    android:id="@+id/errorReportCopyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/copy" />
+
+            <Button
+                android:id="@+id/errorReportGitHubButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/error_report_open_issue_button_text" />
 
         </LinearLayout>
     </ScrollView>
