@@ -219,7 +219,7 @@
     <string name="sorry_string">Sorry, that should not have happened.</string>
     <string name="guru_meditation" translatable="false">Guru Meditation.</string>
     <string name="error_report_button_text">Report error via e-mail</string>
-    <string name="copy">Copy</string>
+    <string name="copy_for_github">Copy formatted report</string>
     <string name="error_report_open_issue_button_text">Report error on GitHub</string>
     <string name="error_report_switch_document_text">Append page content which failed to load to the error report.</string>
     <string name="error_report_open_github_notice">Please make sure to check whether an issue which discusses your crash already exists.</string>

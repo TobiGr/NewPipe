@@ -256,8 +256,8 @@ public class ErrorActivity extends AppCompatActivity {
         Button reportEmailButton = findViewById(R.id.errorReportEmailButton);
         Button copyButton = findViewById(R.id.errorReportCopyButton);
         Button reportGithubButton = findViewById(R.id.errorReportGitHubButton);
-        LinearLayout includeDocumentSwitchContainer = findViewById(R.id.includeDocumentSwitchContainer);
-        SwitchCompat includeDocumentSwitch = findViewById(R.id.includeDocumentSwitch);
+        LinearLayout includeDocumentsSwitchContainer = findViewById(R.id.includeDocumentsSwitchContainer);
+        SwitchCompat includeDocumentsSwitch = findViewById(R.id.includeDocumentsSwitch);
 
         userCommentBox = findViewById(R.id.errorCommentBox);
         TextView errorView = findViewById(R.id.errorView);
@@ -269,16 +269,16 @@ public class ErrorActivity extends AppCompatActivity {
         errorInfo = intent.getParcelableExtra(ERROR_INFO);
         errorList = intent.getStringArrayExtra(ERROR_LIST);
         parsedDocumentList = intent.getStringArrayExtra(ERROR_DOCUMENT_LIST);
-        // no document available
 
+        // no documents available
         if (parsedDocumentList == null || parsedDocumentList.length == 0) {
-            includeDocumentSwitchContainer.setVisibility(View.GONE);
+            includeDocumentsSwitchContainer.setVisibility(View.GONE);
         } else {
             boolean documentListEmpty = false;
             for (String parsedDocument : parsedDocumentList) {
                 if (parsedDocument == null || parsedDocument.length() == 0) documentListEmpty = true;
             }
-            if (documentListEmpty) includeDocumentSwitchContainer.setVisibility(View.GONE);
+            if (documentListEmpty) includeDocumentsSwitchContainer.setVisibility(View.GONE);
         }
 
 
@@ -294,7 +294,7 @@ public class ErrorActivity extends AppCompatActivity {
             ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
             ClipData clip = ClipData.newPlainText(
                     "NewPipe error report",
-                    buildMarkdown(includeDocumentSwitch.isChecked()));
+                    buildMarkdown(includeDocumentsSwitch.isChecked()));
             clipboard.setPrimaryClip(clip);
 
             // remove toast because it appears where the android share menu opens
@@ -302,11 +302,11 @@ public class ErrorActivity extends AppCompatActivity {
         });
 
         reportGithubButton.setOnClickListener((View v) -> {
-            openPrivacyPolicyDialog(this, "GITHUB", includeDocumentSwitch.isChecked());
+            openPrivacyPolicyDialog(this, "GITHUB", includeDocumentsSwitch.isChecked());
         });
 
-        includeDocumentSwitchContainer.setOnClickListener((View v) -> {
-            includeDocumentSwitch.toggle();
+        includeDocumentsSwitchContainer.setOnClickListener((View v) -> {
+            includeDocumentsSwitch.toggle();
         });
 
         // normal bugreport
@@ -355,11 +355,13 @@ public class ErrorActivity extends AppCompatActivity {
     private String formErrorText(String[] el) {
         StringBuilder text = new StringBuilder();
         if (el != null) {
-            for (String e : el) {
-                text.append("-------------------------------------\n").append(e);
+            for(int i = 0; i < el.length; i++) {
+                text.append(el[i]);
+                if (i != el.length - 1) {
+                    text.append("-------------------------------------\n");
+                }
             }
         }
-        // text.append("-------------------------------------");
         return text.toString();
     }
 

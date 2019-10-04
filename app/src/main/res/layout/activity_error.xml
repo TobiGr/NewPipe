@@ -118,7 +118,7 @@
                 android:inputType="" />
 
             <LinearLayout
-                android:id="@+id/includeDocumentSwitchContainer"
+                android:id="@+id/includeDocumentsSwitchContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -126,7 +126,7 @@
                 android:layout_marginBottom="5dp">
 
                 <android.support.v7.widget.SwitchCompat
-                    android:id="@+id/includeDocumentSwitch"
+                    android:id="@+id/includeDocumentsSwitch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
@@ -134,7 +134,7 @@
                     android:layout_gravity="center"/>
 
                 <TextView
-                    android:id="@+id/includeDocumentSwitchText"
+                    android:id="@+id/includeDocumentsSwitchText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/error_report_switch_document_text" />
@@ -156,7 +156,7 @@
                     android:id="@+id/errorReportCopyButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/copy" />
+                    android:text="@string/copy_for_github" />
 
             <Button
                 android:id="@+id/errorReportGitHubButton"
