@@ -29,13 +29,13 @@ jobs:
       - name: Create comment linking to the artifact
         uses: thollander/actions-comment-pull-request@master
         with:
-          message: 'The APK was build successfully. You can find it here: https://github.com/TobiGr/NewPipe/actions/runs/${{github.run_id}}'
+          message: 'The APK was build successfully. You can find it here: https://github.com/TobiGr/NewPipe/actions/runs/${{github.run_id}}#artifacts'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: do ugly things
         uses: actions/github-script@v3
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          githubtoken: ${{ secrets.GITHUB_TOKEN }}
           #script: |
           #  github.issues.createComment({
           #    issue_number: context.issue.number,
@@ -43,4 +43,4 @@ jobs:
           #    repo: context.repo.repo,
           #    body: 'Script: The APK was build successfully. You can find it here: https://github.com/TobiGr/NewPipe/actions/runs/${{github.run_id}}'
           #  })
-          script: echo ${{ secrets.GITHUB_TOKEN }} | sha512sum
+          script: echo $githubToken | sha512sum
