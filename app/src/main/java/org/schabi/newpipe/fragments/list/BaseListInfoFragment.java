@@ -133,6 +133,7 @@ public abstract class BaseListInfoFragment<I extends ListInfo>
                     currentInfo = result;
                     currentNextPage = result.getNextPage();
                     handleResult(result);
+                    loadMoreItemsIfNecessary();
                 }, this::onError);
     }
 
@@ -186,6 +187,7 @@ public abstract class BaseListInfoFragment<I extends ListInfo>
         infoListAdapter.addInfoItemList(result.getItems());
 
         showListFooter(hasMoreItems());
+        //loadMoreItemsIfNecessary();
     }
 
     @Override
@@ -208,6 +210,7 @@ public abstract class BaseListInfoFragment<I extends ListInfo>
             if (result.getRelatedItems().size() > 0) {
                 infoListAdapter.addInfoItemList(result.getRelatedItems());
                 showListFooter(hasMoreItems());
+                //loadMoreItemsIfNecessary();
             } else {
                 infoListAdapter.clearStreamItemList();
                 showEmptyState();
@@ -223,5 +226,11 @@ public abstract class BaseListInfoFragment<I extends ListInfo>
         this.serviceId = sid;
         this.url = u;
         this.name = !TextUtils.isEmpty(title) ? title : "";
+    }
+
+    private void loadMoreItemsIfNecessary() {
+        if (hasMoreItems() && !isListViewScrollable()) {
+            loadMoreItems();
+        }
     }
 }

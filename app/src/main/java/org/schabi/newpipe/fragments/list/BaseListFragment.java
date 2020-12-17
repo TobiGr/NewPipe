@@ -16,6 +16,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.schabi.newpipe.R;
@@ -453,5 +454,14 @@ public abstract class BaseListFragment<I, N> extends BaseStateFragment<I>
         } else {
             return "grid".equals(listMode);
         }
+    }
+
+    protected boolean isListViewScrollable() {
+        final LinearLayoutManager lm = (LinearLayoutManager) itemsList.getLayoutManager();
+        if (lm == null || infoListAdapter == null) {
+            return false;
+        }
+        final int i = lm.getItemCount();
+        return lm.findLastCompletelyVisibleItemPosition() < infoListAdapter.getItemCount() - 1;
     }
 }
