@@ -229,7 +229,7 @@ public abstract class BaseListInfoFragment<I extends ListInfo>
     }
 
     private void loadMoreItemsIfNecessary() {
-        if (hasMoreItems() && !isListViewScrollable()) {
+        if (hasMoreItems() && !isItemsListScrollable()) {
             loadMoreItems();
         }
     }

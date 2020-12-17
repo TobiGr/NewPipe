@@ -456,12 +456,17 @@ public abstract class BaseListFragment<I, N> extends BaseStateFragment<I>
         }
     }
 
-    protected boolean isListViewScrollable() {
+    /**
+     * @return whether the user can scroll down in the itemsList
+     */
+    protected boolean isItemsListScrollable() {
         final LinearLayoutManager lm = (LinearLayoutManager) itemsList.getLayoutManager();
         if (lm == null || infoListAdapter == null) {
             return false;
         }
         final int i = lm.getItemCount();
+        // The list is scrollable if there are some elements hidden,
+        // because they are outside the view.
         return lm.findLastCompletelyVisibleItemPosition() < infoListAdapter.getItemCount() - 1;
     }
 }
