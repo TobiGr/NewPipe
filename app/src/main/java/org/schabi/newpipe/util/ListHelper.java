@@ -273,44 +273,53 @@ public final class ListHelper {
      * Get the audio from the list with the highest quality.
      * Format will be ignored if it yields no results.
      *
-     * @param format       The target format type or null if it doesn't matter
-     * @param audioStreams List of audio streams
-     * @return Index of audio stream that produces the most compact results or -1 if not found
+     * @param format       the target format type or {@code null} if it doesn't matter
+     * @param audioStreams list of audio streams
+     * @return  index of audio stream that produces the most compact results
+     *          or {@code -1} if not found
      */
-    static int getHighestQualityAudioIndex(@Nullable MediaFormat format,
-                                           final List<AudioStream> audioStreams) {
-        int result = -1;
-        if (audioStreams != null) {
-            while (result == -1) {
-                AudioStream prevStream = null;
-                for (int idx = 0; idx < audioStreams.size(); idx++) {
-                    final AudioStream stream = audioStreams.get(idx);
-                    if ((format == null || stream.getFormat() == format)
-                            && (prevStream == null || compareAudioStreamBitrate(prevStream, stream,
-                                    AUDIO_FORMAT_QUALITY_RANKING) < 0)) {
-                        prevStream = stream;
-                        result = idx;
-                    }
-                }
-                if (result == -1 && format == null) {
-                    break;
-                }
-                format = null;
+    static int getHighestQualityAudioIndex(@Nullable final MediaFormat format,
+                                           @Nullable final List<AudioStream> audioStreams) {
+        final Comparator<AudioStream> highQualityComparator = new Comparator<AudioStream>() {
+            @Override
+            public int compare(final AudioStream o1, final AudioStream o2) {
+                // multiply by -1, because compareAudioStreamBitrate orders vice versa
+                return -1 * compareAudioStreamBitrate(o1, o2, AUDIO_FORMAT_QUALITY_RANKING);
             }
-        }
-        return result;
+        };
+        return getAudioIndex(format, audioStreams, highQualityComparator);
     }
 
     /**
      * Get the audio from the list with the lowest bitrate and most efficient format.
      * Format will be ignored if it yields no results.
      *
-     * @param format       The target format type or null if it doesn't matter
-     * @param audioStreams List of audio streams
-     * @return Index of audio stream that produces the most compact results or -1 if not found
+     * @param format       the target format type or {@code null} if it doesn't matter
+     * @param audioStreams list of audio streams
+     * @return  index of audio stream that produces the most compact results
+     *          or {@code -1} if not found
      */
-    static int getMostCompactAudioIndex(@Nullable MediaFormat format,
-                                        final List<AudioStream> audioStreams) {
+    static int getMostCompactAudioIndex(@Nullable final MediaFormat format,
+                                        @Nullable final List<AudioStream> audioStreams) {
+        final Comparator<AudioStream> lowSizeComparator = new Comparator<AudioStream>() {
+            @Override
+            public int compare(final AudioStream o1, final AudioStream o2) {
+                return compareAudioStreamBitrate(o1, o2, AUDIO_FORMAT_EFFICIENCY_RANKING);
+            }
+        };
+        return getAudioIndex(format, audioStreams, lowSizeComparator);
+    }
+
+    /**
+     * Get the audio index from the list which matches best the given comparator.
+     * @param format        the target format type or {@code null} if it doesn't matter
+     * @param audioStreams  list of audio streams
+     * @param comparator    The comparator which determines which audio stream is needed
+     * @return The index of the audio stream or {@code -1} if no matching audio stream was found
+     */
+    private static int getAudioIndex(@Nullable MediaFormat format,
+                             @Nullable final List<AudioStream> audioStreams,
+                             final Comparator<AudioStream> comparator) {
         int result = -1;
         if (audioStreams != null) {
             while (result == -1) {
@@ -318,8 +327,7 @@ public final class ListHelper {
                 for (int idx = 0; idx < audioStreams.size(); idx++) {
                     final AudioStream stream = audioStreams.get(idx);
                     if ((format == null || stream.getFormat() == format)
-                            && (prevStream == null || compareAudioStreamBitrate(prevStream, stream,
-                                    AUDIO_FORMAT_EFFICIENCY_RANKING) > 0)) {
+                            && (prevStream == null || comparator.compare(prevStream, stream) > 0)) {
                         prevStream = stream;
                         result = idx;
                     }
@@ -460,7 +468,15 @@ public final class ListHelper {
         return format;
     }
 
-    // Compares the quality of two audio streams
+    /**
+     * Compare the quality of two {@link AudioStream}s.
+     * @param streamA
+     * @param streamB
+     * @param formatRanking a {@link List} ordered by the quality of its {@link MediaFormat}s;
+     *                      the higher the quality, the higher the index
+     * @return negative values if the quality of {@code streamA}
+     * is lower than the quality of {@code streamB}.
+     */
     private static int compareAudioStreamBitrate(final AudioStream streamA,
                                                  final AudioStream streamB,
                                                  final List<MediaFormat> formatRanking) {
