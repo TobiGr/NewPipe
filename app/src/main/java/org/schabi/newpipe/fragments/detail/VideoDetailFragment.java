@@ -33,6 +33,7 @@ import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
 import androidx.annotation.AttrRes;
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
@@ -215,7 +216,9 @@ public final class VideoDetailFragment
         // It will do nothing if the player is not in fullscreen mode
         hideSystemUiIfNeeded();
 
-        if (!player.videoPlayerSelected() && !playAfterConnect) {
+        if (!player.videoPlayerSelected() && !playAfterConnect
+                || (currentInfo != null
+                && currentInfo.getStreamType() == StreamType.UPCOMING_STREAM)) {
             return;
         }
 
@@ -491,8 +494,10 @@ public final class VideoDetailFragment
                 }
                 break;
             case R.id.detail_thumbnail_root_layout:
-                autoPlayEnabled = true; // forcefully start playing
-                openVideoPlayer();
+                if (currentInfo.getStreamType() != StreamType.UPCOMING_STREAM) {
+                    autoPlayEnabled = true; // forcefully start playing
+                    openVideoPlayer();
+                }
                 break;
             case R.id.detail_title_root_layout:
                 toggleTitleAndSecondaryControls();
@@ -1554,7 +1559,7 @@ public final class VideoDetailFragment
         }
 
         if (!info.getErrors().isEmpty()) {
-            // Bandcamp fan pages are not yet supported and thus a ContentNotAvailableException is
+            // Bandcamp fan pages are not yet supported and thus a ContentNotSupportedException is
             // thrown. This is not an error and thus should not be shown to the user.
             for (final Throwable throwable : info.getErrors()) {
                 if (throwable instanceof ContentNotSupportedException
@@ -1573,12 +1578,25 @@ public final class VideoDetailFragment
                 || info.getStreamType() == StreamType.AUDIO_LIVE_STREAM ? View.GONE : View.VISIBLE);
         binding.detailControlsBackground.setVisibility(info.getAudioStreams().isEmpty()
                 ? View.GONE : View.VISIBLE);
+        final boolean isUpcomingStream = info.getStreamType() == StreamType.UPCOMING_STREAM;
+        binding.detailControlsPlaylistAppend.setVisibility(
+                isUpcomingStream ? View.GONE : View.VISIBLE);
+        binding.detailControlsDownload.setVisibility(
+                isUpcomingStream ? View.GONE : View.VISIBLE);
 
         final boolean noVideoStreams =
                 info.getVideoStreams().isEmpty() && info.getVideoOnlyStreams().isEmpty();
         binding.detailControlsPopup.setVisibility(noVideoStreams ? View.GONE : View.VISIBLE);
-        binding.detailThumbnailPlayButton.setImageResource(
-                noVideoStreams ? R.drawable.ic_headset_shadow : R.drawable.ic_play_arrow_shadow);
+        @DrawableRes final int thumbnailButtonIcon;
+        if (isUpcomingStream) {
+            thumbnailButtonIcon = R.drawable.ic_info_shadow;
+        } else if (noVideoStreams) {
+            thumbnailButtonIcon = R.drawable.ic_headset_shadow;
+        } else {
+            thumbnailButtonIcon =  R.drawable.ic_play_arrow_shadow;
+        }
+        binding.detailThumbnailPlayButton.setImageResource(thumbnailButtonIcon);
+
     }
 
     private void displayUploaderAsSubChannel(final StreamInfo info) {
