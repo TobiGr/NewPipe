@@ -5,6 +5,8 @@ on:
     types: [created, edited]
   issues:
     types: [opened, edited]
+  pull_requests:
+    types: [opened]
 
 permissions:
   issues: write
