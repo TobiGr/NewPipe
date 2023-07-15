@@ -17,8 +17,11 @@ module.exports = async ({github, context}) => {
         initialBody = context.payload.comment.body;
     } else if (context.eventName == 'issues') {
         initialBody = context.payload.issue.body;
+    } else if (context.eventName == 'pull_request') {
+        console.log(context.payload);
+        initialBody = context.payload.pr.body;
     } else {
-        console.log('Aborting: No body found');
+        console.log('Aborting: No body found', context.eventName);
         return;
     }
     console.log(`Found body: \n${initialBody}\n`);
@@ -59,7 +62,7 @@ module.exports = async ({github, context}) => {
 
     // Update the corresponding element
     if (context.eventName == 'issue_comment') {
-        console.log('Updating comment with id', context.payload.comment.id);
+        console.log('Updating issue comment with id', context.payload.comment.id);
         await github.rest.issues.updateComment({
             comment_id: context.payload.comment.id,
             owner: context.repo.owner,
@@ -70,6 +73,22 @@ module.exports = async ({github, context}) => {
         console.log('Updating issue', context.payload.issue.number);
         await github.rest.issues.update({
             issue_number: context.payload.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: newBody
+        });
+    } else if (context.eventName == 'pull_request_comment') {
+        console.log('Updating pull request comment with id', context.payload.comment.id);
+        await github.rest.pulls.updateComment({
+            comment_id: context.payload.comment.id,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: newBody
+        })
+    } else if (context.eventName == 'pull_request') {
+        console.log('Updating pull request', context.payload.issue.number);
+        await github.rest.pulls.update({
+            pull_number: context.payload.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
             body: newBody
