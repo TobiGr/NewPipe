@@ -166,6 +166,33 @@ class StreamItemAdapterTest {
         wrapper.resetInfo()
     }
 
+    @Test
+    fun retrieveMediaFormatFromContentDispositionHeader() {
+        val streams = getIncompleteAudioStreams(7)
+        val wrapper = StreamInfoWrapper(streams, context)
+        val retrieveMediaFormat = { stream: AudioStream, response: Response ->
+            StreamInfoWrapper<AudioStream>::retrieveMediaFormatFromContentDispositionHeader(stream, wrapper, response)
+        }
+
+
+        val helper = AssertionHelper(streams, wrapper, retrieveMediaFormat)
+
+        helper.assertInvalidResponse(getResponse(mapOf(Pair("content-length", "mp3"))), 0)
+        helper.assertInvalidResponse(getResponse(mapOf(Pair("Content-Disposition",
+                "name=\"train.png\""))), 1)
+        helper.assertInvalidResponse(getResponse(mapOf(Pair("Content-Disposition",
+                "form-data; name=\"data.csv\""))), 2)
+        helper.assertInvalidResponse(getResponse(mapOf(Pair("Content-Disposition",
+                "form-data; name=\"fieldName\"; filename=\"filename.jpg\""))), 3)
+
+        helper.assertValidResponse(getResponse(mapOf(Pair("Content-Disposition",
+                "name=\"train.ogg\""))), 4, MediaFormat.OGG)
+        helper.assertValidResponse(getResponse(mapOf(Pair("Content-Disposition",
+                "form-data; name=\"audio.flac\""))), 5, MediaFormat.FLAC)
+        helper.assertValidResponse(getResponse(mapOf(Pair("Content-Disposition",
+                "form-data; name=\"audio.aiff\"; filename=\"audio.aiff\""))), 6, MediaFormat.AIFF)
+    }
+
     /**
      * @return a list of video streams, in which their video only property mirrors the provided
      * [videoOnly] vararg.
@@ -244,6 +271,8 @@ class StreamItemAdapterTest {
         }
     }
 
+
+
     /**
      * Helper function that builds a secondary stream list.
      */
@@ -266,5 +295,38 @@ class StreamItemAdapterTest {
             listHeaders[entry.key] = listOf(entry.value)
         }
         return Response(200, null, listHeaders, "", "")
+    }
+
+    companion object {
+        fun a(a: String): Boolean {
+            return a.isEmpty()
+        }
+    }
+
+    class AssertionHelper<T: Stream>(
+            private val streams: List<T>,
+            private val wrapper: StreamInfoWrapper<T>,
+            private val retrieveMediaFormat: (stream: T, response: Response) -> Boolean) {
+
+        /**
+         * Assert that an invalid response does not result in wrongly extracted
+         */
+        fun assertInvalidResponse(
+                response: Response,
+                index: Int) {
+            assertFalse("invalid header returns valid value",
+                    retrieveMediaFormat(streams[index], response))
+            assertNull("Media format extracted although stated otherwise", wrapper.getFormat(index))
+        }
+        fun assertValidResponse(
+                response: Response,
+                index: Int,
+                format: MediaFormat) {
+            assertTrue(
+                    "header was not recognized", StreamInfoWrapper
+                    .retrieveMediaFormatFromContentDispositionHeader(streams[index], wrapper, response)
+            )
+            assertEquals("Wrong media format extracted", format, wrapper.getFormat(index))
+        }
     }
 }

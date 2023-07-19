@@ -400,7 +400,8 @@ public class StreamItemAdapter<T extends Stream, U extends Stream> extends BaseA
             return false;
         }
 
-        private static <X extends Stream> boolean retrieveMediaFormatFromContentTypeHeader(
+        @VisibleForTesting
+        public static <X extends Stream> boolean retrieveMediaFormatFromContentTypeHeader(
                 @NonNull final X stream,
                 @NonNull final StreamInfoWrapper<X> streamsWrapper,
                 @NonNull final Response response) {
