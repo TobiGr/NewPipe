@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 import androidx.collection.SparseArrayCompat;
 
 import org.schabi.newpipe.DownloaderImpl;
@@ -301,7 +302,8 @@ public class StreamItemAdapter<T extends Stream, U extends Stream> extends BaseA
          * @param response       the response of the head request for the given stream
          * @return {@code true} if the media format could be retrieved; {@code false} otherwise
          */
-        private static <X extends Stream> boolean retrieveMediaFormat(
+        @VisibleForTesting
+        public static <X extends Stream> boolean retrieveMediaFormat(
                 @NonNull final X stream,
                 @NonNull final StreamInfoWrapper<X> streamsWrapper,
                 @NonNull final Response response) {
@@ -311,7 +313,8 @@ public class StreamItemAdapter<T extends Stream, U extends Stream> extends BaseA
                     || retrieveMediaFormatFromContentTypeHeader(stream, streamsWrapper, response);
         }
 
-        private static <X extends Stream> boolean retrieveMediaFormatFromFileTypeHeaders(
+        @VisibleForTesting
+        public static <X extends Stream> boolean retrieveMediaFormatFromFileTypeHeaders(
                 @NonNull final X stream,
                 @NonNull final StreamInfoWrapper<X> streamsWrapper,
                 @NonNull final Response response) {
@@ -332,7 +335,8 @@ public class StreamItemAdapter<T extends Stream, U extends Stream> extends BaseA
             return false;
         }
 
-        private static <X extends Stream> boolean retrieveMediaFormatFromContentDispositionHeader(
+        @VisibleForTesting
+        public static <X extends Stream> boolean retrieveMediaFormatFromContentDispositionHeader(
                 @NonNull final X stream,
                 @NonNull final StreamInfoWrapper<X> streamsWrapper,
                 @NonNull final Response response) {
@@ -421,7 +425,8 @@ public class StreamItemAdapter<T extends Stream, U extends Stream> extends BaseA
         public void resetInfo() {
             Arrays.fill(streamSizes, SIZE_UNSET);
             for (int i = 0; i < streamsList.size(); i++) {
-                streamFormats[i] = streamsList.get(i).getFormat();
+                streamFormats[i] = streamsList.get(i) == null // test for invalid streams
+                        ? null : streamsList.get(i).getFormat();
             }
         }
 

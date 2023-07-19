@@ -12,15 +12,21 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.MediumTest
 import androidx.test.internal.runner.junit4.statement.UiThreadStatement
 import org.junit.Assert
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
+import org.junit.Assert.assertNull
+import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.schabi.newpipe.R
 import org.schabi.newpipe.extractor.MediaFormat
+import org.schabi.newpipe.extractor.downloader.Response
 import org.schabi.newpipe.extractor.stream.AudioStream
 import org.schabi.newpipe.extractor.stream.Stream
 import org.schabi.newpipe.extractor.stream.SubtitlesStream
 import org.schabi.newpipe.extractor.stream.VideoStream
+import org.schabi.newpipe.util.StreamItemAdapter.StreamInfoWrapper
 
 @MediumTest
 @RunWith(AndroidJUnit4::class)
@@ -123,6 +129,43 @@ class StreamItemAdapterTest {
         }
     }
 
+    @Test
+    fun retrieveMediaFormatFromFileTypeHeaders() {
+        val streams = getIncompleteAudioStreams(5)
+        val wrapper = StreamInfoWrapper(streams, context)
+
+        val invalidResponse1 = getResponse(mapOf(Pair("content-length", "mp3")))
+        val invalidResponse2 = getResponse(mapOf(Pair("file-type", "mp0")))
+        val amazonResponse = getResponse(mapOf(Pair("x-amz-meta-file-type", "aiff")))
+        val normalResponse = getResponse(mapOf(Pair("file-type", "mp3")))
+
+        assertFalse(
+            "invalid header returns valid value", StreamInfoWrapper
+                .retrieveMediaFormatFromFileTypeHeaders(streams[0], wrapper, invalidResponse1)
+        )
+        assertNull("Media format extracted although stated otherwise", wrapper.getFormat(0))
+
+        assertFalse(
+            "invalid file type returns valid MediaFormat", StreamInfoWrapper
+                .retrieveMediaFormatFromFileTypeHeaders(streams[1], wrapper, invalidResponse2)
+        )
+        assertNull("Media format extracted although file type is invalid", wrapper.getFormat(1))
+
+        assertTrue(
+            "file-type header was not recognized", StreamInfoWrapper
+                .retrieveMediaFormatFromFileTypeHeaders(streams[2], wrapper, amazonResponse)
+        )
+        assertEquals("Wrong media format extracted", MediaFormat.AIFF, wrapper.getFormat(2))
+
+        assertTrue(
+            "file-type header was not recognized", StreamInfoWrapper
+                .retrieveMediaFormatFromFileTypeHeaders(streams[3], wrapper, normalResponse)
+        )
+        assertEquals("Wrong media format extracted", MediaFormat.MP3, wrapper.getFormat(3))
+
+        wrapper.resetInfo()
+    }
+
     /**
      * @return a list of video streams, in which their video only property mirrors the provided
      * [videoOnly] vararg.
@@ -160,6 +203,19 @@ class StreamItemAdapterTest {
                 }
             }
         )
+
+    private fun getIncompleteAudioStreams(size: Int): List<AudioStream> {
+        val list = ArrayList<AudioStream>(size)
+        for (i in 1..size) {
+            list.add(
+                AudioStream.Builder()
+                    .setId(Stream.ID_UNKNOWN)
+                    .setContent("https://example.com/$i", true)
+                    .build()
+            )
+        }
+        return list
+    }
 
     /**
      * Checks whether the item at [position] in the [spinner] has the correct icon visibility when
@@ -203,4 +259,12 @@ class StreamItemAdapterTest {
                 put(index, secondaryStreamHelper)
             }
         }
+
+    private fun getResponse(headers: Map<String, String>): Response {
+        val listHeaders = HashMap<String, List<String>>()
+        headers.forEach { entry ->
+            listHeaders[entry.key] = listOf(entry.value)
+        }
+        return Response(200, null, listHeaders, "", "")
+    }
 }
