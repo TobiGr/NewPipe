@@ -588,7 +588,7 @@
     <string name="auto_device_theme_title">自動（裝置佈景主題）</string>
     <string name="night_theme_title">夜間佈景主題</string>
     <string name="show_channel_details">顯示頻道詳細資訊</string>
-    <string name="disable_media_tunneling_summary">如果您遇到黑畫面或影片播放停頓的現象，請停用媒體隧道</string>
+    <string name="disable_media_tunneling_summary">如果您遇到黑畫面或影片播放停頓的現象，請停用媒體隧道。</string>
     <string name="disable_media_tunneling_title">停用媒體隧道</string>
     <string name="metadata_privacy_internal">內部</string>
     <string name="metadata_privacy_private">私人</string>
@@ -735,7 +735,6 @@
     <string name="settings_category_exoplayer_title">ExoPlayer 設定</string>
     <string name="use_exoplayer_decoder_fallback_title">使用 ExoPlayer 的解碼器汰退功能</string>
     <string name="always_use_exoplayer_set_output_surface_workaround_title">一律使用 ExoPlayer 的視訊輸出表面設定解決方法</string>
-    <string name="audio_track_name">%s %s</string>
     <string name="audio_track_type_original">原始</string>
     <string name="audio_track_type_dubbed">配音</string>
     <string name="audio_track_type_descriptive">描述性</string>
@@ -748,4 +747,10 @@
     <string name="always_use_exoplayer_set_output_surface_workaround_summary">此解決方法是在發生表面變動時釋放並重新確認視訊編解碼器，而非直接將表面設定為編解碼器。ExoPlayer 已在部份有問題的裝置上使用了此設定，此設定僅對 Android 6 或更新版本有效。
 \n
 \n啟用此選項可以避免在切換目前視訊播放程式或切換到全螢幕時出現播放錯誤</string>
+    <string name="main_tabs_position_summary">將主分頁選擇器移動至底部</string>
+    <string name="main_tabs_position_title">主分頁位置</string>
+    <string name="audio_track_name">%1$s %2$s</string>
+    <string name="disable_media_tunneling_automatic_info">因為您的裝置型號已知不支援媒體隧道，因此已預設停用。</string>
+    <string name="no_streams">無串流</string>
+    <string name="no_live_streams">無直播串流</string>
 </resources>

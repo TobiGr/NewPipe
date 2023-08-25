@@ -613,7 +613,7 @@
     <string name="auto_device_theme_title">Automatyczny (motyw urządzenia)</string>
     <string name="night_theme_title">Motyw nocny</string>
     <string name="show_channel_details">Pokaż szczegóły kanału</string>
-    <string name="disable_media_tunneling_summary">Wyłącz tunelowanie multimediów, jeśli zaobserwowałeś(-aś) czarny ekran bądź brak płynności odtwarzania wideo</string>
+    <string name="disable_media_tunneling_summary">Wyłącz tunelowanie multimediów, jeśli zaobserwowałeś(-aś) czarny ekran bądź brak płynności odtwarzania wideo.</string>
     <string name="disable_media_tunneling_title">Wyłącz tunelowanie multimediów</string>
     <string name="metadata_age_limit">Ograniczenie wiekowe</string>
     <string name="description_select_disable">Wyłącz zaznaczanie tekstu w opisie</string>
@@ -774,7 +774,7 @@
     <string name="use_exoplayer_decoder_fallback_title">Używaj funkcji zapasowego dekodera ExoPlayera</string>
     <string name="use_exoplayer_decoder_fallback_summary">Włącz tę opcję, jeśli masz problemy z inicjalizacją dekodera. Przywraca dekodery o niższym priorytecie, jeśli inicjalizacja podstawowych dekoderów się nie powiedzie. Może to spowodować słabszą wydajność odtwarzania niż podczas korzystania z podstawowych dekoderów</string>
     <string name="always_use_exoplayer_set_output_surface_workaround_title">Zawsze używaj obejścia ustawienia powierzchni wyjścia wideo ExoPlayera</string>
-    <string name="audio_track_name">%s %s</string>
+    <string name="audio_track_name">%1$s %2$s</string>
     <string name="audio_track_type_original">oryginalna</string>
     <string name="audio_track_type_dubbed">dubbing</string>
     <string name="audio_track_type_descriptive">audiodeskrypcja</string>
@@ -782,4 +782,9 @@
     <string name="always_use_exoplayer_set_output_surface_workaround_summary">To obejście zwalnia i ponownie tworzy instancje kodeków wideo, gdy nastąpi zmiana powierzchni, zamiast bezpośrednio ustawiać powierzchnię dla kodeka. Używane już przez ExoPlayera na niektórych urządzeniach z tym problemem, ustawienie to ma wpływ tylko na Androida 6 i nowsze.
 \n
 \nWłączenie tej opcji może zapobiec błędom odtwarzania podczas przełączania obecnego odtwarzacza wideo lub przechodzenia na pełny ekran</string>
+    <string name="main_tabs_position_summary">Przenieś selektor kart głównych na dół</string>
+    <string name="main_tabs_position_title">Pozycja kart głównych</string>
+    <string name="disable_media_tunneling_automatic_info">Tunelowanie multimediów zostało domyślnie wyłączone na Twoim urządzeniu, ponieważ wiadomo, że model Twojego urządzenia go nie obsługuje</string>
+    <string name="no_streams">Brak strumieni</string>
+    <string name="no_live_streams">Brak transmisji na żywo</string>
 </resources>

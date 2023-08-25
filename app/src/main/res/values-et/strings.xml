@@ -560,7 +560,7 @@
     <string name="enable_queue_limit">Piira allalaadimiste järjekorda</string>
     <string name="error_progress_lost">Faili kustutamisega läks ka tööjärg kautsi</string>
     <string name="error_postprocessing_stopped">Faili töötlemisel NewPipe lõpetas töö</string>
-    <string name="disable_media_tunneling_summary">Lülita meedia tunneldamine välja juhul, kui esitamisel tekib must ekraan või pildi kuvamine on katkendlik</string>
+    <string name="disable_media_tunneling_summary">Lülita meedia tunneldamine välja juhul, kui esitamisel tekib must ekraan või pildi kuvamine on katkendlik.</string>
     <string name="disable_media_tunneling_title">Lülita meedia tunneldamine välja</string>
     <string name="drawer_header_description">Vaheta teenust, hetkel on kasutusel:</string>
     <string name="content_not_supported">NewPipe hetkel sellist võimaluist ei toeta.
@@ -748,7 +748,7 @@
     <string name="audio_track_present_in_video">Selles meediavoos peaks heliriba juba olemas olema</string>
     <string name="use_exoplayer_decoder_fallback_title">Kasuta ExoPlayer\'i alternatiivset dekooderit</string>
     <string name="always_use_exoplayer_set_output_surface_workaround_title">Kasuta alati ExoPlayer\'i video väljundpinna seadistamise lahendust</string>
-    <string name="audio_track_name">%s %s</string>
+    <string name="audio_track_name">%1$s %2$s</string>
     <string name="audio_track_type_original">algne</string>
     <string name="audio_track_type_dubbed">dubleeritud</string>
     <string name="audio_track_type_descriptive">kirjeldav</string>
@@ -761,4 +761,9 @@
     <string name="always_use_exoplayer_set_output_surface_workaround_summary">Video väljundpinna muutumisel see alternatiivne lahendus eemaldab videokodekid kasutusest ja laadib nad uuesti ega ürita videokodeke uue väljundpinnaga sobitada. See seadistus toimib vaid Android 6 ja uuemates versioonides ning mõne seadme puhul on juba automaatselt kasutusel
 \n
 \nSelle valiku kasutamine hoiab ära mõned vea, mis tekivad ekraani pööramisel ja täisekraanivaate kasutamisel</string>
+    <string name="main_tabs_position_summary">Tõsta põhiline vahekaartide valija alla äärde</string>
+    <string name="main_tabs_position_title">Vahekaartide põhiline asukoht</string>
+    <string name="disable_media_tunneling_automatic_info">Kuna on teada, et see seade ei toeta meedia tunneldamist, siis on see funktsionaalsus vaikimisi välja lülitatud.</string>
+    <string name="no_streams">Meediavoogusid ei leidu</string>
+    <string name="no_live_streams">Otseeetris meediavoogusid ei leidu</string>
 </resources>

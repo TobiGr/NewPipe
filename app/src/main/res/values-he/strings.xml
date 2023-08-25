@@ -618,7 +618,7 @@
     <string name="recaptcha_solve">לפתור</string>
     <string name="night_theme_title">ערכת עיצוב לילית</string>
     <string name="show_channel_details">להציג את פרטי הערוץ</string>
-    <string name="disable_media_tunneling_summary">כדאי להשבית תיעול מדיה אם הופיעה תופעה של מסך שחור או גמגום בנגינת וידאו</string>
+    <string name="disable_media_tunneling_summary">כדאי להשבית תיעול מדיה אם הופיעה תופעה של מסך שחור או גמגום בנגינת וידאו.</string>
     <string name="disable_media_tunneling_title">השבתת תיעול מדיה</string>
     <string name="metadata_privacy_internal">פנימי</string>
     <string name="metadata_privacy_private">פרטי</string>
@@ -782,9 +782,14 @@
     <string name="settings_category_exoplayer_summary">ניהול חלק מהגדרות של ה־ExoPlayer שלך. השינויים האלו דורשים את הפעלת הנגן מחדש כדי להיכנס לתוקף</string>
     <string name="progressive_load_interval_summary">שינוי גודל מרווח הטעינה (כרגע %s). ערך נמוך יותר עשוי להאיץ את טעינת הווידאו הראשונית</string>
     <string name="use_exoplayer_decoder_fallback_summary">יש להפעיל את האפשרות הזאת אם נתקלת בבעיות עם אתחול מפענח, מה שגורם להנחתה למפענחים עם עדיפות נמוכה יותר אם אתחול המפענחים העיקריים נכשל. עלול לגרום לביצועי נגינה נחותים לעומת מפענחים ראשיים</string>
-    <string name="audio_track_name">%s %s</string>
     <string name="always_use_exoplayer_set_output_surface_workaround_title">תמיד להשתמש במעקף הגדרות משטח פלט הווידאו של ExoPlayer</string>
     <string name="always_use_exoplayer_set_output_surface_workaround_summary">המעקף הזה משחרר ומקים מחדש את מפענחי הווידאו כשמשתנה שינוי במשטח, במקום להגדיר את המשטח למפענח ישירות. כבר נעשה בזה שימוש על ידי ExoPlayer בחלק מהמכשירים עם התקלה הזאת, הגדרה זו משפיעה על Android 6 ומעלה בלבד
 \n
 \nהפעלת האפשרות עשויה למנוע שגיאות נגינה בעת חזרה לנגן הווידאו הנוכחית או במעבר למסך מלא</string>
+    <string name="main_tabs_position_title">מקום לשוניות ראשיות</string>
+    <string name="main_tabs_position_summary">להעביר את בורר הלשוניות הראשי לתחתית</string>
+    <string name="audio_track_name">%1$s %2$s</string>
+    <string name="disable_media_tunneling_automatic_info">תיעול מדיה הושבת כברירת מחדל במכשיר שלך כיוון שדגם המכשיר ידוע בכך שאינו תומך בזה.</string>
+    <string name="no_live_streams">אין תזרימים חיים</string>
+    <string name="no_streams">אין תזרימים</string>
 </resources>

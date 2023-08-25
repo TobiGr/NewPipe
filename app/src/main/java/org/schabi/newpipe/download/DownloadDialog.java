@@ -313,6 +313,7 @@ public class DownloadDialog extends DialogFragment
         selectedSubtitleIndex = getSubtitleIndexBy(subtitleStreamsAdapter.getAll());
 
         dialogBinding.qualitySpinner.setOnItemSelectedListener(this);
+        dialogBinding.audioStreamSpinner.setOnItemSelectedListener(this);
         dialogBinding.audioTrackSpinner.setOnItemSelectedListener(this);
         dialogBinding.videoAudioGroup.setOnCheckedChangeListener(this);
 
@@ -770,7 +771,6 @@ public class DownloadDialog extends DialogFragment
                 .setTitle(R.string.general_error)
                 .setMessage(msg)
                 .setNegativeButton(getString(R.string.ok), null)
-                .create()
                 .show();
     }
 
@@ -983,7 +983,7 @@ public class DownloadDialog extends DialogFragment
                     break;
             }
 
-            askDialog.create().show();
+            askDialog.show();
             return;
         }
 
@@ -1027,7 +1027,7 @@ public class DownloadDialog extends DialogFragment
             }
         });
 
-        askDialog.create().show();
+        askDialog.show();
     }
 
     private void continueSelectedDownload(@NonNull final StoredFileHelper storage) {
