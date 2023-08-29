@@ -17,12 +17,12 @@ import org.schabi.newpipe.extractor.channel.tabs.ChannelTabInfo;
 import org.schabi.newpipe.extractor.linkhandler.ListLinkHandler;
 import org.schabi.newpipe.extractor.stream.StreamInfoItem;
 import org.schabi.newpipe.fragments.list.BaseListInfoFragment;
-import org.schabi.newpipe.player.PlayerType;
+import org.schabi.newpipe.fragments.list.playlist.PlaylistControlViewHolder;
 import org.schabi.newpipe.player.playqueue.ChannelTabPlayQueue;
 import org.schabi.newpipe.player.playqueue.PlayQueue;
 import org.schabi.newpipe.util.ChannelTabHelper;
 import org.schabi.newpipe.util.ExtractorHelper;
-import org.schabi.newpipe.util.NavigationHelper;
+import org.schabi.newpipe.views.PlaylistControlView;
 
 import java.util.List;
 import java.util.function.Supplier;
@@ -31,7 +31,8 @@ import java.util.stream.Collectors;
 import icepick.State;
 import io.reactivex.rxjava3.core.Single;
 
-public class ChannelTabFragment extends BaseListInfoFragment<InfoItem, ChannelTabInfo> {
+public class ChannelTabFragment extends BaseListInfoFragment<InfoItem, ChannelTabInfo>
+        implements PlaylistControlViewHolder {
 
     @State
     protected ListLinkHandler tabHandler;
@@ -39,6 +40,7 @@ public class ChannelTabFragment extends BaseListInfoFragment<InfoItem, ChannelTa
     protected String channelName;
 
     private PlaylistControlBinding playlistControlBinding;
+    private PlaylistControlView playlistControlView;
 
     public static ChannelTabFragment getInstance(final int serviceId,
                                                  final ListLinkHandler tabHandler,
@@ -72,9 +74,16 @@ public class ChannelTabFragment extends BaseListInfoFragment<InfoItem, ChannelTa
     }
 
     @Override
-    public void onDestroy() {
-        super.onDestroy();
+    protected void initViews(final View rootView, final Bundle savedInstanceState) {
+        super.initViews(rootView, savedInstanceState);
+        playlistControlView = new PlaylistControlView(activity);
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
         playlistControlBinding = null;
+        playlistControlView = null;
     }
 
     @Override
@@ -115,27 +124,11 @@ public class ChannelTabFragment extends BaseListInfoFragment<InfoItem, ChannelTa
                 playlistControlBinding.getRoot().setVisibility(View.GONE);
             }
 
-            playlistControlBinding.playlistCtrlPlayAllButton.setOnClickListener(
-                    view -> NavigationHelper.playOnMainPlayer(activity, getPlayQueue()));
-            playlistControlBinding.playlistCtrlPlayPopupButton.setOnClickListener(
-                    view -> NavigationHelper.playOnPopupPlayer(activity, getPlayQueue(), false));
-            playlistControlBinding.playlistCtrlPlayBgButton.setOnClickListener(
-                    view -> NavigationHelper.playOnBackgroundPlayer(activity, getPlayQueue(),
-                            false));
-
-            playlistControlBinding.playlistCtrlPlayPopupButton.setOnLongClickListener(view -> {
-                NavigationHelper.enqueueOnPlayer(activity, getPlayQueue(), PlayerType.POPUP);
-                return true;
-            });
-
-            playlistControlBinding.playlistCtrlPlayBgButton.setOnLongClickListener(view -> {
-                NavigationHelper.enqueueOnPlayer(activity, getPlayQueue(), PlayerType.AUDIO);
-                return true;
-            });
+            playlistControlView.initListeners(activity, playlistControlBinding, this, false);
         }
     }
 
-    private PlayQueue getPlayQueue() {
+    public PlayQueue getPlayQueue() {
         final List<StreamInfoItem> streamItems = infoListAdapter.getItemsList().stream()
                 .filter(StreamInfoItem.class::isInstance)
                 .map(StreamInfoItem.class::cast)

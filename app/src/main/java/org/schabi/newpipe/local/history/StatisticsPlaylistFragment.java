@@ -28,6 +28,7 @@ import org.schabi.newpipe.databinding.StatisticPlaylistControlBinding;
 import org.schabi.newpipe.error.ErrorInfo;
 import org.schabi.newpipe.error.UserAction;
 import org.schabi.newpipe.extractor.stream.StreamInfoItem;
+import org.schabi.newpipe.fragments.list.playlist.PlaylistControlViewHolder;
 import org.schabi.newpipe.info_list.dialog.InfoItemDialog;
 import org.schabi.newpipe.local.BaseLocalListFragment;
 import org.schabi.newpipe.player.playqueue.PlayQueue;
@@ -36,6 +37,7 @@ import org.schabi.newpipe.settings.HistorySettingsFragment;
 import org.schabi.newpipe.util.NavigationHelper;
 import org.schabi.newpipe.util.OnClickGesture;
 import org.schabi.newpipe.info_list.dialog.StreamDialogDefaultEntry;
+import org.schabi.newpipe.views.PlaylistControlView;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -49,7 +51,8 @@ import io.reactivex.rxjava3.disposables.CompositeDisposable;
 import io.reactivex.rxjava3.disposables.Disposable;
 
 public class StatisticsPlaylistFragment
-        extends BaseLocalListFragment<List<StreamStatisticsEntry>, Void> {
+        extends BaseLocalListFragment<List<StreamStatisticsEntry>, Void>
+        implements PlaylistControlViewHolder {
     private final CompositeDisposable disposables = new CompositeDisposable();
     @State
     Parcelable itemsListState;
@@ -57,6 +60,7 @@ public class StatisticsPlaylistFragment
 
     private StatisticPlaylistControlBinding headerBinding;
     private PlaylistControlBinding playlistControlBinding;
+    private PlaylistControlView playlistControlView;
 
     /* Used for independent events */
     private Subscription databaseSubscription;
@@ -120,6 +124,7 @@ public class StatisticsPlaylistFragment
         if (!useAsFrontPage) {
             setTitle(getString(R.string.title_last_played));
         }
+        playlistControlView = new PlaylistControlView(activity);
     }
 
     @Override
@@ -195,14 +200,10 @@ public class StatisticsPlaylistFragment
         if (itemListAdapter != null) {
             itemListAdapter.unsetSelectedListener();
         }
-        if (playlistControlBinding != null) {
-            playlistControlBinding.playlistCtrlPlayBgButton.setOnClickListener(null);
-            playlistControlBinding.playlistCtrlPlayAllButton.setOnClickListener(null);
-            playlistControlBinding.playlistCtrlPlayPopupButton.setOnClickListener(null);
 
-            headerBinding = null;
-            playlistControlBinding = null;
-        }
+        headerBinding = null;
+        playlistControlBinding = null;
+        playlistControlView = null;
 
         if (databaseSubscription != null) {
             databaseSubscription.cancel();
@@ -276,12 +277,8 @@ public class StatisticsPlaylistFragment
             itemsListState = null;
         }
 
-        playlistControlBinding.playlistCtrlPlayAllButton.setOnClickListener(view ->
-                NavigationHelper.playOnMainPlayer(activity, getPlayQueue()));
-        playlistControlBinding.playlistCtrlPlayPopupButton.setOnClickListener(view ->
-                NavigationHelper.playOnPopupPlayer(activity, getPlayQueue(), false));
-        playlistControlBinding.playlistCtrlPlayBgButton.setOnClickListener(view ->
-                NavigationHelper.playOnBackgroundPlayer(activity, getPlayQueue(), false));
+        playlistControlView.initListeners(activity, playlistControlBinding, this, false);
+
         headerBinding.sortButton.setOnClickListener(view -> toggleSortMode());
 
         hideLoading();
@@ -374,7 +371,7 @@ public class StatisticsPlaylistFragment
         }
     }
 
-    private PlayQueue getPlayQueue() {
+    public PlayQueue getPlayQueue() {
         return getPlayQueue(0);
     }
 
