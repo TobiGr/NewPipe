@@ -1,7 +1,5 @@
 name: Backport merged pull request
 on:
-  pull_request_target:
-    types: [opened, closed] # allow creating backports of open or merged PRs
   issue_comment:
     types: [created]
 permissions:
@@ -16,7 +14,6 @@ jobs:
     # the commenter has write access to the repository. We do not want to allow
     # everybody to trigger backports and create branches in our repository.
     if: >
-        github.event_name == 'issue_comment' &&
         github.event.issue.pull_request &&
         startsWith(github.event.comment.body, '/backport') &&
         (
