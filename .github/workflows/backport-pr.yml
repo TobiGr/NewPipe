@@ -41,12 +41,16 @@ jobs:
             echo "No backport target found in comment." >&2
             exit 1
           fi
+          echo "BACKPORT_TARGET=$target" >> $GITHUB_ENV
 
           labels=$(echo "$labels_json" | jq -r 'if . == null then "" else map(.name) | join(",") end')
-          echo "BACKPORT_TARGET=$target" >> $GITHUB_ENV
-          echo "PR_LABELS=$labels" >> $GITHUB_ENV
+          if [ -z "$labels" ]; then
+            echo "BACKPORT_PR_LABELS=backport" >> $GITHUB_ENV
+          else
+            echo "BACKPORT_PR_LABELS=backport,$labels" >> $GITHUB_ENV
+          fi
       - name: Create backport pull requests
         uses: korthout/backport-action@v4
         with:
-          labels: 'backport'
+          add_labels: ${{ env.BACKPORT_PR_LABELS }}
           target_branches: ${{ env.BACKPORT_TARGET }}
