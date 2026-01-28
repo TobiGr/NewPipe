@@ -42,7 +42,7 @@ fun TextPreference(
         icon?.let {
             Icon(
                 painter = painterResource(id = icon),
-                contentDescription = "icon for $title preference"
+                contentDescription = null // decorative
             )
             Spacer(modifier = Modifier.width(SizeTokens.SpacingSmall))
         }
