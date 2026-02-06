@@ -85,7 +85,7 @@ public class OggFromWebMWriter implements Closeable {
      * @see <a href="https://datatracker.ietf.org/doc/html/rfc7845.html#section-6">
      *     RFC7845 6. Packet Size Limits</a>
      */
-    private static final int OPUS_MAX_PACKETS_PAGE_SIZE = 61_440;
+    private static final int OPUS_MAX_PACKETS_PAGE_SIZE = 65_025;
 
     private boolean done = false;
     private boolean parsed = false;
