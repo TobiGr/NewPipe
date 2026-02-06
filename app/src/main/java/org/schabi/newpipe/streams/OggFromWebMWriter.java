@@ -50,10 +50,24 @@ import java.util.stream.Collectors;
  * @author tobigr
  */
 public class OggFromWebMWriter implements Closeable {
+    private static final String TAG = OggFromWebMWriter.class.getSimpleName();
+
+    /**
+     * No flags set.
+     */
     private static final byte FLAG_UNSET = 0x00;
-    //private static final byte FLAG_CONTINUED = 0x01;
+    /**
+     * The packet is continued from previous the previous page.
+     */
+    private static final byte FLAG_CONTINUED = 0x01;
+    /**
+     * BOS (beginning of stream).
+     */
     private static final byte FLAG_FIRST = 0x02;
-    private static final byte FLAG_LAST = 0x04;
+    /**
+     * EOS (end of stream).
+     */
+    private static final byte FLAG_LAST = 0x04;;
 
     private static final byte HEADER_CHECKSUM_OFFSET = 22;
     private static final byte HEADER_SIZE = 27;
@@ -66,6 +80,12 @@ public class OggFromWebMWriter implements Closeable {
      */
     private static final int OGG_SEGMENT_SIZE = 255;
 
+    /**
+     * The maximum size of the Opus packet in bytes, to be included in the Ogg page.
+     * @see <a href="https://datatracker.ietf.org/doc/html/rfc7845.html#section-6">
+     *     RFC7845 6. Packet Size Limits</a>
+     */
+    private static final int OPUS_MAX_PACKETS_PAGE_SIZE = 61_440;
 
     private boolean done = false;
     private boolean parsed = false;
@@ -330,12 +350,13 @@ public class OggFromWebMWriter implements Closeable {
      * @ImplNote See <a href="https://datatracker.ietf.org/doc/html/rfc7845.html#section-5.2">
      *     RFC7845 5.2</a>
      *
-     * @return
+     * @return the metadata header as a byte array, or null if the codec is not supported
+     * for metadata generation
      */
     @Nullable
     private byte[] makeMetadata() {
         if (DEBUG) {
-            Log.d("OggFromWebMWriter", "Downloading media with codec ID " + webmTrack.codecId);
+            Log.d(TAG, "Downloading media with codec ID " + webmTrack.codecId);
         }
 
         if ("A_OPUS".equals(webmTrack.codecId)) {
@@ -355,18 +376,17 @@ public class OggFromWebMWriter implements Closeable {
             }
 
             if (DEBUG) {
-                Log.d("OggFromWebMWriter", "Creating metadata header with this data:");
-                metadata.forEach(p -> Log.d("OggFromWebMWriter", p.first + "=" + p.second));
+                Log.d(TAG, "Creating metadata header with this data:");
+                metadata.forEach(p -> Log.d(TAG, p.first + "=" + p.second));
             }
 
             return makeOpusTagsHeader(metadata);
         } else if ("A_VORBIS".equals(webmTrack.codecId)) {
-            /**
-             * See <a href="https://datatracker.ietf.org/doc/html/rfc7845.html#section-5.2">
-             *  RFC7845 5.2</a>
-             */
+            // See https://xiph.org/vorbis/doc/Vorbis_I_spec.html#x1-620004.2.1
+            // for the Vorbis comment header format
+            // TODO: add Vorbis metadata: same as Opus, but with the Vorbis comment header format
             return new byte[]{
-                    0x03, // ???
+                    0x03, // packet type for Vorbis comment header
                     0x76, 0x6f, 0x72, 0x62, 0x69, 0x73, // "vorbis" binary string
                     0x00, 0x00, 0x00, 0x00, // writing application string size (not present)
                     0x00, 0x00, 0x00, 0x00 // additional tags count (zero means no tags)
@@ -476,6 +496,7 @@ public class OggFromWebMWriter implements Closeable {
 
         final var head = ByteBuffer.allocate(byteCount);
         head.order(ByteOrder.LITTLE_ENDIAN);
+        // See RFC7845 5.2: https://datatracker.ietf.org/doc/html/rfc7845.html#section-5.2
         head.put(new byte[]{
                 0x4F, 0x70, 0x75, 0x73, 0x54, 0x61, 0x67, 0x73, // "OpusTags" binary string
                 0x00, 0x00, 0x00, 0x00, // vendor (aka. Encoder) string of length 0
@@ -559,9 +580,10 @@ public class OggFromWebMWriter implements Closeable {
     }
 
     private boolean addPacketSegment(final int size) {
-        if (size > 65025) {
-            throw new UnsupportedOperationException(
-                    String.format("page size is %s but cannot be larger than 65025", size));
+        if (size > OPUS_MAX_PACKETS_PAGE_SIZE) {
+            throw new UnsupportedOperationException(String.format(
+                    "page size is %s but cannot be larger than %s",
+                    size, OPUS_MAX_PACKETS_PAGE_SIZE));
         }
 
         int available = (segmentTable.length - segmentTableSize) * OGG_SEGMENT_SIZE;
