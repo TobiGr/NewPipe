@@ -28,6 +28,8 @@ import java.util.Base64;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import us.shandian.giga.postprocessing.ImageUtils;
+
 /**
  * <p>
  *     This class is used to convert a WebM stream containing Opus or Vorbis audio
@@ -50,9 +52,23 @@ import java.util.stream.Collectors;
  * @author tobigr
  */
 public class OggFromWebMWriter implements Closeable {
+    private static final String TAG = OggFromWebMWriter.class.getSimpleName();
+
+    /**
+     * No flags set.
+     */
     private static final byte FLAG_UNSET = 0x00;
-    //private static final byte FLAG_CONTINUED = 0x01;
+    /**
+     * The packet is continued from previous the previous page.
+     */
+    private static final byte FLAG_CONTINUED = 0x01;
+    /**
+     * BOS (beginning of stream).
+     */
     private static final byte FLAG_FIRST = 0x02;
+    /**
+     * EOS (end of stream).
+     */
     private static final byte FLAG_LAST = 0x04;
 
     private static final byte HEADER_CHECKSUM_OFFSET = 22;
@@ -88,9 +104,15 @@ public class OggFromWebMWriter implements Closeable {
     private final Bitmap thumbnail;
 
     /**
+     * Tracks whether the packet active on the last written page was incomplete,
+     *  meaning the next page starts with a continued packet (needs {@link #FLAG_CONTINUED}).
+     */
+    private boolean previousPageHadIncompletePacket = false;
+
+    /**
      * Constructor of OggFromWebMWriter.
-     * @param source
-     * @param target
+     * @param source the readable/seeking source stream
+     * @param target the writable/seeking output stream
      * @param streamInfo the stream info
      * @param thumbnail the thumbnail bitmap used as cover art
      */
@@ -219,11 +241,8 @@ public class OggFromWebMWriter implements Closeable {
         }
 
         /* step 2: create packet with code init data */
-        if (webmTrack.codecPrivate != null) {
-            addPacketSegment(webmTrack.codecPrivate.length);
-            makePacketHeader(0x00, header, webmTrack.codecPrivate);
-            write(header);
-            output.write(webmTrack.codecPrivate);
+        if (webmTrack.codecPrivate != null && webmTrack.codecPrivate.length > 0) {
+            writeDataIntoHeaderBufferInChunks(webmTrack.codecPrivate, header);
         }
 
         /* step 3: create packet with metadata */
@@ -239,19 +258,33 @@ public class OggFromWebMWriter implements Closeable {
         while (webmSegment != null) {
             bloq = getNextBlock();
 
-            if (bloq != null && addPacketSegment(bloq)) {
-                final int pos = page.position();
-                //noinspection ResultOfMethodCallIgnored
-                bloq.data.read(page.array(), pos, bloq.dataSize);
-                page.position(pos + bloq.dataSize);
-                continue;
+            if (bloq != null) {
+                // try to add as many bytes of this block as possible to the current page
+                final int bytesAdded = addPacketSegment(bloq);
+                if (bytesAdded > 0) {
+                    final int pos = page.position();
+                    // read only the bytes that were accounted for in the segment table
+                    //noinspection ResultOfMethodCallIgnored
+                    bloq.data.read(page.array(), pos, bytesAdded);
+                    page.position(pos + bytesAdded);
+
+                    // if we consumed the entire block, continue to next block
+                    if (bytesAdded == bloq.dataSize) {
+                        continue;
+                    }
+
+                    // else: partial consumption -> keep bloq as current block for next iteration
+                    webmBlock = bloq;
+                }
             }
 
+            // If we are here, either there was no block or we filled the page:
+            // finalize and write page
             // calculate the current packet duration using the next block
             double elapsedNs = webmTrack.codecDelay;
 
             if (bloq == null) {
-                packetFlag = FLAG_LAST; // note: if the flag is FLAG_CONTINUED, is changed
+                packetFlag |= FLAG_LAST; // mark end-of-stream/page when no block available
                 elapsedNs += webmBlockLastTimecode;
 
                 if (webmTrack.defaultDuration > 0) {
@@ -268,6 +301,11 @@ public class OggFromWebMWriter implements Closeable {
             elapsedNs = elapsedNs / TIME_SCALE_NS;
             elapsedNs = Math.ceil(elapsedNs * resolution);
 
+            // set continuation flag if previous page ended with an incomplete packet
+            if (previousPageHadIncompletePacket) {
+                packetFlag |= FLAG_CONTINUED;
+            }
+
             // create header and calculate page checksum
             int checksum = makePacketHeader((long) elapsedNs, header, null);
             checksum = calcCrc32(checksum, page.array(), page.position());
@@ -278,7 +316,12 @@ public class OggFromWebMWriter implements Closeable {
             write(header);
             write(page);
 
+            previousPageHadIncompletePacket = (webmBlock != null);
+
             webmBlock = bloq;
+
+            // after writing, clear last/continued flags for next page unless explicitly set later
+            packetFlag &= ~(FLAG_LAST | FLAG_CONTINUED);
         }
     }
 
@@ -323,12 +366,12 @@ public class OggFromWebMWriter implements Closeable {
      * @ImplNote See <a href="https://datatracker.ietf.org/doc/html/rfc7845.html#section-5.2">
      *     RFC7845 5.2</a>
      *
-     * @return
+     * @return The binary metadata header, or null if not implemented for the codec
      */
     @Nullable
     private byte[] makeMetadata() {
         if (DEBUG) {
-            Log.d("OggFromWebMWriter", "Downloading media with codec ID " + webmTrack.codecId);
+            Log.d(TAG, "Downloading media with codec ID " + webmTrack.codecId);
         }
 
         if ("A_OPUS".equals(webmTrack.codecId)) {
@@ -348,13 +391,13 @@ public class OggFromWebMWriter implements Closeable {
             }
 
             if (DEBUG) {
-                Log.d("OggFromWebMWriter", "Creating metadata header with this data:");
-                metadata.forEach(p -> Log.d("OggFromWebMWriter", p.first + "=" + p.second));
+                Log.d(TAG, "Creating metadata header with this data:");
+                metadata.forEach(p -> Log.d(TAG, p.first + "=" + p.second));
             }
 
             return makeOpusTagsHeader(metadata);
         } else if ("A_VORBIS".equals(webmTrack.codecId)) {
-            /**
+            /*
              * See <a href="https://datatracker.ietf.org/doc/html/rfc7845.html#section-5.2">
              *  RFC7845 5.2</a>
              */
@@ -401,19 +444,25 @@ public class OggFromWebMWriter implements Closeable {
      * @param bitmap The bitmap to use as cover art
      * @return The key-value pair representing the tag
      */
-    private static Pair<String, String> makeOpusPictureTag(final Bitmap bitmap) {
+    private static Pair<String, String> makeOpusPictureTag(final Bitmap bitmap, final int maxSize) {
         // FLAC picture block format (big-endian):
         // uint32 picture_type
-        // uint32 mime_length, mime_string
-        // uint32 desc_length, desc_string
+        // uint32 mime_length,
+        //        mime_string
+        // uint32 desc_length,
+        //        desc_string
         // uint32 width
         // uint32 height
         // uint32 color_depth
         // uint32 colors_indexed
-        // uint32 data_length, data_bytes
+        // uint32 data_length,
+        //        data_bytes
 
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+
+        // bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+
+        ImageUtils.INSTANCE.compressToSize()
 
         final byte[] imageData = baos.toByteArray();
         final byte[] mimeBytes = "image/jpeg".getBytes(StandardCharsets.UTF_8);
@@ -421,20 +470,24 @@ public class OggFromWebMWriter implements Closeable {
         // fixed ints + mime + desc
         final int headerSize = 4 * 8 + mimeBytes.length + descBytes.length;
         final ByteBuffer buf = ByteBuffer.allocate(headerSize + imageData.length);
-        buf.putInt(3); // picture type: 3 = Cover (front)
+        // See https://id3.org/id3v2.3.0#Attached_picture for a full list of picture types
+        // TODO: allow specifying other picture types, i.e. cover (front) for music albums;
+        //       but this info needs to be provided by the extractor first.
+        buf.putInt(0); // picture type: 0 = Other
         buf.putInt(mimeBytes.length);
         buf.put(mimeBytes);
         buf.putInt(descBytes.length);
-        // no description
         if (descBytes.length > 0) {
+            // currently no description available, might be added later.
             buf.put(descBytes);
         }
-        buf.putInt(bitmap.getWidth()); // width (unknown)
-        buf.putInt(bitmap.getHeight()); // height (unknown)
+        buf.putInt(bitmap.getWidth());
+        buf.putInt(bitmap.getHeight());
         buf.putInt(0); // color depth
         buf.putInt(0); // colors indexed
         buf.putInt(imageData.length);
         buf.put(imageData);
+
         final String b64 = Base64.getEncoder().encodeToString(buf.array());
         return Pair.create("METADATA_BLOCK_PICTURE", b64);
     }
@@ -457,7 +510,7 @@ public class OggFromWebMWriter implements Closeable {
                 .stream()
                 .filter(p -> !p.second.isBlank())
                 .map(OggFromWebMWriter::makeOpusMetadataTag)
-                .collect(Collectors.toUnmodifiableList());
+                .toList();
 
         final var tagsBytes = tags.stream().collect(Collectors.summingInt(arr -> arr.length));
 
@@ -538,45 +591,108 @@ public class OggFromWebMWriter implements Closeable {
         segmentTableSize = 0;
     }
 
-    private boolean addPacketSegment(final SimpleBlock block) {
+    /**
+     * Try to add as many bytes of the provided block to the current segment table as possible.
+     *
+     * @param block the block to add
+     * @return the number of bytes that were accounted for in the segment table (0..block.dataSize).
+     */
+    private int addPacketSegment(final SimpleBlock block) {
         final long timestamp = block.absoluteTimeCodeNs + webmTrack.codecDelay;
 
         if (timestamp >= segmentTableNextTimestamp) {
-            return false;
+            return 0;
         }
 
         return addPacketSegment(block.dataSize);
     }
 
-    private boolean addPacketSegment(final int size) {
-        if (size > 65025) {
-            throw new UnsupportedOperationException(
-                    String.format("page size is %s but cannot be larger than 65025", size));
+    /**
+     * Attempt to add up to {@code size} bytes into the current segment table.
+     * This method does NOT throw on large sizes; callers are expected to loop
+     * and write the data in chunks if necessary.
+     * @param size the number of bytes to add
+     * @return the number of bytes actually added; if zero, no space was available
+     */
+    private int addPacketSegment(final int size) {
+        if (size <= 0) {
+            return 0; // should not happen, but better be safe than sorry
         }
 
-        int available = (segmentTable.length - segmentTableSize) * 255;
-        final boolean extra = (size % 255) == 0;
-
-        if (extra) {
-            // add a zero byte entry in the table
-            // required to indicate the sample size is multiple of 255
-            available -= 255;
+        final int freeSegments = segmentTable.length - segmentTableSize;
+        if (freeSegments <= 0) {
+            if (DEBUG) {
+                Log.d(TAG, "addPacketSegment: no free segments");
+            }
+            return 0; // no room in segment table
         }
 
-        // check if possible add the segment, without overflow the table
-        if (available < size) {
-            return false; // not enough space on the page
+        // Calculate a safe maximum of bytes that can be represented with the available
+        // segment entries. If bytes == freeSegments*255 then we'd need an extra
+        // zero-sized segment to signal the packet boundary -> not enough room.
+        final int maxFit = freeSegments * 255 - 1; // >=0 when freeSegments >= 1
+        if (maxFit <= 0) {
+            if (DEBUG) {
+                Log.d(TAG, "addPacketSegment: maxFit <= 0 (freeSegments=" + freeSegments + ")");
+            }
+            return 0;
         }
 
-        for (int seg = size; seg > 0; seg -= 255) {
-            segmentTable[segmentTableSize++] = (byte) Math.min(seg, 255);
+        int bytesToAdd = Math.min(size, maxFit);
+
+        // Build segment entries for bytesToAdd
+        int remaining = bytesToAdd;
+        while (remaining > 0) {
+            final int segSize = Math.min(remaining, 255);
+            segmentTable[segmentTableSize++] = (byte) segSize;
+            remaining -= segSize;
         }
 
-        if (extra) {
-            segmentTable[segmentTableSize++] = 0x00;
+        boolean insertedZero = false;
+        boolean backedOff = false;
+
+        // If bytesToAdd is an exact multiple of 255 we must place a zero-sized
+        // segment to indicate the packet boundary (Ogg requirement).
+        if ((bytesToAdd % 255) == 0) {
+            // Prefer to write the zero-sized segment into the table if there's room.
+            if (segmentTableSize < segmentTable.length) {
+                segmentTable[segmentTableSize++] = 0x00;
+                insertedZero = true;
+            } else {
+                // No room for the zero entry: back off one 255-segment to make space.
+                // This reduces bytesToAdd by 255 and replaces the last 255 entry with a 0.
+                // The remaining 255 bytes will be written on the next page.
+                segmentTableSize--; // remove last 255 entry
+                bytesToAdd -= 255;
+                // Now we have room for the zero entry
+                segmentTable[segmentTableSize++] = 0x00;
+                backedOff = true;
+            }
         }
 
-        return true;
+        if (DEBUG) {
+            // Print a compact representation of the segment table we just appended
+            final StringBuilder sb = new StringBuilder();
+            sb.append("addPacketSegment: size=").append(size)
+                    .append(" freeSegments=").append(freeSegments)
+                    .append(" maxFit=").append(maxFit)
+                    .append(" bytesToAdd=").append(bytesToAdd)
+                    .append(" insertedZero=").append(insertedZero)
+                    .append(" backedOff=").append(backedOff)
+                    .append(" segmentTableSize=").append(segmentTableSize)
+                    .append(" entries=[");
+            for (int i = Math.max(0, segmentTableSize - 16); i < segmentTableSize; i++) {
+                sb.append((segmentTable[i] & 0xff));
+                if (i < segmentTableSize - 1) {
+                    sb.append(',');
+                }
+            }
+            sb.append("]");
+            Log.d(TAG, sb.toString());
+        }
+
+
+        return bytesToAdd;
     }
 
     private void populateCrc32Table() {
@@ -599,5 +715,93 @@ public class OggFromWebMWriter implements Closeable {
         }
 
         return crc;
+    }
+
+    /**
+     * <p>Write a potentially large immediate buffer (codecPrivate or metadata) in chunks.</p>
+     * Each chunk is encoded into the segment table and written out immediately
+     * using its own header. This allows arbitrarily large buffers (e.g. large thumbnail)
+     * to be written without overflowing the page.
+     *
+     * @param data the data to write
+     * @param header the header to write into
+     */
+    private void writeDataIntoHeaderBufferInChunks(final byte[] data, final ByteBuffer header)
+            throws IOException {
+        int offset = 0;
+        while (offset < data.length) {
+
+            final int remaining = data.length - offset;
+            final int bytesAdded = addPacketSegment(remaining);
+
+            if (bytesAdded == 0) {
+                if (DEBUG) {
+                    Log.d(TAG, "writeDataIntoHeaderBufferInChunks: "
+                            + "no space, finalizing page header");
+                }
+                // no space available in current page -> finalize page (should not happen when
+                // called at beginning but handle gracefully)
+                final int checksum = makePacketHeader(0x00, header, null);
+                final int crc = calcCrc32(checksum, new byte[0], 0);
+                header.putInt(HEADER_CHECKSUM_OFFSET, crc);
+                write(header);
+                continue;
+            }
+
+            final byte[] chunk = new byte[bytesAdded];
+            System.arraycopy(data, offset, chunk, 0, bytesAdded);
+
+            if (previousPageHadIncompletePacket) {
+                packetFlag |= FLAG_CONTINUED;
+            }
+
+            if (DEBUG) {
+                Log.d(TAG, "writeDataIntoHeaderBufferInChunks: offset=" + offset
+                        + " remaining=" + remaining
+                        + " bytesAdded=" + bytesAdded
+                        + " prevIncomplete=" + previousPageHadIncompletePacket);
+            }
+
+            // compute expected bytes from current segment table BEFORE makePacketHeader clears it
+            final int expectedBytes = sumSegmentTableEntries();
+
+            // create header with immediate page bytes used for checksum
+            int checksum = makePacketHeader(0x00, header, chunk);
+            checksum = calcCrc32(checksum, chunk, chunk.length);
+            header.putInt(HEADER_CHECKSUM_OFFSET, checksum);
+
+
+            if (DEBUG) {
+                Log.d(TAG, "Writing header seq=" + sequenceCount + " segCount=" + expectedBytes
+                        + " expectedChunk=" + expectedBytes + " actualChunk=" + chunk.length);
+            }
+
+            // validate expected == chunk.length to detect mismatches early
+            if (expectedBytes != chunk.length) {
+                final String msg = "Segment table / chunk size mismatch (seq=" + sequenceCount
+                        + " expected=" + expectedBytes + " actual=" + chunk.length
+                        + " segTableSize=" + segmentTableSize + ")";
+                Log.e(TAG, msg);
+                throw new IOException(msg);
+            }
+
+            write(header);
+            output.write(chunk);
+
+            previousPageHadIncompletePacket = (bytesAdded < (data.length - offset));
+
+            // clear continued/last flags for next header
+            packetFlag &= ~(FLAG_CONTINUED | FLAG_LAST);
+
+            offset += bytesAdded;
+        }
+    }
+
+    private int sumSegmentTableEntries() {
+        int sum = 0;
+        for (int i = 0; i < segmentTableSize; i++) {
+            sum += (segmentTable[i] & 0xff);
+        }
+        return sum;
     }
 }
