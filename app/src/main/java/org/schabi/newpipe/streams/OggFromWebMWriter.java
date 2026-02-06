@@ -628,30 +628,64 @@ public class OggFromWebMWriter implements Closeable {
 
         while (offset < data.length) {
             final int remaining = data.length - offset;
-            final int chunkSize = Math.min(remaining, OPUS_MAX_PACKETS_PAGE_SIZE);
+            final boolean finalChunkCandidate = remaining <= OPUS_MAX_PACKETS_PAGE_SIZE;
+            final int chunkSize;
+            if (finalChunkCandidate) {
+                chunkSize = remaining; // final chunk can be any size
+            } else {
+                // For intermediate (non-final) chunks, make the chunk size a multiple
+                // of OGG_SEGMENT_SIZE so that the last lacing value is 255 and the
+                // decoder won't treat the packet as finished on that page.
+                final int maxFullSegments = OPUS_MAX_PACKETS_PAGE_SIZE / OGG_SEGMENT_SIZE;
+                chunkSize = maxFullSegments * OGG_SEGMENT_SIZE;
+            }
 
-            // Prepare segment table for this chunk. The existing addPacketSegment(int)
-            // will return false if the current page can't fit the segment table for
-            // this chunk; such a case would indicate leftover segments and shouldn't
-            // happen for metadata (we use this method before other packet data).
-            // If it does happen, fall back to forcing a flush by creating an empty
-            // header/page (not expected in normal runs).
-            if (!addPacketSegment(chunkSize)) {
-                // If the segment table cannot accept the chunk, flush an empty page
-                // so the table is cleared and try again. We write a header without
-                // an immediate page (no data) to flush current segments.
+            final boolean isFinalChunk = (offset + chunkSize) >= data.length;
+
+            // We must reserve appropriate number of lacing values in the segment table.
+            // For chunks that are exact multiples of OGG_SEGMENT_SIZE and are the final
+            // chunk of the packet, a trailing 0 lacing entry is required to indicate
+            // the packet ends exactly on a segment boundary. For intermediate chunks
+            // (continued across pages) we MUST NOT write that trailing 0 because then
+            // the packet would appear complete on that page. Instead intermediate
+            // chunks should end with only 255-valued lacing entries (no trailing 0).
+            final int fullSegments = chunkSize / OGG_SEGMENT_SIZE; // may be 0
+            final int lastSegSize = chunkSize % OGG_SEGMENT_SIZE; // 0..254
+            final boolean chunkIsMultiple = (lastSegSize == 0);
+
+            int requiredEntries = fullSegments + (lastSegSize > 0 ? 1 : 0);
+            if (chunkIsMultiple && isFinalChunk) {
+                // need an extra zero entry to mark packet end
+                requiredEntries += 1;
+            }
+
+            // If the segment table doesn't have enough room, flush the current page
+            // by writing a header without immediate data. This clears the segment table.
+            if (requiredEntries > (segmentTable.length - segmentTableSize)) {
+                // flush current page
                 int checksum = makePacketHeader(0x00, header, null);
                 checksum = calcCrc32(checksum, new byte[0], 0);
                 header.putInt(HEADER_CHECKSUM_OFFSET, checksum);
                 write(header);
+            }
 
-                // Now the segment table was cleared by makePacketHeader(); retry
-                if (!addPacketSegment(chunkSize)) {
-                    // If still failing, give up and throw an exception — this should
-                    // not happen because chunkSize <= OPUS_MAX_PACKETS_PAGE_SIZE and
-                    // the segment table capacity is larger than that.
-                    throw new IOException("Unable to fit metadata chunk into Ogg segment table");
-                }
+            // After ensuring space, if still not enough (edge case), throw
+            if (requiredEntries > (segmentTable.length - segmentTableSize)) {
+                throw new IOException("Unable to reserve segment table entries for metadata chunk");
+            }
+
+            // Fill the segment table entries for this chunk. For intermediate chunks
+            // that are an exact multiple of OGG_SEGMENT_SIZE we must NOT append a
+            // trailing zero entry (that would incorrectly signal packet end).
+            final int remainingToAssign = chunkSize;
+            for (int seg = remainingToAssign; seg > 0; seg -= OGG_SEGMENT_SIZE) {
+                segmentTable[segmentTableSize++] = (byte) Math.min(seg, OGG_SEGMENT_SIZE);
+            }
+
+            if (chunkIsMultiple && isFinalChunk) {
+                // Only append the zero terminator for a final chunk that has an exact
+                // multiple of OGG_SEGMENT_SIZE bytes.
+                segmentTable[segmentTableSize++] = 0x00;
             }
 
             // For continuation pages (after the first), mark the page as continued.
@@ -661,9 +695,9 @@ public class OggFromWebMWriter implements Closeable {
 
             final byte[] chunk = Arrays.copyOfRange(data, offset, offset + chunkSize);
 
-            // makePacketHeader when provided with immediatePage will compute and
-            // write the checksum that includes the page data, so just call it and
-            // then write header + data.
+            // Now create header (which will consume and clear the segment table) and write
+            // header + chunk data. makePacketHeader will compute checksum including chunk
+            // when an immediatePage is provided.
             makePacketHeader(0x00, header, chunk);
             write(header);
             output.write(chunk);
