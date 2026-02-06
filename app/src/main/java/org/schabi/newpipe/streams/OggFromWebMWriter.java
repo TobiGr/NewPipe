@@ -58,7 +58,14 @@ public class OggFromWebMWriter implements Closeable {
     private static final byte HEADER_CHECKSUM_OFFSET = 22;
     private static final byte HEADER_SIZE = 27;
 
-    private static final int TIME_SCALE_NS = 1000000000;
+    private static final int TIME_SCALE_NS = 1_000_000_000;
+
+    /**
+     * The maximum size of a segment in the Ogg page, in bytes.
+     * This is a fixed value defined by the Ogg specification.
+     */
+    private static final int OGG_SEGMENT_SIZE = 255;
+
 
     private boolean done = false;
     private boolean parsed = false;
@@ -80,7 +87,7 @@ public class OggFromWebMWriter implements Closeable {
     private long webmBlockNearDuration = 0;
 
     private short segmentTableSize = 0;
-    private final byte[] segmentTable = new byte[255];
+    private final byte[] segmentTable = new byte[OGG_SEGMENT_SIZE];
     private long segmentTableNextTimestamp = TIME_SCALE_NS;
 
     private final int[] crc32Table = new int[256];
@@ -421,7 +428,10 @@ public class OggFromWebMWriter implements Closeable {
         // fixed ints + mime + desc
         final int headerSize = 4 * 8 + mimeBytes.length + descBytes.length;
         final ByteBuffer buf = ByteBuffer.allocate(headerSize + imageData.length);
-        buf.putInt(3); // picture type: 3 = Cover (front)
+        // See https://id3.org/id3v2.3.0#Attached_picture for a full list of picture types
+        // TODO: allow specifying other picture types, i.e. cover (front) for music albums;
+        //       but this info needs to be provided by the extractor first.
+        buf.putInt(3); // picture type: 0 = Other, 2 = Cover (front)
         buf.putInt(mimeBytes.length);
         buf.put(mimeBytes);
         buf.putInt(descBytes.length);
@@ -429,10 +439,10 @@ public class OggFromWebMWriter implements Closeable {
         if (descBytes.length > 0) {
             buf.put(descBytes);
         }
-        buf.putInt(bitmap.getWidth()); // width (unknown)
-        buf.putInt(bitmap.getHeight()); // height (unknown)
-        buf.putInt(0); // color depth
-        buf.putInt(0); // colors indexed
+        buf.putInt(bitmap.getWidth());
+        buf.putInt(bitmap.getHeight());
+        buf.putInt(24); // color depth for JPEG and PNG is usually 24 bits
+        buf.putInt(0); // colors indexed (0 for non-indexed images, i.e. JPEG, PNG)
         buf.putInt(imageData.length);
         buf.put(imageData);
         final String b64 = Base64.getEncoder().encodeToString(buf.array());
@@ -554,13 +564,13 @@ public class OggFromWebMWriter implements Closeable {
                     String.format("page size is %s but cannot be larger than 65025", size));
         }
 
-        int available = (segmentTable.length - segmentTableSize) * 255;
-        final boolean extra = (size % 255) == 0;
+        int available = (segmentTable.length - segmentTableSize) * OGG_SEGMENT_SIZE;
+        final boolean extra = (size % OGG_SEGMENT_SIZE) == 0;
 
         if (extra) {
             // add a zero byte entry in the table
-            // required to indicate the sample size is multiple of 255
-            available -= 255;
+            // required to indicate the sample size is multiple of OGG_SEGMENT_SIZE
+            available -= OGG_SEGMENT_SIZE;
         }
 
         // check if possible add the segment, without overflow the table
@@ -568,8 +578,8 @@ public class OggFromWebMWriter implements Closeable {
             return false; // not enough space on the page
         }
 
-        for (int seg = size; seg > 0; seg -= 255) {
-            segmentTable[segmentTableSize++] = (byte) Math.min(seg, 255);
+        for (int seg = size; seg > 0; seg -= OGG_SEGMENT_SIZE) {
+            segmentTable[segmentTableSize++] = (byte) Math.min(seg, OGG_SEGMENT_SIZE);
         }
 
         if (extra) {
