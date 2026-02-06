@@ -27,6 +27,7 @@ import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.Arrays;
 
 /**
  * <p>
@@ -256,10 +257,10 @@ public class OggFromWebMWriter implements Closeable {
         /* step 3: create packet with metadata */
         final byte[] buffer = makeMetadata();
         if (buffer != null) {
-            addPacketSegment(buffer.length);
-            makePacketHeader(0x00, header, buffer);
-            write(header);
-            output.write(buffer);
+            // Use the new overloaded addPacketSegment to handle metadata that may be
+            // larger than the maximum page size. This method will split the metadata
+            // into multiple Ogg pages as needed.
+            addPacketSegment(buffer, header);
         }
 
         /* step 4: calculate amount of packets */
@@ -609,6 +610,67 @@ public class OggFromWebMWriter implements Closeable {
         }
 
         return true;
+    }
+
+    /**
+     * Overloaded addPacketSegment for large metadata blobs: splits the provided data into
+     * multiple pages if necessary and writes them immediately (header + data).
+     * This method is intended to be used only for metadata (e.g. large thumbnails).
+     *
+     * @param data the metadata to add as a packet segment
+     * @param header a reusable ByteBuffer for writing page headers; this method will write
+     *               the header for each page as needed
+     */
+    private void addPacketSegment(final byte[] data, @NonNull final ByteBuffer header)
+            throws IOException {
+        int offset = 0;
+        boolean first = true;
+
+        while (offset < data.length) {
+            final int remaining = data.length - offset;
+            final int chunkSize = Math.min(remaining, OPUS_MAX_PACKETS_PAGE_SIZE);
+
+            // Prepare segment table for this chunk. The existing addPacketSegment(int)
+            // will return false if the current page can't fit the segment table for
+            // this chunk; such a case would indicate leftover segments and shouldn't
+            // happen for metadata (we use this method before other packet data).
+            // If it does happen, fall back to forcing a flush by creating an empty
+            // header/page (not expected in normal runs).
+            if (!addPacketSegment(chunkSize)) {
+                // If the segment table cannot accept the chunk, flush an empty page
+                // so the table is cleared and try again. We write a header without
+                // an immediate page (no data) to flush current segments.
+                int checksum = makePacketHeader(0x00, header, null);
+                checksum = calcCrc32(checksum, new byte[0], 0);
+                header.putInt(HEADER_CHECKSUM_OFFSET, checksum);
+                write(header);
+
+                // Now the segment table was cleared by makePacketHeader(); retry
+                if (!addPacketSegment(chunkSize)) {
+                    // If still failing, give up and throw an exception — this should
+                    // not happen because chunkSize <= OPUS_MAX_PACKETS_PAGE_SIZE and
+                    // the segment table capacity is larger than that.
+                    throw new IOException("Unable to fit metadata chunk into Ogg segment table");
+                }
+            }
+
+            // For continuation pages (after the first), mark the page as continued.
+            if (!first) {
+                packetFlag = FLAG_CONTINUED;
+            }
+
+            final byte[] chunk = Arrays.copyOfRange(data, offset, offset + chunkSize);
+
+            // makePacketHeader when provided with immediatePage will compute and
+            // write the checksum that includes the page data, so just call it and
+            // then write header + data.
+            makePacketHeader(0x00, header, chunk);
+            write(header);
+            output.write(chunk);
+
+            offset += chunkSize;
+            first = false;
+        }
     }
 
     private void populateCrc32Table() {
