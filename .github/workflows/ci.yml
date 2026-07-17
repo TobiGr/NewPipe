@@ -13,6 +13,9 @@ on:
       - dev
       - master
 
+env:
+  IGNORED_FILES: 'README.md|assets/*|doc/*|fastlane/*|.github/*.md|.github/**/*.md|.github/FUNDING.yml|.github/ISSUE_TEMPLATE/*'
+
 jobs:
   detect-changes:
     runs-on: ubuntu-latest
@@ -24,25 +27,22 @@ jobs:
           fetch-depth: 0
       - name: Determine if only ignored files changed
         id: check
+        env:
+          IGNORED_FILES: ${{ env.IGNORED_FILES }}
         run: |
-          echo "Checking changed files against ignore list..."
-          # If not a pull_request event, assume there are relevant changes
           if [ "${{ github.event_name }}" != "pull_request" ]; then
             echo "only_ignored=false" >> $GITHUB_OUTPUT
             exit 0
           fi
           git fetch origin ${{ github.event.pull_request.base.ref }} --depth=1 || true
           CHANGED=$(git diff --name-only origin/${{ github.event.pull_request.base.ref }}...HEAD || true)
-          echo "$CHANGED"
           if [ -z "$CHANGED" ]; then
             echo "only_ignored=true" >> $GITHUB_OUTPUT
             exit 0
           fi
           only_ignored=true
           for file in $CHANGED; do
-            case "$file" in
-              README.md | doc/* | fastlane/* | assets/* | .github/*.md | .github/**/*.md | .github/FUNDING.yml | .github/ISSUE_TEMPLATE/*)
-                # ignored file - continue
+            case "$file" in $IGNORED_FILES)
                 ;;
               *)
               only_ignored=false
