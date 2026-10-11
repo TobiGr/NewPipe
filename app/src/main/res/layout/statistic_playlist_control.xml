@@ -4,84 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/historySearchInput"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/history_search_input_background"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="12dp"
+        android:hint="@string/history_search_hint"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingHorizontal="12dp"
+        android:singleLine="true"
+        android:textSize="14sp"
+        tools:ignore="Autofill" />
 
-        <RelativeLayout
-            android:id="@+id/sortButton"
-            android:layout_width="0dp"
+    <!-- Horizontal scroll is not needed on normal screen sizes with an English localization,
+         but some locals have very long translations for "most played", e.g. German ... -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackground"
-            android:clickable="true"
-            android:focusable="true"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/fullyWatchedFilterButton"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_weight="1">
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="12dp">
 
-            <ImageView
-                android:id="@+id/sortButtonIcon"
-                android:layout_width="48dp"
-                android:layout_height="28dp"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="12dp"
-                android:layout_marginEnd="12dp"
-                android:src="@drawable/ic_filter_list"
-                tools:ignore="ContentDescription" />
-
-            <org.schabi.newpipe.views.NewPipeTextView
-                android:id="@+id/sortButtonText"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_toEndOf="@id/sortButtonIcon"
-                android:gravity="start|center_vertical"
-                android:text="@string/title_most_played"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/fullyWatchedFilterButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackground"
-            android:clickable="true"
-            android:focusable="true"
-            app:layout_constraintStart_toEndOf="@id/sortButton"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_weight="1">
-
-            <CheckBox
-                android:id="@+id/fullyWatchedFilterButtonCheckBox"
+            <com.google.android.material.chip.Chip
+                android:id="@+id/sortChip"
+                android:theme="@style/Theme.MaterialComponents.DayNight.Bridge"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="12dp"
-                android:layout_marginEnd="12dp"
-                android:checked="false" />
+                android:layout_marginStart="8dp"
+                android:checkable="false"
+                android:text="@string/title_most_played"
+                app:chipIcon="@drawable/ic_filter_list"
+                app:chipIconVisible="true" />
 
-            <org.schabi.newpipe.views.NewPipeTextView
-                android:id="@+id/fullyWatchedFilterButtonText"
+            <com.google.android.material.chip.Chip
+                android:id="@+id/filterWatchedChip"
+                android:theme="@style/Theme.MaterialComponents.DayNight.Bridge"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_toEndOf="@id/fullyWatchedFilterButtonCheckBox"
-                android:gravity="start|center_vertical"
-                android:text="@string/title_hide_watched"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:checkable="true"
+                android:checked="true"
+                android:text="@string/history_search_filter_watched" />
 
-        </RelativeLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
 
     <include
         android:id="@+id/playlist_control"
