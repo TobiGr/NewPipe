@@ -17,7 +17,25 @@ module.exports = async ({github, context}) => {
       if (isPR) {
         template = '<details><summary>Raw template</summary>\n```\n' + process.env.PR_TEMPLATE + '\n```\n</details>';
       } else {
-        template = '[Bug report template](https://raw.githubusercontent.com/TeamNewPipe/NewPipe/refs/heads/dev/.github/ISSUE_TEMPLATE/bug_report.yml), [Feature request template](https://raw.githubusercontent.com/TeamNewPipe/NewPipe/refs/heads/dev/.github/ISSUE_TEMPLATE/feature_request.yml)';
+        const templates = {
+            'bug report': 'https://raw.githubusercontent.com/TeamNewPipe/NewPipe/refs/heads/dev/.github/ISSUE_TEMPLATE/bug_report.yml',
+            'feature request': 'https://raw.githubusercontent.com/TeamNewPipe/NewPipe/refs/heads/dev/.github/ISSUE_TEMPLATE/feature_request.yml'
+        };
+
+        const yaml = require('js-yaml');
+        const templateParts = await Promise.all(Object.entries(templates).map(async ([templateName, url]) => {
+            const response = await fetch(url);
+            if (!response.ok) {
+                console.log(`Failed to fetch ${url}: ${response.status} ${response.statusText}`);
+                return `<details><summary>${templateName}</summary>\n<a href="${url}" target="_blank">View template</a></details>`;
+            }
+
+            const issueTemplate = yaml.load(await response.text());
+            const body = yaml.dump(issueTemplate.body || []).trim();
+            return `<details><summary>${templateName}</summary>\n\`\`\`yml\n${body}\n\`\`\`\n</details>`;
+        }));
+
+        template = templateParts.join(', ');
       }
       body = `Thank you for creating this ${kind}. Please edit your description and add the template with the information: ${template}`;
     } else {
