@@ -1,0 +1,11 @@
+on:
+  pull_request:
+    paths:
+      - 'fastlane/**'
+
+jobs:
+  validate-fastline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ashutoshgngwr/validate-fastlane-supply-metadata@v2
