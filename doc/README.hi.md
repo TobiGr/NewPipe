@@ -4,6 +4,7 @@
 
 <p align="center"><a href="https://f-droid.org/packages/org.schabi.newpipe/"><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on-hi.svg" alt="इसे F-Droid पर पाएँ" width=206/></a></p>
 
+
 <p align="center">
 <a href="https://github.com/TeamNewPipe/NewPipe/releases" alt="GitHub प्रकाशन"><img src="https://img.shields.io/github/release/TeamNewPipe/NewPipe.svg" ></a>
 <a href="https://github.com/TeamNewPipe/NewPipe-nightly/releases" alt="GitHub NewPipe nightly releases"><img src="https://img.shields.io/github/release/TeamNewPipe/NewPipe-nightly.svg?labelColor=purple&label=dev%20nightly"></a>
