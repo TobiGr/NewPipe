@@ -76,6 +76,7 @@ open class App :
     }
 
     override fun onCreate() {
+        // change in app file
         super.onCreate()
 
         instance = this
